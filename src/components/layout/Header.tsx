@@ -267,28 +267,29 @@ export function Header() {
                 <Menu className="w-6 h-6" />
               </button>
 
-              <Link href="/" className="flex items-center gap-3 group">
-                <Image
-                  src="/logo.jpg"
-                  alt="Motoplex Performance Division"
-                  width={42}
-                  height={42}
-                  className="rounded-xl object-contain shadow-xs border border-zinc-900/10 group-hover:scale-105 transition-transform shrink-0"
-                  priority
-                />
+              <Link href="/" className="flex items-center gap-3.5 group shrink-0">
+                <div className="relative h-12 sm:h-14 w-16 sm:w-20 shrink-0 rounded-xl overflow-hidden bg-black p-0.5 border border-zinc-800 shadow-sm group-hover:border-red-600/70 transition-all">
+                  <Image
+                    src="/logo.jpg"
+                    alt="Motoplex Performance Division"
+                    fill
+                    className="object-contain group-hover:scale-105 transition-transform duration-200"
+                    priority
+                  />
+                </div>
                 <div className="flex flex-col">
                   <div className="flex items-center gap-1.5">
-                    <span className="font-black text-xl sm:text-2xl tracking-tighter text-zinc-950 group-hover:text-red-600 transition-colors leading-none">
+                    <span className="font-black text-2xl sm:text-3xl tracking-tighter text-zinc-950 group-hover:text-red-600 transition-colors leading-none">
                       MOTOPLEX
                     </span>
                     {/* Italian Tricolor Accent Bars */}
-                    <div className="flex h-3.5 w-2 rounded-xs overflow-hidden flex-col shadow-xs shrink-0">
+                    <div className="flex h-4 w-2 rounded-xs overflow-hidden flex-col shadow-xs shrink-0">
                       <span className="bg-emerald-600 flex-1 w-full" />
                       <span className="bg-white flex-1 w-full" />
                       <span className="bg-red-600 flex-1 w-full" />
                     </div>
                   </div>
-                  <span className="text-[9px] font-extrabold tracking-[0.2em] text-zinc-500 uppercase mt-0.5 leading-none">
+                  <span className="text-[10px] sm:text-[11px] font-black tracking-[0.24em] text-red-600 uppercase mt-1 leading-none">
                     PERFORMANCE DIVISION
                   </span>
                 </div>
@@ -653,7 +654,7 @@ export function Header() {
 
         {/* Tier 2: Category & Models Navigation Bar (Desktop) */}
         <div
-          className="hidden lg:block bg-zinc-50/95 border-b border-zinc-200/80 backdrop-blur-md relative"
+          className="hidden lg:block bg-zinc-950 text-white border-b border-zinc-800 relative shadow-sm"
           onMouseLeave={handleCloseMegaMenu}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-2">
@@ -663,10 +664,10 @@ export function Header() {
                 <button
                   type="button"
                   onClick={() => setIsMegaMenuOpen((prev) => !prev)}
-                  className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-black uppercase tracking-wider transition-all cursor-pointer ${
+                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-black uppercase tracking-wider transition-all cursor-pointer ${
                     isMegaMenuOpen
                       ? "bg-red-600 text-white shadow-xs"
-                      : "bg-zinc-900 text-white hover:bg-red-600"
+                      : "bg-red-600 hover:bg-red-700 text-white"
                   }`}
                 >
                   <Menu className="w-3.5 h-3.5" />
@@ -680,74 +681,74 @@ export function Header() {
               </div>
 
               {/* Direct Category Links */}
-              <nav className="flex items-center gap-5 xl:gap-6 text-xs font-bold uppercase tracking-wider">
+              <nav className="flex items-center gap-5 xl:gap-7 text-xs font-bold uppercase tracking-wider text-zinc-300">
                 <Link
                   href="/category/brake-system"
                   prefetch={true}
-                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                  className="hover:text-red-500 transition-colors py-1"
                 >
                   Brake System
                 </Link>
                 <Link
                   href="/category/engine-performance"
                   prefetch={true}
-                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                  className="hover:text-red-500 transition-colors py-1"
                 >
                   Engine & Tuning
                 </Link>
                 <Link
                   href="/category/air-filters"
                   prefetch={true}
-                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                  className="hover:text-red-500 transition-colors py-1"
                 >
                   Air Filters
                 </Link>
                 <Link
                   href="/category/clutch-transmission"
                   prefetch={true}
-                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                  className="hover:text-red-500 transition-colors py-1"
                 >
                   Clutch & Chain
                 </Link>
                 <Link
                   href="/category/tyres"
                   prefetch={true}
-                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                  className="hover:text-red-500 transition-colors py-1"
                 >
                   Tyres
                 </Link>
                 <Link
                   href="/services"
                   prefetch={true}
-                  className="text-zinc-900 hover:text-red-600 transition-colors flex items-center gap-1.5 py-1"
+                  className="text-white hover:text-red-500 transition-colors flex items-center gap-1.5 py-1"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
                   <span>Workshop & Services</span>
                 </Link>
               </nav>
             </div>
 
             {/* Right Quick Nav Links */}
-            <div className="flex items-center gap-5 text-xs font-bold uppercase tracking-wider">
+            <div className="flex items-center gap-5 text-xs font-bold uppercase tracking-wider text-zinc-400">
               <Link
                 href="/dealerships"
                 prefetch={true}
-                className="text-zinc-600 hover:text-red-600 transition-colors"
+                className="hover:text-white transition-colors"
               >
                 Dealerships
               </Link>
               <Link
                 href="/track"
                 prefetch={true}
-                className="text-zinc-700 hover:text-red-600 transition-colors flex items-center gap-1.5"
+                className="hover:text-white transition-colors flex items-center gap-1.5"
               >
-                <Truck className="w-3.5 h-3.5 text-red-600" />
+                <Truck className="w-3.5 h-3.5 text-red-500" />
                 <span>Track Order</span>
               </Link>
               <Link
                 href="/shop"
                 prefetch={true}
-                className="text-red-600 hover:text-red-700 font-black transition-colors"
+                className="text-red-500 hover:text-red-400 font-black transition-colors"
               >
                 All Products →
               </Link>
