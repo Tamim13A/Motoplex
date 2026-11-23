@@ -293,7 +293,7 @@ export default function AdminPOSPage() {
               </h1>
             </div>
             <p className="text-[11px] text-slate-500">
-              Counter #01 • Gulshan-2 Flagship • Cashier: Authorized Officer
+              Counter #01 • Mirpur 60 Feet Flagship • Cashier: Authorized Officer
             </p>
           </div>
         </div>

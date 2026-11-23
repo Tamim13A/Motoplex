@@ -42,10 +42,10 @@ export default function ReturnsPolicyPage() {
             <h3 className="text-sm font-bold text-zinc-900">How to Initiate a Size Exchange:</h3>
             <ol className="list-decimal pl-5 space-y-2">
               <li>
-                <strong>Contact Concierge:</strong> Call our hotline at <strong>+880 1700-MOTOPLEX</strong> or send a message via our Live Concierge chat.
+                <strong>Contact Concierge:</strong> Call our hotline at <strong>+880 1957-060531</strong> or send a message via our Live Concierge chat.
               </li>
               <li>
-                <strong>Courier Pickup or Showroom Drop:</strong> You can either drop the parcel at our Gulshan-2 showroom or we will arrange a reverse pickup via Pathao/Steadfast Courier.
+                <strong>Courier Pickup or Showroom Drop:</strong> You can either drop the parcel at our Mirpur 60 Feet showroom or we will arrange a reverse pickup via Pathao/Steadfast Courier.
               </li>
               <li>
                 <strong>Replacement Dispatch:</strong> Once verified, your revised size will be dispatched within 24 hours.

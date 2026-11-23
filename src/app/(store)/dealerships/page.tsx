@@ -41,7 +41,7 @@ export default function DealershipsPage() {
               3 AUTHORIZED SHOWROOMS & MASTER WORKSHOPS
             </h1>
             <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
-              Experience Aprilia and Vespa superbikes, certified service facilities, and authentic gear at our premier branches in Gulshan-2, Uttara, and Chattogram.
+              Experience Aprilia and Vespa superbikes, certified service facilities, and authentic gear at our premier branches in Mirpur 60 Feet, Uttara, and Chattogram.
             </p>
           </div>
         </div>

@@ -23,7 +23,7 @@ export function TrustBadges() {
     {
       icon: Wrench,
       title: "Official Motoplex Service Warranty",
-      description: "Certified master technicians with specialized Italian diagnostic tools in Gulshan.",
+      description: "Certified master technicians with specialized Italian diagnostic tools at Mirpur 60 Feet Showroom.",
     },
   ];
 

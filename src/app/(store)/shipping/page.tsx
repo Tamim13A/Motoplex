@@ -58,7 +58,7 @@ export default function ShippingPolicyPage() {
           <section className="space-y-3">
             <h2 className="text-sm font-bold text-zinc-900">4. Motorcycle Vehicle Transport & Registration</h2>
             <p>
-              For complete two-wheelers (Aprilia RS 457, Tuono 457, Vespa Sprint, and Primavera), vehicles are delivered via specialized enclosed hydraulic ramp carriers or can be collected directly during a personalized VIP unveiling at our Gulshan-2 showroom.
+              For complete two-wheelers (Aprilia RS 457, Tuono 457, Vespa Sprint, and Primavera), vehicles are delivered via specialized enclosed hydraulic ramp carriers or can be collected directly during a personalized VIP unveiling at our Mirpur 60 Feet showroom.
             </p>
           </section>
         </div>

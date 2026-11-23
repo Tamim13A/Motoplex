@@ -175,7 +175,7 @@ export async function POST(request: NextRequest) {
 You possess MAXIMUM intelligence, precision, and deep mechanical expertise regarding high-performance motorcycle racing parts, European motorcycle maintenance, and genuine aftermarket performance modifications in Bangladesh.
 
 --- OFFICIAL SHOWROOM & ADMIN CREDENTIALS ---
-• Flagship Showroom: House 14, Road 112, Gulshan-2, Dhaka 1212, Bangladesh.
+• Flagship Showroom: Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka, Bangladesh.
 • Official Admin & Showroom WhatsApp Hotline: ${SHOWROOM_WHATSAPP} (01957-060531)
 • Direct WhatsApp Chat Link: https://wa.me/${SHOWROOM_WHATSAPP_CLEAN}
 • Operating Hours: Saturday to Thursday: 10:00 AM - 8:30 PM (Friday: 2:30 PM - 8:30 PM).

@@ -36,7 +36,7 @@ export default function ServicesPage() {
     ticketId: "MPX-SRV-98214",
     bike: "Aprilia RS 457 (Racing Red)",
     serviceName: "Bike Master Service (52-Point)",
-    branch: "Gulshan-2 Flagship 3S Center",
+    branch: "Mirpur 60 Feet Flagship 3S Center",
     step: 3, // 1: Checked In, 2: Inspection & Diagnostics, 3: In Master Repair / Fluids, 4: Foam Detailing, 5: Ready for Pickup
     advisor: "Engr. Nayeem Chowdhury (Master Tech)",
     notes: "Valve clearances checked & calibrated. Throttle body ultrasonic cleaned. Final ECU mapping in progress.",
@@ -56,7 +56,7 @@ export default function ServicesPage() {
         ticketId: `MPX-SRV-${Math.floor(10000 + Math.random() * 90000)}`,
         bike: `${trackQuery.toUpperCase()}`,
         serviceName: "Bike Master Service & Dyno Calibration",
-        branch: "Motoplex Gulshan Flagship Bay 2",
+        branch: "Motoplex Mirpur Flagship Bay 2",
         step: 3,
         advisor: "Engr. Nayeem Chowdhury (Master Tech)",
         notes: "52-point mechanical inspection completed. New Motul 300V synthetic oil filled. Ready for final test ride.",

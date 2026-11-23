@@ -687,7 +687,7 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
                     Every motorcycle and accessory imported by Motoplex BD carries our registered barcode and verifiable warranty card.
                   </p>
                   <ul className="space-y-1.5 list-disc pl-5">
-                    <li>Motorcycles (Aprilia & Vespa): 2-Year Engine & Electrical Warranty with 4 free routine maintenance services at our Gulshan-2 facility.</li>
+                    <li>Motorcycles (Aprilia & Vespa): 2-Year Engine & Electrical Warranty with 4 free routine maintenance services at our Mirpur 60 Feet facility.</li>
                     <li>Shoei Helmets: 5-Year International Manufacturer Warranty against shell or liner defects.</li>
                     <li>Riding Gear & Jackets: 1-Year stitching and zipper warranty.</li>
                     <li>7-Day Size Exchange: If your jacket or helmet fit is slightly off, we exchange it for your exact size with zero restocking charges.</li>

@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
       bikeModel: body.bikeModel?.trim() || "RS 457",
       bikePlate: body.bikePlate?.trim() || "",
       dealershipId: body.dealershipId || "dealership-gulshan",
-      dealershipName: body.dealershipName || "Motoplex Gulshan HQ",
+      dealershipName: body.dealershipName || "Motoplex Flagship — Mirpur 60 Feet",
       dealershipCity: body.dealershipCity || "Dhaka",
       bookingDate: body.bookingDate || new Date().toISOString().split("T")[0],
       bookingSlot: body.bookingSlot || "11:00 AM – 01:00 PM",

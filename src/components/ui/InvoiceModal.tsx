@@ -195,9 +195,9 @@ export function InvoiceModal({ order, isOpen, onClose }: InvoiceModalProps) {
                     </div>
                     <div style="font-size: 10px; color: #475569; margin-top: 8px; line-height: 1.4;">
                       Official Authorized Distributor for <strong>Aprilia • Moto Guzzi • Vespa</strong><br />
-                      Flagship Showroom: House 14, Road 112, Gulshan-2, Dhaka 1212<br />
+                      Flagship Showroom: Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka<br />
                       BIN / VAT Reg No: <strong>004189234-0101</strong> • NBR Mushak-6.3 Standard<br />
-                      Hotline: +880 1700-MOTOPLEX | Showroom WhatsApp: <strong>+880 1957-060531</strong>
+                      Showroom Hotline & WhatsApp: <strong>+880 1957-060531</strong>
                     </div>
                   </td>
                   <td style="vertical-align: top; text-align: right; width: 38%;">
@@ -452,9 +452,9 @@ export function InvoiceModal({ order, isOpen, onClose }: InvoiceModalProps) {
               </span>
               <p className="text-[11px] text-zinc-500 mt-2 leading-relaxed">
                 Official Authorized Distributor for <strong>Aprilia • Moto Guzzi • Vespa</strong><br />
-                Flagship Showroom: House 14, Road 112, Gulshan-2, Dhaka 1212<br />
+                Flagship Showroom: Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka<br />
                 BIN / VAT Reg No: <strong>004189234-0101</strong> • NBR Mushak-6.3 Standard<br />
-                Hotline: +880 1700-MOTOPLEX | Showroom WhatsApp: <strong>+880 1957-060531</strong>
+                Showroom Hotline & WhatsApp: <strong>+880 1957-060531</strong>
               </p>
             </div>
 

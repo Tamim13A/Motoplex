@@ -54,9 +54,9 @@ export async function GET() {
     console.warn("[API/admin/settings] Database offline, serving default settings.");
     const defaultSettings = {
       storeName: "MOTOPLEX Bangladesh",
-      phone: "+880 1700-MOTOPLEX",
+      phone: "+880 1957-060531",
       email: "concierge@motoplexbd.com",
-      address: "House 14, Road 112, Gulshan-2, Dhaka 1212",
+      address: "Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka",
       deliveryCharges: {
         insideDhaka: 120,
         outsideDhaka: 150,
@@ -110,9 +110,9 @@ export async function PUT(request: NextRequest) {
     console.warn("[API/admin/settings] Database offline, serving default settings.");
     const defaultSettings = {
       storeName: "MOTOPLEX Bangladesh",
-      phone: "+880 1700-MOTOPLEX",
+      phone: "+880 1957-060531",
       email: "concierge@motoplexbd.com",
-      address: "House 14, Road 112, Gulshan-2, Dhaka 1212",
+      address: "Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka",
       deliveryCharges: {
         insideDhaka: 120,
         outsideDhaka: 150,

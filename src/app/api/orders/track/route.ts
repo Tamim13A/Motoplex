@@ -128,7 +128,7 @@ export async function GET(request: NextRequest) {
     {
       title: "Genuine Quality Inspection & Packaged",
       titleBn: "কোয়ালিটি চেক ও প্যাকেজিং",
-      description: "Sealed in protective tamper-proof packaging at Gulshan Central Warehouse.",
+      description: "Sealed in protective tamper-proof packaging at Mirpur Central Warehouse.",
       completed: ["Processing", "Shipped", "Delivered"].includes(currentStatus) && !isCancelled,
       current: currentStatus === "Processing",
       time: ["Processing", "Shipped", "Delivered"].includes(currentStatus) ? "Completed" : "In queue",

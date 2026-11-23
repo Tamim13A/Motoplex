@@ -27,21 +27,21 @@ const BANK_DETAILS = {
     bankName: "Dutch-Bangla Bank (DBBL)",
     accountName: "MOTOPLEX",
     accountNumber: "1641510237133",
-    branch: "Gulshan Branch, Dhaka",
+    branch: "Mirpur Branch, Dhaka",
     badge: "Rocket / Dutch Bangla",
   },
   City: {
     bankName: "The City Bank Limited",
     accountName: "MOTOPLEX",
     accountNumber: "1455042635001",
-    branch: "Gulshan-2 Branch, Dhaka",
+    branch: "Mirpur Branch, Dhaka",
     badge: "City Bank / City Touch",
   },
   BRAC: {
     bankName: "BRAC Bank Limited",
     accountName: "MOTOPLEX",
     accountNumber: "2071151390001",
-    branch: "Gulshan Branch, Dhaka",
+    branch: "Mirpur Branch, Dhaka",
     badge: "BRAC Bank / Astha App",
   },
 };
@@ -57,7 +57,7 @@ export default function CheckoutPage() {
 
   const [division, setDivision] = useState("Dhaka");
   const [district, setDistrict] = useState("Dhaka");
-  const [area, setArea] = useState("Gulshan");
+  const [area, setArea] = useState("Mirpur");
   const [streetAddress, setStreetAddress] = useState("");
 
   // Payment states - advance courier fee

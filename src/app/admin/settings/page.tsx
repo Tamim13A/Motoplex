@@ -25,9 +25,9 @@ export default function AdminSettingsPage() {
   // General & Company Details
   const [storeName, setStoreName] = useState("Motoplex Bangladesh");
   const [tagline, setTagline] = useState("Official Importer for Aprilia, Moto Guzzi & Vespa Parts");
-  const [phone, setPhone] = useState("+880 1700-668675");
+  const [phone, setPhone] = useState("+880 1957-060531");
   const [email, setEmail] = useState("concierge@motoplexbd.com");
-  const [address, setAddress] = useState("House 14, Road 112, Gulshan-2, Dhaka 1212");
+  const [address, setAddress] = useState("Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka");
   const [logoUrl, setLogoUrl] = useState("https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=200&auto=format&fit=crop");
 
   // Delivery Charges

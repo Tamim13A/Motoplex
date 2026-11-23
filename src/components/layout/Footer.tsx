@@ -39,7 +39,7 @@ export function Footer() {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
                 <div>
-                  <strong className="text-zinc-200">Flagship Showroom:</strong> Plot 12, Road 113, Gulshan-2, Dhaka 1212, Bangladesh
+                  <strong className="text-zinc-200">Flagship Showroom:</strong> Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka, Bangladesh
                 </div>
               </div>
               <div className="flex items-start gap-2.5">
@@ -50,7 +50,9 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-red-500 shrink-0" />
-                <span className="font-mono text-zinc-200 font-bold">+880 1700-MOTOPLEX</span>
+                <a href="tel:+8801957060531" className="font-mono text-zinc-200 font-bold hover:text-white transition-colors">
+                  +880 1957-060531
+                </a>
               </div>
             </div>
           </div>

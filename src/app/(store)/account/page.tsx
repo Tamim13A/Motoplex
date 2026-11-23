@@ -132,7 +132,7 @@ export default function AccountOverviewPage() {
                   bikeModel: b.bikeModel || "RS 457",
                   bikePlate: b.bikePlate || "",
                   dealershipId: b.dealershipId || "dealership-gulshan",
-                  dealershipName: b.dealershipName || "Motoplex Gulshan HQ",
+                  dealershipName: b.dealershipName || "Motoplex Flagship — Mirpur 60 Feet",
                   dealershipCity: b.dealershipCity || "Dhaka",
                   bookingDate: b.bookingDate || formatDateSafe(b.createdAt),
                   bookingSlot: b.bookingSlot || "11:00 AM – 01:00 PM",

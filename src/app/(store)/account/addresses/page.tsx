@@ -30,7 +30,7 @@ export default function AddressesPage() {
   const [newAddress, setNewAddress] = useState("");
   const [newDivision, setNewDivision] = useState("Dhaka");
   const [newDistrict, setNewDistrict] = useState("Dhaka");
-  const [newArea, setNewArea] = useState("Gulshan");
+  const [newArea, setNewArea] = useState("Mirpur");
 
   // Fetch logged in customer addresses from DB
   useEffect(() => {
@@ -47,7 +47,7 @@ export default function AddressesPage() {
             name: json.data.user.name || "Customer",
             phone: json.data.user.phone || "+880 17XXXXXXXX",
             address: a.address || "",
-            area: a.area || "Gulshan",
+            area: a.area || "Mirpur",
             district: a.district || "Dhaka",
             division: a.division || "Dhaka",
           }));

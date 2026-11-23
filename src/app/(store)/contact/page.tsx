@@ -26,7 +26,7 @@ export default function ContactPage() {
   const faqs = [
     {
       q: "Where is the Motoplex Bangladesh flagship showroom located?",
-      a: "Our primary flagship showroom and certified service facility is located at Plot 12, Road 113, Gulshan-2, Dhaka 1212. We also operate a dedicated riders' lounge at GEC Circle, Nasirabad, Chattogram.",
+      a: "Our primary flagship showroom and certified service facility is located at Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka, Bangladesh. We also operate a dedicated riders' lounge at GEC Circle, Nasirabad, Chattogram.",
     },
     {
       q: "How does nationwide delivery work across Bangladesh?",
@@ -38,7 +38,7 @@ export default function ContactPage() {
     },
     {
       q: "How do I claim official warranty on Shoei helmets or Aprilia bikes?",
-      a: "All items purchased from Motoplex BD feature our importer hologram and registered QR warranty code. Simply bring your warranty card or digital order invoice to our Gulshan-2 showroom or contact our hotline.",
+      a: "All items purchased from Motoplex BD feature our importer hologram and registered QR warranty code. Simply bring your warranty card or digital order invoice to our Mirpur 60 Feet showroom or contact our hotline at +880 1957-060531.",
     },
   ];
 
@@ -50,7 +50,7 @@ export default function ContactPage() {
     }
 
     setSubmitted(true);
-    showToast("Message Dispatched", "Our Gulshan concierge will contact you within 2 hours.", "success");
+    showToast("Message Dispatched", "Our Mirpur showroom concierge will contact you within 2 hours.", "success");
   };
 
   return (
@@ -65,7 +65,7 @@ export default function ContactPage() {
             CONTACT MOTOPLEX BANGLADESH
           </h1>
           <p className="text-xs sm:text-sm text-zinc-400 max-w-xl mx-auto leading-relaxed">
-            Visit our state-of-the-art Italian showroom in Gulshan-2, book private motorcycle consultations, or contact our rider support hotline.
+            Visit our state-of-the-art Italian showroom at Mirpur 60 Feet, Dhaka, book private motorcycle consultations, or contact our rider support hotline.
           </p>
         </div>
       </div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                   <span>Dhaka Flagship Showroom & Service Center</span>
                 </div>
                 <p className="text-xs text-zinc-600 leading-relaxed">
-                  Plot 12, Road 113, Gulshan-2, Dhaka 1212, Bangladesh
+                  Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka, Bangladesh
                 </p>
                 <div className="pt-2 text-xs text-zinc-500 space-y-1">
                   <div className="flex items-center gap-2">
@@ -95,7 +95,9 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2 font-mono font-bold text-zinc-900">
                     <Phone className="w-3.5 h-3.5 text-red-600" />
-                    <span>+880 1700-MOTOPLEX (668675)</span>
+                    <a href="tel:+8801957060531" className="hover:text-red-600 transition-colors">
+                      +880 1957-060531
+                    </a>
                   </div>
                 </div>
               </div>
@@ -116,7 +118,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2 font-mono font-bold text-zinc-900">
                     <Phone className="w-3.5 h-3.5 text-red-600" />
-                    <span>+880 1711-MOTOPLEX</span>
+                    <span>+880 1957-060531</span>
                   </div>
                 </div>
               </div>
@@ -152,7 +154,7 @@ export default function ContactPage() {
                   <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
                   <h3 className="text-lg font-bold text-zinc-900">Inquiry Received</h3>
                   <p className="text-xs text-zinc-600 max-w-md mx-auto leading-relaxed">
-                    Thank you, {name}! Your message regarding &ldquo;{subject}&rdquo; has been sent to our Gulshan-2 showroom manager.
+                    Thank you, {name}! Your message regarding &ldquo;{subject}&rdquo; has been sent to our Mirpur showroom manager.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}

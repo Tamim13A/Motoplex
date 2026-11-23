@@ -147,7 +147,7 @@ Ask me about any product, exact price in BDT, bike fitment, workshop services, o
       });
 
       const data = await response.json();
-      const botReply = data.reply || `Thank you for reaching out! Please contact our Gulshan Showroom Admin directly on WhatsApp: ${ADMIN_WHATSAPP}.`;
+      const botReply = data.reply || `Thank you for reaching out! Please contact our Mirpur Showroom Admin directly on WhatsApp: ${ADMIN_WHATSAPP}.`;
 
       setMessages((prev) => [
         ...prev,
@@ -212,7 +212,7 @@ Ask me about any product, exact price in BDT, bike fitment, workshop services, o
                   </span>
                 </div>
                 <p className="text-[11px] text-zinc-400 flex items-center gap-1">
-                  <span>Gulshan-2 Showroom</span>
+                  <span>Mirpur 60 Feet Showroom</span>
                   <span>•</span>
                   <a
                     href={ADMIN_WHATSAPP_LINK}

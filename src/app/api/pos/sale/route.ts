@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
         phone: customerPhone?.trim() || "N/A",
         division: "Dhaka",
         district: "Dhaka",
-        area: "Gulshan-2",
+        area: "Mirpur 60 Feet",
         address: "Motoplex Flagship Counter Sale",
       },
       items: items.map((i: any) => ({
@@ -92,7 +92,7 @@ export async function POST(request: NextRequest) {
         orderNumber: safeOrderNo,
         customerName: customerName || "Walk-in Customer",
         customerPhone: customerPhone || "N/A",
-        branchName: "Gulshan-2 Flagship (Counter #01)",
+        branchName: "Mirpur 60 Feet Flagship (Counter #01)",
         items: items.map((i: any) => ({
           name: i.name,
           quantity: Number(i.quantity) || 1,

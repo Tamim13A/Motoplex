@@ -38,7 +38,7 @@ const homeTestimonials: Testimonial[] = [
     name: "Zubair Al-Mamun",
     role: "Track Day Enthusiast",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
-    quote: "From Dainese racing suits to Akrapovič exhausts, everything is 100% original. Their customer service team in Gulshan knows motorcycling inside and out.",
+    quote: "From Dainese racing suits to Akrapovič exhausts, everything is 100% original. Their customer service team in Mirpur 60 Feet knows motorcycling inside and out.",
     rating: 5,
     verified: true,
   },

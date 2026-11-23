@@ -331,17 +331,17 @@ function TrackingContent() {
                 </span>
                 <h4 className="text-base font-bold">Have Questions About Your Delivery?</h4>
                 <p className="text-xs text-zinc-400">
-                  Our Gulshan logistics desk is ready to assist your dispatch status Saturday - Thursday.
+                  Our Mirpur logistics desk is ready to assist your dispatch status Saturday - Thursday.
                 </p>
               </div>
 
               <div className="flex items-center gap-3 shrink-0">
                 <a
-                  href="tel:+8801700668675"
+                  href="tel:+8801957060531"
                   className="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-5 py-3 rounded-xl transition-all shadow-md flex items-center gap-2"
                 >
                   <Phone className="w-3.5 h-3.5" />
-                  <span>Call +880 1700-MOTOPLEX</span>
+                  <span>Call +880 1957-060531</span>
                 </a>
               </div>
             </div>

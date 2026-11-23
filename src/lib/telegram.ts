@@ -428,7 +428,7 @@ export async function sendTelegramPosSaleNotification(
   try {
     const customerName = escapeHtml(posSale.customerName || "Walk-in Customer");
     const customerPhone = escapeHtml(posSale.customerPhone || "N/A");
-    const branch = escapeHtml(posSale.branchName || "Gulshan-2 Flagship (Counter #01)");
+    const branch = escapeHtml(posSale.branchName || "Mirpur 60 Feet Flagship (Counter #01)");
     const paymentMethod = escapeHtml(posSale.paymentMethod || "Cash");
 
     const visibleItems = posSale.items.slice(0, 4);

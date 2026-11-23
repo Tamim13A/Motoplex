@@ -234,13 +234,13 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
 
             {/* Showroom & Hotline */}
             <div className="p-4 bg-zinc-50 rounded-xl space-y-2 text-xs text-zinc-600 border border-zinc-200">
-              <div className="flex items-center gap-2 font-bold text-zinc-900">
+              <a href="tel:+8801957060531" className="flex items-center gap-2 font-bold text-zinc-900 hover:text-red-600 transition-colors">
                 <Phone className="w-3.5 h-3.5 text-red-600" />
-                <span>+880 1700-MOTOPLEX</span>
-              </div>
+                <span>+880 1957-060531</span>
+              </a>
               <div className="flex items-start gap-2 text-[11px] text-zinc-500">
                 <MapPin className="w-3.5 h-3.5 text-zinc-400 shrink-0 mt-0.5" />
-                <span>Plot 12, Road 113, Gulshan-2, Dhaka 1212, Bangladesh</span>
+                <span>Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka, Bangladesh</span>
               </div>
             </div>
           </div>

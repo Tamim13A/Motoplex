@@ -154,7 +154,7 @@ async function seedDatabase() {
       logoUrl: "/logo.svg",
       phone: "+880 1711-000000",
       email: "info@motoplexbd.com",
-      address: "Gulshan-2, Dhaka, Bangladesh",
+      address: "Mirpur 60 Feet (Opposite of Paka Masjid), Dhaka, Bangladesh",
       deliveryCharges: { insideDhaka: 120, outsideDhaka: 150 },
     });
     console.log("[Seeder] Store settings created");
