@@ -19,6 +19,7 @@ import {
   X,
   Package,
   LogOut,
+  Phone,
 } from "lucide-react";
 import { MegaMenu } from "./MegaMenu";
 import { MobileMenuDrawer } from "./MobileMenuDrawer";
@@ -247,18 +248,17 @@ export function Header() {
         </div>
 
 
-        {/* Main Navbar */}
+        {/* Tier 1: Main Header (Logo, Centered Search & Action Utilities) */}
         <div
-          className={`border-b transition-all duration-300 relative ${
+          className={`transition-all duration-200 relative border-b ${
             isScrolled
-              ? "bg-white/85 backdrop-blur-xl border-zinc-200/80 shadow-lg shadow-black/[0.04] py-2.5"
-              : "bg-white/95 backdrop-blur-md border-zinc-200/60 py-3.5"
+              ? "bg-white/95 backdrop-blur-xl border-zinc-200/80 shadow-xs py-2 sm:py-2.5"
+              : "bg-white border-zinc-200/60 py-3 sm:py-3.5"
           }`}
-          onMouseLeave={handleCloseMegaMenu}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
-            {/* Left: Mobile hamburger & Logo */}
-            <div className="flex items-center gap-3">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 sm:gap-6">
+            {/* Left: Mobile hamburger & Brand Logo */}
+            <div className="flex items-center gap-3 shrink-0">
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
                 className="p-2 -ml-2 text-zinc-700 hover:text-zinc-950 lg:hidden rounded-lg hover:bg-zinc-100"
@@ -267,137 +267,49 @@ export function Header() {
                 <Menu className="w-6 h-6" />
               </button>
 
-              <Link href="/" className="flex items-center gap-2.5 group">
+              <Link href="/" className="flex items-center gap-3 group">
                 <Image
                   src="/logo.jpg"
                   alt="Motoplex Performance Division"
-                  width={38}
-                  height={38}
-                  className="rounded-xl object-contain shadow-xs border border-zinc-900/10 group-hover:scale-105 transition-transform"
+                  width={42}
+                  height={42}
+                  className="rounded-xl object-contain shadow-xs border border-zinc-900/10 group-hover:scale-105 transition-transform shrink-0"
                   priority
                 />
                 <div className="flex flex-col">
-                  <div className="flex items-center gap-1">
-                    <span className="font-black text-xl sm:text-2xl tracking-tighter text-zinc-950 group-hover:text-red-600 transition-colors">
+                  <div className="flex items-center gap-1.5">
+                    <span className="font-black text-xl sm:text-2xl tracking-tighter text-zinc-950 group-hover:text-red-600 transition-colors leading-none">
                       MOTOPLEX
                     </span>
                     {/* Italian Tricolor Accent Bars */}
-                    <div className="flex h-3.5 w-2 rounded-xs overflow-hidden flex-col shadow-xs">
+                    <div className="flex h-3.5 w-2 rounded-xs overflow-hidden flex-col shadow-xs shrink-0">
                       <span className="bg-emerald-600 flex-1 w-full" />
                       <span className="bg-white flex-1 w-full" />
                       <span className="bg-red-600 flex-1 w-full" />
                     </div>
                   </div>
-                  <span className="text-[9px] font-bold tracking-[0.22em] text-zinc-500 uppercase -mt-1">
+                  <span className="text-[9px] font-extrabold tracking-[0.2em] text-zinc-500 uppercase mt-0.5 leading-none">
                     PERFORMANCE DIVISION
                   </span>
                 </div>
               </Link>
             </div>
 
-            {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-7">
-              {/* Mega Menu Toggle */}
-              <div
-                onMouseEnter={handleOpenMegaMenu}
-                className="py-1"
-              >
-                <button
-                  type="button"
-                  onClick={() => setIsMegaMenuOpen((prev) => !prev)}
-                  className="flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-zinc-900 hover:text-red-600 py-2 transition-colors cursor-pointer"
-                >
-                  <span>Categories & Models</span>
-                  <ChevronDown
-                    className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                      isMegaMenuOpen ? "rotate-180 text-red-600" : ""
-                    }`}
-                  />
-                </button>
-              </div>
-
-              <Link
-                href="/category/brake-system"
-                prefetch={true}
-                className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
-              >
-                Brake System
-              </Link>
-              <Link
-                href="/category/engine-performance"
-                prefetch={true}
-                className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
-              >
-                Engine & Tuning
-              </Link>
-              <Link
-                href="/category/air-filters"
-                prefetch={true}
-                className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
-              >
-                Air Filters
-              </Link>
-              <Link
-                href="/category/clutch-transmission"
-                prefetch={true}
-                className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
-              >
-                Clutch & Chain
-              </Link>
-              <Link
-                href="/category/tyres"
-                prefetch={true}
-                className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
-              >
-                Tyres
-              </Link>
-              <Link
-                href="/services"
-                prefetch={true}
-                className="text-xs font-bold uppercase tracking-wider text-zinc-900 hover:text-red-600 transition-colors flex items-center gap-1"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse" />
-                <span>Workshop & Services</span>
-              </Link>
-              <Link
-                href="/dealerships"
-                prefetch={true}
-                className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
-              >
-                Dealerships
-              </Link>
-              <Link
-                href="/track"
-                prefetch={true}
-                className="text-xs font-bold uppercase tracking-wider text-zinc-900 hover:text-red-600 transition-colors flex items-center gap-1.5"
-              >
-                <Truck className="w-3.5 h-3.5 text-red-600" />
-                <span>Track Order</span>
-              </Link>
-              <Link
-                href="/shop"
-                prefetch={true}
-                className="text-xs font-bold uppercase tracking-wider text-red-600 hover:text-red-700 transition-colors"
-              >
-                All Products
-              </Link>
-            </nav>
-
-            {/* Center/Right: Live Autocomplete Search Bar */}
-            <div ref={searchRef} className="relative hidden md:block flex-1 max-w-xs lg:max-w-sm">
+            {/* Center: Live Autocomplete Search Bar */}
+            <div ref={searchRef} className="relative hidden md:block flex-1 max-w-xl mx-2 lg:mx-6">
               <form onSubmit={handleSearchSubmit} className="relative">
                 <input
                   ref={searchInputRef}
                   type="text"
-                  placeholder="Search performance parts, gear..."
+                  placeholder="Search performance parts, gear, models..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onFocus={() => setIsSearchFocused(true)}
-                  className="w-full bg-zinc-50 hover:bg-zinc-100/80 focus:bg-white border border-zinc-200 focus:border-red-600 rounded-full pl-9 pr-14 py-2 text-xs text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-red-600/10 transition-all"
+                  className="w-full bg-zinc-50 hover:bg-zinc-100/80 focus:bg-white border border-zinc-200 focus:border-red-600 rounded-full pl-10 pr-14 py-2.5 text-xs text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-red-600/10 transition-all shadow-2xs"
                 />
-                <Search className="w-4 h-4 text-zinc-400 absolute left-3 top-2.5" />
+                <Search className="w-4 h-4 text-zinc-400 absolute left-3.5 top-3" />
                 {!searchQuery && (
-                  <span className="hidden lg:inline-flex items-center px-1.5 py-0.5 border border-zinc-200 rounded text-[10px] font-mono text-zinc-400 absolute right-3 top-2 select-none pointer-events-none">
+                  <span className="hidden lg:inline-flex items-center px-1.5 py-0.5 border border-zinc-200 rounded text-[10px] font-mono text-zinc-400 absolute right-3.5 top-2.5 select-none pointer-events-none">
                     ⌘K
                   </span>
                 )}
@@ -405,7 +317,7 @@ export function Header() {
                   <button
                     type="button"
                     onClick={() => setSearchQuery("")}
-                    className="p-1 text-zinc-400 hover:text-zinc-600 absolute right-2.5 top-2"
+                    className="p-1 text-zinc-400 hover:text-zinc-600 absolute right-3 top-2.5"
                   >
                     <X className="w-3.5 h-3.5" />
                   </button>
@@ -496,8 +408,23 @@ export function Header() {
               )}
             </div>
 
-            {/* Right Action Icons */}
-            <div className="flex items-center gap-1 sm:gap-2">
+            {/* Right Action Icons & Utilities */}
+            <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+              {/* Showroom Hotline */}
+              <a
+                href="tel:+8801957060531"
+                className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-xl text-zinc-700 hover:text-red-600 hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-200"
+                title="Direct Showroom & Support Hotline"
+              >
+                <div className="w-7 h-7 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0">
+                  <Phone className="w-3.5 h-3.5" />
+                </div>
+                <div className="text-left">
+                  <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider leading-none">Support</p>
+                  <p className="text-xs font-black text-zinc-900 leading-tight">+880 1957-060531</p>
+                </div>
+              </a>
+
               {/* If staff is logged in, show quick 1-click shortcut to Admin Console */}
               {currentUser && (currentUser.role === "admin" || currentUser.role === "moderator") && (
                 <Link
@@ -700,12 +627,139 @@ export function Header() {
             </div>
           </div>
 
-          {/* Full-width Mega Menu anchored to Navbar */}
+          {/* Mobile Search Input */}
+          <div className="md:hidden px-4 pt-2.5 pb-1">
+            <form onSubmit={handleSearchSubmit} className="relative">
+              <input
+                type="text"
+                placeholder="Search performance parts..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-zinc-100 focus:bg-white border border-zinc-200 focus:border-red-600 rounded-xl pl-9 pr-8 py-2 text-xs text-zinc-900 placeholder:text-zinc-400 focus:outline-none"
+              />
+              <Search className="w-4 h-4 text-zinc-400 absolute left-3 top-2.5" />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery("")}
+                  className="p-1 text-zinc-400 hover:text-zinc-600 absolute right-2.5 top-2"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </form>
+          </div>
+        </div>
+
+        {/* Tier 2: Category & Models Navigation Bar (Desktop) */}
+        <div
+          className="hidden lg:block bg-zinc-50/95 border-b border-zinc-200/80 backdrop-blur-md relative"
+          onMouseLeave={handleCloseMegaMenu}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-2">
+            <div className="flex items-center gap-6 xl:gap-8">
+              {/* Mega Menu Toggle Button */}
+              <div onMouseEnter={handleOpenMegaMenu} className="py-0.5">
+                <button
+                  type="button"
+                  onClick={() => setIsMegaMenuOpen((prev) => !prev)}
+                  className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-black uppercase tracking-wider transition-all cursor-pointer ${
+                    isMegaMenuOpen
+                      ? "bg-red-600 text-white shadow-xs"
+                      : "bg-zinc-900 text-white hover:bg-red-600"
+                  }`}
+                >
+                  <Menu className="w-3.5 h-3.5" />
+                  <span>Categories & Models</span>
+                  <ChevronDown
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                      isMegaMenuOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {/* Direct Category Links */}
+              <nav className="flex items-center gap-5 xl:gap-6 text-xs font-bold uppercase tracking-wider">
+                <Link
+                  href="/category/brake-system"
+                  prefetch={true}
+                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                >
+                  Brake System
+                </Link>
+                <Link
+                  href="/category/engine-performance"
+                  prefetch={true}
+                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                >
+                  Engine & Tuning
+                </Link>
+                <Link
+                  href="/category/air-filters"
+                  prefetch={true}
+                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                >
+                  Air Filters
+                </Link>
+                <Link
+                  href="/category/clutch-transmission"
+                  prefetch={true}
+                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                >
+                  Clutch & Chain
+                </Link>
+                <Link
+                  href="/category/tyres"
+                  prefetch={true}
+                  className="text-zinc-700 hover:text-red-600 transition-colors py-1"
+                >
+                  Tyres
+                </Link>
+                <Link
+                  href="/services"
+                  prefetch={true}
+                  className="text-zinc-900 hover:text-red-600 transition-colors flex items-center gap-1.5 py-1"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse" />
+                  <span>Workshop & Services</span>
+                </Link>
+              </nav>
+            </div>
+
+            {/* Right Quick Nav Links */}
+            <div className="flex items-center gap-5 text-xs font-bold uppercase tracking-wider">
+              <Link
+                href="/dealerships"
+                prefetch={true}
+                className="text-zinc-600 hover:text-red-600 transition-colors"
+              >
+                Dealerships
+              </Link>
+              <Link
+                href="/track"
+                prefetch={true}
+                className="text-zinc-700 hover:text-red-600 transition-colors flex items-center gap-1.5"
+              >
+                <Truck className="w-3.5 h-3.5 text-red-600" />
+                <span>Track Order</span>
+              </Link>
+              <Link
+                href="/shop"
+                prefetch={true}
+                className="text-red-600 hover:text-red-700 font-black transition-colors"
+              >
+                All Products →
+              </Link>
+            </div>
+          </div>
+
+          {/* Full-width Mega Menu anchored right below Tier 2 */}
           {isMegaMenuOpen && (
             <div
               onMouseEnter={handleOpenMegaMenu}
               onMouseLeave={handleCloseMegaMenu}
-              className="w-full"
+              className="w-full absolute top-full left-0 right-0 z-50 shadow-2xl"
             >
               <MegaMenu onClose={() => setIsMegaMenuOpen(false)} />
             </div>
