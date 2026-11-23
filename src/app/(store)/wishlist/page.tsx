@@ -72,7 +72,7 @@ export default function WishlistPage() {
               <div>
                 <div className="relative aspect-square w-full bg-zinc-50 overflow-hidden">
                   <Image
-                    src={product.images[0]}
+                    src={product.images?.[0] || "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=600&auto=format&fit=crop"}
                     alt={product.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

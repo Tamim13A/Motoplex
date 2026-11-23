@@ -2,1088 +2,21908 @@ import { Product } from "@/types";
 
 export const products: Product[] = [
   {
-    id: "prod-01",
-    name: "Aprilia RS 457 Twin Cylinder Superbike",
-    slug: "aprilia-rs-457-twin-cylinder",
-    tagline: "Born on the track, engineered for pure adrenaline on Bangladesh highways.",
-    brand: "Aprilia Racing Italy",
-    category: "Two-Wheelers & Scooters",
-    categorySlug: "motorcycles",
-    subcategory: "Aprilia Supersport & Naked",
-    subcategorySlug: "aprilia-sport",
-    childCategory: "Aprilia RS Series",
-    productGroup: "RS 457 Twin Cylinder",
-    price: 985000,
-    compareAtPrice: 1050000,
-    discountPercentage: 6,
-    rating: 4.9,
-    reviewCount: 38,
-    sku: "AP-RS457-TC-01",
-    stock: 4,
-    images: [
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-1",
+    "name": "BMC Air Filter CBR 2012 2016",
+    "slug": "bmc-air-filter-cbr-2012-2016",
+    "tagline": "Genuine BMC Air Filter engineered for maximum track and highway reliability.",
+    "brand": "BMC",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1001",
+    "stock": 3,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The Aprilia RS 457 represents the pinnacle of lightweight supersport engineering. Powered by an ultra-modern 457cc parallel twin-cylinder DOHC 4-valve liquid-cooled engine producing 47.6 HP at 9,400 RPM with Ride-by-Wire throttle and 3 selectable riding modes. Equipped with upside-down 41mm forks, ByBre radial brakes, and dual-channel Bosch ABS with anti-rollover prevention.",
-    features: [
-      "457cc Parallel-Twin Liquid Cooled Engine with 47.6 HP & 43.5 Nm Torque",
-      "Full 5-inch Color TFT Display with Smartphone Bluetooth Telemetry",
-      "Ride-by-Wire with 3 Riding Modes & 3-Level Switchable Traction Control",
-      "Aluminum Dual-Beam Perimeter Frame with Engine as Stressed Member",
-      "Full LED Lighting with Integrated Front Indicators",
-      "Official Motoplex Bangladesh 2-Year Engine & Electrical Warranty",
+    "description": "Official authentic BMC BMC Air Filter CBR 2012 2016. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BMC original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Displacement": "457 cc",
-      "Power Output": "47.6 HP @ 9,400 rpm",
-      "Torque": "43.5 Nm @ 6,700 rpm",
-      "Weight (Dry)": "159 kg",
-      "Seat Height": "800 mm",
-      "Fuel Tank Capacity": "13 Liters",
-      "Top Speed": "190+ km/h",
-      "Origin": "Piaggio & C. SpA, Noale, Italy",
+    "specifications": {
+      "Brand": "BMC",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
     },
-    variants: [
-      { id: "var-rs457-blk", name: "Prismatic Dark", color: "Prismatic Dark", colorHex: "#1e1e24", price: 985000, compareAtPrice: 1050000, stock: 2, sku: "AP-RS457-BLK" },
-      { id: "var-rs457-red", name: "Racing Stripes Red", color: "Racing Stripes Red", colorHex: "#dc2626", price: 995000, compareAtPrice: 1060000, stock: 1, sku: "AP-RS457-RED" },
-      { id: "var-rs457-wht", name: "Opalescent Light", color: "Opalescent Light", colorHex: "#e2e8f0", price: 985000, compareAtPrice: 1050000, stock: 1, sku: "AP-RS457-WHT" },
+    "variants": [
+      {
+        "id": "var-MPX-1001",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 3,
+        "sku": "MPX-1001-STD"
+      }
     ],
-    sizes: ["Standard Seat (800mm)", "Low Seat (785mm)"],
-    colors: [
-      { name: "Prismatic Dark", hex: "#1e1e24" },
-      { name: "Racing Stripes Red", hex: "#dc2626" },
-      { name: "Opalescent Light", hex: "#e2e8f0" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Aircraft Aluminum Frame", "Carbon Composite Fairings"],
-    isFeatured: true,
-    isBestSeller: true,
-    isNewArrival: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
   },
   {
-    id: "prod-02",
-    name: "Vespa Sprint S 150 i-Get ABS TFT Edition",
-    slug: "vespa-sprint-s-150-iget-abs-tft",
-    tagline: "Timeless Italian elegance with full-color TFT connectivity and modern ABS.",
-    brand: "Vespa Italy",
-    category: "Two-Wheelers & Scooters",
-    categorySlug: "motorcycles",
-    subcategory: "Vespa Premium Italian Scooters",
-    subcategorySlug: "vespa-scooters",
-    childCategory: "Vespa Primavera & Sprint",
-    productGroup: "Sprint S 150 i-Get ABS",
-    price: 495000,
-    compareAtPrice: 530000,
-    discountPercentage: 7,
-    rating: 4.8,
-    reviewCount: 46,
-    sku: "VSP-SPR-150-TFT",
-    stock: 6,
-    images: [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-2",
+    "name": "NLK Adjustable Ignition coil FI Version",
+    "slug": "nlk-adjustable-ignition-coil-fi-version",
+    "tagline": "Genuine NLK NLK Adjustable Ignition Y15ZR/RS 150 engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "NLK Adjustable Ignition Y15ZR/RS 150",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "NLK Adjustable Ignition Y15ZR/RS 150",
+    "subcategorySlug": "nlk-adjustable-ignition-y15zr-rs-150",
+    "childCategory": "NLK Adjustable Ignition Y15ZR/RS 150 Series",
+    "price": 2700,
+    "compareAtPrice": 2970,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1002",
+    "stock": 19,
+    "costPrice": 2025,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The Vespa Sprint S 150 TFT combines sporty charisma with state-of-the-art Italian design. Featuring an advanced 155cc single-cylinder 4-stroke 3-valve i-Get electronic injection engine with Barometric sensor. The 4.3-inch full-color TFT screen links seamlessly with the Vespa MIA app for navigation and call alerts.",
-    features: [
-      "155cc i-Get Electronic Fuel Injection with 12.9 HP",
-      "Front Wheel ABS with 200mm Hydraulic Stainless Disc",
-      "4.3-inch Full Color TFT Dashboard with Vespa MIA Smartphone Connectivity",
-      "Monocoque Pressed High-Tensile Steel Body Structure",
-      "Sporty Red Accented Decals and Diamond-Cut 12-inch Alloy Rims",
-      "2-Year Official Motoplex Bangladesh Showroom Warranty",
+    "description": "Official authentic NLK NLK Adjustable Ignition coil FI Version. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Displacement": "154.8 cc",
-      "Power Output": "12.9 HP @ 7,750 rpm",
-      "Torque": "12.8 Nm @ 6,500 rpm",
-      "Fuel Consumption": "40 km/l approx.",
-      "Fuel Tank": "7 Liters",
-      "Brakes": "Front 200mm Disc (ABS) / Rear 140mm Drum",
-      "Country of Assembly": "Pontedera, Italy / Piaggio Official",
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "NLK Adjustable Ignition Y15ZR/RS 150",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (19 units)"
     },
-    variants: [
-      { id: "var-vspr-grigio", name: "Grigio Titanio (Matte Grey)", color: "Grigio Titanio", colorHex: "#4b5563", price: 495000, stock: 3, sku: "VSP-GRG-150" },
-      { id: "var-vspr-bronze", name: "Bronze Antico", color: "Bronze Antico", colorHex: "#78350f", price: 505000, stock: 2, sku: "VSP-BRZ-150" },
-      { id: "var-vspr-nero", name: "Nero Convinto (Gloss Black)", color: "Nero Convinto", colorHex: "#111827", price: 495000, stock: 1, sku: "VSP-NER-150" },
+    "variants": [
+      {
+        "id": "var-MPX-1002",
+        "name": "Standard",
+        "price": 2700,
+        "stock": 19,
+        "sku": "MPX-1002-STD"
+      }
     ],
-    sizes: ["Standard Chassis (790mm Seat)"],
-    colors: [
-      { name: "Grigio Titanio", hex: "#4b5563" },
-      { name: "Bronze Antico", hex: "#78350f" },
-      { name: "Nero Convinto", hex: "#111827" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Monocoque Sheet Steel", "Hand-stitched Leatherette"],
-    isFeatured: true,
-    isBestSeller: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-03",
-    name: "Shoei X-SPR Pro Carbon Aerodynamic Track Helmet",
-    slug: "shoei-x-spr-pro-carbon-aerodynamic-helmet",
-    tagline: "FIM Racing Homologated & ECE 22.06 certified MotoGP world championship helmet.",
-    brand: "Shoei Helmets Japan",
-    category: "Helmets & Visors",
-    categorySlug: "helmets",
-    subcategory: "Full Face Helmets",
-    subcategorySlug: "full-face-helmets",
-    childCategory: "Carbon Racing Helmets",
-    productGroup: "Aerodynamic Track Spoilers",
-    price: 98000,
-    compareAtPrice: 110000,
-    discountPercentage: 11,
-    rating: 5.0,
-    reviewCount: 29,
-    sku: "SH-XSPR-PRO-01",
-    stock: 9,
-    images: [
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-3",
+    "name": "Bikers Foot rest assembly CBR new model Silver",
+    "slug": "bikers-foot-rest-assembly-cbr-new-model-silver",
+    "tagline": "Genuine BIKERS foot rest engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "foot rest",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "foot rest",
+    "subcategorySlug": "foot-rest",
+    "childCategory": "foot rest Series",
+    "price": 30000,
+    "compareAtPrice": 33000,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1003",
+    "stock": 2,
+    "costPrice": 22500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The Shoei X-SPR Pro is the weapon of choice for Marc Márquez and premier class riders. Engineered to maintain absolute stability beyond 350 km/h with an advanced rear stabilizer and patented vortex generators on the visor edges. Features Shoei AIM+ 6-ply multi-composite carbon shell with emergency quick release system (E.Q.R.S.).",
-    features: [
-      "FIM Racing & ECE 22.06 Homologated for Premier Circuit Racing",
-      "AIM+ Organic & High-Performance Carbon Fiber 6-Layer Matrix",
-      "CWR-F2R Visor with 2D Tear-Off Posts & Pinlock 120 MaxVision Included",
-      "Rear Stabilizer with Replaceable Flaps for High-Speed Downforce",
-      "7 Closable Air Inlets & 6 Air Outlets with Cheek Pad Ventilation System",
-      "Double-D Ring Titanium Fastening System",
+    "description": "Official authentic BIKERS Bikers Foot rest assembly CBR new model Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Safety Certification": "ECE 22.06 / FIM FRHPhe-01",
-      "Shell Material": "Shoei AIM+ Carbon Composite",
-      "Visor Type": "CWR-F2R Anti-Scratch UV400",
-      "Weight": "1,450g ± 50g",
-      "Closure": "Double D-Ring Titanium",
-      "Warranty": "5-Year Official International Shoei Warranty",
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "foot rest",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
     },
-    variants: [
-      { id: "var-shoei-s", name: "Gloss Carbon / Size S", size: "S (55-56 cm)", color: "Gloss Carbon", colorHex: "#1f2937", price: 98000, stock: 2, sku: "SH-XSPR-S" },
-      { id: "var-shoei-m", name: "Gloss Carbon / Size M", size: "M (57-58 cm)", color: "Gloss Carbon", colorHex: "#1f2937", price: 98000, stock: 4, sku: "SH-XSPR-M" },
-      { id: "var-shoei-l", name: "Gloss Carbon / Size L", size: "L (59-60 cm)", color: "Gloss Carbon", colorHex: "#1f2937", price: 98000, stock: 3, sku: "SH-XSPR-L" },
+    "variants": [
+      {
+        "id": "var-MPX-1003",
+        "name": "Standard",
+        "price": 30000,
+        "stock": 2,
+        "sku": "MPX-1003-STD"
+      }
     ],
-    sizes: ["S (55-56 cm)", "M (57-58 cm)", "L (59-60 cm)", "XL (61-62 cm)"],
-    colors: [
-      { name: "Gloss Carbon", hex: "#1f2937" },
-      { name: "Matt Deep Black", hex: "#0f172a" },
-      { name: "Pure White", hex: "#f8fafc" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["AIM+ Carbon Fiber Matrix", "Dual-Density EPS Liner"],
-    isFeatured: true,
-    isBestSeller: true,
-    isNewArrival: false,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-04",
-    name: "AGV Pista GP RR Carbon Misano Limited Edition",
-    slug: "agv-pista-gp-rr-carbon-misano",
-    tagline: "Exact replica of Valentino Rossi's MotoGP helmet with integrated hydration system.",
-    brand: "AGV Italy",
-    category: "Helmets & Visors",
-    categorySlug: "helmets",
-    subcategory: "Full Face Helmets",
-    subcategorySlug: "full-face-helmets",
-    childCategory: "Carbon Racing Helmets",
-    productGroup: "Aerodynamic Track Spoilers",
-    price: 185000,
-    compareAtPrice: 205000,
-    discountPercentage: 10,
-    rating: 5.0,
-    reviewCount: 17,
-    sku: "AGV-PISTA-MISANO",
-    stock: 3,
-    images: [
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-4",
+    "name": "Bikers Foot rest assembly CBR new model Red",
+    "slug": "bikers-foot-rest-assembly-cbr-new-model-red",
+    "tagline": "Genuine BIKERS foot rest engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "foot rest",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "foot rest",
+    "subcategorySlug": "foot-rest",
+    "childCategory": "foot rest Series",
+    "price": 30000,
+    "compareAtPrice": 33000,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1004",
+    "stock": 2,
+    "costPrice": 22500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The AGV Pista GP RR is built with 100% 3K Carbon Fiber shell. Developed in MotoGP wind tunnels with the revolutionary PRO Spoiler, giving 0g aerodynamic drag in the racing tuck position. Includes 5mm optical class 1 Ultravision visor with 190° panoramic field of view.",
-    features: [
-      "100% 3K Multi-Density Carbon Fiber Shell across 4 Shell Sizes",
-      "FIM Homologation Certified for MotoGP & Superbike World Championships",
-      "Integrated Hydration Channel Route Inside Chin Guard",
-      "5mm Optical Class 1 Visor with 85° Vertical & 190° Horizontal Vision",
-      "Metal Visor Mechanism with Patented Visor Lock System (VLS)",
-      "Breathable Shalimar & Ritmo Fabric Interior with Sanitized Treatment",
+    "description": "Official authentic BIKERS Bikers Foot rest assembly CBR new model Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Certification": "FIM FRHPhe-01 / ECE 22.06 / DOT",
-      "Shell": "100% High Tensile Carbon Fiber",
-      "Weight": "1,350g (Ultralight)",
-      "Fastener": "Titanium Double-D Ring",
-      "Origin": "Dainese SpA, Colceresa, Italy",
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "foot rest",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
     },
-    variants: [
-      { id: "var-agv-m", name: "Misano Replica / Size M", size: "M (57-58 cm)", color: "Carbon Yellow Fluo", colorHex: "#eab308", price: 185000, stock: 2, sku: "AGV-PST-M" },
-      { id: "var-agv-l", name: "Misano Replica / Size L", size: "L (59-60 cm)", color: "Carbon Yellow Fluo", colorHex: "#eab308", price: 185000, stock: 1, sku: "AGV-PST-L" },
+    "variants": [
+      {
+        "id": "var-MPX-1004",
+        "name": "Standard",
+        "price": 30000,
+        "stock": 2,
+        "sku": "MPX-1004-STD"
+      }
     ],
-    sizes: ["M (57-58 cm)", "L (59-60 cm)", "XL (61-62 cm)"],
-    colors: [
-      { name: "Carbon Yellow Fluo", hex: "#eab308" },
-      { name: "Matte Raw Carbon", hex: "#18181b" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["100% 3K Carbon Fiber", "Titanium Hardware"],
-    isFeatured: true,
-    isNewArrival: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-05",
-    name: "Alpinestars GP Plus R v3 Airflow Leather Jacket",
-    slug: "alpinestars-gp-plus-r-v3-airflow-leather-jacket",
-    tagline: "Track-proven premium 1.3mm bovine leather with extensive localized perforation.",
-    brand: "Alpinestars",
-    category: "Riding Gear & Protection",
-    categorySlug: "riding-gear",
-    subcategory: "Jackets & One-Piece Suits",
-    subcategorySlug: "jackets-suits",
-    childCategory: "Bovine Leather Racing Jackets",
-    productGroup: "CE Level 2 Pro-Armor",
-    price: 68000,
-    compareAtPrice: 75000,
-    discountPercentage: 9,
-    rating: 4.9,
-    reviewCount: 31,
-    sku: "ALP-GP-PL-03",
-    stock: 8,
-    images: [
-      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-5",
+    "name": "Bikers Foot rest assembly CBR new model Black",
+    "slug": "bikers-foot-rest-assembly-cbr-new-model-black",
+    "tagline": "Genuine BIKERS foot rest engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "foot rest",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "foot rest",
+    "subcategorySlug": "foot-rest",
+    "childCategory": "foot rest Series",
+    "price": 30000,
+    "compareAtPrice": 33000,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1005",
+    "stock": 2,
+    "costPrice": 22500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "Constructed from highly durable, abrasion-resistant 1.3mm genuine bovine leather. Features Nucleon Flex Plus CE Level 1 armor on shoulders and elbows, plus external Dynamic Friction Shield (DFS) dual-density TPU sliders. Extensive high-resistance stretch fabric panels deliver superb anatomical riding comfort.",
-    features: [
-      "Premium 1.3mm Genuine Bovine Leather Chassis with High Tear Resistance",
-      "Extensive Perforated Ventilation Zones Ideal for Bangladesh Summers",
-      "External DFS Dual-Density TPU Shoulder Sliders for Impact Dissipation",
-      "HRSF High Resistance Stretch Fiber Panels on Underarm & Chest",
-      "Full Waist Connection Zipper for Secure Attachment to Riding Pants",
-      "Tech-Air 5 Airbag System Compatible",
+    "description": "Official authentic BIKERS Bikers Foot rest assembly CBR new model Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Abrasion Material": "1.3mm Full-Grain Bovine Leather",
-      "Protection Standard": "CE Category II PPE Regulation (EU) 2016/425 - AAA Class",
-      "Armor": "Nucleon Flex Plus Level 1 on Shoulders & Elbows",
-      "Zippers": "Heavy Duty YKK Semi-Auto Lock",
-      "Weight": "2.4 kg",
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "foot rest",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
     },
-    variants: [
-      { id: "var-alp-m-blk", name: "Black / Euro 50 (M)", size: "Euro 50 (M)", color: "Black White Red", colorHex: "#dc2626", price: 68000, stock: 3, sku: "ALP-GP-M" },
-      { id: "var-alp-l-blk", name: "Black / Euro 52 (L)", size: "Euro 52 (L)", color: "Black White Red", colorHex: "#dc2626", price: 68000, stock: 3, sku: "ALP-GP-L" },
-      { id: "var-alp-xl-blk", name: "Black / Euro 54 (XL)", size: "Euro 54 (XL)", color: "Black White Red", colorHex: "#dc2626", price: 68000, stock: 2, sku: "ALP-GP-XL" },
+    "variants": [
+      {
+        "id": "var-MPX-1005",
+        "name": "Standard",
+        "price": 30000,
+        "stock": 2,
+        "sku": "MPX-1005-STD"
+      }
     ],
-    sizes: ["Euro 48 (S)", "Euro 50 (M)", "Euro 52 (L)", "Euro 54 (XL)", "Euro 56 (XXL)"],
-    colors: [
-      { name: "Black White Red", hex: "#dc2626" },
-      { name: "Stealth Black", hex: "#0f172a" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["1.3mm Bovine Leather", "HRSF Stretch Panels"],
-    isFeatured: true,
-    isBestSeller: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-06",
-    name: "Rev'it! Eclipse 2 High-Flow Summer Mesh Jacket",
-    slug: "revit-eclipse-2-high-flow-summer-mesh-jacket",
-    tagline: "Engineered specifically for hot humid climates with maximum air throughput.",
-    brand: "REV'IT! Netherlands",
-    category: "Riding Gear & Protection",
-    categorySlug: "riding-gear",
-    subcategory: "Jackets & One-Piece Suits",
-    subcategorySlug: "jackets-suits",
-    childCategory: "All-Weather & Tropical Mesh Jackets",
-    productGroup: "High-Flow Cordura 600D",
-    price: 24500,
-    compareAtPrice: 28000,
-    discountPercentage: 12,
-    rating: 4.8,
-    reviewCount: 52,
-    sku: "REV-ECL-02-SL",
-    stock: 15,
-    images: [
-      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-6",
+    "name": "Bikers Foot rest assembly CBR 12- 16 Sliver",
+    "slug": "bikers-foot-rest-assembly-cbr-12-16-sliver",
+    "tagline": "Genuine BIKERS foot rest engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "foot rest",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "foot rest",
+    "subcategorySlug": "foot-rest",
+    "childCategory": "foot rest Series",
+    "price": 28500,
+    "compareAtPrice": 31350,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1006",
+    "stock": 2,
+    "costPrice": 21375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The Eclipse 2 jacket is the ultimate answer to Dhaka city heat and humidity. Built with full-coverage open-weave mesh panels across the chest, back, and arms that channel cooling airflow directly to your core while abrasion-resistant polyester 600D protects key impact zones.",
-    features: [
-      "Full Open-Weave Mesh Construction for Unrestricted Air Flow",
-      "Polyester 600D Abrasion Shield on Shoulders and Forearms",
-      "Ultra-Flexible SEESMART CE Level 1 Armor on Shoulders and Elbows",
-      "Prepared for SEESOFT CE Level 2 Back Protector Insert",
-      "Jeans Double Loop Attachment System at Lower Hem",
-      "Adjustable Straps at Waist, Cuffs, and Upper Arms",
+    "description": "Official authentic BIKERS Bikers Foot rest assembly CBR 12- 16 Sliver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Material": "Polyester 600D & High-Density Ventilation Mesh",
-      "Certification": "EN 17092-4:2020 Class A",
-      "Ventilation": "100% Fully Vented Front, Back & Arms",
-      "Fit": "Regular Tour / Urban Fit",
-      "Visibility": "Laminated Reflective Logo on Upper Back",
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "foot rest",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
     },
-    variants: [
-      { id: "var-rev-m-slv", name: "Silver / M", size: "M (38-40 in)", color: "Silver Grey", colorHex: "#94a3b8", price: 24500, stock: 5, sku: "REV-ECL-M-SLV" },
-      { id: "var-rev-l-slv", name: "Silver / L", size: "L (41-43 in)", color: "Silver Grey", colorHex: "#94a3b8", price: 24500, stock: 6, sku: "REV-ECL-L-SLV" },
-      { id: "var-rev-xl-blk", name: "Black / XL", size: "XL (44-46 in)", color: "Deep Black", colorHex: "#09090b", price: 24500, stock: 4, sku: "REV-ECL-XL-BLK" },
+    "variants": [
+      {
+        "id": "var-MPX-1006",
+        "name": "Standard",
+        "price": 28500,
+        "stock": 2,
+        "sku": "MPX-1006-STD"
+      }
     ],
-    sizes: ["S (36-37 in)", "M (38-40 in)", "L (41-43 in)", "XL (44-46 in)", "XXL (47-49 in)"],
-    colors: [
-      { name: "Silver Grey", hex: "#94a3b8" },
-      { name: "Deep Black", hex: "#09090b" },
-      { name: "Olive Green", hex: "#3f6212" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Cordura 600D Polyester", "High-Flow 3D Air Mesh"],
-    isFeatured: true,
-    isBestSeller: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-07",
-    name: "Dainese Full Metal 6 Titanium Track Gauntlet Gloves",
-    slug: "dainese-full-metal-6-titanium-gloves",
-    tagline: "MotoGP championship winning hand protection with carbon and titanium armor.",
-    brand: "Dainese Italy",
-    category: "Riding Gear & Protection",
-    categorySlug: "riding-gear",
-    subcategory: "Performance Gloves",
-    subcategorySlug: "riding-gloves",
-    childCategory: "Full Gauntlet Carbon Track Gloves",
-    productGroup: "SPS Scaphoid Palm Sliders",
-    price: 49500,
-    compareAtPrice: 55000,
-    discountPercentage: 10,
-    rating: 5.0,
-    reviewCount: 22,
-    sku: "DNS-FM6-TITAN",
-    stock: 5,
-    images: [
-      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-7",
+    "name": "Bikers Foot rest assembly CBR 12- 16 Red",
+    "slug": "bikers-foot-rest-assembly-cbr-12-16-red",
+    "tagline": "Genuine BIKERS foot rest engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "foot rest",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "foot rest",
+    "subcategorySlug": "foot-rest",
+    "childCategory": "foot rest Series",
+    "price": 28500,
+    "compareAtPrice": 31350,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1007",
+    "stock": 2,
+    "costPrice": 21375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The pinnacle of motorcycle glove design. Dainese Full Metal 6 integrates carbon fiber and titanium inserts on knuckles and back of the hand, with DuPont Kevlar aramid stitching and a super-tactile goat leather palm for supreme throttle feel.",
-    features: [
-      "Carbon Fiber and Titanium Composite Inserts on Knuckles and Back",
-      "Kevlar Fiber Stitching with Aramid Fiber Internal Reinforcements",
-      "Distortion Control System (DCP) on Little Finger to Prevent Fractures",
-      "Goatskin Palm with Micro-Injected Reinforcements",
-      "Pre-Curved Fingers for Zero Throttle Fatigue",
+    "description": "Official authentic BIKERS Bikers Foot rest assembly CBR 12- 16 Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Certification": "CE - Cat. II - Pr-EN 13594 Standard lev. 1",
-      "Palm": "Super Soft Goatskin Leather",
-      "Hardware": "Molded Titanium & Carbon Fiber",
-      "Closure": "Double Cuff Adjustment Strap",
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "foot rest",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
     },
-    variants: [
-      { id: "var-dns-m", name: "Black / Size M", size: "M (8.5)", color: "Black Carbon", colorHex: "#18181b", price: 49500, stock: 2, sku: "DNS-FM6-M" },
-      { id: "var-dns-l", name: "Black / Size L", size: "L (9.0)", color: "Black Carbon", colorHex: "#18181b", price: 49500, stock: 3, sku: "DNS-FM6-L" },
+    "variants": [
+      {
+        "id": "var-MPX-1007",
+        "name": "Standard",
+        "price": 28500,
+        "stock": 2,
+        "sku": "MPX-1007-STD"
+      }
     ],
-    sizes: ["S (8.0)", "M (8.5)", "L (9.0)", "XL (9.5)"],
-    colors: [
-      { name: "Black Carbon", hex: "#18181b" },
-      { name: "Black Red Fluo", hex: "#dc2626" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Goatskin Leather", "DuPont Kevlar", "Titanium & Carbon"],
-    isFeatured: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-08",
-    name: "Alpinestars Supertech R Vented Road Racing Boots",
-    slug: "alpinestars-supertech-r-vented-boots",
-    tagline: "The definitive racing boot with bio-mechanical inner ankle brace.",
-    brand: "Alpinestars",
-    category: "Riding Gear & Protection",
-    categorySlug: "riding-gear",
-    subcategory: "Boots & Riding Shoes",
-    subcategorySlug: "riding-boots",
-    childCategory: "Magnesium Slider Racing Boots",
-    productGroup: "Anti-Torsion Ankle Bracing",
-    price: 64000,
-    compareAtPrice: 72000,
-    discountPercentage: 11,
-    rating: 4.9,
-    reviewCount: 19,
-    sku: "ALP-SUP-R-VNT",
-    stock: 6,
-    images: [
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-8",
+    "name": "Bikers Foot rest assembly CBR 12- 16 Black",
+    "slug": "bikers-foot-rest-assembly-cbr-12-16-black",
+    "tagline": "Genuine BIKERS foot rest engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "foot rest",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "foot rest",
+    "subcategorySlug": "foot-rest",
+    "childCategory": "foot rest Series",
+    "price": 28500,
+    "compareAtPrice": 31350,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1008",
+    "stock": 2,
+    "costPrice": 21375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "Every element of the Alpinestars Supertech R boot has undergone rigorous MotoGP testing. Features an innovative separate bio-mechanical inner ankle bootie that works with the outer structure to protect the ankle against hyper-extension and twisting torsion.",
-    features: [
-      "Durable Microfiber Upper with Strategic Airflow Perforations",
-      "Internal Bio-Mechanical Ankle Brace with Double-Hinged Torsion Bars",
-      "Replaceable Co-Injected TPU/Aluminum Toe Slider with Screw Assembly",
-      "Ergonomically Contoured Shin Plate for Impact Resistance",
-      "Lightweight Rubber Compound Sole for Ultra-Direct Peg Control",
+    "description": "Official authentic BIKERS Bikers Foot rest assembly CBR 12- 16 Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Safety Standard": "CE Certified to EN 13634:2017",
-      "Material": "Advanced Tech Microfiber & TPU",
-      "Sliders": "Replaceable Magnesium/Aluminum",
-      "Sole": "Oil & Fuel Resistant Vulcanized Rubber",
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "foot rest",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
     },
-    variants: [
-      { id: "var-alp-boot-42", name: "Size 42 EU / 8.5 US", size: "42 EU (8.5 US)", color: "Black White Red", colorHex: "#dc2626", price: 64000, stock: 2, sku: "ALP-BT-42" },
-      { id: "var-alp-boot-43", name: "Size 43 EU / 9.5 US", size: "43 EU (9.5 US)", color: "Black White Red", colorHex: "#dc2626", price: 64000, stock: 3, sku: "ALP-BT-43" },
-      { id: "var-alp-boot-44", name: "Size 44 EU / 10 US", size: "44 EU (10 US)", color: "Black White Red", colorHex: "#dc2626", price: 64000, stock: 1, sku: "ALP-BT-44" },
+    "variants": [
+      {
+        "id": "var-MPX-1008",
+        "name": "Standard",
+        "price": 28500,
+        "stock": 2,
+        "sku": "MPX-1008-STD"
+      }
     ],
-    sizes: ["41 EU (7.5 US)", "42 EU (8.5 US)", "43 EU (9.5 US)", "44 EU (10 US)", "45 EU (11 US)"],
-    colors: [
-      { name: "Black White Red", hex: "#dc2626" },
-      { name: "Solid Matte Black", hex: "#0f172a" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["High-Tensile Microfiber", "Magnesium Sliders", "Bio-Mechanical Composite"],
-    isFeatured: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-09",
-    name: "Akrapovič Full Titanium Exhaust System (Aprilia RS 457)",
-    slug: "akrapovic-full-titanium-exhaust-aprilia-rs-457",
-    tagline: "Track-developed titanium header and carbon muffler for deep acoustic growl.",
-    brand: "Akrapovič Slovenia",
-    category: "Performance & Exhausts",
-    categorySlug: "performance-parts",
-    subcategory: "Full Exhausts & Slip-Ons",
-    subcategorySlug: "exhaust-systems",
-    childCategory: "Titanium & Carbon Slip-On Silencers",
-    productGroup: "Akrapovič Track Homologated",
-    price: 135000,
-    compareAtPrice: 148000,
-    discountPercentage: 9,
-    rating: 5.0,
-    reviewCount: 14,
-    sku: "AKR-RS457-TITAN",
-    stock: 4,
-    images: [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-9",
+    "name": "Racepro Handle bar set R15v3 & V4",
+    "slug": "racepro-handle-bar-set-r15v3-v4",
+    "tagline": "Genuine Racepro Handle bar set engineered for maximum track and highway reliability.",
+    "brand": "Racepro",
+    "productType": "Handle bar set",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handle bar set",
+    "subcategorySlug": "handle-bar-set",
+    "childCategory": "Handle bar set Series",
+    "price": 7500,
+    "compareAtPrice": 8250,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1009",
+    "stock": 2,
+    "costPrice": 5625,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "Handcrafted in Slovenia, this complete racing exhaust delivers an immediate +3.8 HP peak gain and +2.9 Nm of midrange torque while shedding 4.2 kg over the stock exhaust system. Distinctive deep Akrapovič racing resonance tuned specifically for the 457cc 270-degree crankshaft parallel twin.",
-    features: [
-      "Precision TIG-Welded Ultra-Lightweight Titanium Headers",
-      "Handmade Carbon Fiber Outer Sleeve with Titanium End Cap",
-      "Power Gain: +3.8 HP @ 9,800 rpm / Weight Saving: -4.2 kg (45% lighter)",
-      "Dedicated Removable dB-Killer Spark Arrestor Included",
-      "Direct Bolt-On Fitment with No Cutting or Modification Required",
+    "description": "Official authentic Racepro Racepro Handle bar set R15v3 & V4. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Racepro original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Weight Reduction": "-4.2 kg vs OEM",
-      "Sound Output": "98.5 dB @ 5,000 RPM (with dB killer)",
-      "Material": "Race-grade Titanium & High-Temp Pre-Preg Carbon",
-      "Compatibility": "Aprilia RS 457 (2024-2026)",
+    "specifications": {
+      "Brand": "Racepro",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handle bar set",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
     },
-    variants: [
-      { id: "var-akr-full", name: "Full Race System (Titanium + Carbon)", price: 135000, stock: 4, sku: "AKR-FULL-RS457" },
+    "variants": [
+      {
+        "id": "var-MPX-1009",
+        "name": "Standard",
+        "price": 7500,
+        "stock": 2,
+        "sku": "MPX-1009-STD"
+      }
     ],
-    sizes: ["Direct Fitment Kit"],
-    colors: [{ name: "Titanium Matte / Carbon", hex: "#64748b" }],
-    materials: ["Titanium Alloy", "Carbon Fiber"],
-    isFeatured: true,
-    isNewArrival: true,
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
   },
   {
-    id: "prod-10",
-    name: "Brembo GP4-RX Billet Radial Brake Caliper Kit",
-    slug: "brembo-gp4-rx-billet-radial-calipers",
-    tagline: "MotoGP technology with nickel-chromium plated billet aluminum and 4x32mm pistons.",
-    brand: "Brembo Italy",
-    category: "Performance & Exhausts",
-    categorySlug: "performance-parts",
-    subcategory: "Brembo Brakes & Öhlins Suspensions",
-    subcategorySlug: "brakes-suspension",
-    childCategory: "Brembo Sintered Racing Pads & Discs",
-    productGroup: "Carbon Ceramic Track Compound",
-    price: 198000,
-    compareAtPrice: 220000,
-    discountPercentage: 10,
-    rating: 5.0,
-    reviewCount: 9,
-    sku: "BRM-GP4-RX-108",
-    stock: 2,
-    images: [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-10",
+    "name": "DND Disc 320mm ( GSXR D05 Sliver",
+    "slug": "dnd-disc-320mm-gsxr-d05-sliver",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1010",
+    "stock": 1,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The Brembo GP4-RX represents the ultimate radial caliper for road and track day supersport machines. Machined entirely from solid billet aeronautical aluminum with CNC precision, finished in exclusive nickel plating. Features 4 separate 32mm diameter pistons with Brembo sintered racing brake pads.",
-    features: [
-      "Machined from Solid Billet Aluminum for Extreme Structural Rigidity",
-      "Exclusive Nickel-Plated Surface Finish for Maximum Heat Dissipation",
-      "4 x 32mm Aluminum Pistons with Anti-Drag Return Seals",
-      "Brembo 108mm Radial Bolt Pitch Compatible with Performance Forks",
-      "Sintered Brembo Genuine High-Bite Brake Pads Included",
+    "description": "Official authentic DND DND Disc 320mm ( GSXR D05 Sliver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Mounting Pitch": "108 mm",
-      "Piston Diameter": "32 mm x 4",
-      "Finish": "Nickel Plating",
-      "Weight (per caliper)": "710g (Without pads)",
-      "Origin": "Curno, Bergamo, Italy",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
     },
-    variants: [
-      { id: "var-brm-kit", name: "108mm Pair (Left & Right)", price: 198000, stock: 2, sku: "BRM-GP4-PAIR" },
+    "variants": [
+      {
+        "id": "var-MPX-1010",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 1,
+        "sku": "MPX-1010-STD"
+      }
     ],
-    sizes: ["108mm Radial Mount"],
-    colors: [{ name: "Nickel Silver Mirror", hex: "#cbd5e1" }],
-    materials: ["Billet CNC Aluminum", "Nickel Coating"],
-    isFeatured: false,
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-11",
-    name: "Sena 50S Mesh 2.0 Sound by Harman Kardon",
-    slug: "sena-50s-mesh-harman-kardon-intercom",
-    tagline: "Audiophile-grade clarity with multi-channel open mesh intercom communication.",
-    brand: "Sena",
-    category: "Helmets & Visors",
-    categorySlug: "helmets",
-    subcategory: "Visors & Comms Systems",
-    subcategorySlug: "visors-accessories",
-    childCategory: "Photochromic & Iridium Visors",
-    productGroup: "Intercom Bluetooth Prepared",
-    price: 38500,
-    compareAtPrice: 43000,
-    discountPercentage: 10,
-    rating: 4.8,
-    reviewCount: 43,
-    sku: "SEN-50S-HK-01",
-    stock: 12,
-    images: [
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-11",
+    "name": "DND Disc 320mm ( GSXR D05 Red",
+    "slug": "dnd-disc-320mm-gsxr-d05-red",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1011",
+    "stock": 1,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The Sena 50S offers audiophile sound engineered in collaboration with acoustic experts at Harman Kardon. Features Sena Mesh 2.0 technology that connects near-limitless riders within an effective range of up to 8 km, alongside Bluetooth 5.0 and glove-friendly Jog Dial.",
-    features: [
-      "Speakers & Microphone Masterfully Tuned by Harman Kardon",
-      "Multi-Channel Open Mesh Connects Virtually Limitless Riders",
-      "Bluetooth 5.0 with Smartphone Siri & Google Voice Assistant Integration",
-      "Fast Charging: 20 Minutes Charge Gives 2 Hours Mesh / 3.5h Bluetooth Talk Time",
-      "Automatic Firmware Updates via Included WiFi Adapter Cable",
+    "description": "Official authentic DND DND Disc 320mm ( GSXR D05 Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Intercom Range": "Up to 2 km (1.2 miles) open terrain / 8 km in Mesh group",
-      "Battery Life": "Mesh talk time: 9 hours / Bluetooth talk time: 14 hours",
-      "Charging Time": "1 hour to 100%",
-      "Water Resistance": "All-Weather IPX7 Certified",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
     },
-    variants: [
-      { id: "var-sena-single", name: "Single Pack", price: 38500, stock: 9, sku: "SEN-50S-SGL" },
-      { id: "var-sena-dual", name: "Dual Pack (2 Units)", price: 72000, stock: 3, sku: "SEN-50S-DL" },
+    "variants": [
+      {
+        "id": "var-MPX-1011",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 1,
+        "sku": "MPX-1011-STD"
+      }
     ],
-    sizes: ["Single Unit", "Dual Rider Kit"],
-    colors: [{ name: "Matte Black", hex: "#18181b" }],
-    materials: ["High-Impact Polycarbonate", "Waterproof Seals"],
-    isFeatured: true,
-    isBestSeller: true,
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-12",
-    name: "Quad Lock PRO Aluminum Handlebar Mount with Damper",
-    slug: "quad-lock-pro-aluminum-motorcycle-mount",
-    tagline: "Precision CNC black anodized aluminum with patented precision vibration isolator.",
-    brand: "Quad Lock Australia",
-    category: "Accessories & Care",
-    categorySlug: "accessories-maintenance",
-    subcategory: "Phone Mounts & Chargers",
-    subcategorySlug: "mounts-chargers",
-    childCategory: "Vibration Dampened Handlebar Mounts",
-    productGroup: "Wireless Qi Fast Charging Heads",
-    price: 13500,
-    compareAtPrice: 15500,
-    discountPercentage: 13,
-    rating: 4.9,
-    reviewCount: 65,
-    sku: "QL-PRO-VIB-KIT",
-    stock: 20,
-    images: [
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-12",
+    "name": "DND Disc 320mm ( GSXR D05 Gold",
+    "slug": "dnd-disc-320mm-gsxr-d05-gold",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1012",
+    "stock": 1,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "Protect your smartphone's delicate camera optical image stabilization (OIS) from destructive high-frequency engine vibration. This bundle combines the CNC machined black anodized Pro Aluminum handlebar mount with the dual-chassis elastomer Vibration Dampener.",
-    features: [
-      "Precision CNC Machined Aircraft-Grade Aluminum with Black Anodizing",
-      "Vibration Dampener Reduces Over 90% of High-Frequency Engine Resonances",
-      "Patented Dual-Stage Lock with Instant One-Handed Twist Release",
-      "Fits 22mm (7/8\"), 25mm (1\"), 28mm (1-1/8\"), and 32mm (1-1/4\") Bars",
-      "Discreet Cable Routing Channel for USB Charging Cords",
+    "description": "Official authentic DND DND Disc 320mm ( GSXR D05 Gold. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Material": "Black Anodized Billet Aluminum & Stainless Steel Hardware",
-      "Compatibility": "All Quad Lock Cases & Universal Adaptors",
-      "Bar Fitment": "22mm to 35mm diameter handlebars & clip-ons",
-      "Warranty": "Lifetime Manufacturer Guarantee",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
     },
-    variants: [
-      { id: "var-ql-pro", name: "Handlebar Pro + Dampener Bundle", price: 13500, stock: 15, sku: "QL-PRO-HB" },
-      { id: "var-ql-stem", name: "Fork Stem Pro + Dampener (Superbikes)", price: 14200, stock: 5, sku: "QL-PRO-FS" },
+    "variants": [
+      {
+        "id": "var-MPX-1012",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 1,
+        "sku": "MPX-1012-STD"
+      }
     ],
-    sizes: ["Handlebar Mount Kit", "Fork Stem Mount Kit"],
-    colors: [{ name: "Anodized Midnight Black", hex: "#0f172a" }],
-    materials: ["Aircraft Billet Aluminum", "Silicone Elastomers"],
-    isFeatured: true,
-    isBestSeller: true,
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-13",
-    name: "TCX Mood 2 Gore-Tex Urban Riding Sneakers",
-    slug: "tcx-mood-2-gore-tex-riding-sneakers",
-    tagline: "Waterproof, breathable street sneakers with hidden D3O malleolus ankle armor.",
-    brand: "TCX Boots Italy",
-    category: "Riding Gear & Protection",
-    categorySlug: "riding-gear",
-    subcategory: "Boots & Riding Shoes",
-    subcategorySlug: "riding-boots",
-    childCategory: "Urban Reinforced Riding Sneakers",
-    productGroup: "D3O Impact Discs Embedded",
-    price: 32000,
-    compareAtPrice: 36000,
-    discountPercentage: 11,
-    rating: 4.7,
-    reviewCount: 26,
-    sku: "TCX-MD2-GTX-01",
-    stock: 11,
-    images: [
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-13",
+    "name": "DND Disc 320mm ( GSXR D05 Blue",
+    "slug": "dnd-disc-320mm-gsxr-d05-blue",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1013",
+    "stock": 2,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The TCX Mood 2 GTX combines everyday casual sneaker aesthetics with impenetrable Gore-Tex Extended Comfort waterproofing. Equipped with D3O inserts that stay flexible while walking but instantly lock rigid on impact to protect your ankle bones.",
-    features: [
-      "Genuine Cowhide Suede Leather Upper with Hydrophobic Coating",
-      "Guaranteed Waterproof & Highly Breathable Gore-Tex Membrane",
-      "Embedded D3O Ankle Protectors with Reinforced Heel Counter & Toe Cap",
-      "Groundtrax Rubber Outsole Designed for Superior Footpeg Traction",
-      "OrthoLite Cushion Footbed for All-Day Commuting Walking Comfort",
+    "description": "Official authentic DND DND Disc 320mm ( GSXR D05 Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Certification": "CE - Cat. II - EN 13634 Standard",
-      "Membrane": "Gore-Tex Extended Comfort Footwear",
-      "Upper": "Full Cowhide Suede Leather",
-      "Insole": "OrthoLite with Long-Term Cushioning",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
     },
-    variants: [
-      { id: "var-tcx-41", name: "Brown Suede / 41 EU", size: "41 EU", color: "Vintage Brown", colorHex: "#78350f", price: 32000, stock: 3, sku: "TCX-41-BRN" },
-      { id: "var-tcx-42", name: "Brown Suede / 42 EU", size: "42 EU", color: "Vintage Brown", colorHex: "#78350f", price: 32000, stock: 4, sku: "TCX-42-BRN" },
-      { id: "var-tcx-43", name: "Black Suede / 43 EU", size: "43 EU", color: "Slate Black", colorHex: "#1e293b", price: 32000, stock: 4, sku: "TCX-43-BLK" },
+    "variants": [
+      {
+        "id": "var-MPX-1013",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 2,
+        "sku": "MPX-1013-STD"
+      }
     ],
-    sizes: ["40 EU", "41 EU", "42 EU", "43 EU", "44 EU", "45 EU"],
-    colors: [
-      { name: "Vintage Brown", hex: "#78350f" },
-      { name: "Slate Black", hex: "#1e293b" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Cowhide Suede Leather", "Gore-Tex Membrane", "D3O Polymer"],
-    isFeatured: false,
-    isNewArrival: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-14",
-    name: "Aprilia Racing Factory Paddock Softshell Jacket",
-    slug: "aprilia-racing-factory-paddock-softshell-jacket",
-    tagline: "Official MotoGP team issue paddock gear with fleece lining and sponsor badges.",
-    brand: "Aprilia Racing Official",
-    category: "Rider Lifestyle & Apparel",
-    categorySlug: "apparel-lifestyle",
-    subcategory: "Paddock Hoodies & Polos",
-    subcategorySlug: "paddock-apparel",
-    childCategory: "Aprilia Racing Factory Paddock Tees",
-    productGroup: "Heavyweight 240GSM Cotton",
-    price: 18500,
-    compareAtPrice: 21000,
-    discountPercentage: 12,
-    rating: 4.9,
-    reviewCount: 37,
-    sku: "APR-PAD-JKT-01",
-    stock: 14,
-    images: [
-      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-14",
+    "name": "DND Disc 320mm ( GSXR D05 Black",
+    "slug": "dnd-disc-320mm-gsxr-d05-black",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1014",
+    "stock": 2,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "Step into the MotoGP pit lane with the official Aprilia Racing team softshell jacket. Windproof, water-resistant triple-layer bonded fabric with thermal fleece interior, high collar, zip pockets, and high-definition embroidered sponsor insignias.",
-    features: [
-      "Triple-Layer Bonded Softshell with Water-Repellent Outer Face",
-      "Soft Microfleece Inner Lining for Superior Thermal Insulation",
-      "High-Definition Direct Embroidered Aprilia Racing & Partner Badges",
-      "Waterproof Sealed Chest & Handwarmer Zippers",
-      "Adjustable Elastic Drawcord Hem with Storm Cuffs",
+    "description": "Official authentic DND DND Disc 320mm ( GSXR D05 Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Fabric": "96% Polyester, 4% Spandex Softshell / 100% Microfleece",
-      "Weather Resistance": "Windproof & 8,000mm Hydrostatic Head Water Repellency",
-      "Care": "Machine wash cold 30°C",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
     },
-    variants: [
-      { id: "var-apr-m", name: "Black / Size M", size: "M", color: "Aprilia Black & Red", colorHex: "#dc2626", price: 18500, stock: 5, sku: "APR-PAD-M" },
-      { id: "var-apr-l", name: "Black / Size L", size: "L", color: "Aprilia Black & Red", colorHex: "#dc2626", price: 18500, stock: 6, sku: "APR-PAD-L" },
-      { id: "var-apr-xl", name: "Black / Size XL", size: "XL", color: "Aprilia Black & Red", colorHex: "#dc2626", price: 18500, stock: 3, sku: "APR-PAD-XL" },
+    "variants": [
+      {
+        "id": "var-MPX-1014",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 2,
+        "sku": "MPX-1014-STD"
+      }
     ],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: [
-      { name: "Aprilia Black & Red", hex: "#dc2626" },
-      { name: "Monochrome Black", hex: "#0f172a" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Bonded Technical Softshell", "Polar Fleece"],
-    isFeatured: true,
-    isBestSeller: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-15",
-    name: "Vespa Heritage Handcrafted Italian Leather Duffle",
-    slug: "vespa-heritage-italian-leather-duffle-bag",
-    tagline: "Artisan Tuscan full-grain vegetable-tanned leather weekender with helmet strap.",
-    brand: "Vespa Heritage Collection",
-    category: "Rider Lifestyle & Apparel",
-    categorySlug: "apparel-lifestyle",
-    subcategory: "Paddock Hoodies & Polos",
-    subcategorySlug: "paddock-apparel",
-    childCategory: "Aprilia Racing Factory Paddock Tees",
-    productGroup: "Heavyweight 240GSM Cotton",
-    price: 36000,
-    compareAtPrice: 42000,
-    discountPercentage: 14,
-    rating: 5.0,
-    reviewCount: 15,
-    sku: "VSP-LUX-BAG-01",
-    stock: 5,
-    images: [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-15",
+    "name": "DND Disc 320mm ( CBR D04 Blue",
+    "slug": "dnd-disc-320mm-cbr-d04-blue",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1015",
+    "stock": 1,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "Crafted in Florence, Italy using time-honored vegetable tanning techniques. This luxurious duffle features dedicated luggage rack tie-downs for Vespa footboards or rear racks, solid brass hardware, and a separate ventilated compartment for riding shoes or gloves.",
-    features: [
-      "100% Certified Full-Grain Tuscan Vegetable-Tanned Cowhide Leather",
-      "Antique Solid Brass Hardware and YKK Heavy-Gauge Excella Zippers",
-      "Reinforced Base with Protective Brass Studs and Vespa Rear Rack Straps",
-      "Ventilated Lower Shoe / Riding Glove Compartment",
-      "Detachable Padded Leather Shoulder Strap with Embossed Vespa Crest",
+    "description": "Official authentic DND DND Disc 320mm ( CBR D04 Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Dimensions": "52cm x 28cm x 26cm (Cabin Approved Size)",
-      "Capacity": "38 Liters",
-      "Weight": "1.8 kg",
-      "Origin": "Florence, Tuscany, Italy",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
     },
-    variants: [
-      { id: "var-bag-tan", name: "Cognac Tan", color: "Cognac Tan", colorHex: "#9a3412", price: 36000, stock: 3, sku: "VSP-BAG-TAN" },
-      { id: "var-bag-dark", name: "Espresso Brown", color: "Espresso Brown", colorHex: "#451a03", price: 36000, stock: 2, sku: "VSP-BAG-DRK" },
+    "variants": [
+      {
+        "id": "var-MPX-1015",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 1,
+        "sku": "MPX-1015-STD"
+      }
     ],
-    sizes: ["38L Weekender"],
-    colors: [
-      { name: "Cognac Tan", hex: "#9a3412" },
-      { name: "Espresso Brown", hex: "#451a03" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Tuscan Full-Grain Leather", "Solid Brass Hardware"],
-    isFeatured: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-16",
-    name: "Motul 300V 4T Factory Line 10W-40 Racing Oil (4L)",
-    slug: "motul-300v-factory-line-10w40-racing-oil",
-    tagline: "Ester Core technology synthetic racing lubricant for maximum power output.",
-    brand: "Motul France",
-    category: "Accessories & Care",
-    categorySlug: "accessories-maintenance",
-    subcategory: "Phone Mounts & Chargers",
-    subcategorySlug: "mounts-chargers",
-    childCategory: "Vibration Dampened Handlebar Mounts",
-    productGroup: "Wireless Qi Fast Charging Heads",
-    price: 9200,
-    compareAtPrice: 10500,
-    discountPercentage: 12,
-    rating: 5.0,
-    reviewCount: 78,
-    sku: "MTL-300V-10W40-4L",
-    stock: 35,
-    images: [
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-16",
+    "name": "DND Disc 320mm ( CBR D04 Gold",
+    "slug": "dnd-disc-320mm-cbr-d04-gold",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1016",
+    "stock": 3,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "100% synthetic 4-stroke racing engine lubricant developed for premier racing teams. Ester Core technology guarantees maximum engine power output without compromising reliability and wear protection under extreme thermal load in Bangladesh traffic and high-revving track sessions.",
-    features: [
-      "Ester Core Technology Provides Supreme Oil Film Adhesion at High RPM",
-      "Zero Shear Loss: 100% Stable Oil Pressure Under Track Conditions",
-      "Optimized Wet Clutch Friction Performance for Instant Gear Engagement",
-      "Exceeds Current API Standards / JASO T903 Clutch Compatibility",
-      "Authentic Motoplex Importer Hologram Seal of Authenticity",
+    "description": "Official authentic DND DND Disc 320mm ( CBR D04 Gold. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Viscosity Grade": "SAE 10W-40",
-      "Type": "100% Synthetic Ester Core",
-      "Volume": "4 Liters Canister",
-      "Origin": "Aubervilliers, France",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
     },
-    variants: [
-      { id: "var-motul-4l", name: "4 Liter Canister", price: 9200, stock: 25, sku: "MTL-300V-4L" },
-      { id: "var-motul-1l", name: "1 Liter Bottle", price: 2450, stock: 40, sku: "MTL-300V-1L" },
+    "variants": [
+      {
+        "id": "var-MPX-1016",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 3,
+        "sku": "MPX-1016-STD"
+      }
     ],
-    sizes: ["4L Canister", "1L Bottle"],
-    colors: [{ name: "Motul Racing Green", hex: "#15803d" }],
-    materials: ["Ester Core Synthetic"],
-    isFeatured: false,
-    isBestSeller: true,
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-17",
-    name: "Oxford Stormex Ultimate Waterproof Heavy-Duty Bike Cover",
-    slug: "oxford-stormex-waterproof-motorcycle-cover",
-    tagline: "Tough all-weather bonded exterior with soft heat-resistant lining and lock pockets.",
-    brand: "Oxford Products UK",
-    category: "Accessories & Care",
-    categorySlug: "accessories-maintenance",
-    subcategory: "Phone Mounts & Chargers",
-    subcategorySlug: "mounts-chargers",
-    childCategory: "Vibration Dampened Handlebar Mounts",
-    productGroup: "Wireless Qi Fast Charging Heads",
-    price: 8800,
-    compareAtPrice: 10000,
-    discountPercentage: 12,
-    rating: 4.8,
-    reviewCount: 34,
-    sku: "OXF-STRM-01",
-    stock: 18,
-    images: [
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-17",
+    "name": "DND Disc 320mm ( CBR D04 Black",
+    "slug": "dnd-disc-320mm-cbr-d04-black",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1017",
+    "stock": 1,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The UK's most acclaimed motorcycle cover. Built with tough outer bonded seams that defend against heavy monsoon rainfall, intense UV rays, dust, and scratches. Includes an inner heat-resistant lining so you can cover your motorcycle immediately after riding without waiting for the exhaust to cool.",
-    features: [
-      "Heavy-Duty Exterior Resists Heavy Monsoon Rains and Sun UV Degradation",
-      "Heat-Resistant Lining for Exhaust Pipes Allows Immediate Parking Coverage",
-      "Strategically Positioned Holes for Chain Locks with Protective Flaps",
-      "Adjustable Belly Strap and Rear Window for License Plate Visibility",
-      "Ventilated Air Pockets to Eliminate Internal Condensation",
+    "description": "Official authentic DND DND Disc 320mm ( CBR D04 Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Waterproofing": "10,000mm Hydrostatic Head",
-      "Size": "Medium (Sports/Naked) / Large (Adventure/Tourer)",
-      "Reflective": "360° Night Vision Reflective Strips",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
     },
-    variants: [
-      { id: "var-oxf-m", name: "Medium (Sports / Scooters)", size: "Medium", color: "Two-Tone Black/Silver", colorHex: "#334155", price: 8800, stock: 10, sku: "OXF-ST-M" },
-      { id: "var-oxf-l", name: "Large (Tourer / Superbikes)", size: "Large", color: "Two-Tone Black/Silver", colorHex: "#334155", price: 9500, stock: 8, sku: "OXF-ST-L" },
+    "variants": [
+      {
+        "id": "var-MPX-1017",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 1,
+        "sku": "MPX-1017-STD"
+      }
     ],
-    sizes: ["Medium", "Large", "X-Large"],
-    colors: [{ name: "Two-Tone Black/Silver", hex: "#334155" }],
-    materials: ["Bonded PVC Weatherproof Fabric", "Soft Heat-Resistant Cotton"],
-    isFeatured: false,
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
   },
   {
-    id: "prod-18",
-    name: "Arrow Pro-Race Nichrom Dark Slip-On Silencer",
-    slug: "arrow-pro-race-nichrom-dark-silencer",
-    tagline: "Track-born Italian craftsmanship with matte dark finish and laser engraved emblem.",
-    brand: "Arrow Special Parts Italy",
-    category: "Performance & Exhausts",
-    categorySlug: "performance-parts",
-    subcategory: "Full Exhausts & Slip-Ons",
-    subcategorySlug: "exhaust-systems",
-    childCategory: "Titanium & Carbon Slip-On Silencers",
-    productGroup: "Arrow Pro-Race Nichrom",
-    price: 62000,
-    compareAtPrice: 68000,
-    discountPercentage: 9,
-    rating: 4.8,
-    reviewCount: 16,
-    sku: "ARW-PRORACE-DK",
-    stock: 5,
-    images: [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-18",
+    "name": "DND Disc 320mm ( CBR D04 RED",
+    "slug": "dnd-disc-320mm-cbr-d04-red",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1018",
+    "stock": 4,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "Designed for riders who crave an aggressive GP megaphone profile. Crafted in Italy from lightweight Nichrom stainless alloy with a matte dark ceramic finish and stainless steel internal baffles. Delivers crisp throttle response and an exhilarating acoustic profile.",
-    features: [
-      "Nichrom Stainless Steel Megaphone Body with Dark Ceramic Coating",
-      "Laser-Etched Arrow Italian Racing Crest",
-      "Euro 5 Homologated Road-Legal with Removable Sound Insert",
-      "Saves 2.8 kg Over Stock Exhaust System",
+    "description": "Official authentic DND DND Disc 320mm ( CBR D04 RED. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Body Length": "250 mm",
-      "Inlet Diameter": "54 mm",
-      "Weight": "1.75 kg",
-      "Origin": "San Giustino, Perugia, Italy",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
     },
-    variants: [
-      { id: "var-arw-rs", name: "Slip-On Silencer + Link Pipe", price: 62000, stock: 5, sku: "ARW-PR-SLIP" },
+    "variants": [
+      {
+        "id": "var-MPX-1018",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 4,
+        "sku": "MPX-1018-STD"
+      }
     ],
-    sizes: ["Standard Slip-On"],
-    colors: [{ name: "Nichrom Matte Dark", hex: "#1e293b" }],
-    materials: ["Nichrom Stainless Steel", "Ceramic Coating"],
-    isFeatured: false,
-    isNewArrival: true,
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-19",
-    name: "HJC RPHA 12 Carbon Track Helmet",
-    slug: "hjc-rpha-12-carbon-track-helmet",
-    tagline: "Premium Integrated Matrix EVO carbon shell with aerodynamic wind tunnel testing.",
-    brand: "HJC Helmets",
-    category: "Helmets & Visors",
-    categorySlug: "helmets",
-    subcategory: "Full Face Helmets",
-    subcategorySlug: "full-face-helmets",
-    childCategory: "Carbon Racing Helmets",
-    productGroup: "Pinlock 120 MaxVision Ready",
-    price: 68000,
-    compareAtPrice: 76000,
-    discountPercentage: 11,
-    rating: 4.9,
-    reviewCount: 28,
-    sku: "HJC-RPHA12-CBN",
-    stock: 7,
-    images: [
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-19",
+    "name": "DND Disc 320mm ( CBR D04 Sliver",
+    "slug": "dnd-disc-320mm-cbr-d04-sliver",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1019",
+    "stock": 10,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The successor to the legendary RPHA 11. Built with P.I.M. EVO Carbon structure for enhanced shock resistance and featherlight weight. Aerodynamically sculpted shell reduces drag and lift at maximum velocity while the curved 2D visor provides panoramic vision.",
-    features: [
-      "P.I.M. EVO Carbon Fiber Shell for Maximum Impact Energy Dispersion",
-      "ECE 22.06 Approved with Emergency Quick Release Cheek Pads",
-      "HJ-42 Clear 2D Visor & Dark Smoke Shield Both Included in Box",
-      "Pinlock 120 MaxVision Anti-Fog Lens Included as Standard",
-      "Silvercool Advanced Anti-Bacterial Washable Lining",
+    "description": "Official authentic DND DND Disc 320mm ( CBR D04 Sliver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Standard": "ECE 22.06 Certified",
-      "Weight": "1,300g ± 50g",
-      "Included Visors": "1x Clear + 1x Dark Smoke Visor",
-      "Chinstrap": "Double D-Ring Metal",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
     },
-    variants: [
-      { id: "var-hjc-m", name: "Gloss Carbon / M", size: "M (57-58 cm)", color: "Gloss Carbon", colorHex: "#09090b", price: 68000, stock: 4, sku: "HJC-R12-M" },
-      { id: "var-hjc-l", name: "Gloss Carbon / L", size: "L (58-59 cm)", color: "Gloss Carbon", colorHex: "#09090b", price: 68000, stock: 3, sku: "HJC-R12-L" },
+    "variants": [
+      {
+        "id": "var-MPX-1019",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 10,
+        "sku": "MPX-1019-STD"
+      }
     ],
-    sizes: ["S (55-56 cm)", "M (57-58 cm)", "L (58-59 cm)", "XL (60-61 cm)"],
-    colors: [
-      { name: "Gloss Carbon", hex: "#09090b" },
-      { name: "Matte Carbon", hex: "#27272a" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Carbon-Glass Hybrid Fabric", "Dual Density EPS"],
-    isFeatured: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-20",
-    name: "Aprilia Tuono 457 Hyper-Naked Streetfighter",
-    slug: "aprilia-tuono-457-hyper-naked-streetfighter",
-    tagline: "Dominant upright ergonomics with aggressive twin-cylinder torque and LED optics.",
-    brand: "Aprilia Racing Italy",
-    category: "Two-Wheelers & Scooters",
-    categorySlug: "motorcycles",
-    subcategory: "Aprilia Supersport & Naked",
-    subcategorySlug: "aprilia-sport",
-    childCategory: "Aprilia Tuono Naked Streetfighters",
-    productGroup: "Tuono 457 Hyper-Naked",
-    price: 940000,
-    compareAtPrice: 995000,
-    discountPercentage: 6,
-    rating: 4.9,
-    reviewCount: 19,
-    sku: "AP-TUONO-457-01",
-    stock: 3,
-    images: [
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-20",
+    "name": "DND Disc 320mm ( R15 D06 Gold",
+    "slug": "dnd-disc-320mm-r15-d06-gold",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1020",
+    "stock": 4,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The naked beast unleashed. The Tuono 457 inherits all the racing DNA of the RS 457 but reimagines it with wide handlebars, an authoritative upright seating posture, and minimal aggressive streetfighter bodywork. Perfect for conquering both dense city traffic and open highway bends.",
-    features: [
-      "457cc Parallel-Twin DOHC Engine with 47.6 HP and Linear Torque Delivery",
-      "Wide Aluminum Handlebar for Command and High-Speed Agility",
-      "Triple LED Headlight Cluster with DRL Light Guides",
-      "Bosch Multi-Map ABS and Aprilia Traction Control System",
-      "5-inch Full Color TFT Dashboard with Quickshifter Ready Architecture",
+    "description": "Official authentic DND DND Disc 320mm ( R15 D06 Gold. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Engine": "Parallel-Twin 4-Stroke 4-Valves Per Cylinder DOHC",
-      "Power": "47.6 HP @ 9,400 RPM",
-      "Frame": "Dual-Beam Aluminum Perimeter",
-      "Front Suspension": "41mm Upside Down Fork, 120mm Travel",
-      "Fuel Tank": "13 Liters",
-      "Warranty": "2 Years Official Motoplex Warranty",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
     },
-    variants: [
-      { id: "var-tuono-grey", name: "Speed Silver", color: "Speed Silver", colorHex: "#64748b", price: 940000, stock: 2, sku: "AP-TUO-SLV" },
-      { id: "var-tuono-red", name: "Piranha Red", color: "Piranha Red", colorHex: "#dc2626", price: 940000, stock: 1, sku: "AP-TUO-RED" },
+    "variants": [
+      {
+        "id": "var-MPX-1020",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 4,
+        "sku": "MPX-1020-STD"
+      }
     ],
-    sizes: ["Standard 805mm Seat"],
-    colors: [
-      { name: "Speed Silver", hex: "#64748b" },
-      { name: "Piranha Red", hex: "#dc2626" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Aluminum Dual-Beam", "Composite Subframe"],
-    isFeatured: true,
-    isNewArrival: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-21",
-    name: "Vespa Primavera 125 Touring Edition",
-    slug: "vespa-primavera-125-touring-edition",
-    tagline: "Classic chrome front and rear fold-down racks with retro flyscreen and mint green livery.",
-    brand: "Vespa Italy",
-    category: "Two-Wheelers & Scooters",
-    categorySlug: "motorcycles",
-    subcategory: "Vespa Premium Italian Scooters",
-    subcategorySlug: "vespa-scooters",
-    childCategory: "Vespa Primavera & Sprint",
-    productGroup: "Primavera 125 Touring Edition",
-    price: 440000,
-    compareAtPrice: 475000,
-    discountPercentage: 7,
-    rating: 4.8,
-    reviewCount: 33,
-    sku: "VSP-PRIM-125-TR",
-    stock: 5,
-    images: [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-21",
+    "name": "DND Disc 320mm ( R15 D06 Sliver",
+    "slug": "dnd-disc-320mm-r15-d06-sliver",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1021",
+    "stock": 16,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The Vespa Primavera Touring edition pays homage to the spirit of Italian exploration. Equipped with factory-fitted chrome luggage racks both at the front and rear, plus an aerodynamic tinted flyscreen. Powered by the quiet and ultra-efficient 125cc i-Get 3-valve engine.",
-    features: [
-      "Factory Chrome Front and Rear Fold-Down Luggage Carriers Included",
-      "Tinted Aerodynamic Touring Windscreen",
-      "125cc i-Get 3-Valve Engine with Electronic Fuel Injection",
-      "12-inch 5-Spoke Alloy Wheels with Front ABS Disc Brake",
-      "Saddle with Dedicated Real Leather Stitching and Piping",
+    "description": "Official authentic DND DND Disc 320mm ( R15 D06 Sliver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Displacement": "124.5 cc",
-      "Max Power": "10.6 HP @ 7,700 rpm",
-      "Fuel Economy": "45+ km/liter",
-      "Under-Seat Storage": "Fits 1 Full Jet Helmet",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (16 units)"
     },
-    variants: [
-      { id: "var-prim-mint", name: "Verde Relax (Mint Green)", color: "Verde Relax", colorHex: "#86efac", price: 440000, stock: 3, sku: "VSP-PRM-MNT" },
-      { id: "var-prim-white", name: "Bianco Innocenza (Gloss White)", color: "Bianco Innocenza", colorHex: "#f8fafc", price: 440000, stock: 2, sku: "VSP-PRM-WHT" },
+    "variants": [
+      {
+        "id": "var-MPX-1021",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 16,
+        "sku": "MPX-1021-STD"
+      }
     ],
-    sizes: ["Standard 790mm"],
-    colors: [
-      { name: "Verde Relax", hex: "#86efac" },
-      { name: "Bianco Innocenza", hex: "#f8fafc" },
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
     ],
-    materials: ["Sheet Steel Monocoque", "Chromed Steel Racks"],
-    isFeatured: false,
-    isBestSeller: true,
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
   },
   {
-    id: "prod-22",
-    name: "Dainese Misano 3 D-Air Bovine Racing Suit",
-    slug: "dainese-misano-3-d-air-racing-suit",
-    tagline: "Autonomous intelligent wireless airbag system with titanium shoulder and elbow plates.",
-    brand: "Dainese Italy",
-    category: "Riding Gear & Protection",
-    categorySlug: "riding-gear",
-    subcategory: "Jackets & One-Piece Suits",
-    subcategorySlug: "jackets-suits",
-    childCategory: "Bovine Leather Racing Jackets",
-    productGroup: "CE Level 2 Pro-Armor",
-    price: 345000,
-    compareAtPrice: 380000,
-    discountPercentage: 9,
-    rating: 5.0,
-    reviewCount: 8,
-    sku: "DNS-MIS-3-DAIR",
-    stock: 2,
-    images: [
-      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=1200&auto=format&fit=crop",
+    "id": "prod-22",
+    "name": "DND Disc 320mm ( R15 D06 Black",
+    "slug": "dnd-disc-320mm-r15-d06-black",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1022",
+    "stock": 16,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "The apex of track safety. The Dainese Misano 3 incorporates the latest D-air racing airbag system with algorithm triggers developed through millions of telemetry kilometers in MotoGP. Features D-Skin 2.0 full-grain bovine leather, bi-axial elastic inserts, and seamless titanium plates on shoulders and elbows.",
-    features: [
-      "Integrated Wireless D-Air Racing Airbag Protection (Shoulders, Clavicles, Neck)",
-      "Premium D-Skin 2.0 Full-Grain Bovine Leather Construction",
-      "Seamless Grade 5 Titanium Plates on Shoulders, Elbows, and Knees",
-      "Replaceable RSS 4.0 Slider System on Elbows and Knees",
-      "Aerodynamic Racing Speed Hump with Hydration Bladder Integration",
+    "description": "Official authentic DND DND Disc 320mm ( R15 D06 Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
     ],
-    specifications: {
-      "Airbag Technology": "D-air Racing with GPS & Accelerometers (No bike sensor required)",
-      "Standard": "CE - Cat. II - Directive 89/686/EEC AAA Class",
-      "Leather": "D-Skin 2.0 Treated Bovine Leather",
-      "Weight": "4.8 kg",
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (16 units)"
     },
-    variants: [
-      { id: "var-mis-50", name: "Euro 50 / Medium", size: "Euro 50 (M)", color: "Black White Red", colorHex: "#dc2626", price: 345000, stock: 1, sku: "DNS-M3-50" },
-      { id: "var-mis-52", name: "Euro 52 / Large", size: "Euro 52 (L)", color: "Black White Red", colorHex: "#dc2626", price: 345000, stock: 1, sku: "DNS-M3-52" },
+    "variants": [
+      {
+        "id": "var-MPX-1022",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 16,
+        "sku": "MPX-1022-STD"
+      }
     ],
-    sizes: ["Euro 48 (S)", "Euro 50 (M)", "Euro 52 (L)", "Euro 54 (XL)"],
-    colors: [{ name: "Black White Red", hex: "#dc2626" }],
-    materials: ["D-Skin 2.0 Bovine Leather", "Titanium", "Aramid Fiber"],
-    isFeatured: true,
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
   },
+  {
+    "id": "prod-23",
+    "name": "DND Disc 320mm ( R15 D06 RED",
+    "slug": "dnd-disc-320mm-r15-d06-red",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1023",
+    "stock": 10,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DND DND Disc 320mm ( R15 D06 RED. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1023",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 10,
+        "sku": "MPX-1023-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-24",
+    "name": "NLK Piston Cylinder Rs150 65mm R15",
+    "slug": "nlk-piston-cylinder-rs150-65mm-r15",
+    "tagline": "Genuine NLK Piston Cylinder engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Piston Cylinder",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Piston Cylinder",
+    "subcategorySlug": "piston-cylinder",
+    "childCategory": "Piston Cylinder Series",
+    "price": 16000,
+    "compareAtPrice": 17600,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1024",
+    "stock": 1,
+    "costPrice": 12000,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Piston Cylinder Rs150 65mm R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Piston Cylinder",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1024",
+        "name": "Standard",
+        "price": 16000,
+        "stock": 1,
+        "sku": "MPX-1024-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-25",
+    "name": "NLK Piston Cylinder Rs150 57mm CBR",
+    "slug": "nlk-piston-cylinder-rs150-57mm-cbr",
+    "tagline": "Genuine NLK Piston Cylinder engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Piston Cylinder",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Piston Cylinder",
+    "subcategorySlug": "piston-cylinder",
+    "childCategory": "Piston Cylinder Series",
+    "price": 16000,
+    "compareAtPrice": 17600,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1025",
+    "stock": 1,
+    "costPrice": 12000,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Piston Cylinder Rs150 57mm CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Piston Cylinder",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1025",
+        "name": "Standard",
+        "price": 16000,
+        "stock": 1,
+        "sku": "MPX-1025-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-26",
+    "name": "NLK Piston Cylinder Rs150 66 2mm CBR",
+    "slug": "nlk-piston-cylinder-rs150-66-2mm-cbr",
+    "tagline": "Genuine NLK Piston Cylinder engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Piston Cylinder",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Piston Cylinder",
+    "subcategorySlug": "piston-cylinder",
+    "childCategory": "Piston Cylinder Series",
+    "price": 16000,
+    "compareAtPrice": 17600,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1026",
+    "stock": 1,
+    "costPrice": 12000,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Piston Cylinder Rs150 66 2mm CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Piston Cylinder",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1026",
+        "name": "Standard",
+        "price": 16000,
+        "stock": 1,
+        "sku": "MPX-1026-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-27",
+    "name": "NLK HEAD 24mm",
+    "slug": "nlk-head-24mm",
+    "tagline": "Genuine NLK HEAD engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "HEAD",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "HEAD",
+    "subcategorySlug": "head",
+    "childCategory": "HEAD Series",
+    "price": 35000,
+    "compareAtPrice": 38500,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1027",
+    "stock": 0,
+    "costPrice": 26250,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK HEAD 24mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "HEAD",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1027",
+        "name": "Standard",
+        "price": 35000,
+        "stock": 0,
+        "sku": "MPX-1027-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-28",
+    "name": "NLK HEAD 21mm",
+    "slug": "nlk-head-21mm",
+    "tagline": "Genuine NLK HEAD engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "HEAD",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "HEAD",
+    "subcategorySlug": "head",
+    "childCategory": "HEAD Series",
+    "price": 35000,
+    "compareAtPrice": 38500,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1028",
+    "stock": 0,
+    "costPrice": 26250,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK HEAD 21mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "HEAD",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1028",
+        "name": "Standard",
+        "price": 35000,
+        "stock": 0,
+        "sku": "MPX-1028-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-29",
+    "name": "BIKERS Crown Nut MT15, M-Slaz, Xsr",
+    "slug": "bikers-crown-nut-mt15-m-slaz-xsr",
+    "tagline": "Genuine BIKERS Crown Nut engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Crown Nut",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Crown Nut",
+    "subcategorySlug": "crown-nut",
+    "childCategory": "Crown Nut Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1029",
+    "stock": 8,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Crown Nut MT15, M-Slaz, Xsr. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha MT-15 / XSR 155 / M-Slaz. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha MT-15 / XSR 155 / M-Slaz",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Crown Nut",
+      "Compatibility / Fitment": "Yamaha MT-15 / XSR 155 / M-Slaz",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1029",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 8,
+        "sku": "MPX-1029-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-30",
+    "name": "BMC Air Filter Washing KIt",
+    "slug": "bmc-air-filter-washing-kit",
+    "tagline": "Genuine BMC Washing KIt engineered for maximum track and highway reliability.",
+    "brand": "BMC",
+    "productType": "Washing KIt",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Washing KIt",
+    "subcategorySlug": "washing-kit",
+    "childCategory": "Washing KIt Series",
+    "price": 3000,
+    "compareAtPrice": 3300,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1030",
+    "stock": 1,
+    "costPrice": 2250,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BMC BMC Air Filter Washing KIt. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BMC original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BMC",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Washing KIt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1030",
+        "name": "Standard",
+        "price": 3000,
+        "stock": 1,
+        "sku": "MPX-1030-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-31",
+    "name": "BIKERS Rear wheel axle protection ( CBR )",
+    "slug": "bikers-rear-wheel-axle-protection-cbr",
+    "tagline": "Genuine BIKERS wheel axle protection engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "wheel axle protection",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "wheel axle protection",
+    "subcategorySlug": "wheel-axle-protection",
+    "childCategory": "wheel axle protection Series",
+    "price": 8000,
+    "compareAtPrice": 8800,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1031",
+    "stock": 2,
+    "costPrice": 6000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Rear wheel axle protection ( CBR ). Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "wheel axle protection",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1031",
+        "name": "Standard",
+        "price": 8000,
+        "stock": 2,
+        "sku": "MPX-1031-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-32",
+    "name": "BIKERS Front wheel axle protection ( CBR )",
+    "slug": "bikers-front-wheel-axle-protection-cbr",
+    "tagline": "Genuine BIKERS wheel axle protection engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "wheel axle protection",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "wheel axle protection",
+    "subcategorySlug": "wheel-axle-protection",
+    "childCategory": "wheel axle protection Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1032",
+    "stock": 2,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Front wheel axle protection ( CBR ). Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "wheel axle protection",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1032",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 2,
+        "sku": "MPX-1032-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-33",
+    "name": "BIKERS engine oil megarment grase CBR",
+    "slug": "bikers-engine-oil-megarment-grase-cbr",
+    "tagline": "Genuine BIKERS Oil filter cap engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Oil filter cap",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Oil filter cap",
+    "subcategorySlug": "oil-filter-cap",
+    "childCategory": "Oil filter cap Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1033",
+    "stock": 8,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS engine oil megarment grase CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Engine & Performance",
+      "Subcategory": "Oil filter cap",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1033",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 8,
+        "sku": "MPX-1033-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-34",
+    "name": "BIKERS Chain Adjuster Plate CBR 250R",
+    "slug": "bikers-chain-adjuster-plate-cbr-250r",
+    "tagline": "Genuine BIKERS Chain Adjuster Plate engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Chain Adjuster Plate",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Chain Adjuster Plate",
+    "subcategorySlug": "chain-adjuster-plate",
+    "childCategory": "Chain Adjuster Plate Series",
+    "price": 5000,
+    "compareAtPrice": 5500,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1034",
+    "stock": 9,
+    "costPrice": 3750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Chain Adjuster Plate CBR 250R. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Chain Adjuster Plate",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (9 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1034",
+        "name": "Standard",
+        "price": 5000,
+        "stock": 9,
+        "sku": "MPX-1034-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-35",
+    "name": "BIKERS Chain adjuster Stand hook CBR 250R",
+    "slug": "bikers-chain-adjuster-stand-hook-cbr-250r",
+    "tagline": "Genuine BIKERS Chain adjuster engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Chain adjuster",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Chain adjuster",
+    "subcategorySlug": "chain-adjuster",
+    "childCategory": "Chain adjuster Series",
+    "price": 6000,
+    "compareAtPrice": 6600,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1035",
+    "stock": 7,
+    "costPrice": 4500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Chain adjuster Stand hook CBR 250R. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Chain adjuster",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (7 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1035",
+        "name": "Standard",
+        "price": 6000,
+        "stock": 7,
+        "sku": "MPX-1035-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-36",
+    "name": "BIKERS Generator Cover cap R15",
+    "slug": "bikers-generator-cover-cap-r15",
+    "tagline": "Genuine BIKERS Generator Cover cap engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Generator Cover cap",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Generator Cover cap",
+    "subcategorySlug": "generator-cover-cap",
+    "childCategory": "Generator Cover cap Series",
+    "price": 3300,
+    "compareAtPrice": 3630,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1036",
+    "stock": 8,
+    "costPrice": 2475,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Generator Cover cap R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Generator Cover cap",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1036",
+        "name": "Standard",
+        "price": 3300,
+        "stock": 8,
+        "sku": "MPX-1036-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-37",
+    "name": "BIKERS Rear wheel axle protection ( R15 ) Y0259",
+    "slug": "bikers-rear-wheel-axle-protection-r15-y0259",
+    "tagline": "Genuine BIKERS wheel axle protection engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "wheel axle protection",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "wheel axle protection",
+    "subcategorySlug": "wheel-axle-protection",
+    "childCategory": "wheel axle protection Series",
+    "price": 8000,
+    "compareAtPrice": 8800,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1037",
+    "stock": 2,
+    "costPrice": 6000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Rear wheel axle protection ( R15 ) Y0259. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "wheel axle protection",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1037",
+        "name": "Standard",
+        "price": 8000,
+        "stock": 2,
+        "sku": "MPX-1037-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-38",
+    "name": "BIKERS Front wheel axle protection ( R15 ) Y0258",
+    "slug": "bikers-front-wheel-axle-protection-r15-y0258",
+    "tagline": "Genuine BIKERS wheel axle protection engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "wheel axle protection",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "wheel axle protection",
+    "subcategorySlug": "wheel-axle-protection",
+    "childCategory": "wheel axle protection Series",
+    "price": 8000,
+    "compareAtPrice": 8800,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1038",
+    "stock": 1,
+    "costPrice": 6000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Front wheel axle protection ( R15 ) Y0258. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "wheel axle protection",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1038",
+        "name": "Standard",
+        "price": 8000,
+        "stock": 1,
+        "sku": "MPX-1038-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-39",
+    "name": "BIKERS Engine guard SET Right ) R15",
+    "slug": "bikers-engine-guard-set-right-r15",
+    "tagline": "Genuine BIKERS Engine guard YZF R15 engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Engine guard YZF R15",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Engine guard YZF R15",
+    "subcategorySlug": "engine-guard-yzf-r15",
+    "childCategory": "Engine guard YZF R15 Series",
+    "price": 4000,
+    "compareAtPrice": 4400,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1039",
+    "stock": 11,
+    "costPrice": 3000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Engine guard SET Right ) R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Engine guard YZF R15",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (11 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1039",
+        "name": "Standard",
+        "price": 4000,
+        "stock": 11,
+        "sku": "MPX-1039-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-40",
+    "name": "BIKERS Crown R15",
+    "slug": "bikers-crown-r15",
+    "tagline": "Genuine BIKERS Handle Crown engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Handle Crown",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handle Crown",
+    "subcategorySlug": "handle-crown",
+    "childCategory": "Handle Crown Series",
+    "price": 16500,
+    "compareAtPrice": 18150,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1040",
+    "stock": 3,
+    "costPrice": 12375,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Crown R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handle Crown",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1040",
+        "name": "Standard",
+        "price": 16500,
+        "stock": 3,
+        "sku": "MPX-1040-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-41",
+    "name": "BIKERS Handle bar set R15",
+    "slug": "bikers-handle-bar-set-r15",
+    "tagline": "Genuine BIKERS Handle bar set engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Handle bar set",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handle bar set",
+    "subcategorySlug": "handle-bar-set",
+    "childCategory": "Handle bar set Series",
+    "price": 21000,
+    "compareAtPrice": 23100,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1041",
+    "stock": 4,
+    "costPrice": 15750,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Handle bar set R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handle bar set",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1041",
+        "name": "Standard",
+        "price": 21000,
+        "stock": 4,
+        "sku": "MPX-1041-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-42",
+    "name": "NLK Throttle Body 34mm",
+    "slug": "nlk-throttle-body-34mm",
+    "tagline": "Genuine NLK Throttle Body engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Throttle Body",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Throttle Body",
+    "subcategorySlug": "throttle-body",
+    "childCategory": "Throttle Body Series",
+    "price": 9500,
+    "compareAtPrice": 10450,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1042",
+    "stock": 2,
+    "costPrice": 7125,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Throttle Body 34mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Throttle Body",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1042",
+        "name": "Standard",
+        "price": 9500,
+        "stock": 2,
+        "sku": "MPX-1042-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-43",
+    "name": "NLK Throttle Body 32mm",
+    "slug": "nlk-throttle-body-32mm",
+    "tagline": "Genuine NLK Throttle Body engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Throttle Body",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Throttle Body",
+    "subcategorySlug": "throttle-body",
+    "childCategory": "Throttle Body Series",
+    "price": 9500,
+    "compareAtPrice": 10450,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1043",
+    "stock": 1,
+    "costPrice": 7125,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Throttle Body 32mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Throttle Body",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1043",
+        "name": "Standard",
+        "price": 9500,
+        "stock": 1,
+        "sku": "MPX-1043-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-44",
+    "name": "NLK Fuel Pump R15 -42 Bar",
+    "slug": "nlk-fuel-pump-r15-42-bar",
+    "tagline": "Genuine NLK Fuel Pump engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Fuel Pump",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Fuel Pump",
+    "subcategorySlug": "fuel-pump",
+    "childCategory": "Fuel Pump Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1044",
+    "stock": 10,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Fuel Pump R15 -42 Bar. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Fuel Pump",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1044",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 10,
+        "sku": "MPX-1044-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-45",
+    "name": "NLK Double iridium Plug N7cpr-D9",
+    "slug": "nlk-double-iridium-plug-n7cpr-d9",
+    "tagline": "Genuine NLK Plug engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Plug",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Plug",
+    "subcategorySlug": "plug",
+    "childCategory": "Plug Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1045",
+    "stock": 50,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Double iridium Plug N7cpr-D9. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Plug",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (50 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1045",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 50,
+        "sku": "MPX-1045-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-46",
+    "name": "NLK iridium Plug",
+    "slug": "nlk-iridium-plug",
+    "tagline": "Genuine NLK Plug engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Plug",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Plug",
+    "subcategorySlug": "plug",
+    "childCategory": "Plug Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1046",
+    "stock": 50,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK iridium Plug. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Plug",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (50 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1046",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 50,
+        "sku": "MPX-1046-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-47",
+    "name": "NLK Ignition Coil FI Yamaha R15 , FZ, Etc",
+    "slug": "nlk-ignition-coil-fi-yamaha-r15-fz-etc",
+    "tagline": "Genuine NLK Ignition Coil FI engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Ignition Coil FI",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Ignition Coil FI",
+    "subcategorySlug": "ignition-coil-fi",
+    "childCategory": "Ignition Coil FI Series",
+    "price": 2700,
+    "compareAtPrice": 2970,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1047",
+    "stock": 16,
+    "costPrice": 2025,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Ignition Coil FI Yamaha R15 , FZ, Etc. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Ignition Coil FI",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (16 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1047",
+        "name": "Standard",
+        "price": 2700,
+        "stock": 16,
+        "sku": "MPX-1047-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-48",
+    "name": "NLK Ignition Coil FI CBR",
+    "slug": "nlk-ignition-coil-fi-cbr",
+    "tagline": "Genuine NLK Ignition Coil FI engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Ignition Coil FI",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Ignition Coil FI",
+    "subcategorySlug": "ignition-coil-fi",
+    "childCategory": "Ignition Coil FI Series",
+    "price": 2700,
+    "compareAtPrice": 2970,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1048",
+    "stock": 14,
+    "costPrice": 2025,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Ignition Coil FI CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Ignition Coil FI",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (14 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1048",
+        "name": "Standard",
+        "price": 2700,
+        "stock": 14,
+        "sku": "MPX-1048-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-49",
+    "name": "NLK Billet Clutch set",
+    "slug": "nlk-billet-clutch-set",
+    "tagline": "Genuine NLK Clutch set engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Clutch set",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch set",
+    "subcategorySlug": "clutch-set",
+    "childCategory": "Clutch set Series",
+    "price": 16000,
+    "compareAtPrice": 17600,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1049",
+    "stock": 0,
+    "costPrice": 12000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Billet Clutch set. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch set",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1049",
+        "name": "Standard",
+        "price": 16000,
+        "stock": 0,
+        "sku": "MPX-1049-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-50",
+    "name": "NLK Racing Hayper Clutch set",
+    "slug": "nlk-racing-hayper-clutch-set",
+    "tagline": "Genuine NLK Clutch set engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Clutch set",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch set",
+    "subcategorySlug": "clutch-set",
+    "childCategory": "Clutch set Series",
+    "price": 10000,
+    "compareAtPrice": 11000,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1050",
+    "stock": 0,
+    "costPrice": 7500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Racing Hayper Clutch set. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch set",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1050",
+        "name": "Standard",
+        "price": 10000,
+        "stock": 0,
+        "sku": "MPX-1050-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-51",
+    "name": "NLK Radiator",
+    "slug": "nlk-radiator",
+    "tagline": "Genuine NLK Radiator engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Radiator",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Radiator",
+    "subcategorySlug": "radiator",
+    "childCategory": "Radiator Series",
+    "price": 12000,
+    "compareAtPrice": 13200,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1051",
+    "stock": 4,
+    "costPrice": 9000,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Radiator. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Radiator",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1051",
+        "name": "Standard",
+        "price": 12000,
+        "stock": 4,
+        "sku": "MPX-1051-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-52",
+    "name": "RCB liver gard",
+    "slug": "rcb-liver-gard",
+    "tagline": "Genuine RCB liver gard engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "liver gard",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "liver gard",
+    "subcategorySlug": "liver-gard",
+    "childCategory": "liver gard Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1052",
+    "stock": 0,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB liver gard. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "liver gard",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1052",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 0,
+        "sku": "MPX-1052-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-53",
+    "name": "Titanium ket Bolt Rainbow",
+    "slug": "titanium-ket-bolt-rainbow",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 500,
+    "compareAtPrice": 550,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1053",
+    "stock": 40,
+    "costPrice": 375,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium ket Bolt Rainbow. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (40 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1053",
+        "name": "Standard",
+        "price": 500,
+        "stock": 40,
+        "sku": "MPX-1053-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-54",
+    "name": "Titanium ket Bolt Blue",
+    "slug": "titanium-ket-bolt-blue",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 500,
+    "compareAtPrice": 550,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1054",
+    "stock": 71,
+    "costPrice": 375,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium ket Bolt Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (71 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1054",
+        "name": "Standard",
+        "price": 500,
+        "stock": 71,
+        "sku": "MPX-1054-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-55",
+    "name": "Titanium Disc Bolt blue",
+    "slug": "titanium-disc-bolt-blue",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 600,
+    "compareAtPrice": 660,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1055",
+    "stock": 55,
+    "costPrice": 450,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium Disc Bolt blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (55 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1055",
+        "name": "Standard",
+        "price": 600,
+        "stock": 55,
+        "sku": "MPX-1055-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-56",
+    "name": "Titanium Disc Bolt Rainbow",
+    "slug": "titanium-disc-bolt-rainbow",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 600,
+    "compareAtPrice": 660,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1056",
+    "stock": 24,
+    "costPrice": 450,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium Disc Bolt Rainbow. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (24 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1056",
+        "name": "Standard",
+        "price": 600,
+        "stock": 24,
+        "sku": "MPX-1056-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-57",
+    "name": "Titanium calipar Bolt Pink 1.5",
+    "slug": "titanium-calipar-bolt-pink-1-5",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1057",
+    "stock": 13,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium calipar Bolt Pink 1.5. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (13 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1057",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 13,
+        "sku": "MPX-1057-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-58",
+    "name": "Titanium calipar Bolt Pink 1.25",
+    "slug": "titanium-calipar-bolt-pink-1-25",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1058",
+    "stock": 7,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium calipar Bolt Pink 1.25. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (7 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1058",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 7,
+        "sku": "MPX-1058-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-59",
+    "name": "Titanium calipar Bolt blue 1.5",
+    "slug": "titanium-calipar-bolt-blue-1-5",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1059",
+    "stock": 37,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium calipar Bolt blue 1.5. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (37 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1059",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 37,
+        "sku": "MPX-1059-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-60",
+    "name": "Titanium calipar Bolt blue 1.25",
+    "slug": "titanium-calipar-bolt-blue-1-25",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1060",
+    "stock": 37,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium calipar Bolt blue 1.25. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (37 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1060",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 37,
+        "sku": "MPX-1060-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-61",
+    "name": "Titanium Caliper bolt Rainbow 1.25",
+    "slug": "titanium-caliper-bolt-rainbow-1-25",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1061",
+    "stock": 15,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium Caliper bolt Rainbow 1.25. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (15 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1061",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 15,
+        "sku": "MPX-1061-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-62",
+    "name": "Titanium ket Bolt Pink",
+    "slug": "titanium-ket-bolt-pink",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 500,
+    "compareAtPrice": 550,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1062",
+    "stock": 15,
+    "costPrice": 375,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium ket Bolt Pink. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (15 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1062",
+        "name": "Standard",
+        "price": 500,
+        "stock": 15,
+        "sku": "MPX-1062-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-63",
+    "name": "Titanium Disc Bolt Pink",
+    "slug": "titanium-disc-bolt-pink",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 600,
+    "compareAtPrice": 660,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1063",
+    "stock": 20,
+    "costPrice": 450,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium Disc Bolt Pink. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (20 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1063",
+        "name": "Standard",
+        "price": 600,
+        "stock": 20,
+        "sku": "MPX-1063-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-64",
+    "name": "Titanium calipar Bolt Rainbow 1.5",
+    "slug": "titanium-calipar-bolt-rainbow-1-5",
+    "tagline": "Genuine Titanium bolt Titanium bolt engineered for maximum track and highway reliability.",
+    "brand": "Titanium bolt",
+    "productType": "Titanium bolt",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Titanium bolt",
+    "subcategorySlug": "titanium-bolt",
+    "childCategory": "Titanium bolt Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1064",
+    "stock": 20,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Titanium bolt Titanium calipar Bolt Rainbow 1.5. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Titanium bolt original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Titanium bolt",
+      "Category": "Body & Hardware",
+      "Subcategory": "Titanium bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (20 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1064",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 20,
+        "sku": "MPX-1064-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-65",
+    "name": "RCB Brake oil reserve pot A3 RED",
+    "slug": "rcb-brake-oil-reserve-pot-a3-red",
+    "tagline": "Genuine RCB Brake oil reserve pot engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake oil reserve pot",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake oil reserve pot",
+    "subcategorySlug": "brake-oil-reserve-pot",
+    "childCategory": "Brake oil reserve pot Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1065",
+    "stock": 3,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Brake oil reserve pot A3 RED. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake oil reserve pot",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1065",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 3,
+        "sku": "MPX-1065-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-66",
+    "name": "RCB Brake oil reserve pot A3 Sliver",
+    "slug": "rcb-brake-oil-reserve-pot-a3-sliver",
+    "tagline": "Genuine RCB Brake oil reserve pot engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake oil reserve pot",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake oil reserve pot",
+    "subcategorySlug": "brake-oil-reserve-pot",
+    "childCategory": "Brake oil reserve pot Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1066",
+    "stock": 5,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Brake oil reserve pot A3 Sliver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake oil reserve pot",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1066",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 5,
+        "sku": "MPX-1066-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-67",
+    "name": "RCB Brake oil reserve pot A3 Black",
+    "slug": "rcb-brake-oil-reserve-pot-a3-black",
+    "tagline": "Genuine RCB Brake oil reserve pot engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake oil reserve pot",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake oil reserve pot",
+    "subcategorySlug": "brake-oil-reserve-pot",
+    "childCategory": "Brake oil reserve pot Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1067",
+    "stock": 5,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Brake oil reserve pot A3 Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake oil reserve pot",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1067",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 5,
+        "sku": "MPX-1067-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-68",
+    "name": "RPD Brake Calliper Zenith Singel",
+    "slug": "rpd-brake-calliper-zenith-singel",
+    "tagline": "Genuine RPD Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 20000,
+    "compareAtPrice": 22000,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1068",
+    "stock": 0,
+    "costPrice": 15000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Calliper Zenith Singel. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1068",
+        "name": "Standard",
+        "price": 20000,
+        "stock": 0,
+        "sku": "MPX-1068-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-69",
+    "name": "NGK Plug CR8",
+    "slug": "ngk-plug-cr8",
+    "tagline": "Genuine NGK Plug engineered for maximum track and highway reliability.",
+    "brand": "NGK",
+    "productType": "Plug",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Plug",
+    "subcategorySlug": "plug",
+    "childCategory": "Plug Series",
+    "price": 1600,
+    "compareAtPrice": 1760,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1069",
+    "stock": 6,
+    "costPrice": 1200,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NGK NGK Plug CR8. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NGK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NGK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Plug",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1069",
+        "name": "Standard",
+        "price": 1600,
+        "stock": 6,
+        "sku": "MPX-1069-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-70",
+    "name": "SYRC Chassis extended",
+    "slug": "syrc-chassis-extended",
+    "tagline": "Genuine SYRC Chassis extended engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Chassis extended",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Chassis extended",
+    "subcategorySlug": "chassis-extended",
+    "childCategory": "Chassis extended Series",
+    "price": 6000,
+    "compareAtPrice": 6600,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1070",
+    "stock": 3,
+    "costPrice": 4500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Chassis extended. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Chassis extended",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1070",
+        "name": "Standard",
+        "price": 6000,
+        "stock": 3,
+        "sku": "MPX-1070-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-71",
+    "name": "SYRC caliper braket R15 indo",
+    "slug": "syrc-caliper-braket-r15-indo",
+    "tagline": "Genuine SYRC Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 4000,
+    "compareAtPrice": 4400,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1071",
+    "stock": 8,
+    "costPrice": 3000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC caliper braket R15 indo. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1071",
+        "name": "Standard",
+        "price": 4000,
+        "stock": 8,
+        "sku": "MPX-1071-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-72",
+    "name": "SYRC caliper braket GSXR Rear",
+    "slug": "syrc-caliper-braket-gsxr-rear",
+    "tagline": "Genuine SYRC Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 4000,
+    "compareAtPrice": 4400,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1072",
+    "stock": 4,
+    "costPrice": 3000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC caliper braket GSXR Rear. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1072",
+        "name": "Standard",
+        "price": 4000,
+        "stock": 4,
+        "sku": "MPX-1072-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-73",
+    "name": "SYRC caliper braket Radial CBR",
+    "slug": "syrc-caliper-braket-radial-cbr",
+    "tagline": "Genuine SYRC Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 4500,
+    "compareAtPrice": 4950,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1073",
+    "stock": 11,
+    "costPrice": 3375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC caliper braket Radial CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (11 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1073",
+        "name": "Standard",
+        "price": 4500,
+        "stock": 11,
+        "sku": "MPX-1073-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-74",
+    "name": "SYRC caliper braket R15m Stock",
+    "slug": "syrc-caliper-braket-r15m-stock",
+    "tagline": "Genuine SYRC Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 1600,
+    "compareAtPrice": 1760,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1074",
+    "stock": 15,
+    "costPrice": 1200,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC caliper braket R15m Stock. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (15 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1074",
+        "name": "Standard",
+        "price": 1600,
+        "stock": 15,
+        "sku": "MPX-1074-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-75",
+    "name": "Denso Horn Disc",
+    "slug": "denso-horn-disc",
+    "tagline": "Genuine Denso Horn engineered for maximum track and highway reliability.",
+    "brand": "Denso",
+    "productType": "Horn",
+    "category": "Lighting & Electrical",
+    "categorySlug": "lighting-electrical",
+    "subcategory": "Horn",
+    "subcategorySlug": "horn",
+    "childCategory": "Horn Series",
+    "price": 1100,
+    "compareAtPrice": 1210,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1075",
+    "stock": 10,
+    "costPrice": 825,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Denso Denso Horn Disc. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Denso original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Denso",
+      "Category": "Lighting & Electrical",
+      "Subcategory": "Horn",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1075",
+        "name": "Standard",
+        "price": 1100,
+        "stock": 10,
+        "sku": "MPX-1075-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-76",
+    "name": "BIKERS R15 Handel crown top nut",
+    "slug": "bikers-r15-handel-crown-top-nut",
+    "tagline": "Genuine BIKERS crown bolt engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "crown bolt",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "crown bolt",
+    "subcategorySlug": "crown-bolt",
+    "childCategory": "crown bolt Series",
+    "price": 2000,
+    "compareAtPrice": 2200,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1076",
+    "stock": 50,
+    "costPrice": 1500,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS R15 Handel crown top nut. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "crown bolt",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (50 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1076",
+        "name": "Standard",
+        "price": 2000,
+        "stock": 50,
+        "sku": "MPX-1076-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-77",
+    "name": "Maxima Engine oil Pro plus 10W30,",
+    "slug": "maxima-engine-oil-pro-plus-10w30",
+    "tagline": "Genuine Maxima Engine oil engineered for maximum track and highway reliability.",
+    "brand": "Maxima",
+    "productType": "Engine oil",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Engine Oil",
+    "subcategorySlug": "engine-oil",
+    "childCategory": "Engine Oil Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1077",
+    "stock": 100,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Maxima Maxima Engine oil Pro plus 10W30,. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Maxima original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Maxima",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Engine oil",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (100 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1077",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 100,
+        "sku": "MPX-1077-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-78",
+    "name": "Maxima Engine oil Pro plus 10W40",
+    "slug": "maxima-engine-oil-pro-plus-10w40",
+    "tagline": "Genuine Maxima Engine oil engineered for maximum track and highway reliability.",
+    "brand": "Maxima",
+    "productType": "Engine oil",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Engine Oil",
+    "subcategorySlug": "engine-oil",
+    "childCategory": "Engine Oil Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1078",
+    "stock": 100,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Maxima Maxima Engine oil Pro plus 10W40. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Maxima original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Maxima",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Engine oil",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (100 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1078",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 100,
+        "sku": "MPX-1078-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-79",
+    "name": "RPD Ignition Coil",
+    "slug": "rpd-ignition-coil",
+    "tagline": "Genuine RPD Ignition Coil engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Ignition Coil",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Ignition Coil",
+    "subcategorySlug": "ignition-coil",
+    "childCategory": "Ignition Coil Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1079",
+    "stock": 0,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Ignition Coil. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Engine & Performance",
+      "Subcategory": "Ignition Coil",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1079",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 0,
+        "sku": "MPX-1079-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-80",
+    "name": "SYRC Clutch Retainer R15 Silver",
+    "slug": "syrc-clutch-retainer-r15-silver",
+    "tagline": "Genuine SYRC Recliner engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Recliner",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Recliner",
+    "subcategorySlug": "recliner",
+    "childCategory": "Recliner Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1080",
+    "stock": 3,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Clutch Retainer R15 Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Recliner",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1080",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 3,
+        "sku": "MPX-1080-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-81",
+    "name": "SYRC Clutch Retainer R15 Golden",
+    "slug": "syrc-clutch-retainer-r15-golden",
+    "tagline": "Genuine SYRC Recliner engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Recliner",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Recliner",
+    "subcategorySlug": "recliner",
+    "childCategory": "Recliner Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1081",
+    "stock": 3,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Clutch Retainer R15 Golden. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Recliner",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1081",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 3,
+        "sku": "MPX-1081-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-82",
+    "name": "SYRC Clutch Retainer R15 Blue",
+    "slug": "syrc-clutch-retainer-r15-blue",
+    "tagline": "Genuine SYRC Recliner engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Recliner",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Recliner",
+    "subcategorySlug": "recliner",
+    "childCategory": "Recliner Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1082",
+    "stock": 6,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Clutch Retainer R15 Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Recliner",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1082",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 6,
+        "sku": "MPX-1082-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-83",
+    "name": "SYRC Clutch Retainer R15 Red",
+    "slug": "syrc-clutch-retainer-r15-red",
+    "tagline": "Genuine SYRC Recliner engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Recliner",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Recliner",
+    "subcategorySlug": "recliner",
+    "childCategory": "Recliner Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1083",
+    "stock": 7,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Clutch Retainer R15 Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Recliner",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (7 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1083",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 7,
+        "sku": "MPX-1083-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-84",
+    "name": "Mj Racing indicator Light",
+    "slug": "mj-racing-indicator-light",
+    "tagline": "Genuine Mj Racing Light engineered for maximum track and highway reliability.",
+    "brand": "Mj Racing",
+    "productType": "Light",
+    "category": "Lighting & Electrical",
+    "categorySlug": "lighting-electrical",
+    "subcategory": "Light",
+    "subcategorySlug": "light",
+    "childCategory": "Light Series",
+    "price": 250,
+    "compareAtPrice": 275,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1084",
+    "stock": 10,
+    "costPrice": 188,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Mj Racing Mj Racing indicator Light. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Mj Racing original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Mj Racing",
+      "Category": "Lighting & Electrical",
+      "Subcategory": "Light",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1084",
+        "name": "Standard",
+        "price": 250,
+        "stock": 10,
+        "sku": "MPX-1084-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-85",
+    "name": "Mj Racing Fog light wlo4t-tz",
+    "slug": "mj-racing-fog-light-wlo4t-tz",
+    "tagline": "Genuine Mj Racing Fog light engineered for maximum track and highway reliability.",
+    "brand": "Mj Racing",
+    "productType": "Fog light",
+    "category": "Lighting & Electrical",
+    "categorySlug": "lighting-electrical",
+    "subcategory": "Fog light",
+    "subcategorySlug": "fog-light",
+    "childCategory": "Fog light Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1085",
+    "stock": 1,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Mj Racing Mj Racing Fog light wlo4t-tz. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Mj Racing original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Mj Racing",
+      "Category": "Lighting & Electrical",
+      "Subcategory": "Fog light",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1085",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 1,
+        "sku": "MPX-1085-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-86",
+    "name": "RCB side stand 220mm Silver",
+    "slug": "rcb-side-stand-220mm-silver",
+    "tagline": "Genuine RCB side stand engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "side stand",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "side stand",
+    "subcategorySlug": "side-stand",
+    "childCategory": "side stand Series",
+    "price": 2800,
+    "compareAtPrice": 3080,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1086",
+    "stock": 4,
+    "costPrice": 2100,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB side stand 220mm Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Suspension & Protection",
+      "Subcategory": "side stand",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1086",
+        "name": "Standard",
+        "price": 2800,
+        "stock": 4,
+        "sku": "MPX-1086-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-87",
+    "name": "Maxima Brake Fluid Dot 4 500ml",
+    "slug": "maxima-brake-fluid-dot-4-500ml",
+    "tagline": "Genuine Maxima Brake Fluid engineered for maximum track and highway reliability.",
+    "brand": "Maxima",
+    "productType": "Brake Fluid",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Brake Fluid",
+    "subcategorySlug": "brake-fluid",
+    "childCategory": "Brake Fluid Series",
+    "price": 950,
+    "compareAtPrice": 1045,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1087",
+    "stock": 10,
+    "costPrice": 713,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Maxima Maxima Brake Fluid Dot 4 500ml. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Maxima original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Maxima",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Brake Fluid",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1087",
+        "name": "Standard",
+        "price": 950,
+        "stock": 10,
+        "sku": "MPX-1087-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-88",
+    "name": "RPD Matrix Disc GSXR 320mm Silver",
+    "slug": "rpd-matrix-disc-gsxr-320mm-silver",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1088",
+    "stock": 3,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc GSXR 320mm Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1088",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 3,
+        "sku": "MPX-1088-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-89",
+    "name": "RPD Matrix Disc GSXR 320mm Black",
+    "slug": "rpd-matrix-disc-gsxr-320mm-black",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1089",
+    "stock": 8,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc GSXR 320mm Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1089",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 8,
+        "sku": "MPX-1089-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-90",
+    "name": "RPD Matrix Disc GSXR 320mm Red",
+    "slug": "rpd-matrix-disc-gsxr-320mm-red",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1090",
+    "stock": 0,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc GSXR 320mm Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1090",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 0,
+        "sku": "MPX-1090-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-91",
+    "name": "RPD Matrix Disc GSXR 320mm GOLD",
+    "slug": "rpd-matrix-disc-gsxr-320mm-gold",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1091",
+    "stock": 4,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc GSXR 320mm GOLD. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1091",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 4,
+        "sku": "MPX-1091-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-92",
+    "name": "RPD Matrix Disc GSXR 320mm Blue",
+    "slug": "rpd-matrix-disc-gsxr-320mm-blue",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1092",
+    "stock": 2,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc GSXR 320mm Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1092",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 2,
+        "sku": "MPX-1092-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-93",
+    "name": "RPD Coil",
+    "slug": "rpd-coil",
+    "tagline": "Genuine RPD Coil engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Coil",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Coil",
+    "subcategorySlug": "coil",
+    "childCategory": "Coil Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1093",
+    "stock": 0,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Coil. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Engine & Performance",
+      "Subcategory": "Coil",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1093",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 0,
+        "sku": "MPX-1093-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-94",
+    "name": "BIKERS Shock Holder R15v2",
+    "slug": "bikers-shock-holder-r15v2",
+    "tagline": "Genuine BIKERS Shock Holder engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Shock Holder",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Shock Holder",
+    "subcategorySlug": "shock-holder",
+    "childCategory": "Shock Holder Series",
+    "price": 8100,
+    "compareAtPrice": 8910,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1094",
+    "stock": 4,
+    "costPrice": 6075,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Shock Holder R15v2. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Shock Holder",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1094",
+        "name": "Standard",
+        "price": 8100,
+        "stock": 4,
+        "sku": "MPX-1094-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-95",
+    "name": "BIKERS Foot rest assembly front R15 v2",
+    "slug": "bikers-foot-rest-assembly-front-r15-v2",
+    "tagline": "Genuine BIKERS Foot rest assembly front engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Foot rest assembly front",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Foot rest assembly front",
+    "subcategorySlug": "foot-rest-assembly-front",
+    "childCategory": "Foot rest assembly front Series",
+    "price": 28500,
+    "compareAtPrice": 31350,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1095",
+    "stock": 5,
+    "costPrice": 21375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Foot rest assembly front R15 v2. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Foot rest assembly front",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1095",
+        "name": "Standard",
+        "price": 28500,
+        "stock": 5,
+        "sku": "MPX-1095-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-96",
+    "name": "BIKERS foot peg R15",
+    "slug": "bikers-foot-peg-r15",
+    "tagline": "Genuine BIKERS foot peg engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "foot peg",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "foot peg",
+    "subcategorySlug": "foot-peg",
+    "childCategory": "foot peg Series",
+    "price": 7300,
+    "compareAtPrice": 8030,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1096",
+    "stock": 3,
+    "costPrice": 5475,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS foot peg R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "foot peg",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1096",
+        "name": "Standard",
+        "price": 7300,
+        "stock": 3,
+        "sku": "MPX-1096-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-97",
+    "name": "BIKERS Pre load adjuster R15",
+    "slug": "bikers-pre-load-adjuster-r15",
+    "tagline": "Genuine BIKERS Pre load adjuster engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Pre load adjuster",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Pre load adjuster",
+    "subcategorySlug": "pre-load-adjuster",
+    "childCategory": "Pre load adjuster Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1097",
+    "stock": 2,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Pre load adjuster R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Pre load adjuster",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1097",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 2,
+        "sku": "MPX-1097-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-98",
+    "name": "BIKERS Brake Reservoir Cover Rear",
+    "slug": "bikers-brake-reservoir-cover-rear",
+    "tagline": "Genuine BIKERS Brake Reservoir Cover engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Brake Reservoir Cover",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Reservoir Cover",
+    "subcategorySlug": "brake-reservoir-cover",
+    "childCategory": "Brake Reservoir Cover Series",
+    "price": 2000,
+    "compareAtPrice": 2200,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1098",
+    "stock": 10,
+    "costPrice": 1500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Brake Reservoir Cover Rear. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Brake System",
+      "Subcategory": "Brake Reservoir Cover",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1098",
+        "name": "Standard",
+        "price": 2000,
+        "stock": 10,
+        "sku": "MPX-1098-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-99",
+    "name": "BIKERS foot peg CBR250r",
+    "slug": "bikers-foot-peg-cbr250r",
+    "tagline": "Genuine BIKERS foot peg engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "foot peg",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "foot peg",
+    "subcategorySlug": "foot-peg",
+    "childCategory": "foot peg Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1099",
+    "stock": 10,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS foot peg CBR250r. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "foot peg",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1099",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 10,
+        "sku": "MPX-1099-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-100",
+    "name": "BIKERS Chain Adjuster Plate CBR",
+    "slug": "bikers-chain-adjuster-plate-cbr",
+    "tagline": "Genuine BIKERS Chain Adjuster Plate engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Chain Adjuster Plate",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Chain Adjuster Plate",
+    "subcategorySlug": "chain-adjuster-plate",
+    "childCategory": "Chain Adjuster Plate Series",
+    "price": 4500,
+    "compareAtPrice": 4950,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1100",
+    "stock": 27,
+    "costPrice": 3375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Chain Adjuster Plate CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Chain Adjuster Plate",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (27 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1100",
+        "name": "Standard",
+        "price": 4500,
+        "stock": 27,
+        "sku": "MPX-1100-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-101",
+    "name": "BIKERS Rear foot rest Set CBR 250R",
+    "slug": "bikers-rear-foot-rest-set-cbr-250r",
+    "tagline": "Genuine BIKERS Rear foot rest CBR engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Rear foot rest CBR",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Rear foot rest CBR",
+    "subcategorySlug": "rear-foot-rest-cbr",
+    "childCategory": "Rear foot rest CBR Series",
+    "price": 20000,
+    "compareAtPrice": 22000,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1101",
+    "stock": 2,
+    "costPrice": 15000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Rear foot rest Set CBR 250R. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Rear foot rest CBR",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1101",
+        "name": "Standard",
+        "price": 20000,
+        "stock": 2,
+        "sku": "MPX-1101-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-102",
+    "name": "BIKERS Pivot cap CBR",
+    "slug": "bikers-pivot-cap-cbr",
+    "tagline": "Genuine BIKERS Pivot cap engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Pivot cap",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Pivot cap",
+    "subcategorySlug": "pivot-cap",
+    "childCategory": "Pivot cap Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1102",
+    "stock": 6,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Pivot cap CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Pivot cap",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1102",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 6,
+        "sku": "MPX-1102-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-103",
+    "name": "SYRC washer nut",
+    "slug": "syrc-washer-nut",
+    "tagline": "Genuine SYRC Washer Nut engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Washer Nut",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Washer Nut",
+    "subcategorySlug": "washer-nut",
+    "childCategory": "Washer Nut Series",
+    "price": 350,
+    "compareAtPrice": 385,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1103",
+    "stock": 16,
+    "costPrice": 263,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC washer nut. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Body & Hardware",
+      "Subcategory": "Washer Nut",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (16 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1103",
+        "name": "Standard",
+        "price": 350,
+        "stock": 16,
+        "sku": "MPX-1103-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-104",
+    "name": "RPD Deutron Brake Calliper",
+    "slug": "rpd-deutron-brake-calliper",
+    "tagline": "Genuine RPD Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 20000,
+    "compareAtPrice": 22000,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1104",
+    "stock": 2,
+    "costPrice": 15000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Deutron Brake Calliper. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1104",
+        "name": "Standard",
+        "price": 20000,
+        "stock": 2,
+        "sku": "MPX-1104-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-105",
+    "name": "BIKERS oil pot cap CBR",
+    "slug": "bikers-oil-pot-cap-cbr",
+    "tagline": "Genuine BIKERS oil pot cap engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "oil pot cap",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "oil pot cap",
+    "subcategorySlug": "oil-pot-cap",
+    "childCategory": "oil pot cap Series",
+    "price": 2000,
+    "compareAtPrice": 2200,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1105",
+    "stock": 2,
+    "costPrice": 1500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS oil pot cap CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Brake System",
+      "Subcategory": "oil pot cap",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1105",
+        "name": "Standard",
+        "price": 2000,
+        "stock": 2,
+        "sku": "MPX-1105-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-106",
+    "name": "RPD Matrix Disc R15 220mm Red",
+    "slug": "rpd-matrix-disc-r15-220mm-red",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 4500,
+    "compareAtPrice": 4950,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1106",
+    "stock": 36,
+    "costPrice": 3375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc R15 220mm Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (36 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1106",
+        "name": "Standard",
+        "price": 4500,
+        "stock": 36,
+        "sku": "MPX-1106-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-107",
+    "name": "RPD Matrix Disc R15 220mm Blue",
+    "slug": "rpd-matrix-disc-r15-220mm-blue",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 4500,
+    "compareAtPrice": 4950,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1107",
+    "stock": 13,
+    "costPrice": 3375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc R15 220mm Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (13 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1107",
+        "name": "Standard",
+        "price": 4500,
+        "stock": 13,
+        "sku": "MPX-1107-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-108",
+    "name": "RPD Matrix Disc R15 220mm Black",
+    "slug": "rpd-matrix-disc-r15-220mm-black",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 4500,
+    "compareAtPrice": 4950,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1108",
+    "stock": 24,
+    "costPrice": 3375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc R15 220mm Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (24 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1108",
+        "name": "Standard",
+        "price": 4500,
+        "stock": 24,
+        "sku": "MPX-1108-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-109",
+    "name": "Mj Racing Fog light D10",
+    "slug": "mj-racing-fog-light-d10",
+    "tagline": "Genuine Mj Racing Fog light engineered for maximum track and highway reliability.",
+    "brand": "Mj Racing",
+    "productType": "Fog light",
+    "category": "Lighting & Electrical",
+    "categorySlug": "lighting-electrical",
+    "subcategory": "Fog light",
+    "subcategorySlug": "fog-light",
+    "childCategory": "Fog light Series",
+    "price": 5500,
+    "compareAtPrice": 6050,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1109",
+    "stock": 3,
+    "costPrice": 4125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Mj Racing Mj Racing Fog light D10. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Mj Racing original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Mj Racing",
+      "Category": "Lighting & Electrical",
+      "Subcategory": "Fog light",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1109",
+        "name": "Standard",
+        "price": 5500,
+        "stock": 3,
+        "sku": "MPX-1109-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-110",
+    "name": "Mj Racing Fog light D7",
+    "slug": "mj-racing-fog-light-d7",
+    "tagline": "Genuine Mj Racing Fog light engineered for maximum track and highway reliability.",
+    "brand": "Mj Racing",
+    "productType": "Fog light",
+    "category": "Lighting & Electrical",
+    "categorySlug": "lighting-electrical",
+    "subcategory": "Fog light",
+    "subcategorySlug": "fog-light",
+    "childCategory": "Fog light Series",
+    "price": 4600,
+    "compareAtPrice": 5060,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1110",
+    "stock": 1,
+    "costPrice": 3450,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Mj Racing Mj Racing Fog light D7. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Mj Racing original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Mj Racing",
+      "Category": "Lighting & Electrical",
+      "Subcategory": "Fog light",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1110",
+        "name": "Standard",
+        "price": 4600,
+        "stock": 1,
+        "sku": "MPX-1110-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-111",
+    "name": "Mj Racing Fog light D6",
+    "slug": "mj-racing-fog-light-d6",
+    "tagline": "Genuine Mj Racing Fog light engineered for maximum track and highway reliability.",
+    "brand": "Mj Racing",
+    "productType": "Fog light",
+    "category": "Lighting & Electrical",
+    "categorySlug": "lighting-electrical",
+    "subcategory": "Fog light",
+    "subcategorySlug": "fog-light",
+    "childCategory": "Fog light Series",
+    "price": 3800,
+    "compareAtPrice": 4180,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1111",
+    "stock": 2,
+    "costPrice": 2850,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Mj Racing Mj Racing Fog light D6. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Mj Racing original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Mj Racing",
+      "Category": "Lighting & Electrical",
+      "Subcategory": "Fog light",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1111",
+        "name": "Standard",
+        "price": 3800,
+        "stock": 2,
+        "sku": "MPX-1111-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-112",
+    "name": "Mj Racing Fog light D5",
+    "slug": "mj-racing-fog-light-d5",
+    "tagline": "Genuine Mj Racing Fog light engineered for maximum track and highway reliability.",
+    "brand": "Mj Racing",
+    "productType": "Fog light",
+    "category": "Lighting & Electrical",
+    "categorySlug": "lighting-electrical",
+    "subcategory": "Fog light",
+    "subcategorySlug": "fog-light",
+    "childCategory": "Fog light Series",
+    "price": 4000,
+    "compareAtPrice": 4400,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1112",
+    "stock": 0,
+    "costPrice": 3000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Mj Racing Mj Racing Fog light D5. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Mj Racing original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Mj Racing",
+      "Category": "Lighting & Electrical",
+      "Subcategory": "Fog light",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1112",
+        "name": "Standard",
+        "price": 4000,
+        "stock": 0,
+        "sku": "MPX-1112-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-113",
+    "name": "Mj Racing Fog light D2",
+    "slug": "mj-racing-fog-light-d2",
+    "tagline": "Genuine Mj Racing Fog light engineered for maximum track and highway reliability.",
+    "brand": "Mj Racing",
+    "productType": "Fog light",
+    "category": "Lighting & Electrical",
+    "categorySlug": "lighting-electrical",
+    "subcategory": "Fog light",
+    "subcategorySlug": "fog-light",
+    "childCategory": "Fog light Series",
+    "price": 2800,
+    "compareAtPrice": 3080,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1113",
+    "stock": 0,
+    "costPrice": 2100,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Mj Racing Mj Racing Fog light D2. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Mj Racing original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Mj Racing",
+      "Category": "Lighting & Electrical",
+      "Subcategory": "Fog light",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1113",
+        "name": "Standard",
+        "price": 2800,
+        "stock": 0,
+        "sku": "MPX-1113-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-114",
+    "name": "SYRC Pre load adjuster R15 indo",
+    "slug": "syrc-pre-load-adjuster-r15-indo",
+    "tagline": "Genuine SYRC Pre load adjuster engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Pre load adjuster",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Pre load adjuster",
+    "subcategorySlug": "pre-load-adjuster",
+    "childCategory": "Pre load adjuster Series",
+    "price": 1150,
+    "compareAtPrice": 1265,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1114",
+    "stock": 3,
+    "costPrice": 863,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Pre load adjuster R15 indo. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Pre load adjuster",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1114",
+        "name": "Standard",
+        "price": 1150,
+        "stock": 3,
+        "sku": "MPX-1114-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-115",
+    "name": "SYRC Rear Mirror",
+    "slug": "syrc-rear-mirror",
+    "tagline": "Genuine SYRC Rear Mirror engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Rear Mirror",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Rear Mirror",
+    "subcategorySlug": "rear-mirror",
+    "childCategory": "Rear Mirror Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1115",
+    "stock": 5,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Rear Mirror. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Body & Hardware",
+      "Subcategory": "Rear Mirror",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1115",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 5,
+        "sku": "MPX-1115-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-116",
+    "name": "SYRC Chain adjuster R15 black",
+    "slug": "syrc-chain-adjuster-r15-black",
+    "tagline": "Genuine SYRC Chain adjuster engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Chain adjuster",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Chain adjuster",
+    "subcategorySlug": "chain-adjuster",
+    "childCategory": "Chain adjuster Series",
+    "price": 2000,
+    "compareAtPrice": 2200,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1116",
+    "stock": 10,
+    "costPrice": 1500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Chain adjuster R15 black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Chain adjuster",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1116",
+        "name": "Standard",
+        "price": 2000,
+        "stock": 10,
+        "sku": "MPX-1116-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-117",
+    "name": "indo Visor Cbr Clear",
+    "slug": "indo-visor-cbr-clear",
+    "tagline": "Genuine indo Visor engineered for maximum track and highway reliability.",
+    "brand": "indo",
+    "productType": "Visor",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Visor",
+    "subcategorySlug": "visor",
+    "childCategory": "Visor Series",
+    "price": 1800,
+    "compareAtPrice": 1980,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1117",
+    "stock": 8,
+    "costPrice": 1350,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic indo indo Visor Cbr Clear. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified indo original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "indo",
+      "Category": "Body & Hardware",
+      "Subcategory": "Visor",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1117",
+        "name": "Standard",
+        "price": 1800,
+        "stock": 8,
+        "sku": "MPX-1117-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-118",
+    "name": "indo Visor v3 Black",
+    "slug": "indo-visor-v3-black",
+    "tagline": "Genuine indo Visor engineered for maximum track and highway reliability.",
+    "brand": "indo",
+    "productType": "Visor",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Visor",
+    "subcategorySlug": "visor",
+    "childCategory": "Visor Series",
+    "price": 1800,
+    "compareAtPrice": 1980,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1118",
+    "stock": 8,
+    "costPrice": 1350,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic indo indo Visor v3 Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified indo original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "indo",
+      "Category": "Body & Hardware",
+      "Subcategory": "Visor",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1118",
+        "name": "Standard",
+        "price": 1800,
+        "stock": 8,
+        "sku": "MPX-1118-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-119",
+    "name": "indo Visor v3 Clear",
+    "slug": "indo-visor-v3-clear",
+    "tagline": "Genuine indo Visor engineered for maximum track and highway reliability.",
+    "brand": "indo",
+    "productType": "Visor",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Visor",
+    "subcategorySlug": "visor",
+    "childCategory": "Visor Series",
+    "price": 1800,
+    "compareAtPrice": 1980,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1119",
+    "stock": 9,
+    "costPrice": 1350,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic indo indo Visor v3 Clear. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified indo original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "indo",
+      "Category": "Body & Hardware",
+      "Subcategory": "Visor",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (9 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1119",
+        "name": "Standard",
+        "price": 1800,
+        "stock": 9,
+        "sku": "MPX-1119-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-120",
+    "name": "indo Visor v4 Black",
+    "slug": "indo-visor-v4-black",
+    "tagline": "Genuine indo Visor engineered for maximum track and highway reliability.",
+    "brand": "indo",
+    "productType": "Visor",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Visor",
+    "subcategorySlug": "visor",
+    "childCategory": "Visor Series",
+    "price": 1800,
+    "compareAtPrice": 1980,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1120",
+    "stock": 4,
+    "costPrice": 1350,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic indo indo Visor v4 Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified indo original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "indo",
+      "Category": "Body & Hardware",
+      "Subcategory": "Visor",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1120",
+        "name": "Standard",
+        "price": 1800,
+        "stock": 4,
+        "sku": "MPX-1120-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-121",
+    "name": "indo Visor v4 Clear",
+    "slug": "indo-visor-v4-clear",
+    "tagline": "Genuine indo Visor engineered for maximum track and highway reliability.",
+    "brand": "indo",
+    "productType": "Visor",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Visor",
+    "subcategorySlug": "visor",
+    "childCategory": "Visor Series",
+    "price": 1800,
+    "compareAtPrice": 1980,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1121",
+    "stock": 9,
+    "costPrice": 1350,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic indo indo Visor v4 Clear. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified indo original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "indo",
+      "Category": "Body & Hardware",
+      "Subcategory": "Visor",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (9 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1121",
+        "name": "Standard",
+        "price": 1800,
+        "stock": 9,
+        "sku": "MPX-1121-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-122",
+    "name": "UMA Racing Throttle Body 34mm",
+    "slug": "uma-racing-throttle-body-34mm",
+    "tagline": "Genuine UMA Racing Throttle Body engineered for maximum track and highway reliability.",
+    "brand": "UMA Racing",
+    "productType": "Throttle Body",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Throttle Body",
+    "subcategorySlug": "throttle-body",
+    "childCategory": "Throttle Body Series",
+    "price": 9500,
+    "compareAtPrice": 10450,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1122",
+    "stock": 1,
+    "costPrice": 7125,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic UMA Racing UMA Racing Throttle Body 34mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified UMA Racing original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "UMA Racing",
+      "Category": "Engine & Performance",
+      "Subcategory": "Throttle Body",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1122",
+        "name": "Standard",
+        "price": 9500,
+        "stock": 1,
+        "sku": "MPX-1122-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-123",
+    "name": "RCB Brake Master Cylinder Rear E series",
+    "slug": "rcb-brake-master-cylinder-rear-e-series",
+    "tagline": "Genuine RCB Brake Master Cylinder Rear engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake Master Cylinder Rear",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Rear",
+    "subcategorySlug": "brake-master-cylinder-rear",
+    "childCategory": "Brake Master Cylinder Rear Series",
+    "price": 3200,
+    "compareAtPrice": 3520,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1123",
+    "stock": 4,
+    "costPrice": 2400,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Brake Master Cylinder Rear E series. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Rear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1123",
+        "name": "Standard",
+        "price": 3200,
+        "stock": 4,
+        "sku": "MPX-1123-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-124",
+    "name": "RCB Brake Master Cylinder Rear s1 GRT",
+    "slug": "rcb-brake-master-cylinder-rear-s1-grt",
+    "tagline": "Genuine RCB Brake Master Cylinder Rear engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake Master Cylinder Rear",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Rear",
+    "subcategorySlug": "brake-master-cylinder-rear",
+    "childCategory": "Brake Master Cylinder Rear Series",
+    "price": 4000,
+    "compareAtPrice": 4400,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1124",
+    "stock": 0,
+    "costPrice": 3000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Brake Master Cylinder Rear s1 GRT. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Rear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1124",
+        "name": "Standard",
+        "price": 4000,
+        "stock": 0,
+        "sku": "MPX-1124-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-125",
+    "name": "RPD Brake Master Cylinder Front 17mm Red",
+    "slug": "rpd-brake-master-cylinder-front-17mm-red",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 8500,
+    "compareAtPrice": 9350,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1125",
+    "stock": 0,
+    "costPrice": 6375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 17mm Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1125",
+        "name": "Standard",
+        "price": 8500,
+        "stock": 0,
+        "sku": "MPX-1125-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-126",
+    "name": "RPD Brake Master Cylinder Front 17mm Blue",
+    "slug": "rpd-brake-master-cylinder-front-17mm-blue",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 8500,
+    "compareAtPrice": 9350,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1126",
+    "stock": 2,
+    "costPrice": 6375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 17mm Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1126",
+        "name": "Standard",
+        "price": 8500,
+        "stock": 2,
+        "sku": "MPX-1126-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-127",
+    "name": "RPD Brake Master Cylinder Front 17mm Gold",
+    "slug": "rpd-brake-master-cylinder-front-17mm-gold",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 8500,
+    "compareAtPrice": 9350,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1127",
+    "stock": 0,
+    "costPrice": 6375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 17mm Gold. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1127",
+        "name": "Standard",
+        "price": 8500,
+        "stock": 0,
+        "sku": "MPX-1127-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-128",
+    "name": "RPD Brake Master Cylinder Front 17mm Silver",
+    "slug": "rpd-brake-master-cylinder-front-17mm-silver",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 8500,
+    "compareAtPrice": 9350,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1128",
+    "stock": 0,
+    "costPrice": 6375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 17mm Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1128",
+        "name": "Standard",
+        "price": 8500,
+        "stock": 0,
+        "sku": "MPX-1128-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-129",
+    "name": "RPD Brake Master Cylinder Front 17mm Black",
+    "slug": "rpd-brake-master-cylinder-front-17mm-black",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 8500,
+    "compareAtPrice": 9350,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1129",
+    "stock": 2,
+    "costPrice": 6375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 17mm Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1129",
+        "name": "Standard",
+        "price": 8500,
+        "stock": 2,
+        "sku": "MPX-1129-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-130",
+    "name": "RPD Matrix Disc R15 320mm Red",
+    "slug": "rpd-matrix-disc-r15-320mm-red",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1130",
+    "stock": 0,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc R15 320mm Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1130",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 0,
+        "sku": "MPX-1130-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-131",
+    "name": "RPD Matrix Disc R15 320mm Blue",
+    "slug": "rpd-matrix-disc-r15-320mm-blue",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1131",
+    "stock": 0,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc R15 320mm Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1131",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 0,
+        "sku": "MPX-1131-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-132",
+    "name": "RPD Matrix Disc R15 320mm Black",
+    "slug": "rpd-matrix-disc-r15-320mm-black",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1132",
+    "stock": 8,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc R15 320mm Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1132",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 8,
+        "sku": "MPX-1132-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-133",
+    "name": "RPD Matrix Disc R15 320mm Silver",
+    "slug": "rpd-matrix-disc-r15-320mm-silver",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1133",
+    "stock": 0,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc R15 320mm Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1133",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 0,
+        "sku": "MPX-1133-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-134",
+    "name": "RPD Matrix Disc R15 320mm Gold",
+    "slug": "rpd-matrix-disc-r15-320mm-gold",
+    "tagline": "Genuine RPD Disc engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 9000,
+    "compareAtPrice": 9900,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1134",
+    "stock": 11,
+    "costPrice": 6750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Matrix Disc R15 320mm Gold. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (11 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1134",
+        "name": "Standard",
+        "price": 9000,
+        "stock": 11,
+        "sku": "MPX-1134-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-135",
+    "name": "RPD Brake Master Cylinder Front 15mm Red",
+    "slug": "rpd-brake-master-cylinder-front-15mm-red",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 7500,
+    "compareAtPrice": 8250,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1135",
+    "stock": 14,
+    "costPrice": 5625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 15mm Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (14 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1135",
+        "name": "Standard",
+        "price": 7500,
+        "stock": 14,
+        "sku": "MPX-1135-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-136",
+    "name": "RPD Brake Master Cylinder Front 15mm Blue",
+    "slug": "rpd-brake-master-cylinder-front-15mm-blue",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 7500,
+    "compareAtPrice": 8250,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1136",
+    "stock": 19,
+    "costPrice": 5625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 15mm Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (19 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1136",
+        "name": "Standard",
+        "price": 7500,
+        "stock": 19,
+        "sku": "MPX-1136-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-137",
+    "name": "RPD Brake Master Cylinder Front 15mm Gold",
+    "slug": "rpd-brake-master-cylinder-front-15mm-gold",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 7500,
+    "compareAtPrice": 8250,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1137",
+    "stock": 9,
+    "costPrice": 5625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 15mm Gold. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (9 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1137",
+        "name": "Standard",
+        "price": 7500,
+        "stock": 9,
+        "sku": "MPX-1137-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-138",
+    "name": "RPD Brake Master Cylinder Front 15mm Silver",
+    "slug": "rpd-brake-master-cylinder-front-15mm-silver",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 7500,
+    "compareAtPrice": 8250,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1138",
+    "stock": 8,
+    "costPrice": 5625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 15mm Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1138",
+        "name": "Standard",
+        "price": 7500,
+        "stock": 8,
+        "sku": "MPX-1138-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-139",
+    "name": "RPD Brake Master Cylinder Front 15mm Black",
+    "slug": "rpd-brake-master-cylinder-front-15mm-black",
+    "tagline": "Genuine RPD Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 7500,
+    "compareAtPrice": 8250,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1139",
+    "stock": 23,
+    "costPrice": 5625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Master Cylinder Front 15mm Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (23 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1139",
+        "name": "Standard",
+        "price": 7500,
+        "stock": 23,
+        "sku": "MPX-1139-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-140",
+    "name": "RPD Clutch lever Gold",
+    "slug": "rpd-clutch-lever-gold",
+    "tagline": "Genuine RPD Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 5500,
+    "compareAtPrice": 6050,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1140",
+    "stock": 6,
+    "costPrice": 4125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Clutch lever Gold. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1140",
+        "name": "Standard",
+        "price": 5500,
+        "stock": 6,
+        "sku": "MPX-1140-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-141",
+    "name": "RPD Clutch lever blue",
+    "slug": "rpd-clutch-lever-blue",
+    "tagline": "Genuine RPD Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 5500,
+    "compareAtPrice": 6050,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1141",
+    "stock": 20,
+    "costPrice": 4125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Clutch lever blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (20 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1141",
+        "name": "Standard",
+        "price": 5500,
+        "stock": 20,
+        "sku": "MPX-1141-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-142",
+    "name": "RPD Clutch lever Silver",
+    "slug": "rpd-clutch-lever-silver",
+    "tagline": "Genuine RPD Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 5500,
+    "compareAtPrice": 6050,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1142",
+    "stock": 26,
+    "costPrice": 4125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Clutch lever Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (26 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1142",
+        "name": "Standard",
+        "price": 5500,
+        "stock": 26,
+        "sku": "MPX-1142-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-143",
+    "name": "RPD Clutch lever Red",
+    "slug": "rpd-clutch-lever-red",
+    "tagline": "Genuine RPD Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 5500,
+    "compareAtPrice": 6050,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1143",
+    "stock": 15,
+    "costPrice": 4125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Clutch lever Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (15 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1143",
+        "name": "Standard",
+        "price": 5500,
+        "stock": 15,
+        "sku": "MPX-1143-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-144",
+    "name": "RPD Clutch lever Black",
+    "slug": "rpd-clutch-lever-black",
+    "tagline": "Genuine RPD Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 5500,
+    "compareAtPrice": 6050,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1144",
+    "stock": 43,
+    "costPrice": 4125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Clutch lever Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (43 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1144",
+        "name": "Standard",
+        "price": 5500,
+        "stock": 43,
+        "sku": "MPX-1144-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-145",
+    "name": "TRIONCE Rear low mount caliper braket Gixxar 250",
+    "slug": "trionce-rear-low-mount-caliper-braket-gixxar-250",
+    "tagline": "Genuine TRIONCE Rear low mount caliper braket engineered for maximum track and highway reliability.",
+    "brand": "TRIONCE",
+    "productType": "Rear low mount caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Rear low mount caliper braket",
+    "subcategorySlug": "rear-low-mount-caliper-braket",
+    "childCategory": "Rear low mount caliper braket Series",
+    "price": 14500,
+    "compareAtPrice": 15950,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1145",
+    "stock": 4,
+    "costPrice": 10875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TRIONCE TRIONCE Rear low mount caliper braket Gixxar 250. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki Gixxer 155 / SF / Gixxer 250. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TRIONCE original part",
+      "Designed specifically for Suzuki Gixxer 155 / SF / Gixxer 250",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TRIONCE",
+      "Category": "Brake System",
+      "Subcategory": "Rear low mount caliper braket",
+      "Compatibility / Fitment": "Suzuki Gixxer 155 / SF / Gixxer 250",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1145",
+        "name": "Standard",
+        "price": 14500,
+        "stock": 4,
+        "sku": "MPX-1145-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-146",
+    "name": "TRIONCE Brake caliper braket Axial Gixxar 250",
+    "slug": "trionce-brake-caliper-braket-axial-gixxar-250",
+    "tagline": "Genuine TRIONCE Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "TRIONCE",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1146",
+    "stock": 8,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TRIONCE TRIONCE Brake caliper braket Axial Gixxar 250. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki Gixxer 155 / SF / Gixxer 250. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TRIONCE original part",
+      "Designed specifically for Suzuki Gixxer 155 / SF / Gixxer 250",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TRIONCE",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Suzuki Gixxer 155 / SF / Gixxer 250",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1146",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 8,
+        "sku": "MPX-1146-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-147",
+    "name": "TRIONCE Brake caliper braket radial R15M",
+    "slug": "trionce-brake-caliper-braket-radial-r15m",
+    "tagline": "Genuine TRIONCE Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "TRIONCE",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 10000,
+    "compareAtPrice": 11000,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1147",
+    "stock": 10,
+    "costPrice": 7500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TRIONCE TRIONCE Brake caliper braket radial R15M. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TRIONCE original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TRIONCE",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1147",
+        "name": "Standard",
+        "price": 10000,
+        "stock": 10,
+        "sku": "MPX-1147-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-148",
+    "name": "Hurricane Air Filter Cleaning Kit",
+    "slug": "hurricane-air-filter-cleaning-kit",
+    "tagline": "Genuine Hurricane Filter Cleaning Kit engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Filter Cleaning Kit",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Filter Cleaning Kit",
+    "subcategorySlug": "filter-cleaning-kit",
+    "childCategory": "Filter Cleaning Kit Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1148",
+    "stock": 6,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter Cleaning Kit. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Filter Cleaning Kit",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1148",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 6,
+        "sku": "MPX-1148-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-149",
+    "name": "Hurricane Air Filter racing",
+    "slug": "hurricane-air-filter-racing",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1149",
+    "stock": 2,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter racing. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1149",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 2,
+        "sku": "MPX-1149-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-150",
+    "name": "Hurricane Air Filter Demon",
+    "slug": "hurricane-air-filter-demon",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1150",
+    "stock": 1,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter Demon. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1150",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 1,
+        "sku": "MPX-1150-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-151",
+    "name": "Hurricane Air Filter Gsxr",
+    "slug": "hurricane-air-filter-gsxr",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1151",
+    "stock": 1,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter Gsxr. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1151",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 1,
+        "sku": "MPX-1151-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-152",
+    "name": "Hurricane Air Filter Exmotion",
+    "slug": "hurricane-air-filter-exmotion",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1152",
+    "stock": 1,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter Exmotion. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1152",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 1,
+        "sku": "MPX-1152-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-153",
+    "name": "Hurricane Air Filter CBR 19",
+    "slug": "hurricane-air-filter-cbr-19",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1153",
+    "stock": 1,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter CBR 19. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1153",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 1,
+        "sku": "MPX-1153-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-154",
+    "name": "Hurricane Air Filter Gixxar",
+    "slug": "hurricane-air-filter-gixxar",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1154",
+    "stock": 1,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter Gixxar. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki Gixxer 155 / SF / Gixxer 250. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Suzuki Gixxer 155 / SF / Gixxer 250",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Suzuki Gixxer 155 / SF / Gixxer 250",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1154",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 1,
+        "sku": "MPX-1154-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-155",
+    "name": "Hurricane Air Filter NK250",
+    "slug": "hurricane-air-filter-nk250",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1155",
+    "stock": 2,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter NK250. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1155",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 2,
+        "sku": "MPX-1155-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-156",
+    "name": "Hurricane Air Filter 4V",
+    "slug": "hurricane-air-filter-4v",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1156",
+    "stock": 1,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter 4V. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: TVS Apache RTR 160 4V / 200 4V. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for TVS Apache RTR 160 4V / 200 4V",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "TVS Apache RTR 160 4V / 200 4V",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1156",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 1,
+        "sku": "MPX-1156-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-157",
+    "name": "Hurricane Air Filter N250",
+    "slug": "hurricane-air-filter-n250",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1157",
+    "stock": 3,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter N250. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Bajaj Pulsar NS160 / N250. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Bajaj Pulsar NS160 / N250",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Bajaj Pulsar NS160 / N250",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1157",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 3,
+        "sku": "MPX-1157-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-158",
+    "name": "Hurricane Air Filter R15",
+    "slug": "hurricane-air-filter-r15",
+    "tagline": "Genuine Hurricane Air Filter engineered for maximum track and highway reliability.",
+    "brand": "Hurricane",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1158",
+    "stock": 1,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Hurricane Hurricane Air Filter R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Hurricane original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Hurricane",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1158",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 1,
+        "sku": "MPX-1158-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-159",
+    "name": "RCB Caliper front axial",
+    "slug": "rcb-caliper-front-axial",
+    "tagline": "Genuine RCB Caliper braket front 4 pot engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Caliper braket front 4 pot",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Caliper braket front 4 pot",
+    "subcategorySlug": "caliper-braket-front-4-pot",
+    "childCategory": "Caliper braket front 4 pot Series",
+    "price": 8800,
+    "compareAtPrice": 9680,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1159",
+    "stock": 2,
+    "costPrice": 6600,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Caliper front axial. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Caliper braket front 4 pot",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1159",
+        "name": "Standard",
+        "price": 8800,
+        "stock": 2,
+        "sku": "MPX-1159-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-160",
+    "name": "Flamingo Rust remover",
+    "slug": "flamingo-rust-remover",
+    "tagline": "Genuine Flamingo Rust remover engineered for maximum track and highway reliability.",
+    "brand": "Flamingo",
+    "productType": "Rust remover",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Rust remover",
+    "subcategorySlug": "rust-remover",
+    "childCategory": "Rust remover Series",
+    "price": 300,
+    "compareAtPrice": 330,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1160",
+    "stock": 0,
+    "costPrice": 225,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Flamingo Flamingo Rust remover. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Flamingo original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Flamingo",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Rust remover",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1160",
+        "name": "Standard",
+        "price": 300,
+        "stock": 0,
+        "sku": "MPX-1160-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-161",
+    "name": "BIKERS Brake Reservoir Cover Front",
+    "slug": "bikers-brake-reservoir-cover-front",
+    "tagline": "Genuine BIKERS Brake Reservoir Cover engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Brake Reservoir Cover",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Reservoir Cover",
+    "subcategorySlug": "brake-reservoir-cover",
+    "childCategory": "Brake Reservoir Cover Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1161",
+    "stock": 7,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Brake Reservoir Cover Front. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Brake System",
+      "Subcategory": "Brake Reservoir Cover",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (7 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1161",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 7,
+        "sku": "MPX-1161-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-162",
+    "name": "rcb s3 liver r15 non Abs Blue",
+    "slug": "rcb-s3-liver-r15-non-abs-blue",
+    "tagline": "Genuine RCB liver engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "liver",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "liver",
+    "subcategorySlug": "liver",
+    "childCategory": "liver Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1162",
+    "stock": 7,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB rcb s3 liver r15 non Abs Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "liver",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (7 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1162",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 7,
+        "sku": "MPX-1162-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-163",
+    "name": "rcb s3 liver r15 non Abs Silver",
+    "slug": "rcb-s3-liver-r15-non-abs-silver",
+    "tagline": "Genuine RCB liver engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "liver",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "liver",
+    "subcategorySlug": "liver",
+    "childCategory": "liver Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1163",
+    "stock": 0,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB rcb s3 liver r15 non Abs Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "liver",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1163",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 0,
+        "sku": "MPX-1163-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-164",
+    "name": "RCB Clutch lever E2 Silver",
+    "slug": "rcb-clutch-lever-e2-silver",
+    "tagline": "Genuine RCB Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1164",
+    "stock": 30,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Clutch lever E2 Silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (30 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1164",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 30,
+        "sku": "MPX-1164-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-165",
+    "name": "Michelin Tyre pair set 120/160",
+    "slug": "michelin-tyre-pair-set-120-160",
+    "tagline": "Genuine Michelin Tyre pair set engineered for maximum track and highway reliability.",
+    "brand": "Michelin",
+    "productType": "Tyre pair set",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre pair set",
+    "subcategorySlug": "tyre-pair-set",
+    "childCategory": "Tyre pair set Series",
+    "price": 56000,
+    "compareAtPrice": 61600,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1165",
+    "stock": 0,
+    "costPrice": 42000,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Michelin Michelin Tyre pair set 120/160. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Michelin original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Michelin",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre pair set",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1165",
+        "name": "Standard",
+        "price": 56000,
+        "stock": 0,
+        "sku": "MPX-1165-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-166",
+    "name": "Nissin Brake Master Cylinder Front axial",
+    "slug": "nissin-brake-master-cylinder-front-axial",
+    "tagline": "Genuine Nissin Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "Nissin",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 11500,
+    "compareAtPrice": 12650,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1166",
+    "stock": 2,
+    "costPrice": 8625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Nissin Nissin Brake Master Cylinder Front axial. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Nissin original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Nissin",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1166",
+        "name": "Standard",
+        "price": 11500,
+        "stock": 2,
+        "sku": "MPX-1166-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-167",
+    "name": "RCB s1 17mm Brake Master Cylinder Front TI",
+    "slug": "rcb-s1-17mm-brake-master-cylinder-front-ti",
+    "tagline": "Genuine RCB Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 8200,
+    "compareAtPrice": 9020,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1167",
+    "stock": 3,
+    "costPrice": 6150,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB s1 17mm Brake Master Cylinder Front TI. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1167",
+        "name": "Standard",
+        "price": 8200,
+        "stock": 3,
+        "sku": "MPX-1167-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-168",
+    "name": "RCB s2 Clutch lever silver",
+    "slug": "rcb-s2-clutch-lever-silver",
+    "tagline": "Genuine RCB Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 4600,
+    "compareAtPrice": 5060,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1168",
+    "stock": 7,
+    "costPrice": 3450,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB s2 Clutch lever silver. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (7 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1168",
+        "name": "Standard",
+        "price": 4600,
+        "stock": 7,
+        "sku": "MPX-1168-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-169",
+    "name": "RCB s2 Clutch lever Red",
+    "slug": "rcb-s2-clutch-lever-red",
+    "tagline": "Genuine RCB Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 4600,
+    "compareAtPrice": 5060,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1169",
+    "stock": 4,
+    "costPrice": 3450,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB s2 Clutch lever Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1169",
+        "name": "Standard",
+        "price": 4600,
+        "stock": 4,
+        "sku": "MPX-1169-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-170",
+    "name": "RCB s2 Clutch lever Black",
+    "slug": "rcb-s2-clutch-lever-black",
+    "tagline": "Genuine RCB Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 4600,
+    "compareAtPrice": 5060,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1170",
+    "stock": 3,
+    "costPrice": 3450,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB s2 Clutch lever Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1170",
+        "name": "Standard",
+        "price": 4600,
+        "stock": 3,
+        "sku": "MPX-1170-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-171",
+    "name": "NLK Oil Pump Y15zr",
+    "slug": "nlk-oil-pump-y15zr",
+    "tagline": "Genuine NLK Oil Pump engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Oil Pump",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Oil Pump",
+    "subcategorySlug": "oil-pump",
+    "childCategory": "Oil Pump Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1171",
+    "stock": 2,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Oil Pump Y15zr. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha Y15ZR / Y16ZR. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha Y15ZR / Y16ZR",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Oil Pump",
+      "Compatibility / Fitment": "Yamaha Y15ZR / Y16ZR",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1171",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 2,
+        "sku": "MPX-1171-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-172",
+    "name": "TDR Hose Pipe After Market) Black 61cm",
+    "slug": "tdr-hose-pipe-after-market-black-61cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1172",
+    "stock": 32,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Black 61cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (32 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1172",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 32,
+        "sku": "MPX-1172-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-173",
+    "name": "TDR Hose Pipe After Market) Black 89cm",
+    "slug": "tdr-hose-pipe-after-market-black-89cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1173",
+    "stock": 13,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Black 89cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (13 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1173",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 13,
+        "sku": "MPX-1173-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-174",
+    "name": "TDR Hose Pipe After Market) Black 110cm",
+    "slug": "tdr-hose-pipe-after-market-black-110cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1800,
+    "compareAtPrice": 1980,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1174",
+    "stock": 10,
+    "costPrice": 1350,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Black 110cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1174",
+        "name": "Standard",
+        "price": 1800,
+        "stock": 10,
+        "sku": "MPX-1174-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-175",
+    "name": "TDR Hose Pipe Blue 61cm",
+    "slug": "tdr-hose-pipe-blue-61cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1175",
+    "stock": 11,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe Blue 61cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (11 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1175",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 11,
+        "sku": "MPX-1175-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-176",
+    "name": "TDR Hose Pipe After Market) Blue 89cm",
+    "slug": "tdr-hose-pipe-after-market-blue-89cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1176",
+    "stock": 16,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Blue 89cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (16 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1176",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 16,
+        "sku": "MPX-1176-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-177",
+    "name": "TDR Hose Pipe After Market) Blue 110cm",
+    "slug": "tdr-hose-pipe-after-market-blue-110cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1800,
+    "compareAtPrice": 1980,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1177",
+    "stock": 10,
+    "costPrice": 1350,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Blue 110cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1177",
+        "name": "Standard",
+        "price": 1800,
+        "stock": 10,
+        "sku": "MPX-1177-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-178",
+    "name": "TDR Hose Pipe After Market) Red 61cm",
+    "slug": "tdr-hose-pipe-after-market-red-61cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1178",
+    "stock": 12,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Red 61cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (12 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1178",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 12,
+        "sku": "MPX-1178-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-179",
+    "name": "TDR Hose Pipe After Market) Red 89cm",
+    "slug": "tdr-hose-pipe-after-market-red-89cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1179",
+    "stock": 29,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Red 89cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (29 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1179",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 29,
+        "sku": "MPX-1179-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-180",
+    "name": "TDR Hose Pipe After Market) Red 110cm",
+    "slug": "tdr-hose-pipe-after-market-red-110cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1800,
+    "compareAtPrice": 1980,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1180",
+    "stock": 13,
+    "costPrice": 1350,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Red 110cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (13 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1180",
+        "name": "Standard",
+        "price": 1800,
+        "stock": 13,
+        "sku": "MPX-1180-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-181",
+    "name": "TDR Hose Pipe After Market) Silver 110cm",
+    "slug": "tdr-hose-pipe-after-market-silver-110cm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1800,
+    "compareAtPrice": 1980,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1181",
+    "stock": 5,
+    "costPrice": 1350,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Silver 110cm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1181",
+        "name": "Standard",
+        "price": 1800,
+        "stock": 5,
+        "sku": "MPX-1181-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-182",
+    "name": "TDR Hose Pipe After Market) Silver 61mm",
+    "slug": "tdr-hose-pipe-after-market-silver-61mm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1182",
+    "stock": 17,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Silver 61mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (17 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1182",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 17,
+        "sku": "MPX-1182-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-183",
+    "name": "TDR Hose Pipe After Market) Silver 89mm",
+    "slug": "tdr-hose-pipe-after-market-silver-89mm",
+    "tagline": "Genuine TDR Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1183",
+    "stock": 26,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Hose Pipe After Market) Silver 89mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (26 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1183",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 26,
+        "sku": "MPX-1183-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-184",
+    "name": "Nissin Brake Calliper Front Red",
+    "slug": "nissin-brake-calliper-front-red",
+    "tagline": "Genuine Nissin Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "Nissin",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 10000,
+    "compareAtPrice": 11000,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1184",
+    "stock": 0,
+    "costPrice": 7500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Nissin Nissin Brake Calliper Front Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Nissin original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Nissin",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1184",
+        "name": "Standard",
+        "price": 10000,
+        "stock": 0,
+        "sku": "MPX-1184-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-185",
+    "name": "Nissin Brake Calliper Front Black",
+    "slug": "nissin-brake-calliper-front-black",
+    "tagline": "Genuine Nissin Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "Nissin",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 10000,
+    "compareAtPrice": 11000,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1185",
+    "stock": 0,
+    "costPrice": 7500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Nissin Nissin Brake Calliper Front Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Nissin original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Nissin",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1185",
+        "name": "Standard",
+        "price": 10000,
+        "stock": 0,
+        "sku": "MPX-1185-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-186",
+    "name": "Pirelli Tyre Rear rosso4 140/70",
+    "slug": "pirelli-tyre-rear-rosso4-140-70",
+    "tagline": "Genuine Pirelli Tyre Rear engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Rear",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Rear",
+    "subcategorySlug": "tyre-rear",
+    "childCategory": "Tyre Rear Series",
+    "price": 18000,
+    "compareAtPrice": 19800,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1186",
+    "stock": 5,
+    "costPrice": 13500,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Rear rosso4 140/70. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Rear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1186",
+        "name": "Standard",
+        "price": 18000,
+        "stock": 5,
+        "sku": "MPX-1186-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-187",
+    "name": "Pirelli Tyre Rear rosso4 150/60",
+    "slug": "pirelli-tyre-rear-rosso4-150-60",
+    "tagline": "Genuine Pirelli Tyre Rear engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Rear",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Rear",
+    "subcategorySlug": "tyre-rear",
+    "childCategory": "Tyre Rear Series",
+    "price": 19000,
+    "compareAtPrice": 20900,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1187",
+    "stock": 8,
+    "costPrice": 14250,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Rear rosso4 150/60. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Rear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1187",
+        "name": "Standard",
+        "price": 19000,
+        "stock": 8,
+        "sku": "MPX-1187-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-188",
+    "name": "Pirelli Tyre Front rosso 4 110/70",
+    "slug": "pirelli-tyre-front-rosso-4-110-70",
+    "tagline": "Genuine Pirelli Tyre Front engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Front",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Front",
+    "subcategorySlug": "tyre-front",
+    "childCategory": "Tyre Front Series",
+    "price": 15000,
+    "compareAtPrice": 16500,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1188",
+    "stock": 10,
+    "costPrice": 11250,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Front rosso 4 110/70. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1188",
+        "name": "Standard",
+        "price": 15000,
+        "stock": 10,
+        "sku": "MPX-1188-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-189",
+    "name": "DND Rear shock absorber Cbr Yellow",
+    "slug": "dnd-rear-shock-absorber-cbr-yellow",
+    "tagline": "Genuine DND Rear shock absorber engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Rear shock absorber",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Rear shock absorber",
+    "subcategorySlug": "rear-shock-absorber",
+    "childCategory": "Rear shock absorber Series",
+    "price": 13500,
+    "compareAtPrice": 14850,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1189",
+    "stock": 0,
+    "costPrice": 10125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DND DND Rear shock absorber Cbr Yellow. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Rear shock absorber",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1189",
+        "name": "Standard",
+        "price": 13500,
+        "stock": 0,
+        "sku": "MPX-1189-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-190",
+    "name": "DND Rear shock absorber Cbr Black",
+    "slug": "dnd-rear-shock-absorber-cbr-black",
+    "tagline": "Genuine DND Rear shock absorber engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Rear shock absorber",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Rear shock absorber",
+    "subcategorySlug": "rear-shock-absorber",
+    "childCategory": "Rear shock absorber Series",
+    "price": 13500,
+    "compareAtPrice": 14850,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1190",
+    "stock": 0,
+    "costPrice": 10125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DND DND Rear shock absorber Cbr Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Rear shock absorber",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1190",
+        "name": "Standard",
+        "price": 13500,
+        "stock": 0,
+        "sku": "MPX-1190-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-191",
+    "name": "DND Rear shock absorber R15 Black",
+    "slug": "dnd-rear-shock-absorber-r15-black",
+    "tagline": "Genuine DND Rear shock absorber engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Rear shock absorber",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Rear shock absorber",
+    "subcategorySlug": "rear-shock-absorber",
+    "childCategory": "Rear shock absorber Series",
+    "price": 13500,
+    "compareAtPrice": 14850,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1191",
+    "stock": 0,
+    "costPrice": 10125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DND DND Rear shock absorber R15 Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Rear shock absorber",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1191",
+        "name": "Standard",
+        "price": 13500,
+        "stock": 0,
+        "sku": "MPX-1191-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-192",
+    "name": "DND Rear shock absorber R15 Blue",
+    "slug": "dnd-rear-shock-absorber-r15-blue",
+    "tagline": "Genuine DND Rear shock absorber engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Rear shock absorber",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Rear shock absorber",
+    "subcategorySlug": "rear-shock-absorber",
+    "childCategory": "Rear shock absorber Series",
+    "price": 13500,
+    "compareAtPrice": 14850,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1192",
+    "stock": 0,
+    "costPrice": 10125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DND DND Rear shock absorber R15 Blue. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Rear shock absorber",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1192",
+        "name": "Standard",
+        "price": 13500,
+        "stock": 0,
+        "sku": "MPX-1192-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-193",
+    "name": "FRANDO Brake pad SPS",
+    "slug": "frando-brake-pad-sps",
+    "tagline": "Genuine FRANDO Brake pad engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake pad",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake pad",
+    "subcategorySlug": "brake-pad",
+    "childCategory": "Brake pad Series",
+    "price": 5500,
+    "compareAtPrice": 6050,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1193",
+    "stock": 6,
+    "costPrice": 4125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO Brake pad SPS. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake pad",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1193",
+        "name": "Standard",
+        "price": 5500,
+        "stock": 6,
+        "sku": "MPX-1193-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-194",
+    "name": "FRANDO Brake pad CT1",
+    "slug": "frando-brake-pad-ct1",
+    "tagline": "Genuine FRANDO Brake pad engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake pad",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake pad",
+    "subcategorySlug": "brake-pad",
+    "childCategory": "Brake pad Series",
+    "price": 1500,
+    "compareAtPrice": 1650,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1194",
+    "stock": 7,
+    "costPrice": 1125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO Brake pad CT1. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake pad",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (7 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1194",
+        "name": "Standard",
+        "price": 1500,
+        "stock": 7,
+        "sku": "MPX-1194-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-195",
+    "name": "Liqui Moly Speed Additive",
+    "slug": "liqui-moly-speed-additive",
+    "tagline": "Genuine Liqui Moly Speed Additive engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Speed Additive",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Speed Additive",
+    "subcategorySlug": "speed-additive",
+    "childCategory": "Speed Additive Series",
+    "price": 450,
+    "compareAtPrice": 495,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1195",
+    "stock": 25,
+    "costPrice": 338,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Speed Additive. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Speed Additive",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (25 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1195",
+        "name": "Standard",
+        "price": 450,
+        "stock": 25,
+        "sku": "MPX-1195-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-196",
+    "name": "Liqui Moly Engine Flush",
+    "slug": "liqui-moly-engine-flush",
+    "tagline": "Genuine Liqui Moly Engine Flush engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Engine Flush",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Engine Flush",
+    "subcategorySlug": "engine-flush",
+    "childCategory": "Engine Flush Series",
+    "price": 330,
+    "compareAtPrice": 363,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1196",
+    "stock": 20,
+    "costPrice": 248,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Engine Flush. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Engine Flush",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (20 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1196",
+        "name": "Standard",
+        "price": 330,
+        "stock": 20,
+        "sku": "MPX-1196-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-197",
+    "name": "DND Rear Disc Gsxr non abs",
+    "slug": "dnd-rear-disc-gsxr-non-abs",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 3000,
+    "compareAtPrice": 3300,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1197",
+    "stock": 5,
+    "costPrice": 2250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DND DND Rear Disc Gsxr non abs. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1197",
+        "name": "Standard",
+        "price": 3000,
+        "stock": 5,
+        "sku": "MPX-1197-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-198",
+    "name": "DND Rear Disc Gsxr abs",
+    "slug": "dnd-rear-disc-gsxr-abs",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1198",
+    "stock": 5,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DND DND Rear Disc Gsxr abs. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1198",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 5,
+        "sku": "MPX-1198-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-199",
+    "name": "DND Rear Disc R15 abs",
+    "slug": "dnd-rear-disc-r15-abs",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1199",
+    "stock": 5,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DND DND Rear Disc R15 abs. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1199",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 5,
+        "sku": "MPX-1199-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-200",
+    "name": "DND Rear Disc R15 non abs",
+    "slug": "dnd-rear-disc-r15-non-abs",
+    "tagline": "Genuine DND Disc engineered for maximum track and highway reliability.",
+    "brand": "DND",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 3000,
+    "compareAtPrice": 3300,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1200",
+    "stock": 1,
+    "costPrice": 2250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DND DND Rear Disc R15 non abs. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DND original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DND",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1200",
+        "name": "Standard",
+        "price": 3000,
+        "stock": 1,
+        "sku": "MPX-1200-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-201",
+    "name": "BIKERS foot peg CBR150r",
+    "slug": "bikers-foot-peg-cbr150r",
+    "tagline": "Genuine BIKERS foot peg engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "foot peg",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "foot peg",
+    "subcategorySlug": "foot-peg",
+    "childCategory": "foot peg Series",
+    "price": 5000,
+    "compareAtPrice": 5500,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1201",
+    "stock": 4,
+    "costPrice": 3750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS foot peg CBR150r. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "foot peg",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1201",
+        "name": "Standard",
+        "price": 5000,
+        "stock": 4,
+        "sku": "MPX-1201-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-202",
+    "name": "Liqui Moly MoS2 Shooter",
+    "slug": "liqui-moly-mos2-shooter",
+    "tagline": "Genuine Liqui Moly MoS2 Shooter engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "MoS2 Shooter",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "MoS2 Shooter",
+    "subcategorySlug": "mos2-shooter",
+    "childCategory": "MoS2 Shooter Series",
+    "price": 300,
+    "compareAtPrice": 330,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1202",
+    "stock": 5,
+    "costPrice": 225,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly MoS2 Shooter. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "MoS2 Shooter",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1202",
+        "name": "Standard",
+        "price": 300,
+        "stock": 5,
+        "sku": "MPX-1202-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-203",
+    "name": "SYRC footrest extension",
+    "slug": "syrc-footrest-extension",
+    "tagline": "Genuine SYRC footrest extension engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "footrest extension",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "footrest extension",
+    "subcategorySlug": "footrest-extension",
+    "childCategory": "footrest extension Series",
+    "price": 1500,
+    "compareAtPrice": 1650,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1203",
+    "stock": 2,
+    "costPrice": 1125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC footrest extension. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Suspension & Protection",
+      "Subcategory": "footrest extension",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1203",
+        "name": "Standard",
+        "price": 1500,
+        "stock": 2,
+        "sku": "MPX-1203-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-204",
+    "name": "BIKERS Foot rest assembly front thai cbr",
+    "slug": "bikers-foot-rest-assembly-front-thai-cbr",
+    "tagline": "Genuine BIKERS Foot rest assembly front engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Foot rest assembly front",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Foot rest assembly front",
+    "subcategorySlug": "foot-rest-assembly-front",
+    "childCategory": "Foot rest assembly front Series",
+    "price": 29000,
+    "compareAtPrice": 31900,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1204",
+    "stock": 5,
+    "costPrice": 21750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Foot rest assembly front thai cbr. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Foot rest assembly front",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1204",
+        "name": "Standard",
+        "price": 29000,
+        "stock": 5,
+        "sku": "MPX-1204-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-205",
+    "name": "FRANDO Hose Pipe After Market)",
+    "slug": "frando-hose-pipe-after-market",
+    "tagline": "Genuine FRANDO Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 6000,
+    "compareAtPrice": 6600,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1205",
+    "stock": 11,
+    "costPrice": 4500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO Hose Pipe After Market). Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (11 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1205",
+        "name": "Standard",
+        "price": 6000,
+        "stock": 11,
+        "sku": "MPX-1205-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-206",
+    "name": "FRANDO Clutch lever",
+    "slug": "frando-clutch-lever",
+    "tagline": "Genuine FRANDO Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 24000,
+    "compareAtPrice": 26400,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1206",
+    "stock": 0,
+    "costPrice": 18000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO Clutch lever. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1206",
+        "name": "Standard",
+        "price": 24000,
+        "stock": 0,
+        "sku": "MPX-1206-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-207",
+    "name": "FRANDO FMC630 Brake Master Cylinder Front",
+    "slug": "frando-fmc630-brake-master-cylinder-front",
+    "tagline": "Genuine FRANDO Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 45000,
+    "compareAtPrice": 49500,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1207",
+    "stock": 0,
+    "costPrice": 33750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO FMC630 Brake Master Cylinder Front. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1207",
+        "name": "Standard",
+        "price": 45000,
+        "stock": 0,
+        "sku": "MPX-1207-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-208",
+    "name": "FRANDO FCF100s Brake Calliper front",
+    "slug": "frando-fcf100s-brake-calliper-front",
+    "tagline": "Genuine FRANDO Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 18500,
+    "compareAtPrice": 20350,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1208",
+    "stock": 0,
+    "costPrice": 13875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO FCF100s Brake Calliper front. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1208",
+        "name": "Standard",
+        "price": 18500,
+        "stock": 0,
+        "sku": "MPX-1208-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-209",
+    "name": "FRANDO FCC680S Brake Calliper front",
+    "slug": "frando-fcc680s-brake-calliper-front",
+    "tagline": "Genuine FRANDO Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 24000,
+    "compareAtPrice": 26400,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1209",
+    "stock": 3,
+    "costPrice": 18000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO FCC680S Brake Calliper front. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1209",
+        "name": "Standard",
+        "price": 24000,
+        "stock": 3,
+        "sku": "MPX-1209-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-210",
+    "name": "FRANDO FCC984 Brake Calliper rear",
+    "slug": "frando-fcc984-brake-calliper-rear",
+    "tagline": "Genuine FRANDO Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 18000,
+    "compareAtPrice": 19800,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1210",
+    "stock": 0,
+    "costPrice": 13500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO FCC984 Brake Calliper rear. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1210",
+        "name": "Standard",
+        "price": 18000,
+        "stock": 0,
+        "sku": "MPX-1210-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-211",
+    "name": "FRANDO FCF440GT Brake Calliper front",
+    "slug": "frando-fcf440gt-brake-calliper-front",
+    "tagline": "Genuine FRANDO Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 14000,
+    "compareAtPrice": 15400,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1211",
+    "stock": 0,
+    "costPrice": 10500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO FCF440GT Brake Calliper front. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1211",
+        "name": "Standard",
+        "price": 14000,
+        "stock": 0,
+        "sku": "MPX-1211-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-212",
+    "name": "FRANDO FCC100 Brake Calliper front",
+    "slug": "frando-fcc100-brake-calliper-front",
+    "tagline": "Genuine FRANDO Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 50000,
+    "compareAtPrice": 55000,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1212",
+    "stock": 0,
+    "costPrice": 37500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO FCC100 Brake Calliper front. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1212",
+        "name": "Standard",
+        "price": 50000,
+        "stock": 0,
+        "sku": "MPX-1212-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-213",
+    "name": "King Drag Handle Crown indian V4",
+    "slug": "king-drag-handle-crown-indian-v4",
+    "tagline": "Genuine King Drag Handle Crown engineered for maximum track and highway reliability.",
+    "brand": "King Drag",
+    "productType": "Handle Crown",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handle Crown",
+    "subcategorySlug": "handle-crown",
+    "childCategory": "Handle Crown Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1213",
+    "stock": 6,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic King Drag King Drag Handle Crown indian V4. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified King Drag original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "King Drag",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handle Crown",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1213",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 6,
+        "sku": "MPX-1213-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-214",
+    "name": "Maxima Octane Booster",
+    "slug": "maxima-octane-booster",
+    "tagline": "Genuine Maxima Octane Booster engineered for maximum track and highway reliability.",
+    "brand": "Maxima",
+    "productType": "Octane Booster",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Octane Booster",
+    "subcategorySlug": "octane-booster",
+    "childCategory": "Octane Booster Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1214",
+    "stock": 6,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Maxima Maxima Octane Booster. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Maxima original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Maxima",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Octane Booster",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1214",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 6,
+        "sku": "MPX-1214-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-215",
+    "name": "RCB Clear Clutch Cover R15",
+    "slug": "rcb-clear-clutch-cover-r15",
+    "tagline": "Genuine RCB Clear Clutch Cover engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Clear Clutch Cover",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clear Clutch Cover",
+    "subcategorySlug": "clear-clutch-cover",
+    "childCategory": "Clear Clutch Cover Series",
+    "price": 12500,
+    "compareAtPrice": 13750,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1215",
+    "stock": 1,
+    "costPrice": 9375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Clear Clutch Cover R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clear Clutch Cover",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1215",
+        "name": "Standard",
+        "price": 12500,
+        "stock": 1,
+        "sku": "MPX-1215-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-216",
+    "name": "RPD Brake Calliper rear Zenisis",
+    "slug": "rpd-brake-calliper-rear-zenisis",
+    "tagline": "Genuine RPD Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 8500,
+    "compareAtPrice": 9350,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1216",
+    "stock": 0,
+    "costPrice": 6375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Calliper rear Zenisis. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1216",
+        "name": "Standard",
+        "price": 8500,
+        "stock": 0,
+        "sku": "MPX-1216-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-217",
+    "name": "RPD Brake Calliper Front Zenisis",
+    "slug": "rpd-brake-calliper-front-zenisis",
+    "tagline": "Genuine RPD Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 14000,
+    "compareAtPrice": 15400,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1217",
+    "stock": 6,
+    "costPrice": 10500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Calliper Front Zenisis. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1217",
+        "name": "Standard",
+        "price": 14000,
+        "stock": 6,
+        "sku": "MPX-1217-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-218",
+    "name": "Michelin Road6 Tyre 150/60/17",
+    "slug": "michelin-road6-tyre-150-60-17",
+    "tagline": "Genuine Michelin Tyre Rear engineered for maximum track and highway reliability.",
+    "brand": "Michelin",
+    "productType": "Tyre Rear",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Rear",
+    "subcategorySlug": "tyre-rear",
+    "childCategory": "Tyre Rear Series",
+    "price": 28000,
+    "compareAtPrice": 30800,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1218",
+    "stock": 1,
+    "costPrice": 21000,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Michelin Michelin Road6 Tyre 150/60/17. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Michelin original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Michelin",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Rear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1218",
+        "name": "Standard",
+        "price": 28000,
+        "stock": 1,
+        "sku": "MPX-1218-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-219",
+    "name": "NLK Double iridium Plug N8cr-d",
+    "slug": "nlk-double-iridium-plug-n8cr-d",
+    "tagline": "Genuine NLK Plug engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Plug",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Plug",
+    "subcategorySlug": "plug",
+    "childCategory": "Plug Series",
+    "price": 1300,
+    "compareAtPrice": 1430,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1219",
+    "stock": 50,
+    "costPrice": 975,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Double iridium Plug N8cr-d. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Plug",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (50 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1219",
+        "name": "Standard",
+        "price": 1300,
+        "stock": 50,
+        "sku": "MPX-1219-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-220",
+    "name": "Genma Radial bracket R15 indo",
+    "slug": "genma-radial-bracket-r15-indo",
+    "tagline": "Genuine Genma Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "Genma",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 4500,
+    "compareAtPrice": 4950,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1220",
+    "stock": 10,
+    "costPrice": 3375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Genma Genma Radial bracket R15 indo. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Genma original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Genma",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1220",
+        "name": "Standard",
+        "price": 4500,
+        "stock": 10,
+        "sku": "MPX-1220-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-221",
+    "name": "rcb s3 liver r15 non Abs Red",
+    "slug": "rcb-s3-liver-r15-non-abs-red",
+    "tagline": "Genuine RCB liver engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "liver",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "liver",
+    "subcategorySlug": "liver",
+    "childCategory": "liver Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1221",
+    "stock": 4,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB rcb s3 liver r15 non Abs Red. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "liver",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1221",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 4,
+        "sku": "MPX-1221-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-222",
+    "name": "rcb s3 liver r15m",
+    "slug": "rcb-s3-liver-r15m",
+    "tagline": "Genuine RCB RCB Handlebar Balance engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "RCB Handlebar Balance",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "RCB Handlebar Balance",
+    "subcategorySlug": "rcb-handlebar-balance",
+    "childCategory": "RCB Handlebar Balance Series",
+    "price": 2550,
+    "compareAtPrice": 2805,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1222",
+    "stock": 7,
+    "costPrice": 1913,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB rcb s3 liver r15m. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "RCB Handlebar Balance",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (7 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1222",
+        "name": "Standard",
+        "price": 2550,
+        "stock": 7,
+        "sku": "MPX-1222-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-223",
+    "name": "NLK Throttle Body CBR New model )",
+    "slug": "nlk-throttle-body-cbr-new-model",
+    "tagline": "Genuine NLK Throttle Body engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Throttle Body",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Throttle Body",
+    "subcategorySlug": "throttle-body",
+    "childCategory": "Throttle Body Series",
+    "price": 8000,
+    "compareAtPrice": 8800,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1223",
+    "stock": 1,
+    "costPrice": 6000,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Throttle Body CBR New model ). Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Throttle Body",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1223",
+        "name": "Standard",
+        "price": 8000,
+        "stock": 1,
+        "sku": "MPX-1223-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-224",
+    "name": "NLK Forged Connecting Rod",
+    "slug": "nlk-forged-connecting-rod",
+    "tagline": "Genuine NLK Forged Connecting Rod engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Forged Connecting Rod",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Forged Connecting Rod",
+    "subcategorySlug": "forged-connecting-rod",
+    "childCategory": "Forged Connecting Rod Series",
+    "price": 6000,
+    "compareAtPrice": 6600,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1224",
+    "stock": 1,
+    "costPrice": 4500,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Forged Connecting Rod. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Forged Connecting Rod",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1224",
+        "name": "Standard",
+        "price": 6000,
+        "stock": 1,
+        "sku": "MPX-1224-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-225",
+    "name": "NLK Piston Forged Kit 65MM",
+    "slug": "nlk-piston-forged-kit-65mm",
+    "tagline": "Genuine NLK Piston Forged Kit engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Piston Forged Kit",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Piston Forged Kit",
+    "subcategorySlug": "piston-forged-kit",
+    "childCategory": "Piston Forged Kit Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1225",
+    "stock": 2,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Piston Forged Kit 65MM. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Piston Forged Kit",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1225",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 2,
+        "sku": "MPX-1225-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-226",
+    "name": "NLK Piston Forged Kit 63MM",
+    "slug": "nlk-piston-forged-kit-63mm",
+    "tagline": "Genuine NLK Piston Forged Kit engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Piston Forged Kit",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Piston Forged Kit",
+    "subcategorySlug": "piston-forged-kit",
+    "childCategory": "Piston Forged Kit Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1226",
+    "stock": 3,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Piston Forged Kit 63MM. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Piston Forged Kit",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1226",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 3,
+        "sku": "MPX-1226-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-227",
+    "name": "NLK Racing Camshaft RS150",
+    "slug": "nlk-racing-camshaft-rs150",
+    "tagline": "Genuine NLK Racing Camshaft engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Racing Camshaft",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Racing Camshaft",
+    "subcategorySlug": "racing-camshaft",
+    "childCategory": "Racing Camshaft Series",
+    "price": 10000,
+    "compareAtPrice": 11000,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1227",
+    "stock": 3,
+    "costPrice": 7500,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Racing Camshaft RS150. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Racing Camshaft",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1227",
+        "name": "Standard",
+        "price": 10000,
+        "stock": 3,
+        "sku": "MPX-1227-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-228",
+    "name": "NLK Racing Starter motor ( CBR new model )",
+    "slug": "nlk-racing-starter-motor-cbr-new-model",
+    "tagline": "Genuine NLK Racing Starter motor engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Racing Starter motor",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Racing Starter motor",
+    "subcategorySlug": "racing-starter-motor",
+    "childCategory": "Racing Starter motor Series",
+    "price": 8500,
+    "compareAtPrice": 9350,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1228",
+    "stock": 1,
+    "costPrice": 6375,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Racing Starter motor ( CBR new model ). Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Racing Starter motor",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1228",
+        "name": "Standard",
+        "price": 8500,
+        "stock": 1,
+        "sku": "MPX-1228-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-229",
+    "name": "NLK Primary Driven Gear",
+    "slug": "nlk-primary-driven-gear",
+    "tagline": "Genuine NLK Primary Driven Gear engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Primary Driven Gear",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Primary Driven Gear",
+    "subcategorySlug": "primary-driven-gear",
+    "childCategory": "Primary Driven Gear Series",
+    "price": 6000,
+    "compareAtPrice": 6600,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1229",
+    "stock": 1,
+    "costPrice": 4500,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Primary Driven Gear. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Primary Driven Gear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1229",
+        "name": "Standard",
+        "price": 6000,
+        "stock": 1,
+        "sku": "MPX-1229-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-230",
+    "name": "NLK Racing Valve",
+    "slug": "nlk-racing-valve",
+    "tagline": "Genuine NLK Racing Valve engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Racing Valve",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Racing Valve",
+    "subcategorySlug": "racing-valve",
+    "childCategory": "Racing Valve Series",
+    "price": 2100,
+    "compareAtPrice": 2310,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1230",
+    "stock": 4,
+    "costPrice": 1575,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Racing Valve. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Racing Valve",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1230",
+        "name": "Standard",
+        "price": 2100,
+        "stock": 4,
+        "sku": "MPX-1230-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-231",
+    "name": "NLK Rocker ARM Y16",
+    "slug": "nlk-rocker-arm-y16",
+    "tagline": "Genuine NLK Rocker ARM Y16 engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Rocker ARM Y16",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Rocker ARM Y16",
+    "subcategorySlug": "rocker-arm-y16",
+    "childCategory": "Rocker ARM Y16 Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1231",
+    "stock": 2,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Rocker ARM Y16. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha Y15ZR / Y16ZR. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha Y15ZR / Y16ZR",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Rocker ARM Y16",
+      "Compatibility / Fitment": "Yamaha Y15ZR / Y16ZR",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1231",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 2,
+        "sku": "MPX-1231-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-232",
+    "name": "NLK Adjustable Timing Gear",
+    "slug": "nlk-adjustable-timing-gear",
+    "tagline": "Genuine NLK Adjustable Timing Gear engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Adjustable Timing Gear",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Adjustable Timing Gear",
+    "subcategorySlug": "adjustable-timing-gear",
+    "childCategory": "Adjustable Timing Gear Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1232",
+    "stock": 4,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Adjustable Timing Gear. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Adjustable Timing Gear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1232",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 4,
+        "sku": "MPX-1232-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-233",
+    "name": "NLK Racing Camshaft",
+    "slug": "nlk-racing-camshaft",
+    "tagline": "Genuine NLK Racing Camshaft engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Racing Camshaft",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Racing Camshaft",
+    "subcategorySlug": "racing-camshaft",
+    "childCategory": "Racing Camshaft Series",
+    "price": 4500,
+    "compareAtPrice": 4950,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1233",
+    "stock": 4,
+    "costPrice": 3375,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Racing Camshaft. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Racing Camshaft",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1233",
+        "name": "Standard",
+        "price": 4500,
+        "stock": 4,
+        "sku": "MPX-1233-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-234",
+    "name": "NLK Racing ECU NPro",
+    "slug": "nlk-racing-ecu-npro",
+    "tagline": "Genuine NLK Racing ECU engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Racing ECU",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Racing ECU",
+    "subcategorySlug": "racing-ecu",
+    "childCategory": "Racing ECU Series",
+    "price": 15000,
+    "compareAtPrice": 16500,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1234",
+    "stock": 4,
+    "costPrice": 11250,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Racing ECU NPro. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Racing ECU",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1234",
+        "name": "Standard",
+        "price": 15000,
+        "stock": 4,
+        "sku": "MPX-1234-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-235",
+    "name": "NLK Radiator Hose Y16",
+    "slug": "nlk-radiator-hose-y16",
+    "tagline": "Genuine NLK Radiator Hose engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Radiator Hose",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Radiator Hose",
+    "subcategorySlug": "radiator-hose",
+    "childCategory": "Radiator Hose Series",
+    "price": 3000,
+    "compareAtPrice": 3300,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1235",
+    "stock": 1,
+    "costPrice": 2250,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Radiator Hose Y16. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha Y15ZR / Y16ZR. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha Y15ZR / Y16ZR",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Radiator Hose",
+      "Compatibility / Fitment": "Yamaha Y15ZR / Y16ZR",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1235",
+        "name": "Standard",
+        "price": 3000,
+        "stock": 1,
+        "sku": "MPX-1235-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-236",
+    "name": "NLK Tps ( R15)",
+    "slug": "nlk-tps-r15",
+    "tagline": "Genuine NLK Tps engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Tps",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Tps",
+    "subcategorySlug": "tps",
+    "childCategory": "Tps Series",
+    "price": 4000,
+    "compareAtPrice": 4400,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1236",
+    "stock": 5,
+    "costPrice": 3000,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Tps ( R15). Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Tps",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1236",
+        "name": "Standard",
+        "price": 4000,
+        "stock": 5,
+        "sku": "MPX-1236-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-237",
+    "name": "NLK Valve Spring Y16",
+    "slug": "nlk-valve-spring-y16",
+    "tagline": "Genuine NLK Valve Spring engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Valve Spring",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Valve Spring",
+    "subcategorySlug": "valve-spring",
+    "childCategory": "Valve Spring Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1237",
+    "stock": 4,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Valve Spring Y16. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha Y15ZR / Y16ZR. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha Y15ZR / Y16ZR",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Valve Spring",
+      "Compatibility / Fitment": "Yamaha Y15ZR / Y16ZR",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1237",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 4,
+        "sku": "MPX-1237-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-238",
+    "name": "NLK Super Clutch Conversion Kit Y16",
+    "slug": "nlk-super-clutch-conversion-kit-y16",
+    "tagline": "Genuine NLK Super Clutch Conversion Kit engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "Super Clutch Conversion Kit",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Super Clutch Conversion Kit",
+    "subcategorySlug": "super-clutch-conversion-kit",
+    "childCategory": "Super Clutch Conversion Kit Series",
+    "price": 12500,
+    "compareAtPrice": 13750,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1238",
+    "stock": 4,
+    "costPrice": 9375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Super Clutch Conversion Kit Y16. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha Y15ZR / Y16ZR. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha Y15ZR / Y16ZR",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Super Clutch Conversion Kit",
+      "Compatibility / Fitment": "Yamaha Y15ZR / Y16ZR",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1238",
+        "name": "Standard",
+        "price": 12500,
+        "stock": 4,
+        "sku": "MPX-1238-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-239",
+    "name": "Pirelli rosso 4 Tyre pair set 110/70 140/70",
+    "slug": "pirelli-rosso-4-tyre-pair-set-110-70-140-70",
+    "tagline": "Genuine Pirelli Tyre pair set engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre pair set",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre pair set",
+    "subcategorySlug": "tyre-pair-set",
+    "childCategory": "Tyre pair set Series",
+    "price": 33000,
+    "compareAtPrice": 36300,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1239",
+    "stock": 8,
+    "costPrice": 24750,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli rosso 4 Tyre pair set 110/70 140/70. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre pair set",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1239",
+        "name": "Standard",
+        "price": 33000,
+        "stock": 8,
+        "sku": "MPX-1239-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-240",
+    "name": "MHR Rear Fender R15 v4",
+    "slug": "mhr-rear-fender-r15-v4",
+    "tagline": "Genuine MHR Rear Fender engineered for maximum track and highway reliability.",
+    "brand": "MHR",
+    "productType": "Rear Fender",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Rear Fender",
+    "subcategorySlug": "rear-fender",
+    "childCategory": "Rear Fender Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1240",
+    "stock": 6,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic MHR MHR Rear Fender R15 v4. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified MHR original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "MHR",
+      "Category": "Body & Hardware",
+      "Subcategory": "Rear Fender",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1240",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 6,
+        "sku": "MPX-1240-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-241",
+    "name": "RCB Brake oil reserve pot",
+    "slug": "rcb-brake-oil-reserve-pot",
+    "tagline": "Genuine RCB Brake oil reserve pot engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake oil reserve pot",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake oil reserve pot",
+    "subcategorySlug": "brake-oil-reserve-pot",
+    "childCategory": "Brake oil reserve pot Series",
+    "price": 1850,
+    "compareAtPrice": 2035,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1241",
+    "stock": 10,
+    "costPrice": 1388,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Brake oil reserve pot. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake oil reserve pot",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1241",
+        "name": "Standard",
+        "price": 1850,
+        "stock": 10,
+        "sku": "MPX-1241-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-242",
+    "name": "RCB Handlebar Balancer M3",
+    "slug": "rcb-handlebar-balancer-m3",
+    "tagline": "Genuine RCB Handlebar Balancer engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Handlebar Balancer",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handlebar Balancer",
+    "subcategorySlug": "handlebar-balancer",
+    "childCategory": "Handlebar Balancer Series",
+    "price": 750,
+    "compareAtPrice": 825,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1242",
+    "stock": 2,
+    "costPrice": 563,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Handlebar Balancer M3. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handlebar Balancer",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1242",
+        "name": "Standard",
+        "price": 750,
+        "stock": 2,
+        "sku": "MPX-1242-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-243",
+    "name": "NLK Raching water pump R15v3,V4",
+    "slug": "nlk-raching-water-pump-r15v3-v4",
+    "tagline": "Genuine NLK water pump engineered for maximum track and highway reliability.",
+    "brand": "NLK",
+    "productType": "water pump",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "water pump",
+    "subcategorySlug": "water-pump",
+    "childCategory": "water pump Series",
+    "price": 5500,
+    "compareAtPrice": 6050,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1243",
+    "stock": 10,
+    "costPrice": 4125,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NLK NLK Raching water pump R15v3,V4. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NLK original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NLK",
+      "Category": "Engine & Performance",
+      "Subcategory": "water pump",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1243",
+        "name": "Standard",
+        "price": 5500,
+        "stock": 10,
+        "sku": "MPX-1243-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-244",
+    "name": "RCB S2 clutch",
+    "slug": "rcb-s2-clutch",
+    "tagline": "Genuine RCB Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 4600,
+    "compareAtPrice": 5060,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1244",
+    "stock": 9,
+    "costPrice": 3450,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB S2 clutch. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (9 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1244",
+        "name": "Standard",
+        "price": 4600,
+        "stock": 9,
+        "sku": "MPX-1244-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-245",
+    "name": "TRIONCE Caliper Bracket axial CBR",
+    "slug": "trionce-caliper-bracket-axial-cbr",
+    "tagline": "Genuine TRIONCE Caliper Bracket engineered for maximum track and highway reliability.",
+    "brand": "TRIONCE",
+    "productType": "Caliper Bracket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Caliper Bracket",
+    "subcategorySlug": "caliper-bracket",
+    "childCategory": "Caliper Bracket Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1245",
+    "stock": 6,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TRIONCE TRIONCE Caliper Bracket axial CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TRIONCE original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TRIONCE",
+      "Category": "Brake System",
+      "Subcategory": "Caliper Bracket",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1245",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 6,
+        "sku": "MPX-1245-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-246",
+    "name": "TRIONCE Brake caliper braket radial cbr",
+    "slug": "trionce-brake-caliper-braket-radial-cbr",
+    "tagline": "Genuine TRIONCE Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "TRIONCE",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 10000,
+    "compareAtPrice": 11000,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1246",
+    "stock": 8,
+    "costPrice": 7500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TRIONCE TRIONCE Brake caliper braket radial cbr. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TRIONCE original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TRIONCE",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1246",
+        "name": "Standard",
+        "price": 10000,
+        "stock": 8,
+        "sku": "MPX-1246-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-247",
+    "name": "RCB Hose Pipe After Market)",
+    "slug": "rcb-hose-pipe-after-market",
+    "tagline": "Genuine RCB Hose Pipe After Market) engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Hose Pipe After Market)",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Hose Pipe After Market)",
+    "subcategorySlug": "hose-pipe-after-market",
+    "childCategory": "Hose Pipe After Market) Series",
+    "price": 1850,
+    "compareAtPrice": 2035,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1247",
+    "stock": 5,
+    "costPrice": 1388,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Hose Pipe After Market). Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Hose Pipe After Market)",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1247",
+        "name": "Standard",
+        "price": 1850,
+        "stock": 5,
+        "sku": "MPX-1247-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-248",
+    "name": "Kamui Caliper Bracket",
+    "slug": "kamui-caliper-bracket",
+    "tagline": "Genuine Kamui Caliper Bracket engineered for maximum track and highway reliability.",
+    "brand": "Kamui",
+    "productType": "Caliper Bracket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Caliper Bracket",
+    "subcategorySlug": "caliper-bracket",
+    "childCategory": "Caliper Bracket Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1248",
+    "stock": 0,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Kamui Kamui Caliper Bracket. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Kamui original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Kamui",
+      "Category": "Brake System",
+      "Subcategory": "Caliper Bracket",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1248",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 0,
+        "sku": "MPX-1248-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-249",
+    "name": "RPD Brake Calliper rear",
+    "slug": "rpd-brake-calliper-rear",
+    "tagline": "Genuine RPD Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 8500,
+    "compareAtPrice": 9350,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1249",
+    "stock": 0,
+    "costPrice": 6375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Calliper rear. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1249",
+        "name": "Standard",
+        "price": 8500,
+        "stock": 0,
+        "sku": "MPX-1249-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-250",
+    "name": "RPD Brake Calliper Zenith Set",
+    "slug": "rpd-brake-calliper-zenith-set",
+    "tagline": "Genuine RPD Brake Calliper engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Calliper",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper",
+    "subcategorySlug": "brake-calliper",
+    "childCategory": "Brake Calliper Series",
+    "price": 35000,
+    "compareAtPrice": 38500,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1250",
+    "stock": 1,
+    "costPrice": 26250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Calliper Zenith Set. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1250",
+        "name": "Standard",
+        "price": 35000,
+        "stock": 1,
+        "sku": "MPX-1250-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-251",
+    "name": "TDR Disc rear Cbr",
+    "slug": "tdr-disc-rear-cbr",
+    "tagline": "Genuine TDR Disc engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 3000,
+    "compareAtPrice": 3300,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1251",
+    "stock": 57,
+    "costPrice": 2250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Disc rear Cbr. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (57 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1251",
+        "name": "Standard",
+        "price": 3000,
+        "stock": 57,
+        "sku": "MPX-1251-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-252",
+    "name": "Liqui Moly octane booster",
+    "slug": "liqui-moly-octane-booster",
+    "tagline": "Genuine Liqui Moly Octane Booster engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Octane Booster",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Octane Booster",
+    "subcategorySlug": "octane-booster",
+    "childCategory": "Octane Booster Series",
+    "price": 830,
+    "compareAtPrice": 913,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1252",
+    "stock": 0,
+    "costPrice": 623,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly octane booster. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Octane Booster",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1252",
+        "name": "Standard",
+        "price": 830,
+        "stock": 0,
+        "sku": "MPX-1252-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-253",
+    "name": "TDR Disc rear Gsxr New",
+    "slug": "tdr-disc-rear-gsxr-new",
+    "tagline": "Genuine TDR Disc engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 3200,
+    "compareAtPrice": 3520,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1253",
+    "stock": 32,
+    "costPrice": 2400,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Disc rear Gsxr New. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (32 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1253",
+        "name": "Standard",
+        "price": 3200,
+        "stock": 32,
+        "sku": "MPX-1253-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-254",
+    "name": "NGK Plug CR9",
+    "slug": "ngk-plug-cr9",
+    "tagline": "Genuine NGK Plug engineered for maximum track and highway reliability.",
+    "brand": "NGK",
+    "productType": "Plug",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Plug",
+    "subcategorySlug": "plug",
+    "childCategory": "Plug Series",
+    "price": 1600,
+    "compareAtPrice": 1760,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1254",
+    "stock": 50,
+    "costPrice": 1200,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic NGK NGK Plug CR9. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified NGK original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "NGK",
+      "Category": "Engine & Performance",
+      "Subcategory": "Plug",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (50 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1254",
+        "name": "Standard",
+        "price": 1600,
+        "stock": 50,
+        "sku": "MPX-1254-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-255",
+    "name": "Liqui Moly Chain Lube",
+    "slug": "liqui-moly-chain-lube",
+    "tagline": "Genuine Liqui Moly Chain Lube engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Chain Lube",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Chain Lube",
+    "subcategorySlug": "chain-lube",
+    "childCategory": "Chain Lube Series",
+    "price": 800,
+    "compareAtPrice": 880,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1255",
+    "stock": 0,
+    "costPrice": 600,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Chain Lube. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Chain Lube",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1255",
+        "name": "Standard",
+        "price": 800,
+        "stock": 0,
+        "sku": "MPX-1255-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-256",
+    "name": "BIKERS Crown Nut NEW",
+    "slug": "bikers-crown-nut-new",
+    "tagline": "Genuine BIKERS Crown Nut engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Crown Nut",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Crown Nut",
+    "subcategorySlug": "crown-nut",
+    "childCategory": "Crown Nut Series",
+    "price": 2600,
+    "compareAtPrice": 2860,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1256",
+    "stock": 21,
+    "costPrice": 1950,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Crown Nut NEW. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Crown Nut",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (21 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1256",
+        "name": "Standard",
+        "price": 2600,
+        "stock": 21,
+        "sku": "MPX-1256-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-257",
+    "name": "BIKERS Crown Nut CBR",
+    "slug": "bikers-crown-nut-cbr",
+    "tagline": "Genuine BIKERS Crown Nut engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Crown Nut",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Crown Nut",
+    "subcategorySlug": "crown-nut",
+    "childCategory": "Crown Nut Series",
+    "price": 2000,
+    "compareAtPrice": 2200,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1257",
+    "stock": 30,
+    "costPrice": 1500,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Crown Nut CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Crown Nut",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (30 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1257",
+        "name": "Standard",
+        "price": 2000,
+        "stock": 30,
+        "sku": "MPX-1257-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-258",
+    "name": "BIKERS Crown Nut R15",
+    "slug": "bikers-crown-nut-r15",
+    "tagline": "Genuine BIKERS Crown Nut engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Crown Nut",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Crown Nut",
+    "subcategorySlug": "crown-nut",
+    "childCategory": "Crown Nut Series",
+    "price": 2000,
+    "compareAtPrice": 2200,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1258",
+    "stock": 66,
+    "costPrice": 1500,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Crown Nut R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Crown Nut",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (66 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1258",
+        "name": "Standard",
+        "price": 2000,
+        "stock": 66,
+        "sku": "MPX-1258-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-259",
+    "name": "BIKERS Chain adjuster R15",
+    "slug": "bikers-chain-adjuster-r15",
+    "tagline": "Genuine BIKERS Chain adjuster engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Chain adjuster",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Chain adjuster",
+    "subcategorySlug": "chain-adjuster",
+    "childCategory": "Chain adjuster Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1259",
+    "stock": 19,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Chain adjuster R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Chain adjuster",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (19 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1259",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 19,
+        "sku": "MPX-1259-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-260",
+    "name": "BIKERS Foot rest assembly front R15 v3",
+    "slug": "bikers-foot-rest-assembly-front-r15-v3",
+    "tagline": "Genuine BIKERS Foot rest assembly front engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Foot rest assembly front",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Foot rest assembly front",
+    "subcategorySlug": "foot-rest-assembly-front",
+    "childCategory": "Foot rest assembly front Series",
+    "price": 41500,
+    "compareAtPrice": 45650,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1260",
+    "stock": 13,
+    "costPrice": 31125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Foot rest assembly front R15 v3. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Foot rest assembly front",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (13 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1260",
+        "name": "Standard",
+        "price": 41500,
+        "stock": 13,
+        "sku": "MPX-1260-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-261",
+    "name": "BIKERS Generator cover Cap CBR",
+    "slug": "bikers-generator-cover-cap-cbr",
+    "tagline": "Genuine BIKERS Generator Cover cap engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Generator Cover cap",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Generator Cover cap",
+    "subcategorySlug": "generator-cover-cap",
+    "childCategory": "Generator Cover cap Series",
+    "price": 3200,
+    "compareAtPrice": 3520,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1261",
+    "stock": 3,
+    "costPrice": 2400,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Generator cover Cap CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Generator Cover cap",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1261",
+        "name": "Standard",
+        "price": 3200,
+        "stock": 3,
+        "sku": "MPX-1261-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-262",
+    "name": "BIKERS Shock Holder CBR",
+    "slug": "bikers-shock-holder-cbr",
+    "tagline": "Genuine BIKERS Shock Holder engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Shock Holder",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Shock Holder",
+    "subcategorySlug": "shock-holder",
+    "childCategory": "Shock Holder Series",
+    "price": 8000,
+    "compareAtPrice": 8800,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1262",
+    "stock": 7,
+    "costPrice": 6000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Shock Holder CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Shock Holder",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (7 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1262",
+        "name": "Standard",
+        "price": 8000,
+        "stock": 7,
+        "sku": "MPX-1262-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-263",
+    "name": "BIKERS Chain Adjusters CBR",
+    "slug": "bikers-chain-adjusters-cbr",
+    "tagline": "Genuine BIKERS Chain Adjusters CBR engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Chain Adjusters CBR",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Chain Adjusters CBR",
+    "subcategorySlug": "chain-adjusters-cbr",
+    "childCategory": "Chain Adjusters CBR Series",
+    "price": 6000,
+    "compareAtPrice": 6600,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1263",
+    "stock": 13,
+    "costPrice": 4500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Chain Adjusters CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Chain Adjusters CBR",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (13 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1263",
+        "name": "Standard",
+        "price": 6000,
+        "stock": 13,
+        "sku": "MPX-1263-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-264",
+    "name": "BIKERS Front Sprocket Cover CBR",
+    "slug": "bikers-front-sprocket-cover-cbr",
+    "tagline": "Genuine BIKERS Front Sprocket Cover engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Front Sprocket Cover",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Front Sprocket Cover",
+    "subcategorySlug": "front-sprocket-cover",
+    "childCategory": "Front Sprocket Cover Series",
+    "price": 6300,
+    "compareAtPrice": 6930,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1264",
+    "stock": 1,
+    "costPrice": 4725,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Front Sprocket Cover CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Front Sprocket Cover",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1264",
+        "name": "Standard",
+        "price": 6300,
+        "stock": 1,
+        "sku": "MPX-1264-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-265",
+    "name": "BIKERS Handle bar set For CBR",
+    "slug": "bikers-handle-bar-set-for-cbr",
+    "tagline": "Genuine BIKERS Handle bar set engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Handle bar set",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handle bar set",
+    "subcategorySlug": "handle-bar-set",
+    "childCategory": "Handle bar set Series",
+    "price": 19000,
+    "compareAtPrice": 20900,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1265",
+    "stock": 4,
+    "costPrice": 14250,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Handle bar set For CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handle bar set",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1265",
+        "name": "Standard",
+        "price": 19000,
+        "stock": 4,
+        "sku": "MPX-1265-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-266",
+    "name": "Liqui Moly Brake Fluid",
+    "slug": "liqui-moly-brake-fluid",
+    "tagline": "Genuine Liqui Moly Brake Fluid engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Brake Fluid",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Brake Fluid",
+    "subcategorySlug": "brake-fluid",
+    "childCategory": "Brake Fluid Series",
+    "price": 690,
+    "compareAtPrice": 759,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1266",
+    "stock": 0,
+    "costPrice": 518,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Brake Fluid. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Brake Fluid",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1266",
+        "name": "Standard",
+        "price": 690,
+        "stock": 0,
+        "sku": "MPX-1266-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-267",
+    "name": "DID Chain",
+    "slug": "did-chain",
+    "tagline": "Genuine DID Chain engineered for maximum track and highway reliability.",
+    "brand": "DID",
+    "productType": "Chain",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Chain",
+    "subcategorySlug": "chain",
+    "childCategory": "Chain Series",
+    "price": 4200,
+    "compareAtPrice": 4620,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1267",
+    "stock": 0,
+    "costPrice": 3150,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic DID DID Chain. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified DID original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "DID",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Chain",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1267",
+        "name": "Standard",
+        "price": 4200,
+        "stock": 0,
+        "sku": "MPX-1267-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-268",
+    "name": "kamui front disc",
+    "slug": "kamui-front-disc",
+    "tagline": "Genuine kamui Disc engineered for maximum track and highway reliability.",
+    "brand": "kamui",
+    "productType": "Disc",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Disc",
+    "subcategorySlug": "disc",
+    "childCategory": "Disc Series",
+    "price": 15000,
+    "compareAtPrice": 16500,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1268",
+    "stock": 0,
+    "costPrice": 11250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic kamui kamui front disc. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified kamui original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "kamui",
+      "Category": "Brake System",
+      "Subcategory": "Disc",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1268",
+        "name": "Standard",
+        "price": 15000,
+        "stock": 0,
+        "sku": "MPX-1268-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-269",
+    "name": "RCB RCB Handlebar Balance M5",
+    "slug": "rcb-rcb-handlebar-balance-m5",
+    "tagline": "Genuine RCB RCB Handlebar Balance engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "RCB Handlebar Balance",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "RCB Handlebar Balance",
+    "subcategorySlug": "rcb-handlebar-balance",
+    "childCategory": "RCB Handlebar Balance Series",
+    "price": 1200,
+    "compareAtPrice": 1320,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1269",
+    "stock": 3,
+    "costPrice": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB RCB Handlebar Balance M5. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "RCB Handlebar Balance",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1269",
+        "name": "Standard",
+        "price": 1200,
+        "stock": 3,
+        "sku": "MPX-1269-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-270",
+    "name": "RCB RCB Handlebar Balance M4",
+    "slug": "rcb-rcb-handlebar-balance-m4",
+    "tagline": "Genuine RCB RCB Handlebar Balance engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "RCB Handlebar Balance",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "RCB Handlebar Balance",
+    "subcategorySlug": "rcb-handlebar-balance",
+    "childCategory": "RCB Handlebar Balance Series",
+    "price": 1000,
+    "compareAtPrice": 1100,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1270",
+    "stock": 1,
+    "costPrice": 750,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB RCB Handlebar Balance M4. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "RCB Handlebar Balance",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1270",
+        "name": "Standard",
+        "price": 1000,
+        "stock": 1,
+        "sku": "MPX-1270-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-271",
+    "name": "RCB handlebar Balancer M7",
+    "slug": "rcb-handlebar-balancer-m7",
+    "tagline": "Genuine RCB RCB Handlebar Balance engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "RCB Handlebar Balance",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "RCB Handlebar Balance",
+    "subcategorySlug": "rcb-handlebar-balance",
+    "childCategory": "RCB Handlebar Balance Series",
+    "price": 900,
+    "compareAtPrice": 990,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1271",
+    "stock": 3,
+    "costPrice": 675,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB handlebar Balancer M7. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "RCB Handlebar Balance",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1271",
+        "name": "Standard",
+        "price": 900,
+        "stock": 3,
+        "sku": "MPX-1271-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-272",
+    "name": "RCB Handlebar Balancer M8",
+    "slug": "rcb-handlebar-balancer-m8",
+    "tagline": "Genuine RCB Handlebar Balancer engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Handlebar Balancer",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handlebar Balancer",
+    "subcategorySlug": "handlebar-balancer",
+    "childCategory": "Handlebar Balancer Series",
+    "price": 850,
+    "compareAtPrice": 935,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1272",
+    "stock": 11,
+    "costPrice": 638,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Handlebar Balancer M8. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handlebar Balancer",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (11 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1272",
+        "name": "Standard",
+        "price": 850,
+        "stock": 11,
+        "sku": "MPX-1272-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-273",
+    "name": "RCB S1 clutch",
+    "slug": "rcb-s1-clutch",
+    "tagline": "Genuine RCB Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 4100,
+    "compareAtPrice": 4510,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1273",
+    "stock": 3,
+    "costPrice": 3075,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB S1 clutch. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1273",
+        "name": "Standard",
+        "price": 4100,
+        "stock": 3,
+        "sku": "MPX-1273-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-274",
+    "name": "RCB RS1 Carbon 17MM",
+    "slug": "rcb-rs1-carbon-17mm",
+    "tagline": "Genuine RCB Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 12000,
+    "compareAtPrice": 13200,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1274",
+    "stock": 3,
+    "costPrice": 9000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB RS1 Carbon 17MM. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1274",
+        "name": "Standard",
+        "price": 12000,
+        "stock": 3,
+        "sku": "MPX-1274-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-275",
+    "name": "RCB E2 14MM",
+    "slug": "rcb-e2-14mm",
+    "tagline": "Genuine RCB Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 3650,
+    "compareAtPrice": 4015,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1275",
+    "stock": 1,
+    "costPrice": 2738,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB E2 14MM. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1275",
+        "name": "Standard",
+        "price": 3650,
+        "stock": 1,
+        "sku": "MPX-1275-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-276",
+    "name": "RCB S1 FL 14MM",
+    "slug": "rcb-s1-fl-14mm",
+    "tagline": "Genuine RCB Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 6900,
+    "compareAtPrice": 7590,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1276",
+    "stock": 10,
+    "costPrice": 5175,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB S1 FL 14MM. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1276",
+        "name": "Standard",
+        "price": 6900,
+        "stock": 10,
+        "sku": "MPX-1276-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-277",
+    "name": "RCB S1 master cylinder 14mm",
+    "slug": "rcb-s1-master-cylinder-14mm",
+    "tagline": "Genuine RCB Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 6800,
+    "compareAtPrice": 7480,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1277",
+    "stock": 10,
+    "costPrice": 5100,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB S1 master cylinder 14mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1277",
+        "name": "Standard",
+        "price": 6800,
+        "stock": 10,
+        "sku": "MPX-1277-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-278",
+    "name": "RPD Breakpads",
+    "slug": "rpd-breakpads",
+    "tagline": "Genuine RPD Rpd breakpads engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Rpd breakpads",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Rpd breakpads",
+    "subcategorySlug": "rpd-breakpads",
+    "childCategory": "Rpd breakpads Series",
+    "price": 1500,
+    "compareAtPrice": 1650,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1278",
+    "stock": 0,
+    "costPrice": 1125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Breakpads. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Rpd breakpads",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1278",
+        "name": "Standard",
+        "price": 1500,
+        "stock": 0,
+        "sku": "MPX-1278-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-279",
+    "name": "SYRC Handle Crown R15 Indo (thai)",
+    "slug": "syrc-handle-crown-r15-indo-thai",
+    "tagline": "Genuine SYRC Handle Crown engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Handle Crown",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handle Crown",
+    "subcategorySlug": "handle-crown",
+    "childCategory": "Handle Crown Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1279",
+    "stock": 8,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Handle Crown R15 Indo (thai). Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handle Crown",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1279",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 8,
+        "sku": "MPX-1279-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-280",
+    "name": "SYRC Caliper Bracket Radial R15m abs",
+    "slug": "syrc-caliper-bracket-radial-r15m-abs",
+    "tagline": "Genuine SYRC Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 4000,
+    "compareAtPrice": 4400,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1280",
+    "stock": 14,
+    "costPrice": 3000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Caliper Bracket Radial R15m abs. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (14 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1280",
+        "name": "Standard",
+        "price": 4000,
+        "stock": 14,
+        "sku": "MPX-1280-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-281",
+    "name": "Liqui Moly Coolant",
+    "slug": "liqui-moly-coolant",
+    "tagline": "Genuine Liqui Moly Coolant engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Coolant",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Coolant",
+    "subcategorySlug": "coolant",
+    "childCategory": "Coolant Series",
+    "price": 600,
+    "compareAtPrice": 660,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1281",
+    "stock": 4,
+    "costPrice": 450,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Coolant. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Coolant",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1281",
+        "name": "Standard",
+        "price": 600,
+        "stock": 4,
+        "sku": "MPX-1281-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-282",
+    "name": "Liqui Moly Chain & brake cleaner",
+    "slug": "liqui-moly-chain-brake-cleaner",
+    "tagline": "Genuine Liqui Moly Chain & brake cleaner engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Chain & brake cleaner",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Chain & brake cleaner",
+    "subcategorySlug": "chain-brake-cleaner",
+    "childCategory": "Chain & brake cleaner Series",
+    "price": 690,
+    "compareAtPrice": 759,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1282",
+    "stock": 0,
+    "costPrice": 518,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Chain & brake cleaner. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Chain & brake cleaner",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1282",
+        "name": "Standard",
+        "price": 690,
+        "stock": 0,
+        "sku": "MPX-1282-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-283",
+    "name": "Liqui Moly Engine oil synthetic",
+    "slug": "liqui-moly-engine-oil-synthetic",
+    "tagline": "Genuine Liqui Moly Engine oil engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Engine oil",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Engine Oil",
+    "subcategorySlug": "engine-oil",
+    "childCategory": "Engine Oil Series",
+    "price": 1500,
+    "compareAtPrice": 1650,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1283",
+    "stock": 50,
+    "costPrice": 1125,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Engine oil synthetic. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Engine oil",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (50 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1283",
+        "name": "Standard",
+        "price": 1500,
+        "stock": 50,
+        "sku": "MPX-1283-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-284",
+    "name": "TDR Brake Hose Pipe Teflomax",
+    "slug": "tdr-brake-hose-pipe-teflomax",
+    "tagline": "Genuine TDR Brake Hose Pipe engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Brake Hose Pipe",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Hose Pipe",
+    "subcategorySlug": "brake-hose-pipe",
+    "childCategory": "Brake Hose Pipe Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1284",
+    "stock": 30,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Brake Hose Pipe Teflomax. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Brake Hose Pipe",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (30 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1284",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 30,
+        "sku": "MPX-1284-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-285",
+    "name": "Honda Genuine Radiator guard CBR",
+    "slug": "honda-genuine-radiator-guard-cbr",
+    "tagline": "Genuine Honda Genuine Radiator guard engineered for maximum track and highway reliability.",
+    "brand": "Honda Genuine",
+    "productType": "Radiator guard",
+    "category": "Engine & Performance",
+    "categorySlug": "engine-performance",
+    "subcategory": "Radiator guard",
+    "subcategorySlug": "radiator-guard",
+    "childCategory": "Radiator guard Series",
+    "price": 1700,
+    "compareAtPrice": 1870,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1285",
+    "stock": 10,
+    "costPrice": 1275,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Honda Genuine Honda Genuine Radiator guard CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Honda Genuine original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Honda Genuine",
+      "Category": "Engine & Performance",
+      "Subcategory": "Radiator guard",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1285",
+        "name": "Standard",
+        "price": 1700,
+        "stock": 10,
+        "sku": "MPX-1285-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-286",
+    "name": "RCB Clutch lever E2 Black",
+    "slug": "rcb-clutch-lever-e2-black",
+    "tagline": "Genuine RCB Clutch lever engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Clutch lever",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch lever",
+    "subcategorySlug": "clutch-lever",
+    "childCategory": "Clutch lever Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1286",
+    "stock": 3,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Clutch lever E2 Black. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch lever",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1286",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 3,
+        "sku": "MPX-1286-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-287",
+    "name": "BMC Air Filter for gixxer fi",
+    "slug": "bmc-air-filter-for-gixxer-fi",
+    "tagline": "Genuine BMC Air Filter engineered for maximum track and highway reliability.",
+    "brand": "BMC",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 6500,
+    "compareAtPrice": 7150,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1287",
+    "stock": 1,
+    "costPrice": 4875,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BMC BMC Air Filter for gixxer fi. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki Gixxer 155 / SF / Gixxer 250. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BMC original part",
+      "Designed specifically for Suzuki Gixxer 155 / SF / Gixxer 250",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BMC",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Suzuki Gixxer 155 / SF / Gixxer 250",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1287",
+        "name": "Standard",
+        "price": 6500,
+        "stock": 1,
+        "sku": "MPX-1287-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-288",
+    "name": "Honda Genuine Coolant",
+    "slug": "honda-genuine-coolant",
+    "tagline": "Genuine Honda Genuine Coolant engineered for maximum track and highway reliability.",
+    "brand": "Honda Genuine",
+    "productType": "Coolant",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Coolant",
+    "subcategorySlug": "coolant",
+    "childCategory": "Coolant Series",
+    "price": 700,
+    "compareAtPrice": 770,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1288",
+    "stock": 11,
+    "costPrice": 525,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Honda Genuine Honda Genuine Coolant. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Honda Genuine original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Honda Genuine",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Coolant",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (11 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1288",
+        "name": "Standard",
+        "price": 700,
+        "stock": 11,
+        "sku": "MPX-1288-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-289",
+    "name": "Liqui Moly Fuel System Cleaner",
+    "slug": "liqui-moly-fuel-system-cleaner",
+    "tagline": "Genuine Liqui Moly Fuel System Cleaner engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Fuel System Cleaner",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Fuel System Cleaner",
+    "subcategorySlug": "fuel-system-cleaner",
+    "childCategory": "Fuel System Cleaner Series",
+    "price": 360,
+    "compareAtPrice": 396,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1289",
+    "stock": 1,
+    "costPrice": 270,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Fuel System Cleaner. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Fuel System Cleaner",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1289",
+        "name": "Standard",
+        "price": 360,
+        "stock": 1,
+        "sku": "MPX-1289-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-290",
+    "name": "Liqui Moly Coolant",
+    "slug": "liqui-moly-coolant-2",
+    "tagline": "Genuine Liqui Moly Coolant engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Coolant",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Coolant",
+    "subcategorySlug": "coolant",
+    "childCategory": "Coolant Series",
+    "price": 600,
+    "compareAtPrice": 660,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1290",
+    "stock": 9,
+    "costPrice": 450,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Coolant. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Coolant",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (9 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1290",
+        "name": "Standard",
+        "price": 600,
+        "stock": 9,
+        "sku": "MPX-1290-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-291",
+    "name": "BPro Foot rest assembly front GSXR",
+    "slug": "bpro-foot-rest-assembly-front-gsxr",
+    "tagline": "Genuine BPro Foot rest assembly front engineered for maximum track and highway reliability.",
+    "brand": "BPro",
+    "productType": "Foot rest assembly front",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Foot rest assembly front",
+    "subcategorySlug": "foot-rest-assembly-front",
+    "childCategory": "Foot rest assembly front Series",
+    "price": 15000,
+    "compareAtPrice": 16500,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1291",
+    "stock": 5,
+    "costPrice": 11250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BPro BPro Foot rest assembly front GSXR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Suzuki GSX-R 150 / Bandit 150. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BPro original part",
+      "Designed specifically for Suzuki GSX-R 150 / Bandit 150",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BPro",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Foot rest assembly front",
+      "Compatibility / Fitment": "Suzuki GSX-R 150 / Bandit 150",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1291",
+        "name": "Standard",
+        "price": 15000,
+        "stock": 5,
+        "sku": "MPX-1291-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-292",
+    "name": "BPro Foot rest assembly front R15",
+    "slug": "bpro-foot-rest-assembly-front-r15",
+    "tagline": "Genuine BPro Foot rest assembly front engineered for maximum track and highway reliability.",
+    "brand": "BPro",
+    "productType": "Foot rest assembly front",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Foot rest assembly front",
+    "subcategorySlug": "foot-rest-assembly-front",
+    "childCategory": "Foot rest assembly front Series",
+    "price": 15000,
+    "compareAtPrice": 16500,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1292",
+    "stock": 4,
+    "costPrice": 11250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BPro BPro Foot rest assembly front R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BPro original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BPro",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Foot rest assembly front",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1292",
+        "name": "Standard",
+        "price": 15000,
+        "stock": 4,
+        "sku": "MPX-1292-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-293",
+    "name": "Pirelli Tyre Front Rosso sport 100/80/17",
+    "slug": "pirelli-tyre-front-rosso-sport-100-80-17",
+    "tagline": "Genuine Pirelli Tyre Front engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Front",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Front",
+    "subcategorySlug": "tyre-front",
+    "childCategory": "Tyre Front Series",
+    "price": 9600,
+    "compareAtPrice": 10560,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1293",
+    "stock": 6,
+    "costPrice": 7200,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Front Rosso sport 100/80/17. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1293",
+        "name": "Standard",
+        "price": 9600,
+        "stock": 6,
+        "sku": "MPX-1293-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-294",
+    "name": "Shark Power Aftermarket tail light V3/V4",
+    "slug": "shark-power-aftermarket-tail-light-v3-v4",
+    "tagline": "Genuine Shark Power Aftermarket tail light V3/V4 engineered for maximum track and highway reliability.",
+    "brand": "Shark Power",
+    "productType": "Aftermarket tail light V3/V4",
+    "category": "Lighting & Electrical",
+    "categorySlug": "lighting-electrical",
+    "subcategory": "Aftermarket tail light V3/V4",
+    "subcategorySlug": "aftermarket-tail-light-v3-v4",
+    "childCategory": "Aftermarket tail light V3/V4 Series",
+    "price": 3000,
+    "compareAtPrice": 3300,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1294",
+    "stock": 6,
+    "costPrice": 2250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Shark Power Shark Power Aftermarket tail light V3/V4. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Shark Power original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Shark Power",
+      "Category": "Lighting & Electrical",
+      "Subcategory": "Aftermarket tail light V3/V4",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1294",
+        "name": "Standard",
+        "price": 3000,
+        "stock": 6,
+        "sku": "MPX-1294-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-295",
+    "name": "Michelin Tyre pair set 110/150",
+    "slug": "michelin-tyre-pair-set-110-150",
+    "tagline": "Genuine Michelin Tyre pair set engineered for maximum track and highway reliability.",
+    "brand": "Michelin",
+    "productType": "Tyre pair set",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre pair set",
+    "subcategorySlug": "tyre-pair-set",
+    "childCategory": "Tyre pair set Series",
+    "price": 46000,
+    "compareAtPrice": 50600,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1295",
+    "stock": 0,
+    "costPrice": 34500,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Michelin Michelin Tyre pair set 110/150. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Michelin original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Michelin",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre pair set",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1295",
+        "name": "Standard",
+        "price": 46000,
+        "stock": 0,
+        "sku": "MPX-1295-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-296",
+    "name": "SYRC Handle Crown CBR",
+    "slug": "syrc-handle-crown-cbr",
+    "tagline": "Genuine SYRC Handle Crown engineered for maximum track and highway reliability.",
+    "brand": "SYRC",
+    "productType": "Handle Crown",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handle Crown",
+    "subcategorySlug": "handle-crown",
+    "childCategory": "Handle Crown Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1296",
+    "stock": 2,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SYRC SYRC Handle Crown CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SYRC original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SYRC",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handle Crown",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1296",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 2,
+        "sku": "MPX-1296-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-297",
+    "name": "PAGASHI Brake Pad Rear CBR",
+    "slug": "pagashi-brake-pad-rear-cbr",
+    "tagline": "Genuine PAGAISHI Brake Pad Rear engineered for maximum track and highway reliability.",
+    "brand": "PAGAISHI",
+    "productType": "Brake Pad Rear",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Pad Rear",
+    "subcategorySlug": "brake-pad-rear",
+    "childCategory": "Brake Pad Rear Series",
+    "price": 1600,
+    "compareAtPrice": 1760,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1297",
+    "stock": 0,
+    "costPrice": 1200,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic PAGAISHI PAGASHI Brake Pad Rear CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified PAGAISHI original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "PAGAISHI",
+      "Category": "Brake System",
+      "Subcategory": "Brake Pad Rear",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1297",
+        "name": "Standard",
+        "price": 1600,
+        "stock": 0,
+        "sku": "MPX-1297-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-298",
+    "name": "PAGAISHI Brake Pad Front CBR",
+    "slug": "pagaishi-brake-pad-front-cbr",
+    "tagline": "Genuine PAGAISHI Brake Pad Front engineered for maximum track and highway reliability.",
+    "brand": "PAGAISHI",
+    "productType": "Brake Pad Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Pad Front",
+    "subcategorySlug": "brake-pad-front",
+    "childCategory": "Brake Pad Front Series",
+    "price": 1600,
+    "compareAtPrice": 1760,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1298",
+    "stock": 0,
+    "costPrice": 1200,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic PAGAISHI PAGAISHI Brake Pad Front CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified PAGAISHI original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "PAGAISHI",
+      "Category": "Brake System",
+      "Subcategory": "Brake Pad Front",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1298",
+        "name": "Standard",
+        "price": 1600,
+        "stock": 0,
+        "sku": "MPX-1298-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-299",
+    "name": "BIKERS Frame slider CBR",
+    "slug": "bikers-frame-slider-cbr",
+    "tagline": "Genuine BIKERS Frame slider engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Frame slider",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Frame slider",
+    "subcategorySlug": "frame-slider",
+    "childCategory": "Frame slider Series",
+    "price": 19500,
+    "compareAtPrice": 21450,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1299",
+    "stock": 5,
+    "costPrice": 14625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Frame slider CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Frame slider",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1299",
+        "name": "Standard",
+        "price": 19500,
+        "stock": 5,
+        "sku": "MPX-1299-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-300",
+    "name": "SPD Clutch cable bracket",
+    "slug": "spd-clutch-cable-bracket",
+    "tagline": "Genuine SPD Clutch cable bracket engineered for maximum track and highway reliability.",
+    "brand": "SPD",
+    "productType": "Clutch cable bracket",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clutch cable bracket",
+    "subcategorySlug": "clutch-cable-bracket",
+    "childCategory": "Clutch cable bracket Series",
+    "price": 1500,
+    "compareAtPrice": 1650,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1300",
+    "stock": 0,
+    "costPrice": 1125,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SPD SPD Clutch cable bracket. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SPD",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clutch cable bracket",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1300",
+        "name": "Standard",
+        "price": 1500,
+        "stock": 0,
+        "sku": "MPX-1300-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-301",
+    "name": "BIKERS Pre load adjuster CBR",
+    "slug": "bikers-pre-load-adjuster-cbr",
+    "tagline": "Genuine BIKERS Pre load adjuster engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Pre load adjuster",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Pre load adjuster",
+    "subcategorySlug": "pre-load-adjuster",
+    "childCategory": "Pre load adjuster Series",
+    "price": 5000,
+    "compareAtPrice": 5500,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1301",
+    "stock": 8,
+    "costPrice": 3750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Pre load adjuster CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Pre load adjuster",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1301",
+        "name": "Standard",
+        "price": 5000,
+        "stock": 8,
+        "sku": "MPX-1301-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-302",
+    "name": "BIKERS Engine Guard CBR",
+    "slug": "bikers-engine-guard-cbr",
+    "tagline": "Genuine BIKERS Engine Guard CBR engineered for maximum track and highway reliability.",
+    "brand": "BIKERS",
+    "productType": "Engine Guard CBR",
+    "category": "Suspension & Protection",
+    "categorySlug": "suspension-protection",
+    "subcategory": "Engine Guard CBR",
+    "subcategorySlug": "engine-guard-cbr",
+    "childCategory": "Engine Guard CBR Series",
+    "price": 19000,
+    "compareAtPrice": 20900,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1302",
+    "stock": 8,
+    "costPrice": 14250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BIKERS BIKERS Engine Guard CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BIKERS original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BIKERS",
+      "Category": "Suspension & Protection",
+      "Subcategory": "Engine Guard CBR",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (8 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1302",
+        "name": "Standard",
+        "price": 19000,
+        "stock": 8,
+        "sku": "MPX-1302-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-303",
+    "name": "Swits Brake banjo bolt",
+    "slug": "swits-brake-banjo-bolt",
+    "tagline": "Genuine Swits Brake banjo bolt engineered for maximum track and highway reliability.",
+    "brand": "Swits",
+    "productType": "Brake banjo bolt",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake banjo bolt",
+    "subcategorySlug": "brake-banjo-bolt",
+    "childCategory": "Brake banjo bolt Series",
+    "price": 1000,
+    "compareAtPrice": 1100,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1303",
+    "stock": 12,
+    "costPrice": 750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Swits Swits Brake banjo bolt. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Swits original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Swits",
+      "Category": "Brake System",
+      "Subcategory": "Brake banjo bolt",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (12 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1303",
+        "name": "Standard",
+        "price": 1000,
+        "stock": 12,
+        "sku": "MPX-1303-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-304",
+    "name": "SPD Clear Clutch Cover R15",
+    "slug": "spd-clear-clutch-cover-r15",
+    "tagline": "Genuine SPD Clear Clutch Cover engineered for maximum track and highway reliability.",
+    "brand": "SPD",
+    "productType": "Clear Clutch Cover",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clear Clutch Cover",
+    "subcategorySlug": "clear-clutch-cover",
+    "childCategory": "Clear Clutch Cover Series",
+    "price": 24000,
+    "compareAtPrice": 26400,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1304",
+    "stock": 4,
+    "costPrice": 18000,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SPD SPD Clear Clutch Cover R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SPD original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SPD",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clear Clutch Cover",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (4 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1304",
+        "name": "Standard",
+        "price": 24000,
+        "stock": 4,
+        "sku": "MPX-1304-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-305",
+    "name": "SPD Clear Clutch Cover CBR",
+    "slug": "spd-clear-clutch-cover-cbr",
+    "tagline": "Genuine SPD Clear Clutch Cover engineered for maximum track and highway reliability.",
+    "brand": "SPD",
+    "productType": "Clear Clutch Cover",
+    "category": "Clutch & Transmission",
+    "categorySlug": "clutch-transmission",
+    "subcategory": "Clear Clutch Cover",
+    "subcategorySlug": "clear-clutch-cover",
+    "childCategory": "Clear Clutch Cover Series",
+    "price": 25000,
+    "compareAtPrice": 27500,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1305",
+    "stock": 3,
+    "costPrice": 18750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic SPD SPD Clear Clutch Cover CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified SPD original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "SPD",
+      "Category": "Clutch & Transmission",
+      "Subcategory": "Clear Clutch Cover",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1305",
+        "name": "Standard",
+        "price": 25000,
+        "stock": 3,
+        "sku": "MPX-1305-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-306",
+    "name": "RPD Brake Calliper Front Axial 4pot",
+    "slug": "rpd-brake-calliper-front-axial-4pot",
+    "tagline": "Genuine RPD Brake Calliper Front engineered for maximum track and highway reliability.",
+    "brand": "RPD",
+    "productType": "Brake Calliper Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Calliper Front",
+    "subcategorySlug": "brake-calliper-front",
+    "childCategory": "Brake Calliper Front Series",
+    "price": 7500,
+    "compareAtPrice": 8250,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1306",
+    "stock": 5,
+    "costPrice": 5625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RPD RPD Brake Calliper Front Axial 4pot. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RPD original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RPD",
+      "Category": "Brake System",
+      "Subcategory": "Brake Calliper Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1306",
+        "name": "Standard",
+        "price": 7500,
+        "stock": 5,
+        "sku": "MPX-1306-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-307",
+    "name": "Piranha Tail tidy CBR",
+    "slug": "piranha-tail-tidy-cbr",
+    "tagline": "Genuine Piranha Tail tidy engineered for maximum track and highway reliability.",
+    "brand": "Piranha",
+    "productType": "Tail tidy",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Tail tidy",
+    "subcategorySlug": "tail-tidy",
+    "childCategory": "Tail tidy Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1307",
+    "stock": 0,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Piranha Piranha Tail tidy CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Piranha original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Piranha",
+      "Category": "Body & Hardware",
+      "Subcategory": "Tail tidy",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1307",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 0,
+        "sku": "MPX-1307-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-308",
+    "name": "Piranha Tail tidy MT",
+    "slug": "piranha-tail-tidy-mt",
+    "tagline": "Genuine Piranha Tail tidy engineered for maximum track and highway reliability.",
+    "brand": "Piranha",
+    "productType": "Tail tidy",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Tail tidy",
+    "subcategorySlug": "tail-tidy",
+    "childCategory": "Tail tidy Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1308",
+    "stock": 0,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Piranha Piranha Tail tidy MT. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Piranha original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Piranha",
+      "Category": "Body & Hardware",
+      "Subcategory": "Tail tidy",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1308",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 0,
+        "sku": "MPX-1308-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-309",
+    "name": "Piranha Tail tidy R15",
+    "slug": "piranha-tail-tidy-r15",
+    "tagline": "Genuine Piranha Tail tidy engineered for maximum track and highway reliability.",
+    "brand": "Piranha",
+    "productType": "Tail tidy",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Tail tidy",
+    "subcategorySlug": "tail-tidy",
+    "childCategory": "Tail tidy Series",
+    "price": 2500,
+    "compareAtPrice": 2750,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1309",
+    "stock": 3,
+    "costPrice": 1875,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Piranha Piranha Tail tidy R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Piranha original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Piranha",
+      "Category": "Body & Hardware",
+      "Subcategory": "Tail tidy",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1309",
+        "name": "Standard",
+        "price": 2500,
+        "stock": 3,
+        "sku": "MPX-1309-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-310",
+    "name": "Piranha Tail tidy Gpx",
+    "slug": "piranha-tail-tidy-gpx",
+    "tagline": "Genuine Piranha Tail tidy engineered for maximum track and highway reliability.",
+    "brand": "Piranha",
+    "productType": "Tail tidy",
+    "category": "Body & Hardware",
+    "categorySlug": "body-hardware",
+    "subcategory": "Tail tidy",
+    "subcategorySlug": "tail-tidy",
+    "childCategory": "Tail tidy Series",
+    "price": 2000,
+    "compareAtPrice": 2200,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1310",
+    "stock": 2,
+    "costPrice": 1500,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Piranha Piranha Tail tidy Gpx. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Piranha original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Piranha",
+      "Category": "Body & Hardware",
+      "Subcategory": "Tail tidy",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1310",
+        "name": "Standard",
+        "price": 2000,
+        "stock": 2,
+        "sku": "MPX-1310-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-311",
+    "name": "Piranha Handle bar damper R15 v3,v4 & CBR",
+    "slug": "piranha-handle-bar-damper-r15-v3-v4-cbr",
+    "tagline": "Genuine Piranha Handle bar damper engineered for maximum track and highway reliability.",
+    "brand": "Piranha",
+    "productType": "Handle bar damper",
+    "category": "Handlebar & Controls",
+    "categorySlug": "handlebar-controls",
+    "subcategory": "Handle bar damper",
+    "subcategorySlug": "handle-bar-damper",
+    "childCategory": "Handle bar damper Series",
+    "price": 11000,
+    "compareAtPrice": 12100,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1311",
+    "stock": 12,
+    "costPrice": 8250,
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Piranha Piranha Handle bar damper R15 v3,v4 & CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Piranha original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Piranha",
+      "Category": "Handlebar & Controls",
+      "Subcategory": "Handle bar damper",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (12 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1311",
+        "name": "Standard",
+        "price": 11000,
+        "stock": 12,
+        "sku": "MPX-1311-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-312",
+    "name": "Piranha Brake caliper braket Front 4pot",
+    "slug": "piranha-brake-caliper-braket-front-4pot",
+    "tagline": "Genuine Piranha Brake caliper braket engineered for maximum track and highway reliability.",
+    "brand": "Piranha",
+    "productType": "Brake caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake caliper braket",
+    "subcategorySlug": "brake-caliper-braket",
+    "childCategory": "Brake caliper braket Series",
+    "price": 3000,
+    "compareAtPrice": 3300,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1312",
+    "stock": 3,
+    "costPrice": 2250,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Piranha Piranha Brake caliper braket Front 4pot. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Piranha original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Piranha",
+      "Category": "Brake System",
+      "Subcategory": "Brake caliper braket",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1312",
+        "name": "Standard",
+        "price": 3000,
+        "stock": 3,
+        "sku": "MPX-1312-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-313",
+    "name": "Pirelli Tyre Rear rosso sport 130/70",
+    "slug": "pirelli-tyre-rear-rosso-sport-130-70",
+    "tagline": "Genuine Pirelli Tyre Rear engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Rear",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Rear",
+    "subcategorySlug": "tyre-rear",
+    "childCategory": "Tyre Rear Series",
+    "price": 12500,
+    "compareAtPrice": 13750,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sku": "MPX-1313",
+    "stock": 6,
+    "costPrice": 9375,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Rear rosso sport 130/70. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Rear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1313",
+        "name": "Standard",
+        "price": 12500,
+        "stock": 6,
+        "sku": "MPX-1313-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-314",
+    "name": "Pirelli Tyre Rear rosso sport 140/70",
+    "slug": "pirelli-tyre-rear-rosso-sport-140-70",
+    "tagline": "Genuine Pirelli Tyre Rear engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Rear",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Rear",
+    "subcategorySlug": "tyre-rear",
+    "childCategory": "Tyre Rear Series",
+    "price": 13100,
+    "compareAtPrice": 14410,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sku": "MPX-1314",
+    "stock": 0,
+    "costPrice": 9825,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Rear rosso sport 140/70. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Rear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1314",
+        "name": "Standard",
+        "price": 13100,
+        "stock": 0,
+        "sku": "MPX-1314-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-315",
+    "name": "Pirelli rosso 4 Tyre pair set 110/70 150/60",
+    "slug": "pirelli-rosso-4-tyre-pair-set-110-70-150-60",
+    "tagline": "Genuine Pirelli Tyre pair set engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre pair set",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre pair set",
+    "subcategorySlug": "tyre-pair-set",
+    "childCategory": "Tyre pair set Series",
+    "price": 33500,
+    "compareAtPrice": 36850,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sku": "MPX-1315",
+    "stock": 6,
+    "costPrice": 25125,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli rosso 4 Tyre pair set 110/70 150/60. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre pair set",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (6 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1315",
+        "name": "Standard",
+        "price": 33500,
+        "stock": 6,
+        "sku": "MPX-1315-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-316",
+    "name": "Pirelli Tyre Front rosso 3 100/80",
+    "slug": "pirelli-tyre-front-rosso-3-100-80",
+    "tagline": "Genuine Pirelli Tyre Front engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Front",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Front",
+    "subcategorySlug": "tyre-front",
+    "childCategory": "Tyre Front Series",
+    "price": 10500,
+    "compareAtPrice": 11550,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 19,
+    "sku": "MPX-1316",
+    "stock": 0,
+    "costPrice": 7875,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Front rosso 3 100/80. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1316",
+        "name": "Standard",
+        "price": 10500,
+        "stock": 0,
+        "sku": "MPX-1316-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-317",
+    "name": "Pirelli Tyre Front rosso sport 110/70",
+    "slug": "pirelli-tyre-front-rosso-sport-110-70",
+    "tagline": "Genuine Pirelli Tyre Front engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Front",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Front",
+    "subcategorySlug": "tyre-front",
+    "childCategory": "Tyre Front Series",
+    "price": 9800,
+    "compareAtPrice": 10780,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 20,
+    "sku": "MPX-1317",
+    "stock": 0,
+    "costPrice": 7350,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Front rosso sport 110/70. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1317",
+        "name": "Standard",
+        "price": 9800,
+        "stock": 0,
+        "sku": "MPX-1317-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-318",
+    "name": "Pirelli Tyre Rear angel city 140/70",
+    "slug": "pirelli-tyre-rear-angel-city-140-70",
+    "tagline": "Genuine Pirelli Tyre Rear engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Rear",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Rear",
+    "subcategorySlug": "tyre-rear",
+    "childCategory": "Tyre Rear Series",
+    "price": 10200,
+    "compareAtPrice": 11220,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 21,
+    "sku": "MPX-1318",
+    "stock": 0,
+    "costPrice": 7650,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Rear angel city 140/70. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Rear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1318",
+        "name": "Standard",
+        "price": 10200,
+        "stock": 0,
+        "sku": "MPX-1318-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-319",
+    "name": "Pirelli Tyre Rear angel city 130/70",
+    "slug": "pirelli-tyre-rear-angel-city-130-70",
+    "tagline": "Genuine Pirelli Tyre Rear engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Rear",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Rear",
+    "subcategorySlug": "tyre-rear",
+    "childCategory": "Tyre Rear Series",
+    "price": 9100,
+    "compareAtPrice": 10010,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "sku": "MPX-1319",
+    "stock": 0,
+    "costPrice": 6825,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Rear angel city 130/70. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Rear",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1319",
+        "name": "Standard",
+        "price": 9100,
+        "stock": 0,
+        "sku": "MPX-1319-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-320",
+    "name": "Pirelli Tyre Front angel city 100/80",
+    "slug": "pirelli-tyre-front-angel-city-100-80",
+    "tagline": "Genuine Pirelli Tyre Front engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre Front",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre Front",
+    "subcategorySlug": "tyre-front",
+    "childCategory": "Tyre Front Series",
+    "price": 8600,
+    "compareAtPrice": 9460,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "sku": "MPX-1320",
+    "stock": 0,
+    "costPrice": 6450,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre Front angel city 100/80. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1320",
+        "name": "Standard",
+        "price": 8600,
+        "stock": 0,
+        "sku": "MPX-1320-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-321",
+    "name": "TDR Brake Disk Rear R15",
+    "slug": "tdr-brake-disk-rear-r15",
+    "tagline": "Genuine TDR Brake Disk Rear engineered for maximum track and highway reliability.",
+    "brand": "TDR",
+    "productType": "Brake Disk Rear",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Disk Rear",
+    "subcategorySlug": "brake-disk-rear",
+    "childCategory": "Brake Disk Rear Series",
+    "price": 3500,
+    "compareAtPrice": 3850,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 24,
+    "sku": "MPX-1321",
+    "stock": 42,
+    "costPrice": 2625,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic TDR TDR Brake Disk Rear R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified TDR original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "TDR",
+      "Category": "Brake System",
+      "Subcategory": "Brake Disk Rear",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (42 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1321",
+        "name": "Standard",
+        "price": 3500,
+        "stock": 42,
+        "sku": "MPX-1321-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-322",
+    "name": "FRANDO Brake Pad CT2",
+    "slug": "frando-brake-pad-ct2",
+    "tagline": "Genuine FRANDO Brake pad engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake pad",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake pad",
+    "subcategorySlug": "brake-pad",
+    "childCategory": "Brake pad Series",
+    "price": 2200,
+    "compareAtPrice": 2420,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 25,
+    "sku": "MPX-1322",
+    "stock": 32,
+    "costPrice": 1650,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO Brake Pad CT2. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake pad",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (32 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1322",
+        "name": "Standard",
+        "price": 2200,
+        "stock": 32,
+        "sku": "MPX-1322-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-323",
+    "name": "BMC Air Filter for CBR 18 23",
+    "slug": "bmc-air-filter-for-cbr-18-23",
+    "tagline": "Genuine BMC Air Filter engineered for maximum track and highway reliability.",
+    "brand": "BMC",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 7000,
+    "compareAtPrice": 7700,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "sku": "MPX-1323",
+    "stock": 5,
+    "costPrice": 5250,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BMC BMC Air Filter for CBR 18 23. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BMC original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BMC",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1323",
+        "name": "Standard",
+        "price": 7000,
+        "stock": 5,
+        "sku": "MPX-1323-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-324",
+    "name": "BMC Air Filter for TVS 4V",
+    "slug": "bmc-air-filter-for-tvs-4v",
+    "tagline": "Genuine BMC Air Filter engineered for maximum track and highway reliability.",
+    "brand": "BMC",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 5900,
+    "compareAtPrice": 6490,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 27,
+    "sku": "MPX-1324",
+    "stock": 1,
+    "costPrice": 4425,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BMC BMC Air Filter for TVS 4V. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: TVS Apache RTR 160 4V / 200 4V. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BMC original part",
+      "Designed specifically for TVS Apache RTR 160 4V / 200 4V",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BMC",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "TVS Apache RTR 160 4V / 200 4V",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1324",
+        "name": "Standard",
+        "price": 5900,
+        "stock": 1,
+        "sku": "MPX-1324-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-325",
+    "name": "BMC Air Filter for R15",
+    "slug": "bmc-air-filter-for-r15",
+    "tagline": "Genuine BMC Air Filter engineered for maximum track and highway reliability.",
+    "brand": "BMC",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 7500,
+    "compareAtPrice": 8250,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 28,
+    "sku": "MPX-1325",
+    "stock": 0,
+    "costPrice": 5625,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BMC BMC Air Filter for R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BMC original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BMC",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1325",
+        "name": "Standard",
+        "price": 7500,
+        "stock": 0,
+        "sku": "MPX-1325-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-326",
+    "name": "Piranha Rear low mount caliper braket R15",
+    "slug": "piranha-rear-low-mount-caliper-braket-r15",
+    "tagline": "Genuine Piranha Rear low mount caliper braket engineered for maximum track and highway reliability.",
+    "brand": "Piranha",
+    "productType": "Rear low mount caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Rear low mount caliper braket",
+    "subcategorySlug": "rear-low-mount-caliper-braket",
+    "childCategory": "Rear low mount caliper braket Series",
+    "price": 5000,
+    "compareAtPrice": 5500,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 4,
+    "sku": "MPX-1326",
+    "stock": 5,
+    "costPrice": 3750,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Piranha Piranha Rear low mount caliper braket R15. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha YZF R15 V3 / V4 / R15M. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Piranha original part",
+      "Designed specifically for Yamaha YZF R15 V3 / V4 / R15M",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Piranha",
+      "Category": "Brake System",
+      "Subcategory": "Rear low mount caliper braket",
+      "Compatibility / Fitment": "Yamaha YZF R15 V3 / V4 / R15M",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1326",
+        "name": "Standard",
+        "price": 5000,
+        "stock": 5,
+        "sku": "MPX-1326-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-327",
+    "name": "Piranha Rear low mount caliper braket CBR",
+    "slug": "piranha-rear-low-mount-caliper-braket-cbr",
+    "tagline": "Genuine Piranha Rear low mount caliper braket engineered for maximum track and highway reliability.",
+    "brand": "Piranha",
+    "productType": "Rear low mount caliper braket",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Rear low mount caliper braket",
+    "subcategorySlug": "rear-low-mount-caliper-braket",
+    "childCategory": "Rear low mount caliper braket Series",
+    "price": 6000,
+    "compareAtPrice": 6600,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 5,
+    "sku": "MPX-1327",
+    "stock": 2,
+    "costPrice": 4500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Piranha Piranha Rear low mount caliper braket CBR. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Honda CBR 150R / CBR 250R. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Piranha original part",
+      "Designed specifically for Honda CBR 150R / CBR 250R",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Piranha",
+      "Category": "Brake System",
+      "Subcategory": "Rear low mount caliper braket",
+      "Compatibility / Fitment": "Honda CBR 150R / CBR 250R",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1327",
+        "name": "Standard",
+        "price": 6000,
+        "stock": 2,
+        "sku": "MPX-1327-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-328",
+    "name": "BMC Air Filter 1147 For FZ V2/V3",
+    "slug": "bmc-air-filter-1147-for-fz-v2-v3",
+    "tagline": "Genuine BMC Air Filter engineered for maximum track and highway reliability.",
+    "brand": "BMC",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 6600,
+    "compareAtPrice": 7260,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 6,
+    "sku": "MPX-1328",
+    "stock": 1,
+    "costPrice": 4950,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BMC BMC Air Filter 1147 For FZ V2/V3. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Yamaha FZ-S V2 / V3 / V4. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BMC original part",
+      "Designed specifically for Yamaha FZ-S V2 / V3 / V4",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BMC",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Yamaha FZ-S V2 / V3 / V4",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (1 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1328",
+        "name": "Standard",
+        "price": 6600,
+        "stock": 1,
+        "sku": "MPX-1328-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-329",
+    "name": "Liqui Moly Brake Fluid",
+    "slug": "liqui-moly-brake-fluid-2",
+    "tagline": "Genuine Liqui Moly Brake Fluid engineered for maximum track and highway reliability.",
+    "brand": "Liqui Moly",
+    "productType": "Brake Fluid",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Brake Fluid",
+    "subcategorySlug": "brake-fluid",
+    "childCategory": "Brake Fluid Series",
+    "price": 690,
+    "compareAtPrice": 759,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 7,
+    "sku": "MPX-1329",
+    "stock": 0,
+    "costPrice": 518,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Liqui Moly Liqui Moly Brake Fluid. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Liqui Moly original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Liqui Moly",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Brake Fluid",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1329",
+        "name": "Standard",
+        "price": 690,
+        "stock": 0,
+        "sku": "MPX-1329-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true
+  },
+  {
+    "id": "prod-330",
+    "name": "BMC Air Filter for ns160",
+    "slug": "bmc-air-filter-for-ns160",
+    "tagline": "Genuine BMC Air Filter engineered for maximum track and highway reliability.",
+    "brand": "BMC",
+    "productType": "Air Filter",
+    "category": "Air Filters & Intake",
+    "categorySlug": "air-filters",
+    "subcategory": "Air Filter",
+    "subcategorySlug": "air-filter",
+    "childCategory": "Air Filter Series",
+    "price": 5900,
+    "compareAtPrice": 6490,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 8,
+    "sku": "MPX-1330",
+    "stock": 3,
+    "costPrice": 4425,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic BMC BMC Air Filter for ns160. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Bajaj Pulsar NS160 / N250. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified BMC original part",
+      "Designed specifically for Bajaj Pulsar NS160 / N250",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "BMC",
+      "Category": "Air Filters & Intake",
+      "Subcategory": "Air Filter",
+      "Compatibility / Fitment": "Bajaj Pulsar NS160 / N250",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1330",
+        "name": "Standard",
+        "price": 5900,
+        "stock": 3,
+        "sku": "MPX-1330-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-331",
+    "name": "FRANDO FMF-107 Brake Master Cylinder Front Brown 15mm",
+    "slug": "frando-fmf-107-brake-master-cylinder-front-brown-15mm",
+    "tagline": "Genuine FRANDO Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 14000,
+    "compareAtPrice": 15400,
+    "discountPercentage": 10,
+    "rating": 4.6,
+    "reviewCount": 9,
+    "sku": "MPX-1331",
+    "stock": 11,
+    "costPrice": 10500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO FMF-107 Brake Master Cylinder Front Brown 15mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (11 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1331",
+        "name": "Standard",
+        "price": 14000,
+        "stock": 11,
+        "sku": "MPX-1331-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-332",
+    "name": "FRANDO FMF-107 Brake Master Cylinder Front Black 15mm",
+    "slug": "frando-fmf-107-brake-master-cylinder-front-black-15mm",
+    "tagline": "Genuine FRANDO Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 14000,
+    "compareAtPrice": 15400,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 10,
+    "sku": "MPX-1332",
+    "stock": 9,
+    "costPrice": 10500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO FMF-107 Brake Master Cylinder Front Black 15mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (9 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1332",
+        "name": "Standard",
+        "price": 14000,
+        "stock": 9,
+        "sku": "MPX-1332-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-333",
+    "name": "Maxima Engine oil EXTRA 15W50",
+    "slug": "maxima-engine-oil-extra-15w50",
+    "tagline": "Genuine Maxima Engine Oil engineered for maximum track and highway reliability.",
+    "brand": "Maxima",
+    "productType": "Engine Oil",
+    "category": "Lubricants & Care",
+    "categorySlug": "lubricants-fluids",
+    "subcategory": "Engine Oil",
+    "subcategorySlug": "engine-oil",
+    "childCategory": "Engine Oil Series",
+    "price": 3000,
+    "compareAtPrice": 3300,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sku": "MPX-1333",
+    "stock": 5,
+    "costPrice": 2250,
+    "images": [
+      "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Maxima Maxima Engine oil EXTRA 15W50. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Maxima original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Maxima",
+      "Category": "Lubricants & Care",
+      "Subcategory": "Engine Oil",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (5 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1333",
+        "name": "Standard",
+        "price": 3000,
+        "stock": 5,
+        "sku": "MPX-1333-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-334",
+    "name": "RCB Brake Master Cylinder with clutch 30years anniversary edition",
+    "slug": "rcb-brake-master-cylinder-with-clutch-30years-anniversary-edition",
+    "tagline": "Genuine RCB Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 13200,
+    "compareAtPrice": 14520,
+    "discountPercentage": 10,
+    "rating": 4.8,
+    "reviewCount": 12,
+    "sku": "MPX-1334",
+    "stock": 2,
+    "costPrice": 9900,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB Brake Master Cylinder with clutch 30years anniversary edition. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (2 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1334",
+        "name": "Standard",
+        "price": 13200,
+        "stock": 2,
+        "sku": "MPX-1334-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-335",
+    "name": "RCB S1 FL 17mm Brake Master Cylinder Front (BLK)",
+    "slug": "rcb-s1-fl-17mm-brake-master-cylinder-front-blk",
+    "tagline": "Genuine RCB Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "RCB",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 8500,
+    "compareAtPrice": 9350,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 13,
+    "sku": "MPX-1335",
+    "stock": 3,
+    "costPrice": 6375,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic RCB RCB S1 FL 17mm Brake Master Cylinder Front (BLK). Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified RCB original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "RCB",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (3 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1335",
+        "name": "Standard",
+        "price": 8500,
+        "stock": 3,
+        "sku": "MPX-1335-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-336",
+    "name": "Pirelli Tyre pair rosso 4 120/180",
+    "slug": "pirelli-tyre-pair-rosso-4-120-180",
+    "tagline": "Genuine Pirelli Tyre pair set engineered for maximum track and highway reliability.",
+    "brand": "Pirelli",
+    "productType": "Tyre pair set",
+    "category": "Performance Tyres",
+    "categorySlug": "tyres",
+    "subcategory": "Tyre pair set",
+    "subcategorySlug": "tyre-pair-set",
+    "childCategory": "Tyre pair set Series",
+    "price": 0,
+    "compareAtPrice": 0,
+    "discountPercentage": 0,
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sku": "MPX-1336",
+    "stock": 0,
+    "costPrice": 0,
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic Pirelli Pirelli Tyre pair rosso 4 120/180. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified Pirelli original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "Pirelli",
+      "Category": "Performance Tyres",
+      "Subcategory": "Tyre pair set",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "Pre-Order / Out of Stock"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1336",
+        "name": "Standard",
+        "price": 0,
+        "stock": 0,
+        "sku": "MPX-1336-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false
+  },
+  {
+    "id": "prod-337",
+    "name": "FRANDO FMF-107 Brake Master Cylinder Front Brown 17mm",
+    "slug": "frando-fmf-107-brake-master-cylinder-front-brown-17mm",
+    "tagline": "Genuine FRANDO Brake Master Cylinder Front engineered for maximum track and highway reliability.",
+    "brand": "FRANDO",
+    "productType": "Brake Master Cylinder Front",
+    "category": "Brake System",
+    "categorySlug": "brake-system",
+    "subcategory": "Brake Master Cylinder Front",
+    "subcategorySlug": "brake-master-cylinder-front",
+    "childCategory": "Brake Master Cylinder Front Series",
+    "price": 14000,
+    "compareAtPrice": 15400,
+    "discountPercentage": 10,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sku": "MPX-1337",
+    "stock": 10,
+    "costPrice": 10500,
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "description": "Official authentic FRANDO FRANDO FMF-107 Brake Master Cylinder Front Brown 17mm. Specially engineered and quality-tested for high-performance motorcycle enthusiasts. Fitment: Universal / Multi-Fitment. Built to deliver uncompromising safety, aesthetic perfection, and lasting performance on Bangladesh roads and tracks.",
+    "features": [
+      "100% Genuine factory-certified FRANDO original part",
+      "Designed specifically for Universal / Multi-Fitment",
+      "Engineered for optimal heat dissipation and severe stress resilience",
+      "Tested and certified under strict manufacturer tolerances",
+      "Nationwide express delivery via Pathao across all 64 districts in Bangladesh"
+    ],
+    "specifications": {
+      "Brand": "FRANDO",
+      "Category": "Brake System",
+      "Subcategory": "Brake Master Cylinder Front",
+      "Compatibility / Fitment": "Universal / Multi-Fitment",
+      "Condition": "Brand New, Factory Sealed",
+      "Warranty": "Official Motoplex Authenticity Guarantee",
+      "Stock Status": "In Stock (10 units)"
+    },
+    "variants": [
+      {
+        "id": "var-MPX-1337",
+        "name": "Standard",
+        "price": 14000,
+        "stock": 10,
+        "sku": "MPX-1337-STD"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Standard Finish",
+        "hex": "#18181b"
+      }
+    ],
+    "sizes": [
+      "Standard Fitment"
+    ],
+    "materials": [
+      "High-Grade Alloy / Precision Engineered"
+    ],
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": true
+  }
 ];

@@ -9,19 +9,20 @@ import {
   Search,
   X,
   RotateCcw,
-  Sparkles,
 } from "lucide-react";
-import { products } from "@/data/products";
 import { categories } from "@/data/categories";
+import { products as initialProducts } from "@/data/products";
 import { ProductCard } from "@/components/shop/ProductCard";
 import { ProductFilters, FilterValues } from "@/components/shop/ProductFilters";
 import { QuickViewModal } from "@/components/ui/QuickViewModal";
 import { Product } from "@/types";
+import { formatProduct } from "@/lib/productFormatter";
 
 function ShopContent() {
   const searchParams = useSearchParams();
   const initialCategory = searchParams.get("category") || "";
   const initialSubcategory = searchParams.get("subcategory") || "";
+  const initialBrand = searchParams.get("brand") || "";
   const initialQuery = searchParams.get("q") || "";
 
   const [searchQuery, setSearchQuery] = useState(initialQuery);
@@ -33,8 +34,9 @@ function ShopContent() {
   const defaultFilters: FilterValues = {
     category: initialCategory,
     subcategory: initialSubcategory,
-    minPrice: 2000,
+    minPrice: 0,
     maxPrice: 1050000,
+    selectedBrands: initialBrand ? initialBrand.split(",").map((b) => b.trim()).filter(Boolean) : [],
     selectedSizes: [],
     selectedColors: [],
     selectedMaterials: [],
@@ -43,14 +45,35 @@ function ShopContent() {
   };
 
   const [filters, setFilters] = useState<FilterValues>(defaultFilters);
+  const [allProducts, setAllProducts] = useState<Product[]>(() => {
+    return initialProducts.map(formatProduct);
+  });
+
+  // Fetch live products from database
+  useEffect(() => {
+    fetch("/api/products?limit=500", { cache: "no-store" })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((json) => {
+        if (json?.success && Array.isArray(json.data?.products) && json.data.products.length > 0) {
+          setAllProducts(json.data.products.map(formatProduct));
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   // Sync with searchParams if URL changes
   useEffect(() => {
     const cat = searchParams.get("category") || "";
     const sub = searchParams.get("subcategory") || "";
+    const b = searchParams.get("brand") || "";
     const q = searchParams.get("q") || "";
-    if (cat || sub) {
-      setFilters((prev) => ({ ...prev, category: cat, subcategory: sub }));
+    if (cat || sub || b) {
+      setFilters((prev) => ({
+        ...prev,
+        category: cat,
+        subcategory: sub,
+        selectedBrands: b ? b.split(",").map((x) => x.trim()).filter(Boolean) : prev.selectedBrands,
+      }));
       setCurrentPage(1);
     }
     if (q) {
@@ -83,7 +106,7 @@ function ShopContent() {
 
   // Filter and sort products
   const filteredProducts = useMemo(() => {
-    let result = [...products];
+    let result = [...allProducts];
 
     // Search query
     if (searchQuery.trim()) {
@@ -100,12 +123,33 @@ function ShopContent() {
 
     // Category
     if (filters.category) {
-      result = result.filter((p) => p.categorySlug === filters.category);
+      const targetCat = filters.category.toLowerCase().trim();
+      result = result.filter(
+        (p) =>
+          p.categorySlug?.toLowerCase() === targetCat ||
+          p.category?.toLowerCase() === targetCat ||
+          p.subcategorySlug?.toLowerCase() === targetCat ||
+          p.subcategory?.toLowerCase() === targetCat
+      );
     }
 
     // Subcategory
     if (filters.subcategory) {
-      result = result.filter((p) => p.subcategorySlug === filters.subcategory);
+      const targetSub = filters.subcategory.toLowerCase().trim();
+      result = result.filter(
+        (p) =>
+          p.subcategorySlug?.toLowerCase() === targetSub ||
+          p.subcategory?.toLowerCase() === targetSub
+      );
+    }
+
+    // Brands
+    if (filters.selectedBrands && filters.selectedBrands.length > 0) {
+      result = result.filter((p) =>
+        filters.selectedBrands.some((b) =>
+          p.brand.toLowerCase().includes(b.toLowerCase())
+        )
+      );
     }
 
     // Price
@@ -195,12 +239,109 @@ function ShopContent() {
     return filteredProducts.slice(start, start + itemsPerPage);
   }, [filteredProducts, currentPage]);
 
+  // Real REST API integration with resilient fallback
+  const [apiProducts, setApiProducts] = useState<Product[] | null>(null);
+  const [apiTotalPages, setApiTotalPages] = useState<number | null>(null);
+  const [apiTotalCount, setApiTotalCount] = useState<number | null>(null);
+  const [isFetching, setIsFetching] = useState(false);
+
+  useEffect(() => {
+    let isCancelled = false;
+    const fetchCatalog = async () => {
+      setIsFetching(true);
+      try {
+        const params = new URLSearchParams();
+        if (filters.category) params.set("category", filters.category);
+        if (filters.subcategory) params.set("subcategory", filters.subcategory);
+        if (searchQuery.trim()) params.set("q", searchQuery.trim());
+        if (filters.minPrice > 0) params.set("minPrice", filters.minPrice.toString());
+        if (filters.maxPrice < 1050000) params.set("maxPrice", filters.maxPrice.toString());
+        if (filters.selectedBrands && filters.selectedBrands.length > 0) {
+          params.set("brands", filters.selectedBrands.join(","));
+        }
+        if (filters.selectedSizes.length > 0) params.set("sizes", filters.selectedSizes.join(","));
+        if (filters.selectedColors.length > 0) params.set("colors", filters.selectedColors.join(","));
+        if (filters.selectedMaterials.length > 0) params.set("materials", filters.selectedMaterials.join(","));
+        if (filters.inStockOnly) params.set("inStockOnly", "true");
+        if (filters.minRating > 0) params.set("rating", filters.minRating.toString());
+        if (sortBy) params.set("sortBy", sortBy);
+        params.set("page", currentPage.toString());
+        params.set("limit", itemsPerPage.toString());
+
+        const res = await fetch(`/api/products?${params.toString()}`, { cache: "no-store" });
+        if (!res.ok) throw new Error("API Offline");
+        const json = await res.json();
+        if (json.success && Array.isArray(json.data?.products) && json.data.products.length > 0) {
+          if (!isCancelled) {
+            const mapped: Product[] = json.data.products.map((p: any) => ({
+              id: p._id?.toString() || p.id,
+              name: p.name,
+              slug: p.slug,
+              tagline: p.tagline || "",
+              brand: p.brand || "",
+              category: p.category || p.categorySlug || "",
+              categorySlug: p.categorySlug || "",
+              subcategory: p.subcategory || p.subcategorySlug || "",
+              subcategorySlug: p.subcategorySlug || "",
+              price: p.price,
+              compareAtPrice: p.compareAtPrice,
+              discountPercentage: p.discountPercentage,
+              rating: p.rating || 5,
+              reviewCount: p.reviewCount || 0,
+              sku: p.sku || "",
+              stock: p.stock ?? 10,
+              images: p.images || [],
+              description: p.description || "",
+              features: p.features || [],
+              specifications: p.specifications || {},
+              variants: p.variants || [],
+              sizes: p.sizes || p.variants?.map((v: any) => v.size).filter(Boolean) || [],
+              colors: p.colors || p.variants?.map((v: any) => ({ name: v.color || "", hex: v.colorHex || "#000000" })).filter((c: any) => c.name) || [],
+              materials: p.materials || p.variants?.map((v: any) => v.material).filter(Boolean) || [],
+              isFeatured: p.isFeatured,
+              isBestSeller: p.isBestSeller,
+              isNewArrival: p.isNewArrival,
+            }));
+            setApiProducts(mapped);
+            setApiTotalPages(json.data.pagination.totalPages || 1);
+            setApiTotalCount(json.data.pagination.total || mapped.length);
+          }
+        } else {
+          if (!isCancelled) {
+            setApiProducts(null);
+            setApiTotalPages(null);
+            setApiTotalCount(null);
+          }
+        }
+      } catch {
+        if (!isCancelled) {
+          setApiProducts(null);
+          setApiTotalPages(null);
+          setApiTotalCount(null);
+        }
+      } finally {
+        if (!isCancelled) setIsFetching(false);
+      }
+    };
+
+    const timer = setTimeout(fetchCatalog, 250);
+    return () => {
+      isCancelled = true;
+      clearTimeout(timer);
+    };
+  }, [filters, searchQuery, sortBy, currentPage, itemsPerPage]);
+
+  const finalProducts = apiProducts !== null ? apiProducts : paginatedProducts;
+  const finalTotalPages = apiTotalPages !== null ? apiTotalPages : totalPages;
+  const finalTotalCount = apiTotalCount !== null ? apiTotalCount : filteredProducts.length;
+
   const handleResetFilters = () => {
     setFilters({
       category: "",
       subcategory: "",
-      minPrice: 2000,
+      minPrice: 0,
       maxPrice: 1050000,
+      selectedBrands: [],
       selectedSizes: [],
       selectedColors: [],
       selectedMaterials: [],
@@ -215,6 +356,7 @@ function ShopContent() {
   const activeFiltersCount =
     (filters.category ? 1 : 0) +
     (filters.subcategory ? 1 : 0) +
+    (filters.selectedBrands?.length || 0) +
     (filters.maxPrice < 1050000 ? 1 : 0) +
     filters.selectedSizes.length +
     filters.selectedColors.length +
@@ -317,9 +459,17 @@ function ShopContent() {
                   )}
                 </button>
 
-                <p className="text-xs text-zinc-500">
-                  Showing <strong className="text-zinc-900">{paginatedProducts.length}</strong> of{" "}
-                  <strong className="text-zinc-900">{filteredProducts.length}</strong> products
+                <p className="text-xs text-zinc-500 flex items-center gap-2">
+                  <span>
+                    Showing <strong className="text-zinc-900">{finalProducts.length}</strong> of{" "}
+                    <strong className="text-zinc-900">{finalTotalCount}</strong> products
+                  </span>
+                  {isFetching && (
+                    <span className="inline-flex items-center gap-1 text-[10px] text-red-600 font-semibold bg-red-50 px-2 py-0.5 rounded-full">
+                      <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse" />
+                      Live Sync
+                    </span>
+                  )}
                 </p>
               </div>
 
@@ -347,6 +497,26 @@ function ShopContent() {
             {activeFiltersCount > 0 && (
               <div className="flex flex-wrap items-center gap-2 pt-1">
                 <span className="text-xs font-semibold text-zinc-500">Active Filters:</span>
+
+                {filters.selectedBrands?.map((brand) => (
+                  <span
+                    key={brand}
+                    className="inline-flex items-center gap-1 text-xs bg-red-50 text-red-700 border border-red-200 px-2.5 py-1 rounded-full font-medium"
+                  >
+                    Brand: {brand}
+                    <button
+                      onClick={() =>
+                        setFilters({
+                          ...filters,
+                          selectedBrands: (filters.selectedBrands || []).filter((b) => b !== brand),
+                        })
+                      }
+                      className="hover:text-red-900"
+                    >
+                      <X className="w-3 h-3" />
+                    </button>
+                  </span>
+                ))}
 
                 {filters.category && (
                   <span className="inline-flex items-center gap-1 text-xs bg-red-50 text-red-700 border border-red-200 px-2.5 py-1 rounded-full font-medium">
@@ -434,9 +604,9 @@ function ShopContent() {
             )}
 
             {/* Products Grid */}
-            {paginatedProducts.length > 0 ? (
+            {finalProducts.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {paginatedProducts.map((product) => (
+                {finalProducts.map((product) => (
                   <ProductCard
                     key={product.id}
                     product={product}
@@ -469,7 +639,7 @@ function ShopContent() {
             )}
 
             {/* Pagination Controls */}
-            {totalPages > 1 && (
+            {finalTotalPages > 1 && (
               <div className="flex items-center justify-center gap-2 pt-8 border-t border-zinc-200">
                 <button
                   onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
@@ -479,7 +649,7 @@ function ShopContent() {
                   Previous
                 </button>
 
-                {[...Array(totalPages)].map((_, i) => {
+                {[...Array(finalTotalPages)].map((_, i) => {
                   const pageNum = i + 1;
                   return (
                     <button
@@ -497,8 +667,8 @@ function ShopContent() {
                 })}
 
                 <button
-                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-                  disabled={currentPage === totalPages}
+                  onClick={() => setCurrentPage((p) => Math.min(finalTotalPages, p + 1))}
+                  disabled={currentPage === finalTotalPages}
                   className="px-3.5 py-2 text-xs font-semibold text-zinc-700 bg-white border border-zinc-200 rounded-xl hover:bg-zinc-50 disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   Next
@@ -533,7 +703,7 @@ function ShopContent() {
                   onClick={() => setIsMobileFilterOpen(false)}
                   className="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-xs py-3 rounded-xl shadow-md transition-colors"
                 >
-                  Apply Filters ({filteredProducts.length} Results)
+                  Apply Filters ({finalTotalCount} Results)
                 </button>
               </div>
             </div>

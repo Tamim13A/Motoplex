@@ -38,7 +38,7 @@ export function FeaturedCategories() {
             <Link
               key={cat.id}
               href={`/category/${cat.slug}`}
-              className="group relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-zinc-200/80 flex flex-col justify-end p-6"
+              className="group relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-black/15 transition-all duration-500 border border-zinc-200/80 flex flex-col justify-end p-6 active:scale-98"
             >
               {/* Background Image */}
               <Image
@@ -51,6 +51,9 @@ export function FeaturedCategories() {
 
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-90 group-hover:opacity-85 transition-opacity" />
+
+              {/* Top Italian Tricolore Micro Stripe on Hover */}
+              <div className="absolute top-0 inset-x-0 h-1 tricolore-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Content */}
               <div className="relative z-10 space-y-2">

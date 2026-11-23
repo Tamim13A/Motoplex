@@ -2,26 +2,16 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import {
   Wrench,
   CheckCircle2,
   Clock,
-  ShieldCheck,
   Calendar,
   Search,
   ChevronRight,
-  Flame,
-  Phone,
-  Sparkles,
-  Award,
-  Zap,
-  ArrowRight,
-  Gauge,
   Check,
 } from "lucide-react";
-import { bikeServices, BikeService } from "@/data/services";
-import { dealerships } from "@/data/dealerships";
+import { bikeServices } from "@/data/services";
 import { ServiceBookingModal } from "@/components/services/ServiceBookingModal";
 import { useToast } from "@/context/ToastContext";
 

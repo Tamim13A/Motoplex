@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { X, Star, ShoppingBag, Heart, ShieldCheck, Check, ArrowRight } from "lucide-react";
+import { X, Star, ShoppingBag, Heart, Check, ArrowRight } from "lucide-react";
 import { Product } from "@/types";
 import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
@@ -82,7 +82,7 @@ export function QuickViewModal({ product, onClose }: QuickViewModalProps) {
         <div className="md:w-1/2 p-6 bg-zinc-50 flex flex-col justify-between border-b md:border-b-0 md:border-r border-zinc-200">
           <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-white shadow-sm">
             <Image
-              src={product.images[selectedImage] || product.images[0]}
+              src={product.images?.[selectedImage] || product.images?.[0] || "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=600&auto=format&fit=crop"}
               alt={product.name}
               fill
               className="object-cover"
@@ -96,9 +96,9 @@ export function QuickViewModal({ product, onClose }: QuickViewModalProps) {
           </div>
 
           {/* Thumbnails */}
-          {product.images.length > 1 && (
+          {(product.images?.length || 0) > 1 && (
             <div className="flex gap-2 mt-4 overflow-x-auto pb-1">
-              {product.images.map((img, idx) => (
+              {(product.images || []).map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setSelectedImage(idx)}
@@ -149,11 +149,11 @@ export function QuickViewModal({ product, onClose }: QuickViewModalProps) {
             {/* Price */}
             <div className="mt-4 flex items-baseline gap-3">
               <span className="text-2xl font-black text-zinc-950">
-                ৳{product.price.toLocaleString("en-BD")}
+                ৳{Number(product.price || 0).toLocaleString("en-BD")}
               </span>
               {product.compareAtPrice && product.compareAtPrice > product.price && (
                 <span className="text-sm text-zinc-400 line-through">
-                  ৳{product.compareAtPrice.toLocaleString("en-BD")}
+                  ৳{Number(product.compareAtPrice || 0).toLocaleString("en-BD")}
                 </span>
               )}
             </div>
@@ -243,16 +243,16 @@ export function QuickViewModal({ product, onClose }: QuickViewModalProps) {
             <div className="flex items-center gap-3">
               <button
                 onClick={handleAddToCart}
-                className="flex-1 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white text-sm font-semibold py-3 px-5 rounded-xl shadow-lg shadow-red-600/20 transition-all flex items-center justify-center gap-2"
+                className="flex-1 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white text-sm font-bold py-3.5 px-5 rounded-xl shadow-lg shadow-red-600/25 transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-97 animate-shimmer-ray"
               >
                 <ShoppingBag className="w-4 h-4" />
                 Add to Cart
               </button>
               <button
                 onClick={() => toggleWishlist(product)}
-                className={`p-3 rounded-xl border transition-all ${
+                className={`p-3 rounded-xl border transition-all cursor-pointer active:scale-90 ${
                   isWishlisted
-                    ? "bg-red-50 border-red-200 text-red-600"
+                    ? "bg-red-50 border-red-200 text-red-600 animate-heart-pop shadow-xs"
                     : "border-zinc-200 text-zinc-600 hover:border-zinc-400 bg-white"
                 }`}
                 title={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}

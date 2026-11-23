@@ -10,9 +10,7 @@ import {
   ArrowRight,
   ShieldCheck,
   Tag,
-  Truck,
   RotateCcw,
-  CheckCircle2,
 } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
@@ -34,8 +32,6 @@ export default function CartPage() {
     removeCoupon,
     shippingDestination,
     setShippingDestination,
-    freeShippingThreshold,
-    progressToFreeShipping,
   } = useCart();
 
   const { addToWishlist } = useWishlist();
@@ -43,8 +39,6 @@ export default function CartPage() {
 
   const [couponInput, setCouponInput] = useState("");
   const [orderNote, setOrderNote] = useState("");
-
-  const remainingForFreeShipping = Math.max(0, freeShippingThreshold - subtotal);
 
   const handleApplyCoupon = (e: React.FormEvent) => {
     e.preventDefault();
@@ -99,34 +93,11 @@ export default function CartPage() {
           </div>
           <button
             onClick={clearCart}
-            className="text-xs text-zinc-400 hover:text-red-600 flex items-center gap-1 font-semibold transition-colors self-start sm:self-auto"
+            className="text-xs text-zinc-400 hover:text-red-600 flex items-center gap-1 font-semibold transition-colors self-start sm:self-auto cursor-pointer"
           >
             <RotateCcw className="w-3.5 h-3.5" />
             <span>Clear Cart</span>
           </button>
-        </div>
-
-        {/* Free Shipping Meter Banner */}
-        <div className="mt-6 bg-red-50/70 border border-red-200/80 rounded-2xl p-4">
-          <div className="flex items-center gap-2.5 text-xs font-medium text-red-950">
-            <Truck className="w-4 h-4 text-red-600 shrink-0" />
-            {remainingForFreeShipping > 0 ? (
-              <span>
-                Add <strong className="text-red-700 font-bold">৳{remainingForFreeShipping.toLocaleString("en-BD")}</strong> more to your order for <strong className="text-zinc-900">Free Express Delivery</strong> across Bangladesh!
-              </span>
-            ) : (
-              <span className="text-emerald-700 font-bold flex items-center gap-1">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                Congratulations! You qualify for Free Nationwide Courier Delivery!
-              </span>
-            )}
-          </div>
-          <div className="w-full bg-red-200/60 rounded-full h-2 mt-2.5 overflow-hidden">
-            <div
-              className="bg-red-600 h-2 rounded-full transition-all duration-500"
-              style={{ width: `${progressToFreeShipping}%` }}
-            />
-          </div>
         </div>
 
         {/* 2-Column Cart Layout */}
@@ -146,7 +117,7 @@ export default function CartPage() {
                     <div className="flex items-center gap-4 flex-1">
                       <div className="relative w-20 h-20 rounded-xl overflow-hidden bg-zinc-100 shrink-0 border border-zinc-200">
                         <Image
-                          src={item.product.images[0]}
+                          src={item.product.images?.[0] || "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=600&auto=format&fit=crop"}
                           alt={item.product.name}
                           fill
                           className="object-cover"

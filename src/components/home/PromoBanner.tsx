@@ -22,7 +22,7 @@ export function PromoBanner() {
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev.seconds > 0) return { ...prev, seconds: prev.seconds - 1 };
-        if (prev.minutes > 0) return { ...prev, minutes: 59, seconds: 59 };
+        if (prev.minutes > 0) return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
         if (prev.hours > 0) return { ...prev, hours: prev.hours - 1, minutes: 59, seconds: 59 };
         if (prev.days > 0) return { ...prev, days: prev.days - 1, hours: 23, minutes: 59, seconds: 59 };
         return prev;
@@ -53,11 +53,11 @@ export function PromoBanner() {
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
-                MOTOPLEX AUTUMN TRACK PASS: ENJOY 10% OFF
+                MOTOPLEX RACING SEASON: ENJOY 10% OFF
               </h2>
 
               <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed max-w-xl">
-                Upgrade your protection ahead of the highway season. Get 10% instant discount across all Shoei helmets, Dainese leather suits, and Alpinestars boots with coupon code <strong className="text-white font-mono">MOTO10</strong>.
+                Upgrade your ride with high-performance parts. Get 10% instant discount across all racing discs, forged engine kits, and premium fluids with coupon code <strong className="text-white font-mono">MOTO10</strong>.
               </p>
 
               {/* Countdown Timer */}
@@ -120,6 +120,7 @@ export function PromoBanner() {
                   src="https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=800&auto=format&fit=crop"
                   alt="Track Gear Promo Motoplex"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />

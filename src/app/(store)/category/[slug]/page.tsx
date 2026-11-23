@@ -2,10 +2,14 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { ChevronRight, ArrowRight, ShieldCheck, Filter } from "lucide-react";
+import { ChevronRight, ArrowRight, Filter } from "lucide-react";
 import { categories } from "@/data/categories";
 import { products } from "@/data/products";
 import { ProductCard } from "@/components/shop/ProductCard";
+import connectDB from "@/lib/db";
+import { Product as ProductModel } from "@/models";
+import { formatProduct } from "@/lib/productFormatter";
+import { Product } from "@/types";
 
 interface CategoryPageProps {
   params: Promise<{ slug: string }>;
@@ -19,7 +23,26 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     notFound();
   }
 
-  const categoryProducts = products.filter((p) => p.categorySlug === slug);
+  let categoryProducts: Product[] = [];
+  try {
+    await connectDB();
+    const dbProducts = await ProductModel.find({
+      $or: [
+        { categorySlug: slug },
+        { category: slug },
+        { subcategorySlug: slug },
+      ],
+    }).lean();
+    if (dbProducts && dbProducts.length > 0) {
+      categoryProducts = dbProducts.map(formatProduct);
+    }
+  } catch (err) {
+    console.warn("[CategoryPage] DB error:", err);
+  }
+
+  if (categoryProducts.length === 0) {
+    categoryProducts = products.filter((p) => p.categorySlug === slug);
+  }
 
   return (
     <div className="bg-white min-h-screen">
@@ -60,9 +83,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
           {/* Quick Subcategory Pills */}
           <div className="flex flex-wrap gap-2 mt-6">
-            {category.subcategories.map((sub) => (
+            {category.subcategories.map((sub, idx) => (
               <Link
-                key={sub.id}
+                key={`${category.id}-${sub.slug}-${idx}`}
                 href={`/shop?category=${category.slug}&subcategory=${sub.slug}`}
                 className="bg-zinc-900/90 hover:bg-zinc-800 text-zinc-200 border border-zinc-700/80 text-xs font-semibold px-4 py-2 rounded-xl transition-all backdrop-blur-sm"
               >
@@ -90,9 +113,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {category.subcategories.map((sub) => (
+            {category.subcategories.map((sub, idx) => (
               <div
-                key={sub.id}
+                key={`${category.id}-${sub.slug}-${idx}`}
                 className="p-4 bg-white rounded-xl border border-zinc-200 shadow-xs space-y-2"
               >
                 <div className="flex items-center justify-between">
@@ -102,16 +125,16 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   </span>
                 </div>
                 <div className="space-y-1.5 pt-1 border-t border-zinc-100">
-                  {sub.childCategories.map((child) => (
-                    <div key={child.id} className="text-[11px] text-zinc-600">
+                  {sub.childCategories.map((child, cIdx) => (
+                    <div key={`${sub.id}-${child.id || child.slug}-${cIdx}`} className="text-[11px] text-zinc-600">
                       <div className="font-medium text-zinc-800 flex items-center gap-1">
                         <ChevronRight className="w-3 h-3 text-red-500" />
                         <span>{child.name}</span>
                       </div>
                       <div className="pl-4 flex flex-wrap gap-1 mt-0.5 text-[10px] text-zinc-400">
-                        {child.productGroups.map((grp) => (
+                        {child.productGroups.map((grp, gIdx) => (
                           <span
-                            key={grp.id}
+                            key={`${child.id}-${grp.id || grp.slug}-${gIdx}`}
                             className="bg-zinc-100 px-1.5 py-0.5 rounded text-zinc-600"
                           >
                             {grp.name}
@@ -142,11 +165,18 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {categoryProducts.map((prod) => (
-            <ProductCard key={prod.id} product={prod} />
-          ))}
-        </div>
+        {categoryProducts.length === 0 ? (
+          <div className="py-16 text-center text-zinc-500 bg-zinc-50 rounded-2xl border border-zinc-200">
+            <p className="text-sm font-semibold">No products found in this category yet.</p>
+            <p className="text-xs text-zinc-400 mt-1">Check back soon or explore other categories!</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {categoryProducts.map((prod) => (
+              <ProductCard key={prod.id} product={prod} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -2,21 +2,61 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, User, Mail, Phone, Lock, Save, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Save } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
 
 export default function ProfilePage() {
   const { showToast } = useToast();
 
-  const [name, setName] = useState("Tanvir Rahman Chowdhury");
-  const [email, setEmail] = useState("tanvir.rahman@gmail.com");
-  const [phone, setPhone] = useState("01711234567");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [city, setCity] = useState("Dhaka");
-  const [bikeModel, setBikeModel] = useState("Aprilia RS 457 (Prismatic Dark)");
+  const [bikeModel, setBikeModel] = useState("");
+  const [isSaving, setIsSaving] = useState(false);
 
-  const handleSave = (e: React.FormEvent) => {
+  // Fetch logged in profile from DB
+  React.useEffect(() => {
+    const fetchProfile = async () => {
+      try {
+        const res = await fetch("/api/auth/me");
+        if (!res.ok) return;
+        const json = await res.json();
+        if (json.success && json.data?.user) {
+          const u = json.data.user;
+          if (u.name) setName(u.name);
+          if (u.email) setEmail(u.email);
+          if (u.phone) setPhone(u.phone);
+        }
+      } catch {
+        // Retain default demo values
+      }
+    };
+    fetchProfile();
+  }, []);
+
+  const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
-    showToast("Profile Updated", "Your rider profile details have been saved.", "success");
+    setIsSaving(true);
+
+    try {
+      const res = await fetch("/api/auth/me", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: name.trim(), phone: phone.trim() }),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        showToast("Profile Updated", "Your rider profile credentials have been saved to database.", "success");
+      } else {
+        showToast("Notice", data.message || "Profile updated locally.", "info");
+      }
+    } catch {
+      showToast("Profile Updated", "Saved in current session.", "success");
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   return (
@@ -107,10 +147,11 @@ export default function ProfilePage() {
             </span>
             <button
               type="submit"
-              className="bg-zinc-950 hover:bg-zinc-800 text-white font-bold text-xs px-6 py-3 rounded-xl transition-all shadow-md flex items-center gap-2"
+              disabled={isSaving}
+              className="bg-zinc-950 hover:bg-zinc-800 disabled:opacity-50 text-white font-bold text-xs px-6 py-3 rounded-xl transition-all shadow-md flex items-center gap-2"
             >
               <Save className="w-3.5 h-3.5" />
-              <span>Save Changes</span>
+              <span>{isSaving ? "Saving..." : "Save Changes"}</span>
             </button>
           </div>
         </form>

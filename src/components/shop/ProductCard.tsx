@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Star, ShoppingBag, Heart, Eye, Check } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Star, ShoppingBag, Heart, Eye, Check, Zap } from "lucide-react";
 import { Product } from "@/types";
 import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
@@ -14,6 +15,7 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, onQuickView }: ProductCardProps) {
+  const router = useRouter();
   const { addToCart } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
   const [added, setAdded] = useState(false);
@@ -26,6 +28,13 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
     addToCart(product, 1);
     setAdded(true);
     setTimeout(() => setAdded(false), 1500);
+  };
+
+  const handleOrderNow = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addToCart(product, 1);
+    router.push("/checkout");
   };
 
   const handleWishlistToggle = (e: React.MouseEvent) => {
@@ -57,29 +66,29 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
 
   return (
     <div
-      className="group relative bg-white rounded-2xl border border-zinc-200/80 hover:border-zinc-300 hover:shadow-xl hover:shadow-zinc-200/50 transition-all duration-300 flex flex-col overflow-hidden"
+      className="group card-luxury relative bg-white rounded-2xl border border-zinc-200/80 hover:border-zinc-300/90 flex flex-col overflow-hidden will-change-transform transform-gpu"
     >
       {/* Image Container */}
       <div className="relative aspect-square w-full bg-zinc-50 overflow-hidden">
         <Link href={`/product/${product.slug}`} className="relative block w-full h-full">
           {/* Primary image */}
           <Image
-            src={product.images[0]}
+            src={product.images?.[0] || "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=600&auto=format&fit=crop"}
             alt={product.name}
             fill
-            className={`object-cover transition-all duration-500 ease-out transform-gpu group-hover:scale-105 ${
-              product.images.length > 1 ? "group-hover:opacity-0" : ""
+            className={`object-cover transition-all duration-500 ease-out transform-gpu group-hover:scale-106 ${
+              (product.images?.length || 0) > 1 ? "group-hover:opacity-0" : ""
             }`}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />
 
           {/* Secondary image crossfade */}
-          {product.images.length > 1 && (
+          {(product.images?.length || 0) > 1 && product.images?.[1] && (
             <Image
               src={product.images[1]}
               alt={`${product.name} - view 2`}
               fill
-              className="object-cover opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out transform-gpu group-hover:scale-105"
+              className="object-cover opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out transform-gpu group-hover:scale-106"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
           )}
@@ -89,13 +98,14 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
         <div className="absolute top-3 left-3 flex flex-col gap-1.5 z-10 pointer-events-none">
           {badgeText && (
             <span
-              className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-xs ${badgeClass}`}
+              className={`text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm ${badgeClass}`}
             >
               {badgeText}
             </span>
           )}
           {product.stock <= 3 && product.stock > 0 && (
-            <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200">
+            <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-600 border border-amber-500/30 flex items-center gap-1 backdrop-blur-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping" />
               Only {product.stock} left
             </span>
           )}
@@ -105,9 +115,9 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
         <button
           type="button"
           onClick={handleWishlistToggle}
-          className={`absolute top-3 right-3 z-10 p-2 rounded-full backdrop-blur-md transition-all duration-200 cursor-pointer ${
+          className={`absolute top-3 right-3 z-10 p-2 rounded-full backdrop-blur-md transition-all duration-200 cursor-pointer active:scale-90 ${
             isWishlisted
-              ? "bg-red-50 text-red-600 shadow-md scale-105"
+              ? "bg-red-50 text-red-600 shadow-md scale-105 animate-heart-pop"
               : "bg-white/80 hover:bg-white text-zinc-600 hover:text-zinc-950 shadow-sm"
           }`}
           title={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
@@ -116,49 +126,71 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
           <Heart className={`w-4 h-4 ${isWishlisted ? "fill-red-600 text-red-600" : ""}`} />
         </button>
 
-        {/* Mobile Quick Add Button (Bottom Right) */}
-        <button
-          type="button"
-          onClick={handleQuickAdd}
-          className={`md:hidden absolute bottom-3 right-3 z-10 p-2.5 rounded-full shadow-md transition-all active:scale-90 cursor-pointer ${
-            added ? "bg-emerald-600 text-white" : "bg-white/95 text-zinc-900 border border-zinc-200"
-          }`}
-          aria-label="Quick add to cart"
-        >
-          {added ? <Check className="w-4 h-4" /> : <ShoppingBag className="w-4 h-4 text-red-600" />}
-        </button>
+        {/* Mobile Quick Action Buttons (Bottom Right) */}
+        <div className="md:hidden absolute bottom-3 right-3 z-10 flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={handleQuickAdd}
+            className={`p-2 rounded-full shadow-md transition-all active:scale-90 cursor-pointer ${
+              added ? "bg-emerald-600 text-white" : "bg-white/95 text-zinc-900 border border-zinc-200"
+            }`}
+            aria-label="Quick add to cart"
+          >
+            {added ? <Check className="w-3.5 h-3.5" /> : <ShoppingBag className="w-3.5 h-3.5 text-red-600" />}
+          </button>
+          <button
+            type="button"
+            onClick={handleOrderNow}
+            className="bg-red-600 active:bg-red-700 text-white text-[10px] font-bold py-1.5 px-2.5 rounded-full shadow-md flex items-center gap-1 active:scale-90 cursor-pointer"
+            aria-label="Quick Order Now"
+          >
+            <Zap className="w-3 h-3 text-amber-300 fill-amber-300" />
+            <span>Order</span>
+          </button>
+        </div>
 
         {/* Desktop Hover Quick Actions Bar */}
-        <div className="hidden md:flex absolute bottom-3 inset-x-3 z-10 gap-2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+        <div className="hidden md:flex absolute bottom-3 inset-x-3 z-10 gap-1.5 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
           {onQuickView && (
             <button
               type="button"
               onClick={handleQuickViewClick}
-              className="flex-1 bg-white/95 hover:bg-white text-zinc-900 text-xs font-bold py-2.5 px-3 rounded-xl shadow-md border border-zinc-200 transition-all flex items-center justify-center gap-1.5 backdrop-blur-sm cursor-pointer active:scale-95"
+              className="bg-white/95 hover:bg-white text-zinc-900 p-2.5 rounded-xl shadow-md border border-zinc-200 transition-all flex items-center justify-center backdrop-blur-sm cursor-pointer active:scale-95 shrink-0"
+              title="Quick View"
             >
               <Eye className="w-3.5 h-3.5 text-zinc-600" />
-              <span>Quick View</span>
             </button>
           )}
 
           <button
             type="button"
             onClick={handleQuickAdd}
-            className={`flex-1 text-xs font-bold py-2.5 px-3 rounded-xl shadow-md transition-all flex items-center justify-center gap-1.5 cursor-pointer active:scale-95 ${
+            className={`flex-1 text-xs font-bold py-2.5 px-2 rounded-xl shadow-md transition-all flex items-center justify-center gap-1 cursor-pointer active:scale-95 ${
               added
                 ? "bg-emerald-600 text-white"
-                : "bg-red-600 hover:bg-red-700 text-white shadow-red-600/20"
+                : "bg-zinc-900 hover:bg-zinc-800 text-white"
             }`}
+            title="Add to cart"
           >
             {added ? (
               <>
-                <Check className="w-3.5 h-3.5" /> Added
+                <Check className="w-3 h-3" /> Added
               </>
             ) : (
               <>
-                <ShoppingBag className="w-3.5 h-3.5" /> Quick Add
+                <ShoppingBag className="w-3 h-3 text-red-500" /> Cart
               </>
             )}
+          </button>
+
+          <button
+            type="button"
+            onClick={handleOrderNow}
+            className="flex-1 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white text-xs font-bold py-2.5 px-2 rounded-xl shadow-md shadow-red-600/30 transition-all flex items-center justify-center gap-1 cursor-pointer active:scale-95"
+            title="Quick Order Now"
+          >
+            <Zap className="w-3 h-3 text-amber-300 fill-amber-300" />
+            <span>Order Now</span>
           </button>
         </div>
       </div>
@@ -193,12 +225,12 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
         {/* Price & Variant Chips */}
         <div className="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
           <div className="flex items-baseline gap-2">
-            <span className="text-base sm:text-lg font-black text-zinc-950">
-              ৳{product.price.toLocaleString("en-BD")}
+            <span className="text-base sm:text-lg font-black text-zinc-950 font-mono tabular-nums">
+              ৳{Number(product.price || 0).toLocaleString("en-BD")}
             </span>
             {product.compareAtPrice && product.compareAtPrice > product.price && (
-              <span className="text-xs text-zinc-400 line-through">
-                ৳{product.compareAtPrice.toLocaleString("en-BD")}
+              <span className="text-xs text-zinc-400 line-through font-mono tabular-nums">
+                ৳{Number(product.compareAtPrice || 0).toLocaleString("en-BD")}
               </span>
             )}
           </div>

@@ -16,10 +16,10 @@ export default function HomePage() {
       <ServicesSection />
       <FeaturedCategories />
       <FeaturedProducts />
-      <DealershipsSection />
       <PromoBanner />
       <BestSellers />
       <TrustBadges />
+      <DealershipsSection />
       <TestimonialsSection />
     </>
   );

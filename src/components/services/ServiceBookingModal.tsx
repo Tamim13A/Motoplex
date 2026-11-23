@@ -4,18 +4,12 @@ import React, { useState, useEffect } from "react";
 import {
   Wrench,
   X,
-  Calendar,
   Clock,
-  MapPin,
   CheckCircle2,
-  ShieldCheck,
   ChevronRight,
-  Phone,
-  User,
-  Sparkles,
   ArrowRight,
 } from "lucide-react";
-import { bikeServices, BikeService } from "@/data/services";
+import { bikeServices } from "@/data/services";
 import { dealerships } from "@/data/dealerships";
 import { useToast } from "@/context/ToastContext";
 
@@ -41,11 +35,16 @@ export function ServiceBookingModal({
   const [bikePlate, setBikePlate] = useState("DHAKA-METRO-LA-4589");
 
   const [selectedDealershipId, setSelectedDealershipId] = useState("dealership-gulshan");
-  const [bookingDate, setBookingDate] = useState("2026-09-30");
+  const [bookingDate, setBookingDate] = useState(() => {
+    const d = new Date();
+    d.setDate(d.getDate() + 1);
+    return d.toISOString().split("T")[0];
+  });
   const [bookingSlot, setBookingSlot] = useState("11:00 AM – 01:00 PM");
 
-  const [customerName, setCustomerName] = useState("Tanvir Rahman");
-  const [customerPhone, setCustomerPhone] = useState("01711234567");
+  const [customerName, setCustomerName] = useState("");
+  const [customerPhone, setCustomerPhone] = useState("");
+  const [customerEmail, setCustomerEmail] = useState("");
   const [specialNotes, setSpecialNotes] = useState("");
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -60,6 +59,19 @@ export function ServiceBookingModal({
 
   useEffect(() => {
     if (isOpen) {
+      // Auto-prefill authenticated user profile if logged in
+      fetch("/api/auth/me")
+        .then((res) => (res.ok ? res.json() : null))
+        .then((json) => {
+          if (json?.success && json?.data?.user) {
+            const u = json.data.user;
+            if (u.name && !customerName) setCustomerName(u.name);
+            if (u.phone && !customerPhone) setCustomerPhone(u.phone);
+            if (u.email) setCustomerEmail(u.email);
+          }
+        })
+        .catch(() => {});
+
       document.body.style.overflow = "hidden";
       const handleKeyDown = (e: KeyboardEvent) => {
         if (e.key === "Escape") onClose();
@@ -81,25 +93,56 @@ export function ServiceBookingModal({
   const currentDealership =
     dealerships.find((d) => d.id === selectedDealershipId) || dealerships[0];
 
-  const handleConfirmBooking = (e: React.FormEvent) => {
+  const handleConfirmBooking = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!customerName || !customerPhone || !bikeModel) {
+    if (!customerName.trim() || !customerPhone.trim() || !bikeModel.trim()) {
       showToast("Incomplete Form", "Please fill in all required fields.", "error");
       return;
     }
 
     setIsSubmitting(true);
-    setTimeout(() => {
-      const generatedId = `MPX-SRV-${Math.floor(10000 + Math.random() * 90000)}`;
-      setBookingId(generatedId);
+    try {
+      const res = await fetch("/api/services/bookings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          serviceId: currentService.id,
+          serviceName: currentService.name,
+          servicePrice: currentService.priceStarting,
+          serviceDuration: currentService.estimatedTime,
+          customerName: customerName.trim(),
+          customerPhone: customerPhone.trim(),
+          customerEmail: customerEmail.trim() || undefined,
+          bikeBrand: bikeBrand.trim(),
+          bikeModel: bikeModel.trim(),
+          bikePlate: bikePlate.trim(),
+          dealershipId: currentDealership.id,
+          dealershipName: currentDealership.name,
+          dealershipCity: currentDealership.city,
+          bookingDate,
+          bookingSlot,
+          specialNotes: specialNotes.trim(),
+          image: currentService.image,
+        }),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setBookingId(data.booking.bookingNumber);
+        setBookingConfirmed(true);
+        showToast(
+          "Service Slot Reserved!",
+          `Job booking #${data.booking.bookingNumber} confirmed at ${currentDealership.name}. Admin notified!`,
+          "success"
+        );
+      } else {
+        showToast("Booking Failed", data.error || "Could not reserve slot. Please try again.", "error");
+      }
+    } catch {
+      showToast("Network Error", "Unable to contact server. Please try again.", "error");
+    } finally {
       setIsSubmitting(false);
-      setBookingConfirmed(true);
-      showToast(
-        "Service Slot Reserved!",
-        `Job booking ${generatedId} confirmed at ${currentDealership.name}.`,
-        "success"
-      );
-    }, 1000);
+    }
   };
 
   const handleResetAndClose = () => {
@@ -194,7 +237,7 @@ export function ServiceBookingModal({
                 </div>
                 <div className="flex justify-between items-center pt-2 border-t border-zinc-200 text-sm">
                   <span className="font-bold text-zinc-900">Estimated Starting Cost:</span>
-                  <span className="font-black text-zinc-950">৳{currentService.priceStarting.toLocaleString("en-BD")}</span>
+                  <span className="font-black text-zinc-950">৳{Number(currentService?.priceStarting || 0).toLocaleString("en-BD")}</span>
                 </div>
               </div>
 
@@ -430,6 +473,7 @@ export function ServiceBookingModal({
                       <input
                         type="date"
                         required
+                        min={new Date().toISOString().split("T")[0]}
                         value={bookingDate}
                         onChange={(e) => setBookingDate(e.target.value)}
                         className="w-full bg-zinc-50 border border-zinc-200 rounded-xl px-3 py-2.5 text-zinc-900 font-semibold focus:outline-none focus:ring-1 focus:ring-red-600 cursor-pointer"
@@ -500,7 +544,7 @@ export function ServiceBookingModal({
                     <div className="text-right">
                       <span className="text-[10px] text-zinc-500 block">Est. Starting Total</span>
                       <span className="font-black text-sm text-red-600">
-                        ৳{currentService.priceStarting.toLocaleString("en-BD")}
+                        ৳{Number(currentService?.priceStarting || 0).toLocaleString("en-BD")}
                       </span>
                     </div>
                   </div>

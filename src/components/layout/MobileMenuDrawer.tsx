@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { X, ChevronDown, ChevronRight, Phone, MapPin, Shield, Search, ArrowRight } from "lucide-react";
+import { X, ChevronDown, ChevronRight, Phone, MapPin, Shield, Search, ArrowRight, Truck } from "lucide-react";
 import { categories } from "@/data/categories";
 
 interface MobileMenuDrawerProps {
@@ -77,7 +77,7 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
             >
               <input
                 type="text"
-                placeholder="Search helmets, gear, bikes..."
+                placeholder="Search brake discs, engine parts, tyres..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full bg-white border border-zinc-200 rounded-xl pl-9 pr-4 py-2.5 text-xs text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-1 focus:ring-red-600"
@@ -121,8 +121,8 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
                       {/* Subcategories Accordion */}
                       {isExpanded && (
                         <div className="pl-3 pb-3 space-y-3 pt-1 animate-in fade-in duration-200">
-                          {cat.subcategories.map((sub) => (
-                            <div key={sub.id} className="space-y-1">
+                          {cat.subcategories.map((sub, subIdx) => (
+                            <div key={`${cat.id}-${sub.slug || sub.id}-${subIdx}`} className="space-y-1">
                               <Link
                                 href={`/shop?category=${cat.slug}&subcategory=${sub.slug}`}
                                 onClick={onClose}
@@ -180,6 +180,14 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
                   <ArrowRight className="w-3.5 h-3.5 text-zinc-400" />
                 </Link>
                 <Link
+                  href="/login"
+                  onClick={onClose}
+                  className="flex items-center justify-between p-2.5 bg-zinc-950 text-white rounded-xl font-bold shadow-xs my-2"
+                >
+                  <span>Customer Login / Register</span>
+                  <ArrowRight className="w-4 h-4 text-white" />
+                </Link>
+                <Link
                   href="/shop"
                   onClick={onClose}
                   className="flex items-center justify-between py-1.5 hover:text-red-600"
@@ -188,11 +196,21 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
                   <ArrowRight className="w-3.5 h-3.5 text-zinc-400" />
                 </Link>
                 <Link
+                  href="/track"
+                  onClick={onClose}
+                  className="flex items-center justify-between py-1.5 text-red-600 font-bold"
+                >
+                  <span className="flex items-center gap-1.5">
+                    <Truck className="w-3.5 h-3.5" /> Track Order Live
+                  </span>
+                  <ArrowRight className="w-3.5 h-3.5 text-red-600" />
+                </Link>
+                <Link
                   href="/account/orders"
                   onClick={onClose}
                   className="flex items-center justify-between py-1.5 hover:text-red-600"
                 >
-                  <span>Track My Orders</span>
+                  <span>My Orders & Invoices</span>
                   <ArrowRight className="w-3.5 h-3.5 text-zinc-400" />
                 </Link>
                 <Link
@@ -210,14 +228,6 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
                 >
                   <span>Showroom Locations & Support</span>
                   <ArrowRight className="w-3.5 h-3.5 text-zinc-400" />
-                </Link>
-                <Link
-                  href="/admin"
-                  onClick={onClose}
-                  className="flex items-center justify-between py-1.5 text-red-600 font-semibold"
-                >
-                  <span>Admin Dashboard Demo</span>
-                  <Shield className="w-3.5 h-3.5" />
                 </Link>
               </div>
             </div>

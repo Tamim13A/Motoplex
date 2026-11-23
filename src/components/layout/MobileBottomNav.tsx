@@ -19,7 +19,7 @@ export function MobileBottomNav() {
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-zinc-200 pt-1.5 pb-2 md:hidden shadow-xl pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-xl border-t border-zinc-200/80 pt-1.5 pb-2 md:hidden shadow-2xl shadow-black/10 pb-[max(0.5rem,env(safe-area-inset-bottom))] transition-all">
       <div className="grid grid-cols-5 items-center px-1">
         {navItems.map((item, idx) => {
           const Icon = item.icon;
@@ -31,12 +31,12 @@ export function MobileBottomNav() {
                 key={idx}
                 type="button"
                 onClick={() => setIsCartOpen(true)}
-                className="flex flex-col items-center justify-center py-1 text-zinc-600 hover:text-red-600 transition-colors relative cursor-pointer active:scale-95"
+                className="flex flex-col items-center justify-center py-1 text-zinc-600 hover:text-red-600 transition-colors relative cursor-pointer active:scale-90 duration-150"
               >
                 <div className="relative">
                   <Icon className="w-5 h-5" />
                   {item.count && item.count > 0 ? (
-                    <span className="absolute -top-1.5 -right-2 bg-red-600 text-white text-[9px] font-black w-4 h-4 rounded-full flex items-center justify-center shadow-xs">
+                    <span className="absolute -top-1.5 -right-2 bg-red-600 text-white text-[9px] font-black w-4 h-4 rounded-full flex items-center justify-center animate-badge-pop shadow-xs">
                       {item.count}
                     </span>
                   ) : null}
@@ -50,12 +50,12 @@ export function MobileBottomNav() {
             <Link
               key={idx}
               href={item.href!}
-              className={`flex flex-col items-center justify-center py-1 transition-colors relative active:scale-95 ${
+              className={`flex flex-col items-center justify-center py-1 transition-all relative active:scale-90 duration-150 ${
                 isActive
                   ? "text-red-600 font-bold"
                   : item.isHighlighted
                   ? "text-zinc-900 font-bold"
-                  : "text-zinc-600 hover:text-zinc-950"
+                  : "text-zinc-500 hover:text-zinc-950"
               }`}
             >
               <div className="relative">
@@ -65,6 +65,9 @@ export function MobileBottomNav() {
                 )}
               </div>
               <span className="text-[10px] font-semibold mt-1">{item.label}</span>
+              {isActive && (
+                <span className="w-1 h-1 rounded-full bg-red-600 mt-0.5 animate-in fade-in" />
+              )}
             </Link>
           );
         })}

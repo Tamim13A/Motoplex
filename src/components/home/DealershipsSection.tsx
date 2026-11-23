@@ -1,155 +1,139 @@
 "use client";
 
-import React, { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import {
-  MapPin,
-  Phone,
-  Clock,
-  ExternalLink,
-  ShieldCheck,
-  CheckCircle2,
-  Calendar,
-  Building2,
-  Navigation,
-} from "lucide-react";
-import { dealerships, Dealership } from "@/data/dealerships";
+import React from "react";
+import { ShieldCheck, BadgeCheck, CheckCircle2, Star } from "lucide-react";
+
+const authorizedBrands = [
+  {
+    id: "aprilia",
+    brand: "Aprilia",
+    origin: "Italy",
+    logo: "A",
+    gradient: "from-red-600 to-red-800",
+    glow: "shadow-red-900/60",
+    badge: "Piaggio Group Certified",
+    badgeColor: "text-red-400 border-red-800/50 bg-red-950/60",
+    desc: "Official Authorized Dealer",
+  },
+  {
+    id: "vespa",
+    brand: "Vespa",
+    origin: "Italy",
+    logo: "V",
+    gradient: "from-slate-500 to-slate-700",
+    glow: "shadow-slate-900/60",
+    badge: "Vespa World Club Partner",
+    badgeColor: "text-slate-300 border-slate-700/50 bg-slate-900/60",
+    desc: "Official Authorized Dealer",
+  },
+  {
+    id: "motoguzzi",
+    brand: "Moto Guzzi",
+    origin: "Italy",
+    logo: "MG",
+    gradient: "from-amber-500 to-amber-700",
+    glow: "shadow-amber-900/60",
+    badge: "Piaggio Group Exclusive",
+    badgeColor: "text-amber-400 border-amber-800/50 bg-amber-950/60",
+    desc: "Exclusive BD Importer",
+  },
+];
+
+const guaranteePoints = [
+  "Factory Hologram on every product",
+  "Official import documentation",
+  "International manufacturer warranty",
+];
 
 export function DealershipsSection() {
-  const [selectedBranch, setSelectedBranch] = useState<string>("dealership-gulshan");
-
   return (
-    <section className="py-16 md:py-24 bg-white border-b border-zinc-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+    <section className="bg-zinc-950 relative overflow-hidden">
+      {/* Top accent line */}
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-red-600/40 to-transparent" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-18">
+
+        {/* Header row */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 border border-zinc-200 text-xs text-zinc-800 font-bold uppercase tracking-wider mb-2">
-              <Building2 className="w-3.5 h-3.5 text-red-600" />
-              <span>Nationwide Presence</span>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-600/10 border border-red-600/20 text-[11px] text-red-400 font-bold uppercase tracking-wider mb-2">
+              <BadgeCheck className="w-3 h-3" />
+              Official Authorized Dealerships
             </div>
-            <h2 className="text-2xl sm:text-4xl font-black text-zinc-950 tracking-tight">
-              3 AUTHORIZED DEALERSHIPS & SERVICE CENTERS
+            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+              WE ARE AN AUTHORIZED PARTNER OF
+              <span className="text-red-500"> 3 ITALIAN BRANDS</span>
             </h2>
-            <p className="text-xs sm:text-sm text-zinc-500 mt-2 max-w-xl leading-relaxed">
-              Visit our state-of-the-art 3S sales, service, and spare parts facilities located strategically across Dhaka and Chattogram.
+            <p className="text-zinc-500 text-xs mt-1.5 max-w-lg">
+              Every product sold at Motoplex BD is 100% original — directly imported under{" "}
+              <span className="text-zinc-300 font-semibold">official Piaggio Group authorization</span>.
             </p>
           </div>
-
-          <Link
-            href="/dealerships"
-            className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-red-600 hover:text-red-700 uppercase tracking-wider"
-          >
-            <span>View Branch Amenities & Staff</span>
-            <ExternalLink className="w-4 h-4" />
-          </Link>
+          {/* Trust counter */}
+          <div className="shrink-0 hidden sm:flex flex-col items-center justify-center w-20 h-20 rounded-2xl bg-red-600/10 border border-red-600/20">
+            <span className="text-3xl font-black text-white leading-none">3</span>
+            <span className="text-[9px] text-red-400 uppercase tracking-wider font-bold text-center leading-tight mt-0.5">
+              Authorized<br />Brands
+            </span>
+          </div>
         </div>
 
-        {/* 3 Dealership Cards (1-col on mobile, 3-col on desktop) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {dealerships.map((deal) => (
+        {/* 3 Brand Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          {authorizedBrands.map((brand) => (
             <div
-              key={deal.id}
-              className="bg-zinc-50 rounded-3xl border border-zinc-200/90 overflow-hidden flex flex-col justify-between hover:shadow-xl hover:border-zinc-300 transition-all duration-300 group"
+              key={brand.id}
+              className="relative rounded-2xl border border-white/[0.08] bg-white/[0.03] overflow-hidden hover:bg-white/[0.06] hover:border-white/[0.14] transition-all duration-300 group"
             >
-              {/* Image & City Badge */}
-              <div className="relative aspect-16/10 w-full bg-zinc-900 overflow-hidden">
-                <Image
-                  src={deal.image}
-                  alt={deal.name}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
-                <div className="absolute top-3 left-3">
-                  <span className="text-[10px] font-bold uppercase tracking-wider bg-red-600 text-white px-2.5 py-1 rounded-full shadow-md">
-                    {deal.badge}
-                  </span>
-                </div>
-                <div className="absolute bottom-3 left-3 text-white">
-                  <span className="text-xs font-black uppercase tracking-wider text-zinc-300">
-                    {deal.city}, Bangladesh
-                  </span>
-                </div>
-              </div>
+              {/* Top color accent */}
+              <div className={`h-[3px] w-full bg-gradient-to-r ${brand.gradient}`} />
 
-              {/* Body */}
-              <div className="p-6 space-y-4 flex-1">
-                <div>
-                  <h3 className="font-bold text-base sm:text-lg text-zinc-950 group-hover:text-red-600 transition-colors leading-snug">
-                    {deal.name}
-                  </h3>
-                  <p className="text-xs text-zinc-500 mt-1">{deal.tagline}</p>
-                </div>
-
-                <div className="space-y-2.5 text-xs text-zinc-600 pt-2 border-t border-zinc-200">
-                  <div className="flex items-start gap-2.5">
-                    <MapPin className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
-                    <span>{deal.address}</span>
-                  </div>
-                  <div className="flex items-center gap-2.5">
-                    <Phone className="w-4 h-4 text-red-600 shrink-0" />
-                    <a
-                      href={`tel:${deal.phone.replace(/[^0-9+]/g, "")}`}
-                      className="font-bold text-zinc-900 hover:text-red-600 transition-colors"
-                    >
-                      {deal.phone}
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-2.5 text-[11px] text-zinc-500">
-                    <Clock className="w-4 h-4 text-zinc-400 shrink-0" />
-                    <span>{deal.hours}</span>
-                  </div>
-                </div>
-
-                {/* Facility Tags */}
-                <div className="pt-2">
-                  <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-2">
-                    Key Facilities:
-                  </p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {deal.facilities.slice(0, 3).map((f, i) => (
-                      <span
-                        key={i}
-                        className="text-[10px] bg-white border border-zinc-200 text-zinc-700 px-2.5 py-1 rounded-lg font-medium"
-                      >
-                        {f}
-                      </span>
-                    ))}
-                    {deal.facilities.length > 3 && (
-                      <span className="text-[10px] text-zinc-500 px-1 py-1">
-                        +{deal.facilities.length - 3} more
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="p-6 pt-0 flex gap-2">
-                <a
-                  href={deal.googleMapUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 bg-white hover:bg-zinc-100 text-zinc-900 border border-zinc-200 font-bold text-xs py-3 rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-xs"
+              <div className="p-5 flex items-center gap-4">
+                {/* Logo badge */}
+                <div
+                  className={`w-13 h-13 w-[52px] h-[52px] rounded-xl bg-gradient-to-br ${brand.gradient} shadow-lg ${brand.glow} flex items-center justify-center shrink-0`}
                 >
-                  <Navigation className="w-3.5 h-3.5 text-red-600" />
-                  <span>Get Directions</span>
-                </a>
-                <Link
-                  href="/services"
-                  className="flex-1 bg-zinc-950 hover:bg-zinc-800 text-white font-bold text-xs py-3 rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-md"
-                >
-                  <Calendar className="w-3.5 h-3.5" />
-                  <span>Book Visit</span>
-                </Link>
+                  <span className="text-white font-black text-base leading-none">{brand.logo}</span>
+                </div>
+
+                {/* Info */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-1.5 mb-0.5">
+                    <h3 className="text-white font-black text-sm leading-tight">{brand.brand}</h3>
+                    <ShieldCheck className="w-3.5 h-3.5 text-green-500 shrink-0" />
+                  </div>
+                  <p className="text-zinc-500 text-[11px]">🇮🇹 {brand.origin} • {brand.desc}</p>
+                  <div className={`inline-flex items-center gap-1 mt-2 px-2 py-0.5 rounded-full border text-[10px] font-bold ${brand.badgeColor}`}>
+                    <Star className="w-2.5 h-2.5" fill="currentColor" />
+                    <span>{brand.badge}</span>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Bottom Guarantee Strip */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-xl border border-red-600/15 bg-gradient-to-r from-red-950/30 to-transparent px-5 py-4">
+          <div className="flex items-center gap-2.5 shrink-0">
+            <div className="w-8 h-8 rounded-lg bg-red-600 flex items-center justify-center shrink-0">
+              <ShieldCheck className="w-4 h-4 text-white" />
+            </div>
+            <span className="text-white font-bold text-sm">100% Original Product Guarantee</span>
+          </div>
+          <div className="flex flex-wrap gap-x-5 gap-y-1.5">
+            {guaranteePoints.map((point, i) => (
+              <div key={i} className="flex items-center gap-1.5">
+                <CheckCircle2 className="w-3 h-3 text-green-500 shrink-0" />
+                <span className="text-zinc-400 text-[11px]">{point}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
+      {/* Bottom accent line */}
+      <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-zinc-700/40 to-transparent" />
     </section>
   );
 }

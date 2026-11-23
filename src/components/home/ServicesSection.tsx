@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import {
   Wrench,
   CheckCircle2,
@@ -10,11 +9,9 @@ import {
   ShieldCheck,
   ArrowRight,
   Flame,
-  Gauge,
-  Sparkles,
   Calendar,
 } from "lucide-react";
-import { bikeServices, BikeService } from "@/data/services";
+import { bikeServices } from "@/data/services";
 import { ServiceBookingModal } from "@/components/services/ServiceBookingModal";
 
 export function ServicesSection() {
@@ -27,7 +24,7 @@ export function ServicesSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-zinc-950 text-white relative overflow-hidden border-b border-zinc-800">
+    <section className="py-16 md:py-24 bg-zinc-950 text-white relative overflow-hidden border-t border-zinc-800/80 border-b border-zinc-800">
       {/* Background Ambient Glow */}
       <div className="absolute top-0 right-10 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-80 h-80 bg-zinc-800/20 rounded-full blur-3xl pointer-events-none" />
@@ -102,7 +99,7 @@ export function ServicesSection() {
                   <div className="text-right shrink-0">
                     <span className="text-[10px] text-zinc-500 uppercase block">Starting At</span>
                     <span className="text-xl sm:text-2xl font-black text-white">
-                      ৳{service.priceStarting.toLocaleString("en-BD")}
+                      ৳{Number(service.priceStarting || 0).toLocaleString("en-BD")}
                     </span>
                   </div>
                 </div>

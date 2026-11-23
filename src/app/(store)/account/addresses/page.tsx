@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowLeft, MapPin, Plus, Trash2, Edit2, CheckCircle2, X } from "lucide-react";
+import { ArrowLeft, MapPin, Plus, Trash2, CheckCircle2, X } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
 import { bangladeshDivisions } from "@/data/bangladesh";
 
@@ -21,30 +21,7 @@ interface AddressItem {
 export default function AddressesPage() {
   const { showToast } = useToast();
 
-  const [addresses, setAddresses] = useState<AddressItem[]>([
-    {
-      id: "addr-1",
-      label: "Home (Gulshan Flagship Area)",
-      isDefault: true,
-      name: "Tanvir Rahman",
-      phone: "+880 1711-234567",
-      address: "House 14, Road 112, Gulshan-2",
-      area: "Gulshan",
-      district: "Dhaka City",
-      division: "Dhaka",
-    },
-    {
-      id: "addr-2",
-      label: "Office (Banani)",
-      isDefault: false,
-      name: "Tanvir Rahman",
-      phone: "+880 1711-234567",
-      address: "Tower 7, Floor 8, Road 11, Block D, Banani",
-      area: "Banani",
-      district: "Dhaka City",
-      division: "Dhaka",
-    },
-  ]);
+  const [addresses, setAddresses] = useState<AddressItem[]>([]);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [newLabel, setNewLabel] = useState("Showroom Pickup / Residence");
@@ -52,8 +29,56 @@ export default function AddressesPage() {
   const [newPhone, setNewPhone] = useState("");
   const [newAddress, setNewAddress] = useState("");
   const [newDivision, setNewDivision] = useState("Dhaka");
-  const [newDistrict, setNewDistrict] = useState("Dhaka City");
+  const [newDistrict, setNewDistrict] = useState("Dhaka");
   const [newArea, setNewArea] = useState("Gulshan");
+
+  // Fetch logged in customer addresses from DB
+  useEffect(() => {
+    const fetchUserAddresses = async () => {
+      try {
+        const res = await fetch("/api/auth/me");
+        if (!res.ok) return;
+        const json = await res.json();
+        if (json.success && Array.isArray(json.data?.user?.addresses) && json.data.user.addresses.length > 0) {
+          const mapped: AddressItem[] = json.data.user.addresses.map((a: any, idx: number) => ({
+            id: a._id?.toString() || `addr-${idx}`,
+            label: a.area ? `${a.area} Address` : "Delivery Address",
+            isDefault: Boolean(a.isDefault),
+            name: json.data.user.name || "Customer",
+            phone: json.data.user.phone || "+880 17XXXXXXXX",
+            address: a.address || "",
+            area: a.area || "Gulshan",
+            district: a.district || "Dhaka",
+            division: a.division || "Dhaka",
+          }));
+          setAddresses(mapped);
+        }
+      } catch {
+        // Fallback to initial mock list
+      }
+    };
+    fetchUserAddresses();
+  }, []);
+
+  const syncAddressesToDb = async (updatedList: AddressItem[]) => {
+    try {
+      await fetch("/api/auth/me", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          addresses: updatedList.map((a) => ({
+            division: a.division,
+            district: a.district,
+            area: a.area,
+            address: a.address,
+            isDefault: a.isDefault,
+          })),
+        }),
+      });
+    } catch {
+      // Local state is already updated
+    }
+  };
 
   const currentDivData = bangladeshDivisions.find((d) => d.division === newDivision);
   const availableDistricts = currentDivData ? Object.keys(currentDivData.districts) : [];
@@ -79,17 +104,19 @@ export default function AddressesPage() {
   }, [isModalOpen]);
 
   const handleSetDefault = (id: string) => {
-    setAddresses((prev) =>
-      prev.map((a) => ({
-        ...a,
-        isDefault: a.id === id,
-      }))
-    );
+    const updated = addresses.map((a) => ({
+      ...a,
+      isDefault: a.id === id,
+    }));
+    setAddresses(updated);
+    syncAddressesToDb(updated);
     showToast("Default Address Set", "Primary delivery address updated.", "success");
   };
 
   const handleDelete = (id: string) => {
-    setAddresses((prev) => prev.filter((a) => a.id !== id));
+    const updated = addresses.filter((a) => a.id !== id);
+    setAddresses(updated);
+    syncAddressesToDb(updated);
     showToast("Address Removed", "Saved address was deleted.", "info");
   };
 
@@ -103,7 +130,7 @@ export default function AddressesPage() {
     const newAddr: AddressItem = {
       id: `addr-${Date.now()}`,
       label: newLabel,
-      isDefault: false,
+      isDefault: addresses.length === 0,
       name: newName,
       phone: newPhone || "+880 1711-234567",
       address: newAddress,
@@ -112,7 +139,9 @@ export default function AddressesPage() {
       division: newDivision,
     };
 
-    setAddresses((prev) => [...prev, newAddr]);
+    const updated = [...addresses, newAddr];
+    setAddresses(updated);
+    syncAddressesToDb(updated);
     setIsModalOpen(false);
     showToast("New Address Added", "Saved to your delivery address book.", "success");
     setNewName("");
@@ -149,9 +178,8 @@ export default function AddressesPage() {
           {addresses.map((addr) => (
             <div
               key={addr.id}
-              className={`bg-white rounded-3xl p-6 border shadow-xs flex flex-col justify-between space-y-4 ${
-                addr.isDefault ? "border-zinc-950 ring-1 ring-zinc-950" : "border-zinc-200"
-              }`}
+              className={`bg-white rounded-3xl p-6 border shadow-xs flex flex-col justify-between space-y-4 ${addr.isDefault ? "border-zinc-950 ring-1 ring-zinc-950" : "border-zinc-200"
+                }`}
             >
               <div>
                 <div className="flex items-center justify-between pb-3 border-b border-zinc-100">

@@ -18,10 +18,13 @@
   --brand-primary-light: #fef2f2;
   --brand-dark: #09090b;
 
-  /* Transition speeds */
+  /* Transition speeds & Spring Physics */
   --ease-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
   --ease-std: 250ms cubic-bezier(0.16, 1, 0.3, 1);
   --ease-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --spring-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --spring-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --spring-snappy: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 /* ============================================
@@ -37,6 +40,9 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -49,6 +55,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   line-height: 1.5;
+}
+
+/* 120 FPS GPU Hardware Acceleration & Instant Touch Feedback */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gpu-accelerated,
+.group,
+img,
+button,
+a {
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 /* ============================================
@@ -185,6 +205,30 @@ body {
   50% { transform: translateY(-4px); }
 }
 
+@keyframes heart-pop {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.35); }
+  50% { transform: scale(0.92); }
+  75% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+@keyframes badge-pop {
+  0% { transform: scale(0.4); opacity: 0; }
+  70% { transform: scale(1.25); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes ray-shimmer {
+  0% { transform: translateX(-150%) skewX(-20deg); }
+  100% { transform: translateX(250%) skewX(-20deg); }
+}
+
+@keyframes shimmer-wave {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
 /* ============================================
    ANIMATION UTILITIES
    ============================================ */
@@ -198,6 +242,58 @@ body {
 .animate-pulse-glow { animation: pulse-glow 2s ease infinite; }
 .animate-bounce-subtle { animation: bounce-subtle 2s ease infinite; }
 .animate-spin-slow { animation: spin-slow 3s linear infinite; }
+.animate-heart-pop { animation: heart-pop 0.45s var(--spring-bounce); }
+.animate-badge-pop { animation: badge-pop 0.35s var(--spring-bounce); }
+
+/* Luxury card micro-interactions & Italian Motorsport accents */
+.card-luxury {
+  transition: transform 260ms var(--spring-smooth), box-shadow 260ms var(--spring-smooth), border-color 260ms var(--spring-smooth);
+}
+.card-luxury:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.tricolore-accent {
+  background: linear-gradient(90deg, #009246 0% 33.33%, #ffffff 33.33% 66.66%, #ce2b37 66.66% 100%);
+}
+
+.animate-shimmer-ray {
+  position: relative;
+  overflow: hidden;
+}
+.animate-shimmer-ray::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transform: translateX(-150%) skewX(-20deg);
+  animation: ray-shimmer 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.skeleton-wave {
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+.skeleton-wave::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.5) 20%,
+    rgba(255, 255, 255, 0.7) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer-wave 1.6s infinite ease-out;
+}
 
 /* Tailwind-style animate-in helpers */
 .animate-in {
@@ -317,10 +413,63 @@ body {
 }
 
 /* ============================================
-   PRINT STYLES (optional QoL)
+   OFFICIAL TAX INVOICE — 1-PAGE A4 PRINT ENGINE
    ============================================ */
 
 @media print {
-  body { background: white !important; }
-  .no-print { display: none !important; }
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #09090b !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    font-size: 11px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* When printing directly, ensure background headers and footers are suppressed */
+  header,
+  footer,
+  nav,
+  .no-print {
+    display: none !important;
+  }
 }
+
+/* ============================================
+   ANNOUNCEMENT BAR — TICKER ANIMATION
+   ============================================ */
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: inline-flex;
+  animation: ticker 30s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* ============================================
+   HIDE NEXT.JS DEV INDICATOR ("N" BADGE) & OVERLAYS
+   ============================================ */
+nextjs-portal,
+#nextjs-dev-tools-indicator,
+[data-nextjs-dev-tools-indicator],
+[data-nextjs-toast] {
+  display: none !important;
+}
+

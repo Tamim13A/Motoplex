@@ -8,68 +8,65 @@ import { ArrowRight, ShieldCheck, Zap, Award, ChevronLeft, ChevronRight, Flame }
 const heroSlides = [
   {
     id: "slide-1",
-    tag: "Official 2026 Season Launch",
-    badge: "Aprilia RS 457 Now In Bangladesh",
-    headline: ["THE APEX OF", "ITALIAN RACING", "& LUXURY COMMUTING."],
-    highlightWord: "ITALIAN RACING",
+    tag: "High-Performance Braking Division",
+    badge: "DND & RPD Multi-Pot Systems",
+    headline: ["Precision track bite,", "heat-dissipating alloy,", "unrivaled lever control"],
     description:
-      "Direct official importer of Aprilia supersports, Vespa scooters, and world-championship certified safety gear from Shoei, Dainese, Alpinestars, and Akrapovič in Bangladesh.",
-    primaryCta: { href: "/shop", label: "Explore 2026 Collection" },
-    secondaryCta: { href: "/product/aprilia-rs-457-twin-cylinder", label: "Aprilia RS 457 Specs" },
-    image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1200&auto=format&fit=crop",
-    imageAlt: "Aprilia RS 457 Motoplex Bangladesh",
-    cardTitle: "Aprilia RS 457",
-    cardSub: "Prismatic Dark & Racing Stripes",
-    cardBadge: "Flagship Edition",
-    cardPrice: "৳9,85,000",
+      "Direct importer of DND floating brake discs, RPD Zenith multi-pot calipers, radial master cylinders, and Frando racing pads for Yamaha R15, Honda CBR, and Suzuki GSX-R.",
+    primaryCta: { href: "/category/brake-system", label: "Explore Brake Systems" },
+    secondaryCta: { href: "/shop?category=brake-system", label: "All Brake Rotors" },
+    image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "DND Floating Brake Rotor Motoplex BD",
+    cardTitle: "DND 320mm Racing Disc",
+    cardSub: "Floating Rotor • CNC Center Carrier",
+    cardBadge: "Race Division",
+    cardPrice: "৳6,500",
     stats: [
-      { value: "47.6 HP", label: "Parallel Twin" },
-      { value: "ECE 22.06", label: "FIM Certified" },
-      { value: "64 Districts", label: "Nationwide Delivery" },
+      { value: "320mm", label: "Rotor Diameter" },
+      { value: "Grade 5", label: "Floating Pins" },
+      { value: "64 Districts", label: "Express Delivery" },
     ],
   },
   {
     id: "slide-2",
-    tag: "Iconic Italian Design",
-    badge: "Vespa Primavera Now Available",
-    headline: ["TIMELESS ITALIAN", "SCOOTER CULTURE,", "DHAKA-READY."],
-    highlightWord: "ITALIAN",
+    tag: "Engine & Performance Tuning",
+    badge: "NLK Racing Cylinder Kits",
+    headline: ["Race-grade compression,", "forged resilience,", "maximum track RPM"],
     description:
-      "The Vespa Primavera 150 — embodying six decades of Italian design heritage, now officially imported for Bangladesh roads with full BRTA documentation and 2-year warranty.",
-    primaryCta: { href: "/category/motorcycles", label: "View All Scooters" },
-    secondaryCta: { href: "/product/vespa-primavera-150-touring", label: "Vespa Primavera Specs" },
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1200&auto=format&fit=crop",
-    imageAlt: "Vespa Primavera Motoplex Bangladesh",
-    cardTitle: "Vespa Primavera 150",
-    cardSub: "Matt Rosso Passione • Touring Edition",
-    cardBadge: "Iconic Heritage",
-    cardPrice: "৳3,75,000",
+      "Official dealer for NLK Racing cylinders, high-lift camshafts, big valve heads, throttle bodies, programmable ECUs, and racing fuel pumps in Bangladesh.",
+    primaryCta: { href: "/category/engine-performance", label: "View Engine Parts" },
+    secondaryCta: { href: "/shop?category=engine-performance", label: "Performance Kits" },
+    image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "NLK Racing Engine Performance Kit Motoplex",
+    cardTitle: "NLK Piston Cylinder 65mm",
+    cardSub: "Forged Piston • High-Flow Bore Kit",
+    cardBadge: "Track Pro",
+    cardPrice: "৳16,000",
     stats: [
-      { value: "11.7 HP", label: "Euro 5 Engine" },
-      { value: "3-Year", label: "Official Warranty" },
-      { value: "Smart Delivery", label: "Express Dhaka" },
+      { value: "65mm", label: "Bore Size" },
+      { value: "Forged", label: "Piston Alloy" },
+      { value: "Genuine", label: "NLK Authenticity" },
     ],
   },
   {
     id: "slide-3",
-    tag: "World Championship Certified",
-    badge: "Shoei NXR2 Helmets In Stock",
-    headline: ["RACE-GRADE", "PROTECTION FOR", "BANGLADESH RIDERS."],
-    highlightWord: "RACE-GRADE",
+    tag: "Supersport Compound Tyres",
+    badge: "Pirelli Diablo Rosso & Michelin",
+    headline: ["Lean-angle mastery,", "wet and dry traction,", "high-speed stability"],
     description:
-      "Official distributor of Shoei, AGV, and Arai helmets — all ECE 22.06 & SNELL 2020 certified. Expert helmet fitting consultations at our Gulshan-2 flagship showroom.",
-    primaryCta: { href: "/category/helmets", label: "Shop All Helmets" },
-    secondaryCta: { href: "/product/shoei-nxr2-motegi-2-tc1", label: "Shoei NXR2 Details" },
+      "Equip your machine with genuine Pirelli Diablo Rosso IV, Rosso Sport, and Michelin Road 6 radial tyres designed for maximum cornering confidence across Bangladesh.",
+    primaryCta: { href: "/category/tyres", label: "Shop Performance Tyres" },
+    secondaryCta: { href: "/shop?category=tyres", label: "View Tyre Pair Sets" },
     image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
-    imageAlt: "Shoei Helmet Motoplex Bangladesh",
-    cardTitle: "Shoei NXR2 Motegi2 TC-1",
-    cardSub: "ECE 22.06 • SNELL 2020 Certified",
-    cardBadge: "Track Proven",
-    cardPrice: "৳78,500",
+    imageAlt: "Pirelli Diablo Rosso Motoplex BD",
+    cardTitle: "Pirelli Rosso 4 Tyre Pair",
+    cardSub: "110/70 Front + 140/70 Rear Set",
+    cardBadge: "Supersport",
+    cardPrice: "৳33,000",
     stats: [
-      { value: "0.3kg", label: "Shell Weight" },
-      { value: "ECE 22.06", label: "Safety Certified" },
-      { value: "7 Sizes", label: "Available Now" },
+      { value: "Dual Compound", label: "Silica Tread" },
+      { value: "W-Rated", label: "High-Speed" },
+      { value: "In Stock", label: "Fresh Import" },
     ],
   },
 ];
@@ -107,9 +104,11 @@ export function HeroBanner() {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      {/* Background Ambient Glows */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-red-600/12 rounded-full blur-3xl pointer-events-none transition-all duration-1000 transform-gpu" />
-      <div className="absolute bottom-0 left-10 w-80 h-80 bg-zinc-800/20 rounded-full blur-3xl pointer-events-none" />
+      {/* Top Italian Tricolore Ribbon */}
+      <div className="w-full h-1 tricolore-accent" />
+
+      {/* Subtle track-grid texture backdrop */}
+      <div className="absolute inset-0 bg-[radial-gradient(#27272a_1px,transparent_1px)] [background-size:24px_24px] opacity-25 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-28 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -120,24 +119,17 @@ export function HeroBanner() {
             style={{ animation: "fade-in-up 0.4s cubic-bezier(0.16,1,0.3,1) forwards" }}
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs text-zinc-300">
-              <span className="flex h-2 w-2 rounded-full bg-red-500 animate-ping" />
+              <span className="h-1.5 w-1.5 rounded-full bg-red-600" />
               <span className="font-semibold text-white">{slide.tag}</span>
               <span className="text-zinc-600">•</span>
-              <span className="text-red-400 font-bold uppercase tracking-wider text-[10px]">
+              <span className="text-red-500 font-bold uppercase tracking-wider text-[10px]">
                 {slide.badge}
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] text-white">
               {slide.headline.map((line, i) => (
-                <span
-                  key={i}
-                  className={`block ${
-                    line === slide.highlightWord
-                      ? "text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-600 to-amber-500"
-                      : ""
-                  }`}
-                >
+                <span key={i} className="block text-white">
                   {line}
                 </span>
               ))}
@@ -151,10 +143,10 @@ export function HeroBanner() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
               <Link
                 href={slide.primaryCta.href}
-                className="w-full sm:w-auto bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg shadow-red-600/30 transition-all flex items-center justify-center gap-2 group active:scale-98"
+                className="w-full sm:w-auto bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg shadow-red-600/20 transition-all flex items-center justify-center gap-2 group active:scale-98"
               >
                 <span>{slide.primaryCta.label}</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
               </Link>
               <Link
                 href={slide.secondaryCta.href}

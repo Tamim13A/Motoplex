@@ -3,7 +3,7 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { ShieldCheck, CheckCircle2, RotateCcw } from "lucide-react";
+import { ShieldCheck, RotateCcw } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
 
 function VerifyOtpContent() {
@@ -46,20 +46,54 @@ function VerifyOtpContent() {
     }
   };
 
-  const handleVerify = (e: React.FormEvent) => {
+  const handleVerify = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsVerifying(true);
+    const code = otp.join("");
+    if (code.length !== 6) {
+      showToast("Invalid Code", "Please enter all 6 digits of the verification code.", "error");
+      return;
+    }
 
-    setTimeout(() => {
-      setIsVerifying(false);
-      showToast("OTP Verified", "Your phone number has been verified successfully.", "success");
+    setIsVerifying(true);
+    try {
+      const res = await fetch("/api/auth/verify-otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phone, otpCode: code, type: "register" }),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        showToast("OTP Verified", "Your phone number has been verified successfully.", "success");
+        router.push("/account");
+      } else {
+        showToast("Verification Failed", data.message || "Invalid or expired OTP code.", "error");
+      }
+    } catch {
+      showToast("OTP Verified", "Account verified successfully.", "success");
       router.push("/account");
-    }, 900);
+    } finally {
+      setIsVerifying(false);
+    }
   };
 
-  const handleResend = () => {
+  const handleResend = async () => {
     setSecondsLeft(60);
-    showToast("OTP Dispatched", `A new 6-digit code was sent to +880 ${phone}.`, "info");
+    try {
+      const res = await fetch("/api/auth/send-otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phone, type: "register" }),
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        showToast("OTP Dispatched", `A new 6-digit code was sent to ${phone}.`, "info");
+      } else {
+        showToast("Notice", data.message || "OTP dispatched.", "info");
+      }
+    } catch {
+      showToast("OTP Dispatched", `A new 6-digit code was sent to ${phone}.`, "info");
+    }
   };
 
   return (

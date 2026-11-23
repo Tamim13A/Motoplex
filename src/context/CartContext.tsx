@@ -224,9 +224,8 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const shippingFee = useMemo(() => {
     if (items.length === 0) return 0;
     if (coupon?.type === "free_shipping") return 0;
-    if (subtotal >= freeShippingThreshold) return 0;
-    return shippingDestination === "dhaka" ? 80 : 150;
-  }, [items.length, coupon, subtotal, shippingDestination]);
+    return shippingDestination === "dhaka" ? 80 : 130;
+  }, [items.length, coupon, shippingDestination]);
 
   const total = useMemo(() => {
     return Math.max(0, subtotal - discount + shippingFee);

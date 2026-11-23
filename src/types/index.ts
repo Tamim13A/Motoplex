@@ -21,6 +21,8 @@ export interface ProductReview {
   comment: string;
   verifiedPurchase: boolean;
   avatar?: string;
+  image?: string;
+  status?: "pending" | "approved" | "rejected";
 }
 
 export interface Product {
@@ -29,6 +31,7 @@ export interface Product {
   slug: string;
   tagline: string;
   brand: string;
+  productType?: string;
   category: string;
   categorySlug: string;
   subcategory: string;
@@ -42,6 +45,7 @@ export interface Product {
   reviewCount: number;
   sku: string;
   stock: number;
+  costPrice?: number;
   images: string[];
   description: string;
   features: string[];
@@ -73,6 +77,7 @@ export interface SubCategory {
   id: string;
   name: string;
   slug: string;
+  itemCount?: number;
   childCategories: ChildCategory[];
 }
 
@@ -124,6 +129,17 @@ export interface Order {
   shippingFee: number;
   discount: number;
   total: number;
+  advancePaid?: number;
+  dueAmount?: number;
+  paymentDetails?: {
+    advancePaymentMethod?: string;
+    advanceAmount?: number;
+    senderNumber?: string;
+    trxId?: string;
+    bankName?: string;
+    accountNumber?: string;
+    reference?: string;
+  };
   shippingAddress: {
     fullName: string;
     phone: string;
@@ -132,10 +148,36 @@ export interface Order {
     area: string;
     address: string;
   };
-  deliveryMethod: "Standard Courier" | "Express City Delivery";
-  paymentMethod: "bKash" | "AamarPay" | "Cash on Delivery";
+  deliveryMethod: string;
+  paymentMethod: string;
+  paymentStatus?: "Pending" | "Paid" | "Failed";
   trackingNumber?: string;
-  courierName?: "Pathao" | "Steadfast" | "RedX";
+  courierName?: "Pathao" | "Steadfast" | "RedX" | string;
+  stockDeducted?: boolean;
+}
+
+export interface ServiceBookingItem {
+  id: string;
+  bookingNumber: string;
+  serviceId: string;
+  serviceName: string;
+  servicePrice: number;
+  serviceDuration?: string;
+  customerName: string;
+  customerPhone: string;
+  customerEmail?: string;
+  bikeBrand: string;
+  bikeModel: string;
+  bikePlate?: string;
+  dealershipId: string;
+  dealershipName: string;
+  dealershipCity: string;
+  bookingDate: string;
+  bookingSlot: string;
+  specialNotes?: string;
+  image?: string;
+  status: "pending" | "confirmed" | "in_progress" | "completed" | "cancelled";
+  createdAt?: string;
 }
 
 export interface FilterState {

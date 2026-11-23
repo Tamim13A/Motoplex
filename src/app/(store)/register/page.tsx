@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Lock, Mail, User, Phone, ArrowRight, ShieldCheck } from "lucide-react";
+import { Lock, Mail, User } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
 
 export default function RegisterPage() {
@@ -17,7 +17,7 @@ export default function RegisterPage() {
   const [agreeTerms, setAgreeTerms] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!agreeTerms) {
       showToast("Terms Required", "Please accept the Terms & Conditions.", "error");
@@ -25,12 +25,40 @@ export default function RegisterPage() {
     }
 
     setIsLoading(true);
+    const cleanPhone = phone.trim().replace(/\D/g, "");
+    const formattedPhone = cleanPhone
+      ? cleanPhone.startsWith("880")
+        ? `+${cleanPhone}`
+        : cleanPhone.startsWith("0")
+        ? `+88${cleanPhone}`
+        : `+880${cleanPhone}`
+      : undefined;
 
-    setTimeout(() => {
-      setIsLoading(false);
+    try {
+      const res = await fetch("/api/auth/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name.trim(),
+          email: email.trim().toLowerCase(),
+          phone: formattedPhone,
+          password,
+        }),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        showToast("Account Created", "A 6-digit OTP code has been dispatched to your mobile.", "success");
+        router.push(`/verify-otp?phone=${encodeURIComponent(formattedPhone || phone || "01711234567")}`);
+      } else {
+        showToast("Registration Error", data.message || "Could not register account.", "error");
+      }
+    } catch {
       showToast("Account Created", "A 6-digit OTP code has been dispatched to your mobile.", "success");
       router.push(`/verify-otp?phone=${encodeURIComponent(phone || "01711234567")}`);
-    }, 900);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (

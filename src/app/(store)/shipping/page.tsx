@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { Truck, ShieldCheck, MapPin, Clock, ArrowRight } from "lucide-react";
 
 export default function ShippingPolicyPage() {
   return (

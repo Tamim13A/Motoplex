@@ -9,6 +9,7 @@ export interface FilterValues {
   subcategory: string;
   minPrice: number;
   maxPrice: number;
+  selectedBrands: string[];
   selectedSizes: string[];
   selectedColors: string[];
   selectedMaterials: string[];
@@ -23,6 +24,45 @@ interface ProductFiltersProps {
   isMobileDrawer?: boolean;
   onCloseMobileDrawer?: () => void;
 }
+
+export const AVAILABLE_BRANDS = [
+  "BIKERS",
+  "RPD",
+  "NLK",
+  "RCB",
+  "DND",
+  "TDR",
+  "Pirelli",
+  "FRANDO",
+  "Liqui Moly",
+  "Hurricane",
+  "Piranha",
+  "BMC",
+  "Mj Racing",
+  "indo",
+  "Maxima",
+  "SYRC",
+  "Michelin",
+  "Nissin",
+  "SPD",
+  "NGK",
+  "PAGAISHI",
+  "Honda Genuine",
+  "BPro",
+  "Kamui",
+  "TRIONCE",
+  "Titanium bolt",
+  "Denso",
+  "DID",
+  "Genma",
+  "King Drag",
+  "MHR",
+  "Racepro",
+  "Shark Power",
+  "Swits",
+  "UMA Racing",
+  "Flamingo",
+];
 
 const AVAILABLE_SIZES = ["S", "M", "L", "XL", "XXL", "41 EU", "42 EU", "43 EU", "44 EU"];
 const AVAILABLE_COLORS = [
@@ -62,6 +102,14 @@ export function ProductFilters({
       ...filters,
       subcategory: filters.subcategory === subSlug ? "" : subSlug,
     });
+  };
+
+  const handleToggleBrand = (brand: string) => {
+    const current = filters.selectedBrands || [];
+    const next = current.includes(brand)
+      ? current.filter((b) => b !== brand)
+      : [...current, brand];
+    onChange({ ...filters, selectedBrands: next });
   };
 
   const handleToggleSize = (size: string) => {
@@ -142,12 +190,12 @@ export function ProductFilters({
                 {/* Subcategories if active */}
                 {isCatActive && (
                   <div className="pl-4 pr-1 space-y-1 py-1 border-l-2 border-red-200 ml-2">
-                    {cat.subcategories.map((sub) => {
+                    {cat.subcategories.map((sub, subIdx) => {
                       const isSubActive = filters.subcategory === sub.slug;
 
                       return (
                         <button
-                          key={sub.id}
+                          key={`${cat.id}-${sub.slug || sub.id}-${subIdx}`}
                           onClick={() => handleSubcategoryClick(sub.slug)}
                           className={`w-full text-left text-[11px] py-1 px-1.5 rounded transition-colors ${
                             isSubActive
@@ -167,6 +215,46 @@ export function ProductFilters({
         </div>
       </div>
 
+      {/* Brands Filter */}
+      <div className="space-y-3 pt-3 border-t border-zinc-200">
+        <div className="flex items-center justify-between">
+          <label className="text-xs font-bold text-zinc-900 uppercase tracking-wider block">
+            Brand
+          </label>
+          {filters.selectedBrands?.length > 0 && (
+            <span className="text-[10px] font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded-full border border-red-200">
+              {filters.selectedBrands.length} selected
+            </span>
+          )}
+        </div>
+        <div className="space-y-1 max-h-48 overflow-y-auto pr-1 text-xs scrollbar-thin">
+          {AVAILABLE_BRANDS.map((brand) => {
+            const isChecked = filters.selectedBrands?.includes(brand);
+            return (
+              <label
+                key={brand}
+                onClick={() => handleToggleBrand(brand)}
+                className={`flex items-center justify-between p-1.5 rounded-lg transition-colors cursor-pointer select-none ${
+                  isChecked
+                    ? "bg-red-50/80 text-red-700 font-bold"
+                    : "text-zinc-600 hover:text-zinc-950 hover:bg-zinc-50"
+                }`}
+              >
+                <div className="flex items-center gap-2.5">
+                  <input
+                    type="checkbox"
+                    checked={isChecked}
+                    onChange={() => {}}
+                    className="rounded text-red-600 focus:ring-red-600 cursor-pointer w-3.5 h-3.5"
+                  />
+                  <span>{brand}</span>
+                </div>
+              </label>
+            );
+          })}
+        </div>
+      </div>
+
       {/* Price Range */}
       <div className="space-y-3 pt-3 border-t border-zinc-200">
         <div className="flex items-center justify-between">
@@ -181,8 +269,8 @@ export function ProductFilters({
         <div className="space-y-2">
           <input
             type="range"
-            min="2000"
-            max="1100000"
+            min="0"
+            max="1050000"
             step="5000"
             value={filters.maxPrice}
             onChange={(e) => onChange({ ...filters, maxPrice: Number(e.target.value) })}

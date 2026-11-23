@@ -1,81 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { Mail, Phone, MapPin, ShieldCheck, ArrowRight, CheckCircle2 } from "lucide-react";
-import { useToast } from "@/context/ToastContext";
+import { Phone, MapPin, ShieldCheck } from "lucide-react";
 
 export function Footer() {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-  const { showToast } = useToast();
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email.trim() || !email.includes("@")) {
-      showToast("Invalid Email", "Please enter a valid email address.", "error");
-      return;
-    }
-    setSubscribed(true);
-    showToast("Subscribed!", "You have received ৳1,000 promo voucher MOTO10.", "success");
-    setEmail("");
-  };
-
   return (
     <footer className="bg-zinc-950 text-zinc-400 border-t border-zinc-800 text-xs">
-      {/* Upper Newsletter & VIP Club */}
-      <div className="border-b border-zinc-800/80 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
-          <div className="max-w-xl text-center lg:text-left">
-            <span className="text-[10px] font-bold text-red-500 tracking-widest uppercase">
-              Join Motoplex Paddock Club
-            </span>
-            <h3 className="text-xl sm:text-2xl font-black text-white mt-1">
-              Receive ৳1,000 Off Your First Order
-            </h3>
-            <p className="text-zinc-400 text-xs mt-2 leading-relaxed">
-              Get exclusive early invitations to Aprilia track days, new helmet arrivals, and private Italian motorcycle launches in Bangladesh.
-            </p>
-          </div>
-
-          <div className="w-full max-w-md">
-            {subscribed ? (
-              <div className="flex items-center gap-2.5 bg-zinc-900 border border-emerald-500/40 p-4 rounded-2xl text-emerald-400">
-                <CheckCircle2 className="w-5 h-5 shrink-0" />
-                <div>
-                  <p className="font-bold text-xs text-white">Welcome to the Club!</p>
-                  <p className="text-[11px] text-zinc-400">
-                    Use code <strong className="text-red-400 font-mono">MOTO10</strong> at checkout for 10% off.
-                  </p>
-                </div>
-              </div>
-            ) : (
-              <form onSubmit={handleSubscribe} className="flex gap-2">
-                <div className="relative flex-1">
-                  <Mail className="w-4 h-4 text-zinc-500 absolute left-3.5 top-3.5" />
-                  <input
-                    type="email"
-                    placeholder="Enter your email address..."
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-zinc-900 border border-zinc-800 rounded-xl pl-10 pr-4 py-3 text-xs text-white placeholder:text-zinc-500 focus:outline-none focus:border-red-600 transition-colors"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-5 py-3 rounded-xl transition-colors shrink-0 flex items-center gap-1.5"
-                >
-                  Join Club <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-              </form>
-            )}
-            <p className="text-[10px] text-zinc-500 mt-2 text-center lg:text-left">
-              Zero spam. Unsubscribe anytime. Official Motoplex Bangladesh Privacy Guaranteed.
-            </p>
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer Links */}
       <div className="max-w-7xl mx-auto py-14 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
@@ -127,37 +58,37 @@ export function Footer() {
           {/* Catalog Categories */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-              Collections
+              Performance Parts
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/category/motorcycles" className="hover:text-white transition-colors">
-                  Aprilia Supersport & Naked
+                <Link href="/category/brake-system" className="hover:text-white transition-colors">
+                  Brake System & Racing Discs
                 </Link>
               </li>
               <li>
-                <Link href="/category/motorcycles" className="hover:text-white transition-colors">
-                  Vespa Italian Scooters
+                <Link href="/category/engine-performance" className="hover:text-white transition-colors">
+                  Engine, Pistons & Cylinders
                 </Link>
               </li>
               <li>
-                <Link href="/category/helmets" className="hover:text-white transition-colors">
-                  Shoei & AGV Helmets
+                <Link href="/category/air-filters" className="hover:text-white transition-colors">
+                  High-Flow Performance Air Filters
                 </Link>
               </li>
               <li>
-                <Link href="/category/riding-gear" className="hover:text-white transition-colors">
-                  Leather Racing Suits & Jackets
+                <Link href="/category/clutch-transmission" className="hover:text-white transition-colors">
+                  Clutch Sets, Levers & Chains
                 </Link>
               </li>
               <li>
-                <Link href="/category/performance-parts" className="hover:text-white transition-colors">
-                  Akrapovič & Arrow Exhausts
+                <Link href="/category/tyres" className="hover:text-white transition-colors">
+                  Pirelli & Michelin Tyres
                 </Link>
               </li>
               <li>
-                <Link href="/category/accessories-maintenance" className="hover:text-white transition-colors">
-                  Motul 300V & Quad Lock
+                <Link href="/category/lubricants-fluids" className="hover:text-white transition-colors">
+                  Racing Oils & Maintenance Fluids
                 </Link>
               </li>
             </ul>
@@ -202,15 +133,25 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Portals & Demo Tools */}
+          {/* Portals & Tracking */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-              Portals & Demo
+              Customer Portals
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
+                <Link href="/track" className="text-red-400 hover:text-red-300 font-bold transition-colors">
+                  ✦ Track Order (লাইভ ট্র্যাকিং)
+                </Link>
+              </li>
+              <li>
                 <Link href="/account" className="hover:text-white transition-colors">
                   Customer Dashboard
+                </Link>
+              </li>
+              <li>
+                <Link href="/account/orders" className="hover:text-white transition-colors">
+                  Order History & Invoices
                 </Link>
               </li>
               <li>
@@ -220,12 +161,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/checkout" className="hover:text-white transition-colors">
-                  Express Checkout UI
-                </Link>
-              </li>
-              <li>
-                <Link href="/admin" className="text-red-400 font-semibold hover:text-red-300 transition-colors flex items-center gap-1.5">
-                  <ShieldCheck className="w-3.5 h-3.5" /> Admin Dashboard Demo
+                  Checkout
                 </Link>
               </li>
               <li>
@@ -234,42 +170,6 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Payment Methods & Disclaimers */}
-      <div className="border-t border-zinc-800/80 bg-black/60 py-6 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-          <div className="space-y-1">
-            <p className="text-[11px] text-zinc-400">
-              © {new Date().getFullYear()} Motoplex BD (Collaborative Cloud Demo). All rights reserved.
-            </p>
-            <p className="text-[10px] text-zinc-600">
-              Authorized brand trademarks belong to Piaggio & C. SpA, Aprilia Racing, Shoei Co. Ltd., and respective manufacturers.
-            </p>
-          </div>
-
-          {/* Payment Badges */}
-          <div className="flex flex-wrap items-center justify-center gap-2 text-[10px] font-bold text-zinc-300">
-            <span className="bg-zinc-900 border border-zinc-700 px-2.5 py-1 rounded">
-              bKash
-            </span>
-            <span className="bg-zinc-900 border border-zinc-700 px-2.5 py-1 rounded">
-              Nagad
-            </span>
-            <span className="bg-zinc-900 border border-zinc-700 px-2.5 py-1 rounded">
-              Visa
-            </span>
-            <span className="bg-zinc-900 border border-zinc-700 px-2.5 py-1 rounded">
-              Mastercard
-            </span>
-            <span className="bg-zinc-900 border border-zinc-700 px-2.5 py-1 rounded">
-              AamarPay
-            </span>
-            <span className="bg-zinc-900 border border-zinc-700 px-2.5 py-1 rounded text-emerald-400">
-              Cash on Delivery (COD)
-            </span>
           </div>
         </div>
       </div>

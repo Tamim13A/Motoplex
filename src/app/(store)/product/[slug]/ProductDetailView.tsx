@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -16,15 +16,19 @@ import {
   Share2,
   Wrench,
   CheckCircle2,
-  MessageSquare,
   Sparkles,
+  Camera,
+  Zap,
+  Copy,
+  ExternalLink,
+  MessageCircle,
 } from "lucide-react";
 import { Product, ProductVariant } from "@/types";
 import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
 import { useToast } from "@/context/ToastContext";
 import { ProductCard } from "@/components/shop/ProductCard";
-import { mockReviews } from "@/data/reviews";
+import { ProductReview } from "@/types";
 
 interface ProductDetailViewProps {
   product: Product;
@@ -37,12 +41,35 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
   const { toggleWishlist, isInWishlist } = useWishlist();
   const { showToast } = useToast();
 
+  const displayColors = useMemo(() => {
+    if (product.colors && product.colors.length > 0) return product.colors;
+    return [
+      { name: "Matte Black", hex: "#18181b" },
+      { name: "Racing Red", hex: "#dc2626" },
+      { name: "Gloss White", hex: "#ffffff" },
+      { name: "Titanium Silver", hex: "#64748b" },
+    ];
+  }, [product.colors]);
+
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedSize, setSelectedSize] = useState<string>(product.sizes?.[0] || "");
-  const [selectedColor, setSelectedColor] = useState<string>(product.colors?.[0]?.name || "");
+  const [selectedColor, setSelectedColor] = useState<string>(
+    product.colors?.[0]?.name || "Matte Black"
+  );
   const [selectedMaterial, setSelectedMaterial] = useState<string>(product.materials?.[0] || "");
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState<"specs" | "shipping" | "warranty" | "reviews">("specs");
+
+  // Interactive Lens Zoom State
+  const [isZoomed, setIsZoomed] = useState(false);
+  const [zoomCoords, setZoomCoords] = useState({ x: 50, y: 50 });
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
+    const x = Math.max(0, Math.min(100, ((e.clientX - left) / width) * 100));
+    const y = Math.max(0, Math.min(100, ((e.clientY - top) / height) * 100));
+    setZoomCoords({ x, y });
+  };
 
   // Sync state whenever viewing product changes
   useEffect(() => {
@@ -54,12 +81,27 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [product.id, product.sizes, product.colors, product.materials]);
 
-  // Reviews state for writing a new review demo
+  // Reviews state for writing a new review
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   const [reviewName, setReviewName] = useState("");
   const [reviewRating, setReviewRating] = useState(5);
   const [reviewComment, setReviewComment] = useState("");
-  const [reviewsList, setReviewsList] = useState(mockReviews);
+  const [reviewImage, setReviewImage] = useState<string | null>(null);
+  const [reviewsList, setReviewsList] = useState<ProductReview[]>([]);
+
+  useEffect(() => {
+    fetch(`/api/products/${product.slug}/reviews`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((json) => {
+        if (json?.success && Array.isArray(json.data?.reviews)) {
+          setReviewsList(json.data.reviews);
+        }
+      })
+      .catch(() => {});
+  }, [product.slug]);
+
+  // Social Share Modal state
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
   // Lock scroll when review modal is open
   useEffect(() => {
@@ -102,19 +144,10 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
   };
 
   const handleShare = () => {
-    if (navigator.share) {
-      navigator.share({
-        title: product.name,
-        text: product.tagline,
-        url: window.location.href,
-      });
-    } else {
-      navigator.clipboard.writeText(window.location.href);
-      showToast("Link Copied!", "Product URL copied to clipboard.", "info");
-    }
+    setIsShareModalOpen(true);
   };
 
-  const handleSubmitReview = (e: React.FormEvent) => {
+  const handleSubmitReview = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!reviewName.trim() || !reviewComment.trim()) {
       showToast("Incomplete Review", "Please enter your name and comments.", "error");
@@ -126,18 +159,41 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
       userName: reviewName.trim(),
       userCity: "Dhaka, Bangladesh",
       rating: reviewRating,
-      date: "Today",
+      date: "Just now",
       title: "Verified Customer Review",
       comment: reviewComment.trim(),
       verifiedPurchase: true,
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+      image: reviewImage || undefined,
+      status: "pending" as const,
     };
 
     setReviewsList((prev) => [newRev, ...prev]);
-    showToast("Review Submitted", "Thank you! Your verified review has been posted.", "success");
+    showToast(
+      "Review Submitted for Approval",
+      "Thank you! Your review and photo have been received and are pending admin moderation.",
+      "success"
+    );
     setIsReviewModalOpen(false);
     setReviewName("");
     setReviewComment("");
+    setReviewImage(null);
+
+    try {
+      await fetch("/api/reviews", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          productId: product.id,
+          rating: reviewRating,
+          title: "Verified Customer Review",
+          comment: newRev.comment,
+          images: newRev.image ? [newRev.image] : [],
+        }),
+      });
+    } catch {
+      // Local state is already updated
+    }
   };
 
   return (
@@ -181,19 +237,32 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
           {/* Left: Product Image Gallery */}
           <div className="lg:col-span-7 space-y-4">
-            {/* Large Active Image */}
-            <div className="relative aspect-square w-full rounded-3xl overflow-hidden bg-zinc-50 border border-zinc-200 shadow-sm group">
-              <Image
-                src={product.images[selectedImage] || product.images[0]}
-                alt={product.name}
-                fill
-                priority
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 1024px) 100vw, 55vw"
-              />
+            {/* Large Active Image with Interactive Lens Magnifier */}
+            <div
+              className="relative aspect-square w-full rounded-3xl overflow-hidden bg-zinc-50 border border-zinc-200 shadow-sm group cursor-crosshair select-none"
+              onMouseEnter={() => setIsZoomed(true)}
+              onMouseLeave={() => setIsZoomed(false)}
+              onMouseMove={handleMouseMove}
+            >
+              <div
+                className="relative w-full h-full transition-transform duration-150 ease-out will-change-transform"
+                style={{
+                  transformOrigin: `${zoomCoords.x}% ${zoomCoords.y}%`,
+                  transform: isZoomed ? "scale(2.2)" : "scale(1)",
+                }}
+              >
+                <Image
+                  src={product.images?.[selectedImage] || product.images?.[0] || "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=600&auto=format&fit=crop"}
+                  alt={product.name}
+                  fill
+                  priority
+                  className="object-cover pointer-events-none"
+                  sizes="(max-width: 1024px) 100vw, 55vw"
+                />
+              </div>
 
               {/* Discount / Badges */}
-              <div className="absolute top-4 left-4 flex flex-col gap-2 z-10">
+              <div className="absolute top-4 left-4 flex flex-col gap-2 z-10 pointer-events-none">
                 {product.discountPercentage && (
                   <span className="bg-red-600 text-white font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
                     -{product.discountPercentage}% OFF
@@ -207,16 +276,26 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
               </div>
 
               {/* Importer Authenticity Badge */}
-              <div className="absolute bottom-4 left-4 z-10 bg-zinc-950/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-zinc-800 text-[11px] text-zinc-200 flex items-center gap-1.5">
+              <div className="absolute bottom-4 left-4 z-10 bg-zinc-950/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-zinc-800 text-[11px] text-zinc-200 flex items-center gap-1.5 pointer-events-none">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
                 <span>100% Genuine Importer Hologram</span>
+              </div>
+
+              {/* Hover Zoom Prompt Badge */}
+              <div
+                className={`absolute top-4 right-4 z-10 bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold px-2.5 py-1 rounded-full pointer-events-none transition-opacity duration-300 flex items-center gap-1.5 ${
+                  isZoomed ? "opacity-0" : "opacity-90 group-hover:opacity-100"
+                }`}
+              >
+                <Sparkles className="w-3 h-3 text-red-400" />
+                <span>Hover to Zoom Lens</span>
               </div>
             </div>
 
             {/* Thumbnail Navigation Row */}
-            {product.images.length > 1 && (
+            {(product.images?.length || 0) > 1 && (
               <div className="flex gap-3 overflow-x-auto pb-2">
-                {product.images.map((img, idx) => (
+                {(product.images || []).map((img, idx) => (
                   <button
                     key={idx}
                     onClick={() => setSelectedImage(idx)}
@@ -236,11 +315,18 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
           {/* Right: Product Details & Purchase Form */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
             <div>
-              {/* Brand and SKU */}
+              {/* Brand, Product Type, and SKU */}
               <div className="flex items-center justify-between text-xs mb-2">
-                <span className="font-extrabold text-red-600 tracking-wider uppercase">
-                  {product.brand}
-                </span>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-extrabold text-red-600 tracking-wider uppercase">
+                    {product.brand}
+                  </span>
+                  {product.productType && (
+                    <span className="bg-zinc-100 text-zinc-700 font-bold text-[11px] px-2.5 py-0.5 rounded-full border border-zinc-200 uppercase tracking-wide">
+                      {product.productType}
+                    </span>
+                  )}
+                </div>
                 <span className="font-mono text-zinc-400">SKU: {currentSKU}</span>
               </div>
 
@@ -284,20 +370,23 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
               </div>
 
               {/* Pricing Display */}
-              <div className="mt-5 flex items-baseline gap-3">
+              <div className="mt-5 flex flex-wrap items-baseline gap-3">
                 <span className="text-3xl sm:text-4xl font-black text-zinc-950 tracking-tight">
-                  ৳{currentPrice.toLocaleString("en-BD")}
+                  ৳{Number(currentPrice || 0).toLocaleString("en-BD")}
                 </span>
-                {currentComparePrice && currentComparePrice > currentPrice && (
-                  <span className="text-base text-zinc-400 line-through">
-                    ৳{currentComparePrice.toLocaleString("en-BD")}
-                  </span>
-                )}
-                {product.discountPercentage && (
-                  <span className="text-xs font-bold text-red-600 bg-red-50 border border-red-200 px-2 py-0.5 rounded-full">
-                    Save ৳{((currentComparePrice || currentPrice) - currentPrice).toLocaleString("en-BD")}
-                  </span>
-                )}
+                {currentComparePrice && currentComparePrice > currentPrice ? (
+                  <>
+                    <span className="text-base sm:text-lg text-zinc-400 line-through font-semibold">
+                      ৳{Number(currentComparePrice || 0).toLocaleString("en-BD")}
+                    </span>
+                    <span className="text-xs font-black text-red-600 bg-red-50 border border-red-200 px-3 py-1 rounded-full flex items-center gap-1.5 shadow-2xs">
+                      <span>Save ৳{Number((currentComparePrice || 0) - (currentPrice || 0)).toLocaleString("en-BD")}</span>
+                      <span className="bg-red-600 text-white text-[10px] px-1.5 py-0.5 rounded-full font-black">
+                        {Math.round(((currentComparePrice - currentPrice) / currentComparePrice) * 100)}% OFF
+                      </span>
+                    </span>
+                  </>
+                ) : null}
               </div>
 
               {/* Brief Description */}
@@ -306,35 +395,42 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
               </p>
 
               {/* Color Selector */}
-              {product.colors && product.colors.length > 0 && (
+              {displayColors && displayColors.length > 0 && (
                 <div className="mt-6">
-                  <div className="flex justify-between items-center text-xs font-semibold text-zinc-900 mb-2">
-                    <span>Color: <strong className="text-zinc-950 font-bold">{selectedColor}</strong></span>
+                  <div className="flex justify-between items-center text-xs font-semibold text-zinc-900 mb-2.5">
+                    <span>
+                      Available Finish / Color:{" "}
+                      <strong className="text-red-600 font-bold ml-1">{selectedColor}</strong>
+                    </span>
                   </div>
-                  <div className="flex items-center gap-2.5">
-                    {product.colors.map((c) => (
+                  <div className="flex flex-wrap items-center gap-2.5">
+                    {displayColors.map((c) => (
                       <button
                         key={c.name}
+                        type="button"
                         onClick={() => setSelectedColor(c.name)}
-                        className={`w-8 h-8 rounded-full border-2 p-0.5 transition-all flex items-center justify-center ${
+                        className={`group flex items-center gap-2 py-1.5 px-3 rounded-xl border transition-all ${
                           selectedColor === c.name
-                            ? "border-red-600 ring-2 ring-red-600/30 scale-110"
-                            : "border-zinc-200 hover:border-zinc-400"
+                            ? "border-red-600 bg-red-50 text-red-950 font-bold shadow-xs ring-1 ring-red-600/30"
+                            : "border-zinc-200 bg-white hover:border-zinc-400 text-zinc-700 font-medium"
                         }`}
                         title={c.name}
                       >
                         <span
-                          className="w-full h-full rounded-full block relative"
+                          className="w-4 h-4 rounded-full border border-black/20 shadow-2xs flex items-center justify-center shrink-0"
                           style={{ backgroundColor: c.hex }}
                         >
                           {selectedColor === c.name && (
                             <Check
-                              className={`w-3.5 h-3.5 absolute inset-0 m-auto ${
-                                c.name === "White" ? "text-zinc-900" : "text-white"
+                              className={`w-2.5 h-2.5 ${
+                                c.hex.toLowerCase() === "#ffffff" || c.name.toLowerCase().includes("white")
+                                  ? "text-zinc-900"
+                                  : "text-white"
                               }`}
                             />
                           )}
                         </span>
+                        <span className="text-xs">{c.name}</span>
                       </button>
                     ))}
                   </div>
@@ -422,7 +518,7 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
                   </button>
                 </div>
                 <span className="text-xs text-zinc-500">
-                  Subtotal: <strong className="text-zinc-950">৳{(currentPrice * quantity).toLocaleString("en-BD")}</strong>
+                  Subtotal: <strong className="text-zinc-950">৳{Number((currentPrice || 0) * quantity).toLocaleString("en-BD")}</strong>
                 </span>
               </div>
             </div>
@@ -451,12 +547,13 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
                 </button>
               </div>
 
-              {/* Direct Buy Now Button */}
+              {/* Quick Order Now Button */}
               <button
                 onClick={handleBuyNow}
-                className="w-full bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-extrabold text-sm py-4 px-6 rounded-2xl shadow-lg shadow-red-600/30 transition-all flex items-center justify-center gap-2"
+                className="w-full bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-extrabold text-sm py-4 px-6 rounded-2xl shadow-lg shadow-red-600/30 transition-all flex items-center justify-center gap-2 group cursor-pointer active:scale-97 animate-shimmer-ray"
               >
-                <span>Express Buy Now (Go to Checkout)</span>
+                <Zap className="w-4 h-4 text-amber-300 fill-amber-300 group-hover:scale-110 transition-transform" />
+                <span>Quick Order Now (Direct Checkout)</span>
               </button>
 
               {/* Trust Badges Minimal */}
@@ -631,42 +728,74 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
                 </div>
 
                 {/* Reviews List */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {reviewsList.map((rev) => (
-                    <div
-                      key={rev.id}
-                      className="p-5 rounded-2xl bg-white border border-zinc-200/80 shadow-xs space-y-3"
-                    >
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="relative w-10 h-10 rounded-full overflow-hidden bg-zinc-200 shrink-0">
-                            <Image src={rev.avatar || ""} alt="" fill className="object-cover" />
+                {reviewsList.length > 0 ? (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {reviewsList.map((rev) => (
+                      <div
+                        key={rev.id}
+                        className="p-5 rounded-2xl bg-white border border-zinc-200/80 shadow-xs space-y-3"
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-3">
+                            <div className="relative w-10 h-10 rounded-full overflow-hidden bg-zinc-200 shrink-0">
+                              <Image src={rev.avatar || ""} alt="" fill className="object-cover" />
+                            </div>
+                            <div>
+                              <h4 className="font-bold text-xs text-zinc-900 flex items-center gap-1.5">
+                                {rev.userName}
+                                {rev.verifiedPurchase && (
+                                  <span className="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
+                                    Verified Rider
+                                  </span>
+                                )}
+                              </h4>
+                              <p className="text-[10px] text-zinc-400">{rev.userCity} • {rev.date}</p>
+                            </div>
                           </div>
-                          <div>
-                            <h4 className="font-bold text-xs text-zinc-900 flex items-center gap-1.5">
-                              {rev.userName}
-                              {rev.verifiedPurchase && (
-                                <span className="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
-                                  Verified Rider
-                                </span>
-                              )}
-                            </h4>
-                            <p className="text-[10px] text-zinc-400">{rev.userCity} • {rev.date}</p>
+
+                          <div className="flex text-amber-500">
+                            {[...Array(rev.rating)].map((_, i) => (
+                              <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                            ))}
                           </div>
                         </div>
 
-                        <div className="flex text-amber-500">
-                          {[...Array(rev.rating)].map((_, i) => (
-                            <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                          ))}
-                        </div>
+                        <h5 className="font-bold text-xs text-zinc-900 flex items-center gap-2">
+                          <span>{rev.title}</span>
+                          {rev.status === "pending" && (
+                            <span className="text-[10px] text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200">
+                              Under Moderation
+                            </span>
+                          )}
+                        </h5>
+                        <p className="text-xs text-zinc-600 leading-relaxed">{rev.comment}</p>
+
+                        {/* Attached Customer Review Image */}
+                        {rev.image && (
+                          <div className="pt-2">
+                            <div className="relative w-20 h-20 rounded-xl overflow-hidden border border-zinc-200 bg-zinc-50 shadow-xs">
+                              <Image src={rev.image} alt="Customer product photo" fill className="object-cover" />
+                            </div>
+                          </div>
+                        )}
                       </div>
-
-                      <h5 className="font-bold text-xs text-zinc-900">{rev.title}</h5>
-                      <p className="text-xs text-zinc-600 leading-relaxed">{rev.comment}</p>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="p-10 text-center bg-zinc-50 rounded-2xl border border-zinc-200/80 space-y-3">
+                    <Star className="w-8 h-8 text-zinc-300 mx-auto" />
+                    <p className="text-sm font-bold text-zinc-800">No customer reviews yet</p>
+                    <p className="text-xs text-zinc-500 max-w-sm mx-auto">
+                      Purchased this item? Be the first rider to share verified feedback with the Motoplex community.
+                    </p>
+                    <button
+                      onClick={() => setIsReviewModalOpen(true)}
+                      className="inline-block mt-2 bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-colors shadow-xs"
+                    >
+                      Write First Review
+                    </button>
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -760,6 +889,54 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
                 />
               </div>
 
+              {/* Photo Upload Attachment */}
+              <div>
+                <label className="font-bold text-zinc-900 block mb-1">
+                  Attach Product Photo (Optional)
+                </label>
+                <div className="flex items-center gap-3">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    id="review-image-input"
+                    className="hidden"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      if (file) {
+                        const reader = new FileReader();
+                        reader.onload = () => setReviewImage(reader.result as string);
+                        reader.readAsDataURL(file);
+                      }
+                    }}
+                  />
+                  <label
+                    htmlFor="review-image-input"
+                    className="cursor-pointer inline-flex items-center gap-2 px-3.5 py-2 rounded-xl border border-zinc-200 bg-zinc-50 hover:bg-zinc-100 text-xs font-semibold text-zinc-700 transition-colors"
+                  >
+                    <Camera className="w-4 h-4 text-zinc-500" />
+                    <span>{reviewImage ? "Change Photo" : "Upload Photo"}</span>
+                  </label>
+                  {reviewImage && (
+                    <div className="relative w-12 h-12 rounded-lg overflow-hidden border border-zinc-200">
+                      <Image src={reviewImage} alt="Review attachment" fill className="object-cover" />
+                      <button
+                        type="button"
+                        onClick={() => setReviewImage(null)}
+                        className="absolute top-0 right-0 bg-black/70 text-white rounded-bl p-0.5 text-[10px]"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Moderation notice */}
+              <div className="p-3 bg-amber-50/70 border border-amber-200/80 rounded-xl flex items-start gap-2.5 text-[11px] text-amber-900 leading-snug">
+                <ShieldCheck className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                <span>Submitted customer reviews with photos are moderated before public display to guarantee genuine rider feedback.</span>
+              </div>
+
               <div className="pt-2 flex gap-3">
                 <button
                   type="button"
@@ -779,6 +956,128 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
           </div>
         </div>
       )}
+
+      {/* Social Share Modal */}
+      {isShareModalOpen && (
+        <div
+          onClick={() => setIsShareModalOpen(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="w-full max-w-sm bg-white rounded-2xl shadow-2xl border border-zinc-200 p-6 space-y-4"
+          >
+            <div className="flex items-center justify-between pb-3 border-b border-zinc-100">
+              <h3 className="font-bold text-sm text-zinc-950 flex items-center gap-2">
+                <Share2 className="w-4 h-4 text-red-600" />
+                <span>Share This Product</span>
+              </h3>
+              <button
+                onClick={() => setIsShareModalOpen(false)}
+                className="text-zinc-400 hover:text-zinc-900 p-1"
+              >
+                ✕
+              </button>
+            </div>
+
+            <p className="text-xs text-zinc-500">
+              Share <strong>{product.name}</strong> with fellow riders:
+            </p>
+
+            <div className="space-y-2 text-xs">
+              {/* WhatsApp Share */}
+              <a
+                href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+                  `${product.name} (৳${Number(product.price || 0).toLocaleString("en-BD")}) - Check this on Motoplex BD: ${
+                    typeof window !== "undefined" ? window.location.href : ""
+                  }`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsShareModalOpen(false)}
+                className="w-full flex items-center justify-between p-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-200 font-bold transition-colors"
+              >
+                <div className="flex items-center gap-2.5">
+                  <MessageCircle className="w-4 h-4 text-emerald-600" />
+                  <span>Share on WhatsApp</span>
+                </div>
+                <ExternalLink className="w-3.5 h-3.5 text-emerald-600" />
+              </a>
+
+              {/* Facebook Share */}
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                  typeof window !== "undefined" ? window.location.href : ""
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsShareModalOpen(false)}
+                className="w-full flex items-center justify-between p-3 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-900 border border-blue-200 font-bold transition-colors"
+              >
+                <div className="flex items-center gap-2.5">
+                  <ExternalLink className="w-4 h-4 text-blue-600" />
+                  <span>Share on Facebook</span>
+                </div>
+                <ExternalLink className="w-3.5 h-3.5 text-blue-600" />
+              </a>
+
+              {/* Copy Direct Link */}
+              <button
+                type="button"
+                onClick={() => {
+                  if (typeof window !== "undefined") {
+                    navigator.clipboard.writeText(window.location.href);
+                    showToast("Link Copied!", "Product URL copied to clipboard.", "success");
+                    setIsShareModalOpen(false);
+                  }
+                }}
+                className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 hover:bg-zinc-100 text-zinc-800 border border-zinc-200 font-bold transition-colors"
+              >
+                <div className="flex items-center gap-2.5">
+                  <Copy className="w-4 h-4 text-zinc-600" />
+                  <span>Copy Product Link</span>
+                </div>
+                <span className="text-[10px] text-zinc-400 font-medium">Click to Copy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {/* Mobile Floating Sticky Action Bar (Docked right above bottom navigation) */}
+      <div className="md:hidden fixed bottom-[52px] inset-x-0 z-35 bg-white/95 backdrop-blur-md border-t border-zinc-200/90 px-4 py-2.5 shadow-2xl flex items-center justify-between gap-3 animate-in slide-in-from-bottom duration-200">
+        <div className="flex-1 min-w-0">
+          <p className="text-[11px] font-bold text-zinc-900 truncate">{product.name}</p>
+          <div className="flex items-baseline gap-1.5">
+            <span className="text-xs font-black text-red-600 font-mono tabular-nums">
+              ৳{Number(product.price || 0).toLocaleString("en-BD")}
+            </span>
+            {product.compareAtPrice && product.compareAtPrice > product.price && (
+              <span className="text-[10px] text-zinc-400 line-through font-mono">
+                ৳{Number(product.compareAtPrice || 0).toLocaleString("en-BD")}
+              </span>
+            )}
+          </div>
+        </div>
+        <div className="flex items-center gap-2 shrink-0">
+          <button
+            type="button"
+            onClick={handleAddToCart}
+            className="p-2.5 rounded-xl bg-zinc-900 active:bg-zinc-800 text-white shadow-md active:scale-90 transition-transform"
+            aria-label="Add to cart"
+            title="Add to cart"
+          >
+            <ShoppingBag className="w-4 h-4 text-red-500" />
+          </button>
+          <button
+            type="button"
+            onClick={handleBuyNow}
+            className="bg-red-600 active:bg-red-700 text-white text-xs font-black py-2.5 px-4 rounded-xl shadow-md shadow-red-600/30 flex items-center gap-1.5 active:scale-95 transition-all animate-shimmer-ray cursor-pointer"
+          >
+            <Zap className="w-3.5 h-3.5 text-amber-300 fill-amber-300" />
+            <span>Order Now</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

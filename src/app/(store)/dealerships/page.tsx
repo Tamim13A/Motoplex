@@ -9,14 +9,11 @@ import {
   Phone,
   Clock,
   Navigation,
-  Calendar,
-  CheckCircle2,
   ChevronRight,
-  ShieldCheck,
   Mail,
   Wrench,
 } from "lucide-react";
-import { dealerships, Dealership } from "@/data/dealerships";
+import { dealerships } from "@/data/dealerships";
 import { ServiceBookingModal } from "@/components/services/ServiceBookingModal";
 
 export default function DealershipsPage() {

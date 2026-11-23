@@ -1,0 +1,90 @@
+[
+  {
+    "id": "usr-admin-001",
+    "_id": "usr-admin-001",
+    "name": "Motoplex Executive Admin",
+    "email": "admin@motoplex.bd",
+    "phone": "01700668675",
+    "password": "$2a$10$wO3nC7W0tKj9.yK0w6uL7uWqE3Z0g8Gz2d7.a1Rz6n0Y9t3Q3o5tq",
+    "role": "admin",
+    "isVerified": true,
+    "createdAt": "2026-11-17T19:14:11.655Z",
+    "addresses": [
+      {
+        "fullName": "Motoplex HQ",
+        "phone": "01700668675",
+        "division": "Dhaka",
+        "district": "Dhaka",
+        "area": "Gulshan",
+        "address": "House 14, Road 112, Gulshan-2, Dhaka 1212",
+        "isDefault": true
+      }
+    ]
+  },
+  {
+    "id": "usr-mod-001",
+    "_id": "usr-mod-001",
+    "name": "Motoplex Workshop Moderator",
+    "email": "moderator@motoplex.bd",
+    "phone": "01700668676",
+    "password": "$2a$10$wO3nC7W0tKj9.yK0w6uL7uWqE3Z0g8Gz2d7.a1Rz6n0Y9t3Q3o5tq",
+    "role": "moderator",
+    "isVerified": true,
+    "createdAt": "2026-11-17T19:14:11.655Z",
+    "addresses": [
+      {
+        "fullName": "Motoplex Workshop Bay",
+        "phone": "01700668676",
+        "division": "Dhaka",
+        "district": "Dhaka",
+        "area": "Gulshan",
+        "address": "House 14, Road 112, Gulshan-2, Dhaka 1212",
+        "isDefault": true
+      }
+    ]
+  },
+  {
+    "id": "usr-customer-001",
+    "_id": "usr-customer-001",
+    "name": "Tanvir Rahman",
+    "email": "customer@motoplex.bd",
+    "phone": "01711234567",
+    "password": "$2a$10$wO3nC7W0tKj9.yK0w6uL7uWqE3Z0g8Gz2d7.a1Rz6n0Y9t3Q3o5tq",
+    "role": "user",
+    "isVerified": true,
+    "createdAt": "2026-11-17T19:14:11.655Z",
+    "addresses": [
+      {
+        "fullName": "Tanvir Rahman",
+        "phone": "01711234567",
+        "division": "Dhaka",
+        "district": "Dhaka",
+        "area": "Dhanmondi",
+        "address": "House 32, Road 11, Dhanmondi R/A",
+        "isDefault": true
+      }
+    ]
+  },
+  {
+    "id": "usr-customer-002",
+    "_id": "usr-customer-002",
+    "name": "Sabbir Hossain",
+    "email": "rider@motoplex.bd",
+    "phone": "01755123456",
+    "password": "$2a$10$wO3nC7W0tKj9.yK0w6uL7uWqE3Z0g8Gz2d7.a1Rz6n0Y9t3Q3o5tq",
+    "role": "user",
+    "isVerified": true,
+    "createdAt": "2026-11-17T19:14:11.655Z",
+    "addresses": [
+      {
+        "fullName": "Sabbir Hossain",
+        "phone": "01755123456",
+        "division": "Dhaka",
+        "district": "Dhaka",
+        "area": "Uttara",
+        "address": "Sector 4, Road 7, Uttara, Dhaka",
+        "isDefault": true
+      }
+    ]
+  }
+]

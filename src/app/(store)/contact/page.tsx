@@ -1,16 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import {
   Phone,
-  Mail,
-  MapPin,
   Clock,
   Send,
   CheckCircle2,
   ChevronDown,
-  ShieldCheck,
   Building,
 } from "lucide-react";
 import { useToast } from "@/context/ToastContext";

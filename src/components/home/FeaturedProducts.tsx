@@ -1,29 +1,47 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ProductCard } from "@/components/shop/ProductCard";
 import { QuickViewModal } from "@/components/ui/QuickViewModal";
 import { products } from "@/data/products";
 import { Product } from "@/types";
+import { formatProduct } from "@/lib/productFormatter";
 
 export function FeaturedProducts() {
   const [activeTab, setActiveTab] = useState("all");
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
+  const [productList, setProductList] = useState<Product[]>(() => {
+    return products.map(formatProduct);
+  });
+
+  useEffect(() => {
+    fetch("/api/products?limit=500", { cache: "no-store" })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((json) => {
+        if (json?.success && Array.isArray(json.data?.products) && json.data.products.length > 0) {
+          setProductList(json.data.products.map(formatProduct));
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const tabs = [
     { id: "all", label: "All Featured" },
-    { id: "motorcycles", label: "Motorcycles & Scooters" },
-    { id: "helmets", label: "Helmets & Visors" },
-    { id: "riding-gear", label: "Riding Gear" },
-    { id: "performance-parts", label: "Performance Exhausts" },
+    { id: "brake-system", label: "Brake System" },
+    { id: "engine-performance", label: "Engine & Performance" },
+    { id: "air-filters", label: "Air Filters" },
+    { id: "clutch-transmission", label: "Clutch & Chain" },
+    { id: "tyres", label: "Performance Tyres" },
   ];
 
-  const filteredProducts = products.filter((p) => {
-    if (activeTab === "all") return p.isFeatured;
-    return p.categorySlug === activeTab && p.isFeatured;
-  }).slice(0, 8);
+  const filteredProducts = useMemo(() => {
+    return productList.filter((p) => {
+      if (activeTab === "all") return p.isFeatured;
+      return p.categorySlug === activeTab && p.isFeatured;
+    }).slice(0, 8);
+  }, [productList, activeTab]);
 
   return (
     <section className="py-16 md:py-24 bg-white border-b border-zinc-200/80">
@@ -38,7 +56,7 @@ export function FeaturedProducts() {
               FEATURED PRODUCTS
             </h2>
             <p className="text-xs sm:text-sm text-zinc-500 mt-1 max-w-lg">
-              Hand-picked selection of top-tier performance machines, racing armor, and accessories in Bangladesh.
+              Hand-picked selection of top-tier racing parts, precision brake systems, and factory tuning components in Bangladesh.
             </p>
           </div>
 
@@ -61,15 +79,21 @@ export function FeaturedProducts() {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {filteredProducts.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              onQuickView={(p) => setQuickViewProduct(p)}
-            />
-          ))}
-        </div>
+        {filteredProducts.length === 0 ? (
+          <div className="py-12 text-center text-zinc-500 text-sm bg-zinc-50 rounded-2xl border border-zinc-200">
+            No featured products found. Add products from the admin panel to display them here!
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {filteredProducts.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                onQuickView={(p) => setQuickViewProduct(p)}
+              />
+            ))}
+          </div>
+        )}
 
         {/* View All CTA */}
         <div className="mt-12 text-center">
@@ -77,7 +101,7 @@ export function FeaturedProducts() {
             href="/shop"
             className="inline-flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white text-xs font-bold px-8 py-4 rounded-xl shadow-md transition-all group"
           >
-            <span>Explore Full 2026 Catalog (24+ Items)</span>
+            <span>Explore Full Catalog</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { RotateCcw, ShieldCheck, CheckCircle2, ArrowRight } from "lucide-react";
+import { RotateCcw } from "lucide-react";
 
 export default function ReturnsPolicyPage() {
   return (

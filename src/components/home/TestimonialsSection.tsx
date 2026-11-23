@@ -3,7 +3,46 @@
 import React from "react";
 import Image from "next/image";
 import { Star, ShieldCheck, Quote } from "lucide-react";
-import { homeTestimonials, mockReviews } from "@/data/reviews";
+
+interface Testimonial {
+  id: string;
+  name: string;
+  role: string;
+  avatar: string;
+  quote: string;
+  rating: number;
+  verified: boolean;
+}
+
+const homeTestimonials: Testimonial[] = [
+  {
+    id: "t1",
+    name: "Mahir Faisal",
+    role: "President, Desi Bikers Club",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
+    quote: "Motoplex BD has transformed motorcycle culture in Bangladesh. Getting authentic European riding gear and genuine Italian parts with official warranties was nearly impossible before.",
+    rating: 5,
+    verified: true,
+  },
+  {
+    id: "t2",
+    name: "Sadia Anjum",
+    role: "Urban Commuter & Vespa Rider",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
+    quote: "The ordering experience is flawless. Fast doorstep delivery, cash on delivery with inspection option, and authentic products with verifiable importer serial numbers.",
+    rating: 5,
+    verified: true,
+  },
+  {
+    id: "t3",
+    name: "Zubair Al-Mamun",
+    role: "Track Day Enthusiast",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
+    quote: "From Dainese racing suits to Akrapovič exhausts, everything is 100% original. Their customer service team in Gulshan knows motorcycling inside and out.",
+    rating: 5,
+    verified: true,
+  },
+];
 
 export function TestimonialsSection() {
   return (
@@ -63,25 +102,18 @@ export function TestimonialsSection() {
           ))}
         </div>
 
-        {/* Additional Verified Customer Reviews Bar */}
+        {/* Official Motoplex Trust Guarantee Bar */}
         <div className="mt-10 p-6 bg-white rounded-2xl border border-zinc-200/80 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4 text-center md:text-left">
-            <div className="flex -space-x-2">
-              {mockReviews.slice(0, 4).map((r) => (
-                <div
-                  key={r.id}
-                  className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-xs"
-                >
-                  <Image src={r.avatar || ""} alt="" fill className="object-cover" />
-                </div>
-              ))}
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center shrink-0">
+              <ShieldCheck className="w-6 h-6 text-emerald-600" />
             </div>
             <div>
-              <p className="text-xs font-bold text-zinc-900">
-                Over 1,200+ Verified Bangladeshi Riders
+              <p className="text-xs font-bold text-zinc-900 uppercase tracking-wide">
+                Official Motoplex Bangladesh Importer Guarantee
               </p>
               <p className="text-[11px] text-zinc-500">
-                4.9/5 Average Rating on Google Reviews & Motoplex Showrooms
+                100% Genuine European Equipment, Verifiable Importer Serial Numbers & Cash on Delivery Nationwide
               </p>
             </div>
           </div>
@@ -92,7 +124,7 @@ export function TestimonialsSection() {
                 <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
               ))}
             </div>
-            <span className="text-xs font-black text-zinc-900">4.9 / 5.0</span>
+            <span className="text-xs font-black text-zinc-900">Official Distributor</span>
           </div>
         </div>
       </div>
