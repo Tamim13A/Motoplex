@@ -31,7 +31,7 @@ interface ProductCacheItem {
   expiry: number;
 }
 const productsMemoryCache = new Map<string, ProductCacheItem>();
-const CACHE_TTL_MS = 10 * 1000;
+const CACHE_TTL_MS = 60 * 1000;
 
 export function invalidateProductsCache() {
   productsMemoryCache.clear();
@@ -43,7 +43,7 @@ export async function GET(request: NextRequest) {
   if (cached && Date.now() < cached.expiry) {
     return NextResponse.json(cached.data, {
       headers: {
-        "Cache-Control": "public, s-maxage=5, stale-while-revalidate=15",
+        "Cache-Control": "public, s-maxage=60, stale-while-revalidate=600",
         "X-Cache": "HIT-FAST",
       },
     });
@@ -171,8 +171,16 @@ export async function GET(request: NextRequest) {
 
     const skip = (page - 1) * limit;
 
+    const isFull = searchParams.get("full") === "true";
+    const productQuery = Product.find(filter);
+    if (!isFull) {
+      productQuery.select(
+        "name slug tagline brand category categorySlug subcategory subcategorySlug price compareAtPrice discountPercentage rating reviewCount stock images isFeatured isBestSeller isNewArrival"
+      );
+    }
+
     const [products, total] = await Promise.all([
-      Product.find(filter)
+      productQuery
         .sort(sort)
         .skip(skip)
         .limit(limit)
@@ -204,7 +212,7 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json(responsePayload, {
       headers: {
-        "Cache-Control": "public, s-maxage=5, stale-while-revalidate=15",
+        "Cache-Control": "public, s-maxage=60, stale-while-revalidate=600",
         "X-Cache": "MISS",
       },
     });

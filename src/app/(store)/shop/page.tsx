@@ -51,7 +51,7 @@ function ShopContent() {
 
   // Fetch live products from database
   useEffect(() => {
-    fetch("/api/products?limit=500", { cache: "no-store" })
+    fetch("/api/products?limit=500")
       .then((res) => (res.ok ? res.json() : null))
       .then((json) => {
         if (json?.success && Array.isArray(json.data?.products) && json.data.products.length > 0) {

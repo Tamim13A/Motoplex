@@ -11,10 +11,12 @@ import { formatProduct } from "@/lib/productFormatter";
 
 export function BestSellers() {
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
-  const [productList, setProductList] = useState<Product[]>([]);
+  const [productList, setProductList] = useState<Product[]>(() => {
+    return products.filter((p) => p.isBestSeller).map(formatProduct);
+  });
 
   useEffect(() => {
-    fetch("/api/products?limit=100", { cache: "no-store" })
+    fetch("/api/products?bestSeller=true&limit=8")
       .then((res) => (res.ok ? res.json() : null))
       .then((json) => {
         if (json?.success && Array.isArray(json.data?.products)) {
