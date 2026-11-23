@@ -437,41 +437,32 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
                 </div>
               )}
 
-              {/* Size Selector */}
-              {product.sizes && product.sizes.length > 0 && (
-                <div className="mt-5">
-                  <div className="flex justify-between items-center text-xs font-semibold text-zinc-900 mb-2">
-                    <span>Option / Size: <strong className="text-zinc-950 font-bold">{selectedSize}</strong></span>
-                    <button
-                      onClick={() =>
-                        showToast(
-                          "Fitment Guide",
-                          "Helmets & Jackets are standard European sizing. Free size exchange within 7 days in Bangladesh.",
-                          "info"
-                        )
-                      }
-                      className="text-xs text-red-600 hover:underline font-medium"
-                    >
-                      Size & Fit Guide
-                    </button>
+              {/* Fitment Specifications (Only if multiple specific fitments exist) */}
+              {product.sizes &&
+                product.sizes.filter((s) => s && s !== "Standard" && s !== "Standard Fitment").length > 1 && (
+                  <div className="mt-5">
+                    <div className="flex justify-between items-center text-xs font-semibold text-zinc-900 mb-2">
+                      <span>Fitment / Model Spec: <strong className="text-zinc-950 font-bold">{selectedSize}</strong></span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {product.sizes
+                        .filter((s) => s && s !== "Standard" && s !== "Standard Fitment")
+                        .map((s) => (
+                          <button
+                            key={s}
+                            onClick={() => setSelectedSize(s)}
+                            className={`text-xs px-3.5 py-2 rounded-xl border font-bold transition-all ${
+                              selectedSize === s
+                                ? "bg-zinc-950 text-white border-zinc-950 shadow-sm"
+                                : "bg-white text-zinc-700 border-zinc-200 hover:border-zinc-400"
+                            }`}
+                          >
+                            {s}
+                          </button>
+                        ))}
+                    </div>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {product.sizes.map((s) => (
-                      <button
-                        key={s}
-                        onClick={() => setSelectedSize(s)}
-                        className={`text-xs px-3.5 py-2 rounded-xl border font-bold transition-all ${
-                          selectedSize === s
-                            ? "bg-zinc-950 text-white border-zinc-950 shadow-sm"
-                            : "bg-white text-zinc-700 border-zinc-200 hover:border-zinc-400"
-                        }`}
-                      >
-                        {s}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
+                )}
 
               {/* Material Selector if multiple */}
               {product.materials && product.materials.length > 1 && (

@@ -188,29 +188,32 @@ export function QuickViewModal({ product, onClose }: QuickViewModalProps) {
               </div>
             )}
 
-            {/* Size Selector */}
-            {product.sizes && product.sizes.length > 0 && (
-              <div className="mt-4">
-                <label className="text-xs font-semibold text-zinc-900 block mb-2">
-                  Option / Size: <span className="font-normal text-zinc-500">{currentSize}</span>
-                </label>
-                <div className="flex flex-wrap gap-2">
-                  {product.sizes.map((s) => (
-                    <button
-                      key={s}
-                      onClick={() => setSelectedSize(s)}
-                      className={`text-xs px-3 py-1.5 rounded-lg border font-medium transition-all ${
-                        currentSize === s
-                          ? "bg-zinc-900 text-white border-zinc-900"
-                          : "bg-white text-zinc-700 border-zinc-200 hover:border-zinc-400"
-                      }`}
-                    >
-                      {s}
-                    </button>
-                  ))}
+            {/* Fitment Specifications (Only if multiple specific fitments exist) */}
+            {product.sizes &&
+              product.sizes.filter((s) => s && s !== "Standard" && s !== "Standard Fitment").length > 1 && (
+                <div className="mt-4">
+                  <label className="text-xs font-semibold text-zinc-900 block mb-2">
+                    Fitment / Spec: <span className="font-normal text-zinc-500">{currentSize}</span>
+                  </label>
+                  <div className="flex flex-wrap gap-2">
+                    {product.sizes
+                      .filter((s) => s && s !== "Standard" && s !== "Standard Fitment")
+                      .map((s) => (
+                        <button
+                          key={s}
+                          onClick={() => setSelectedSize(s)}
+                          className={`text-xs px-3 py-1.5 rounded-lg border font-medium transition-all ${
+                            currentSize === s
+                              ? "bg-zinc-900 text-white border-zinc-900"
+                              : "bg-white text-zinc-700 border-zinc-200 hover:border-zinc-400"
+                          }`}
+                        >
+                          {s}
+                        </button>
+                      ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
             {/* Quantity */}
             <div className="mt-5 flex items-center gap-4">

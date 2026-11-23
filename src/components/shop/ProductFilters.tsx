@@ -64,7 +64,6 @@ export const AVAILABLE_BRANDS = [
   "Flamingo",
 ];
 
-const AVAILABLE_SIZES = ["S", "M", "L", "XL", "XXL", "41 EU", "42 EU", "43 EU", "44 EU"];
 const AVAILABLE_COLORS = [
   { name: "Black", hex: "#0f172a" },
   { name: "Red", hex: "#dc2626" },
@@ -287,31 +286,6 @@ export function ProductFilters({
               <span className="font-bold text-zinc-800">৳{filters.maxPrice.toLocaleString()}</span>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Size / Fit */}
-      <div className="space-y-3 pt-3 border-t border-zinc-200">
-        <label className="text-xs font-bold text-zinc-900 uppercase tracking-wider block">
-          Size / Option
-        </label>
-        <div className="flex flex-wrap gap-1.5">
-          {AVAILABLE_SIZES.map((size) => {
-            const isSelected = filters.selectedSizes.includes(size);
-            return (
-              <button
-                key={size}
-                onClick={() => handleToggleSize(size)}
-                className={`text-xs px-2.5 py-1.5 rounded-lg border font-medium transition-all ${
-                  isSelected
-                    ? "bg-zinc-900 text-white border-zinc-900 shadow-xs"
-                    : "bg-white text-zinc-700 border-zinc-200 hover:border-zinc-400"
-                }`}
-              >
-                {size}
-              </button>
-            );
-          })}
         </div>
       </div>
 

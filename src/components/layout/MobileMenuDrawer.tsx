@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { X, ChevronDown, ChevronRight, Phone, MapPin, Shield, Search, ArrowRight, Truck } from "lucide-react";
 import { categories } from "@/data/categories";
@@ -51,6 +52,13 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
           {/* Header */}
           <div className="p-4 border-b border-zinc-100 flex items-center justify-between bg-zinc-950 text-white">
             <Link href="/" onClick={onClose} className="flex items-center gap-2">
+              <Image
+                src="/logo.jpg"
+                alt="Motoplex Logo"
+                width={28}
+                height={28}
+                className="rounded-lg object-contain"
+              />
               <span className="font-black text-lg tracking-tighter">MOTOPLEX</span>
               <span className="text-[10px] tracking-widest text-red-500 font-bold uppercase">BD</span>
             </Link>

@@ -267,7 +267,15 @@ export function Header() {
                 <Menu className="w-6 h-6" />
               </button>
 
-              <Link href="/" className="flex items-center gap-2 group">
+              <Link href="/" className="flex items-center gap-2.5 group">
+                <Image
+                  src="/logo.jpg"
+                  alt="Motoplex Performance Division"
+                  width={38}
+                  height={38}
+                  className="rounded-xl object-contain shadow-xs border border-zinc-900/10 group-hover:scale-105 transition-transform"
+                  priority
+                />
                 <div className="flex flex-col">
                   <div className="flex items-center gap-1">
                     <span className="font-black text-xl sm:text-2xl tracking-tighter text-zinc-950 group-hover:text-red-600 transition-colors">
@@ -281,7 +289,7 @@ export function Header() {
                     </div>
                   </div>
                   <span className="text-[9px] font-bold tracking-[0.22em] text-zinc-500 uppercase -mt-1">
-                    BANGLADESH
+                    PERFORMANCE DIVISION
                   </span>
                 </div>
               </Link>

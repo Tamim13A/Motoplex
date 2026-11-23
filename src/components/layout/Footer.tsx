@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MapPin, ShieldCheck } from "lucide-react";
 
 export function Footer() {
@@ -12,7 +13,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand & Story */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2.5">
+              <Image
+                src="/logo.jpg"
+                alt="Motoplex Performance Division"
+                width={40}
+                height={40}
+                className="rounded-xl object-contain shadow-xs border border-zinc-800"
+              />
               <div className="flex flex-col">
                 <div className="flex items-center gap-1">
                   <span className="font-black text-2xl tracking-tighter text-white">
@@ -25,13 +33,13 @@ export function Footer() {
                   </div>
                 </div>
                 <span className="text-[9px] font-bold tracking-[0.22em] text-zinc-500 uppercase -mt-1">
-                  BANGLADESH
+                  PERFORMANCE DIVISION
                 </span>
               </div>
             </Link>
 
             <p className="text-zinc-400 text-xs leading-relaxed max-w-sm">
-              Motoplex Bangladesh is the authorized gateway for Italian motorcycling excellence. Importer and distributor of Aprilia, Vespa, Moto Guzzi, alongside world-championship certified gear from Shoei, Dainese, Alpinestars, and Akrapovič.
+              Motoplex Performance Division Bangladesh is the premier importer and distributor of high-performance motorcycle spare parts, racing accessories, and precision tuning components in Bangladesh.
             </p>
 
             {/* Showroom Addresses */}
