@@ -17,14 +17,17 @@ export function FeaturedProducts() {
   });
 
   useEffect(() => {
-    fetch("/api/products?featured=true&limit=24")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((json) => {
-        if (json?.success && Array.isArray(json.data?.products) && json.data.products.length > 0) {
-          setProductList(json.data.products.map(formatProduct));
-        }
-      })
-      .catch(() => {});
+    const timer = setTimeout(() => {
+      fetch("/api/products?featured=true&limit=24")
+        .then((res) => (res.ok ? res.json() : null))
+        .then((json) => {
+          if (json?.success && Array.isArray(json.data?.products) && json.data.products.length > 0) {
+            setProductList(json.data.products.map(formatProduct));
+          }
+        })
+        .catch(() => {});
+    }, 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   const tabs = [

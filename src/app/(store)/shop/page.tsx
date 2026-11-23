@@ -49,16 +49,19 @@ function ShopContent() {
     return initialProducts.map(formatProduct);
   });
 
-  // Fetch live products from database
+  // Instant 0ms memory render + non-blocking background sync
   useEffect(() => {
-    fetch("/api/products?limit=500")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((json) => {
-        if (json?.success && Array.isArray(json.data?.products) && json.data.products.length > 0) {
-          setAllProducts(json.data.products.map(formatProduct));
-        }
-      })
-      .catch(() => {});
+    const timer = setTimeout(() => {
+      fetch("/api/products?limit=500")
+        .then((res) => (res.ok ? res.json() : null))
+        .then((json) => {
+          if (json?.success && Array.isArray(json.data?.products) && json.data.products.length > 0) {
+            setAllProducts(json.data.products.map(formatProduct));
+          }
+        })
+        .catch(() => {});
+    }, 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   // Sync with searchParams if URL changes
@@ -722,7 +725,7 @@ function ShopContent() {
 
 export default function ShopPage() {
   return (
-    <Suspense fallback={<div className="p-12 text-center text-xs text-zinc-400">Loading catalog...</div>}>
+    <Suspense fallback={null}>
       <ShopContent />
     </Suspense>
   );

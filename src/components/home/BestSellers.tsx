@@ -16,14 +16,17 @@ export function BestSellers() {
   });
 
   useEffect(() => {
-    fetch("/api/products?bestSeller=true&limit=8")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((json) => {
-        if (json?.success && Array.isArray(json.data?.products)) {
-          setProductList(json.data.products.map(formatProduct));
-        }
-      })
-      .catch(() => {});
+    const timer = setTimeout(() => {
+      fetch("/api/products?bestSeller=true&limit=8")
+        .then((res) => (res.ok ? res.json() : null))
+        .then((json) => {
+          if (json?.success && Array.isArray(json.data?.products)) {
+            setProductList(json.data.products.map(formatProduct));
+          }
+        })
+        .catch(() => {});
+    }, 2500);
+    return () => clearTimeout(timer);
   }, []);
 
   const bestSellerProducts = productList.filter((p) => p.isBestSeller).slice(0, 4);

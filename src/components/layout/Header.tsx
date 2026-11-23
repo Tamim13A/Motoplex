@@ -310,36 +310,42 @@ export function Header() {
 
               <Link
                 href="/category/brake-system"
+                prefetch={true}
                 className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
               >
                 Brake System
               </Link>
               <Link
                 href="/category/engine-performance"
+                prefetch={true}
                 className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
               >
                 Engine & Tuning
               </Link>
               <Link
                 href="/category/air-filters"
+                prefetch={true}
                 className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
               >
                 Air Filters
               </Link>
               <Link
                 href="/category/clutch-transmission"
+                prefetch={true}
                 className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
               >
                 Clutch & Chain
               </Link>
               <Link
                 href="/category/tyres"
+                prefetch={true}
                 className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
               >
                 Tyres
               </Link>
               <Link
                 href="/services"
+                prefetch={true}
                 className="text-xs font-bold uppercase tracking-wider text-zinc-900 hover:text-red-600 transition-colors flex items-center gap-1"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse" />
@@ -347,12 +353,14 @@ export function Header() {
               </Link>
               <Link
                 href="/dealerships"
+                prefetch={true}
                 className="text-xs font-bold uppercase tracking-wider text-zinc-700 hover:text-red-600 transition-colors"
               >
                 Dealerships
               </Link>
               <Link
                 href="/track"
+                prefetch={true}
                 className="text-xs font-bold uppercase tracking-wider text-zinc-900 hover:text-red-600 transition-colors flex items-center gap-1.5"
               >
                 <Truck className="w-3.5 h-3.5 text-red-600" />
@@ -360,6 +368,7 @@ export function Header() {
               </Link>
               <Link
                 href="/shop"
+                prefetch={true}
                 className="text-xs font-bold uppercase tracking-wider text-red-600 hover:text-red-700 transition-colors"
               >
                 All Products

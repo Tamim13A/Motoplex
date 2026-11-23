@@ -88,6 +88,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
               src={product.images[1]}
               alt={`${product.name} - view 2`}
               fill
+              loading="lazy"
               className="object-cover opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out transform-gpu group-hover:scale-106"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />

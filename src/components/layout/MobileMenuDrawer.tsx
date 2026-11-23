@@ -189,6 +189,7 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
                 </Link>
                 <Link
                   href="/shop"
+                  prefetch={true}
                   onClick={onClose}
                   className="flex items-center justify-between py-1.5 hover:text-red-600"
                 >
@@ -197,6 +198,7 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
                 </Link>
                 <Link
                   href="/track"
+                  prefetch={true}
                   onClick={onClose}
                   className="flex items-center justify-between py-1.5 text-red-600 font-bold"
                 >

@@ -15,6 +15,14 @@ interface CategoryPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return categories.map((cat) => ({
+    slug: cat.slug,
+  }));
+}
+
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { slug } = await params;
   const category = categories.find((c) => c.slug === slug);

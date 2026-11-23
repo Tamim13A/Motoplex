@@ -11,6 +11,14 @@ interface ProductPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return staticProducts.slice(0, 80).map((p) => ({
+    slug: p.slug,
+  }));
+}
+
 export default async function ProductPage({ params }: ProductPageProps) {
   const { slug } = await params;
   let product: Product | null = null;
